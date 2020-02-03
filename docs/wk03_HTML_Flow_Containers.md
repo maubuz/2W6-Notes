@@ -58,7 +58,7 @@ Most text formating tags are inline elements by default
 *Code*
 
 ```html
-<p>Text <strong>formating elements</strong> only take the space they need</p>
+<p>Text <strong>formating elements</strong> only take the <mark>space they</mark> need</p>
 ```
 
 Result
