@@ -9,4 +9,5 @@ The previous GitBook interface had a few limitations, namely:
 ## What is this page then?
 This webpage is writen in [Markdown](https://www.markdownguide.org/), built with [Docsify](https://docsify.js.org/) and deployed to a [GitHub Pages](https://pages.github.com/) project.
 
-## More to come
+## View Source Code
+This page is open source. View [source code on GitHub](https://github.com/mau-jac/2W6-UI).
