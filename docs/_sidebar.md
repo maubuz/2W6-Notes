@@ -1,5 +1,5 @@
 - **Home**
 - [About](/)
 - **Week 3**
-- [HTML Flow: div & span](wk03_HTML_Flow_Containers.md)
-- [Intro to CSS](wk03_Intro_CSS.md)
+- [HTML Flow: div & span](./wk3/wk03_HTML_Flow_Containers.md)
+- [Intro to CSS](./wk3/wk03_Intro_CSS.md)
