@@ -1,4 +1,9 @@
+![course_title](README.assets/course_title.svg)
+
+
+
 # Welcome
+
 This is the new companion site for the 420-2W6 course.
 
 ## Why a new one?
