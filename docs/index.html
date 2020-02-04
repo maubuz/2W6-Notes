@@ -20,7 +20,12 @@
   <!-- <link rel="stylesheet" href="./css/prism_a11y_dark.css"> -->
   <!-- prism-prism-vsc-dark-plus -->
   <link rel="stylesheet" href="./css/prism-vsc-dark-plus.css">
-
+  <style>
+    /* Fix overlay ahead of image for Plugin: Zoom Image */
+    :root {
+      --zoomimage-overlay-background: rgba(0, 0, 0, 0);
+    }
+  </style>
 </head>
 
 <body>
@@ -39,6 +44,8 @@
   <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- Copy to clipboard button on code blocks -->
   <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- Zoom into images -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 
 </html>
