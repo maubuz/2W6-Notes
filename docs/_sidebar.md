@@ -3,3 +3,4 @@
 - **Week 3**
 - [HTML Flow: div & span](./wk3/wk03_HTML_Flow_Containers.md)
 - [Intro to CSS](./wk3/wk03_Intro_CSS.md)
+- [wk3.1 Hands-on](./wk3/wk3_1_Handson.md)
