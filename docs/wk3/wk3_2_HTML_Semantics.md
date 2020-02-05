@@ -194,13 +194,18 @@ Specifies a big area in the center that contains most of the unique content of a
 
 # What about `<div>` ?
 
-Divs are still useful as containers but they are meaningless semantically.
+Divs are still useful as containers for very custom jobs but they are meaningless semantically.
 
 **Avoiding using divs and use semantic elements whenever possible.**
 
+For machines (browsers, screen readers and search engines) **a div means a generic container**, even if it has been labeled with an id.
 
+> **Semantic elements are better because they are:**
+> - Cleaner for developers
+> - Understandable to machines  
 
-Below is a comparison of a website organised with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).  
+Below is a comparison of a website organised with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).
+
 <br>
 
 ![Semantic HTML5 layout, with structural HTML elements](https://www.springboardseo.com/img/html5-semantic-page-layout.jpg)
@@ -213,27 +218,19 @@ Below is a comparison of a website organised with divs vs semantic elements (fro
 <p align="center"><em>Using Divs</em></p>
 <br>
 
-**Using semantic elements is better because they are:**
-- Cleaner for developers
-- Understandable to machines  
-
-
 # References & Diving Deeper
 
 > **I strongly encourage you to read the** [**Semantic HTML**](https://internetingishard.com/html-and-css/semantic-html/) by internetingishard.com  
 
 Other useful references:  
 
+- [Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure) by MDN Web Docs
 
-[Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure) by MDN Web Docs
+- [HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp) by W3Schools
 
-[HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp) by W3Schools
+- [**HTML semantics cheat sheet**](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) by algonquindesign.ca
 
-
-
-[**HTML semantics cheat sheet**](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) by algonquindesign.ca
-
-
+<br>
 
 # Hands-on Activity
 
@@ -247,8 +244,8 @@ Refactor the HTML page done in the previous activity in order to use semantic HT
 
 ## Lab #2
 
-For this lab we will use the [**Assignment for Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
+For this lab we will use the project [**Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
 
 
 
-Please complete the instructions as described in the **Project brief**
+Please complete the instructions as described in the **Starting point** and **Project brief** section of the page above.
