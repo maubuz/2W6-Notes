@@ -87,17 +87,27 @@ The navigation bar. Defines the navigation functionality for the page.
 ```
 <br>
 
+**`<main>`**
+
+Specifies a big area in the center that contains most of content unique to a page. Used only once on a page.  
+
+Use `<main>` only once per page, and put it directly inside `<body>`. Ideally this shouldn't be nested within other elements.
+
+<br>
+
 **`<article>`**
 
  A block of related content that makes sense on its own without the rest of the page (e.g., a single blog post or a sales item in an e-commerce website).
 
+ Think of an article as a stand-alone block of content. You should technically be able to rip it from your page, put it on another site or search engine and it should continue to flow and make sense on its own.
 
+<br>
 
 **`<section>`**
 
  A thematic grouping of content that constitutes one single piece of functionality. (e.g., a set of article headlines, blog posts or summaries). Often used to group  `<article>` elements.
 
-It's recommended to start a `<section>` with a heading.
+> It's recommended to start a `<section>` with a heading.
 
 ```html
 <section>
@@ -123,9 +133,9 @@ It's recommended to start a `<section>` with a heading.
 
 **`<aside>`**
 
-Defines content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries,  author biography, related links, etc.).
+Defines content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries,  author biography, , quotes, stats, related links, etc.). Also commonly used for advertisement blocks or images.
 
-Should be related to the surrounding content.
+`<aside>` is typically related to the surrounding content.
 
 <br>
 
@@ -156,21 +166,23 @@ Used together in order to add information or a visual explanation to an image. W
 
 **`<time>`**
 
-Used to define a time and a date as human-readable text and machine-readable information.
+Used to define a time and a date as human-readable text and/or as unambiguous machine-readable information.
+
+Particularly useful for search engines (ex.: return only pages published after a certain date).
 
 *Code*
 
 ```html
 <p>We open at <time>10:00</time> every morning.</p>
 
-<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p> 
+<p>By Troy McClure. Published <time datetime='2017-1-3'>January 3rd</time></p> 
 ```
 
 *Result*
 
 <div style="background-color: rgb(248, 248, 246)">
 	<p>We open at <time>10:00</time> every morning.</p>
-	<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>     
+  <p>By Troy McClure. Published <time datetime='2017-1-3'>January 3rd</time></p>
 </div>
 <br>
 
@@ -187,16 +199,11 @@ Defines contact information for the author of the article or web page. Should no
 ```
 <br>
 
-**`<main>`**
-
-Specifies a big area in the center that contains most of the unique content of a given webpage. Used only once on a page.
-<br>
-
 # What about `<div>` ?
 
-Divs are still useful as containers for very custom jobs but they are meaningless semantically.
+Divs are still useful as containers for layout purposes or when no other elements make sense, however, they are meaningless semantically.
 
-**Avoiding using divs and use semantic elements whenever possible.**
+**Avoiding using divs in favour of semantic elements whenever possible.**
 
 For machines (browsers, screen readers and search engines) **a div means a generic container**, even if it has been labeled with an id.
 
