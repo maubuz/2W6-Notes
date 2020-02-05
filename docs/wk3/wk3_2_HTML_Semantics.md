@@ -204,13 +204,13 @@ For machines (browsers, screen readers and search engines) **a div means a gener
 > - Cleaner for developers
 > - Understandable to machines  
 
-Below is a comparison of a website organised with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).
+Below is a comparison of a website organized with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).
 
 <br>
 
 ![Semantic HTML5 layout, with structural HTML elements](https://www.springboardseo.com/img/html5-semantic-page-layout.jpg)
 
- <p align="center"><em>Using Sementic Elements</em></p>
+ <p align="center"><em>Using Semantic Elements</em></p>
  <br>
 
 ![Non-semantic HTML layout, with generic divs](https://www.springboardseo.com/img/non-semantic-html-layout.jpg)
