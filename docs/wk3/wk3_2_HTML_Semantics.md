@@ -8,30 +8,24 @@
 
 
 
-> Semantic html elements clearly describe their **purpose to both the browser and the developer**, allowing the information to be consumed in the correct format, **according to the user**.
+> Semantic html elements clearly describe their **purpose to both the browser and the developer**, allowing the information to be consumed in the correct format **according to the user**.
 
+<br>
 
+![page_talking](https://internetingishard.com/html-and-css/icons/social/semantic-markup-096a41.png ':size=400')
 
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finternetingishard.com%2Fhtml-and-css%2Ficons%2Fsocial%2Fsemantic-markup-096a41.png&amp;f=1&amp;nofb=1" alt="Semantic HTML Tutorial | HTML &amp; CSS Is Hard" style="zoom: 80%;" />
 
 <p align="center"><a href="https://internetingishard.com/html-and-css/icons/social/semantic-markup-096a41.png"><em>Semantic HTML Tutorial</em></a> <em>- internetingishard.com</em></p>
-
-
-
 You have already been using basic semantic elements:
-
-
 
 - &lt;html>
 - &lt;head>
 - &lt;body>
 - &lt;img>
 - &lt;p>
-- &lt;h1>, &lt;h2>, etc 
+- &lt;h1>, &lt;h2>, etc  
 
-
-
-# New Semantic Elements
+# Semantics: Page Structure
 
 
 
@@ -55,17 +49,17 @@ Consider these commonly used website layouts:
 
 
 
-<img src="https://internetingishard.com/html-and-css/semantic-html/html-sectioning-elements-00c3fd.png" style="zoom:60%;">
+<img src="https://internetingishard.com/html-and-css/semantic-html/html-sectioning-elements-00c3fd.png" style="width:300px;">
 
-<p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>
+<p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
 
-
+<br>
 
 ![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
 <p align="center"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><em>HTML Semantic Elements</em></a> <em>- w3schools.org</em></p>
 
-
+<br>
 
 **`<header>`**
 
@@ -76,8 +70,7 @@ Found at the top of a document, a section, or an article and  usually contains t
     <h1>My Amazing Company</h1>
 </header>
 ```
-
-
+<br>
 
 **`<nav>`**
 
@@ -92,8 +85,7 @@ The navigation bar. Defines the navigation functionality for the page.
   </ul>
 </nav>
 ```
-
-
+<br>
 
 **`<article>`**
 
@@ -127,8 +119,7 @@ It's recommended to start a `<section>` with a heading.
 
 </section>
 ```
-
-
+<br>
 
 **`<aside>`**
 
@@ -136,7 +127,7 @@ Defines content that is not directly related to the main content but can provide
 
 Should be related to the surrounding content.
 
-
+<br>
 
 **`<footer>`**
 
@@ -149,8 +140,7 @@ Generally found at the bottom of a document or section.  Typically contains the 
   someone@example.com</a>.</p>
 </footer> 
 ```
-
-
+<br>
 
 **`<figure>`** and **`<figcaption>`**
 
@@ -162,8 +152,7 @@ Used together in order to add information or a visual explanation to an image. W
   <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
 </figure> 
 ```
-
-
+<br>
 
 **`<time>`**
 
@@ -183,7 +172,7 @@ Used to define a time and a date as human-readable text and machine-readable inf
 	<p>We open at <time>10:00</time> every morning.</p>
 	<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>     
 </div>
-
+<br>
 
 
 **`<address>`**
@@ -196,16 +185,14 @@ Defines contact information for the author of the article or web page. Should no
 	McClure</a> for questions about this article.
 </address>
 ```
-
-
+<br>
 
 **`<main>`**
 
 Specifies a big area in the center that contains most of the unique content of a given webpage. Used only once on a page.
+<br>
 
-
-
-## How about `<div>` ?
+# What about `<div>` ?
 
 Divs are still useful as containers but they are meaningless semantically.
 
@@ -213,32 +200,30 @@ Divs are still useful as containers but they are meaningless semantically.
 
 
 
-Below is a comparison of a website organised with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).
-
-- Cleaner and for developers
-- Understandable to machines
-
-
+Below is a comparison of a website organised with divs vs semantic elements (from [springboardseo.com](https://www.springboardseo.com/resources/what-is/semantic-html.html)).  
+<br>
 
 ![Semantic HTML5 layout, with structural HTML elements](https://www.springboardseo.com/img/html5-semantic-page-layout.jpg)
 
  <p align="center"><em>Using Sementic Elements</em></p>
-
-
-
+ <br>
 
 ![Non-semantic HTML layout, with generic divs](https://www.springboardseo.com/img/non-semantic-html-layout.jpg)
 
 <p align="center"><em>Using Divs</em></p>
+<br>
+
+**Using semantic elements is better because they are:**
+- Cleaner for developers
+- Understandable to machines  
 
 
-# References and Diving Deeper
+# References & Diving Deeper
 
-**Strong encourage you to head the [Semantic HTML](https://internetingishard.com/html-and-css/semantic-html/) **by internetingishard.com
+> **I strongly encourage you to read the** [**Semantic HTML**](https://internetingishard.com/html-and-css/semantic-html/) by internetingishard.com  
 
+Other useful references:  
 
-
-Other useful references:
 
 [Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure) by MDN Web Docs
 
