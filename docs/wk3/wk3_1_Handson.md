@@ -1,4 +1,4 @@
-# Hands-on Activities
+# Wk 3.1 Hands-on Activities
 
 ## Exercises
 

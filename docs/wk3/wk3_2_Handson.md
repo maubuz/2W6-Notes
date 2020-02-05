@@ -1,4 +1,4 @@
-# Hands-on Activity
+# Wk 3.2 Hands-on Activity
 
 ## Lab #1
 
