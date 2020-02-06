@@ -6,3 +6,4 @@
 - [3.1 Hands-on](./wk3/wk3_1_Handson.md)
 - [HTML Semantics](./wk3/wk3_2_HTML_Semantics.md)
 - [3.2 Hands-on](./wk3/wk3_2_Handson.md)
+- [Fonts & CSS Units](./wk/../wk3/wk3_3_text_units.md)
