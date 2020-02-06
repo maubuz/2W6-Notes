@@ -251,9 +251,31 @@ There are many other text styling properties, some more used than others:
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): Transform you font to upper case, capitalised, full-width, etc.
 - [`text-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow): Applies drop shadows to your text.
 
+# Shorthand Properties Notation
+Like many CSS properties, you can set multiple font values in one shoot by using the shorthand `<font>` property:
+
+> Refer to the MDN web doc page on the [**`<font>` property**](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
+In the example below the following font properties are set at the same time:
+
+-  [`font-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+-  [`font-variant`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
+-  [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+-  [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) / [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+-    [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+
+```css
+body{
+	font: italic small-caps bold 16px/2 cursive;    
+}
+```
+
+<br>
+
 # Hands-on
 
-## Execises
+## Exercises
 
 Complete the following exercises from W3Schools:
 
