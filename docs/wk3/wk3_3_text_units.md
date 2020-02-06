@@ -128,7 +128,7 @@ h1 {
 
 # CSS Units
 
-!>  For this section we will refer to the page [CSS Units by W3Schools](https://www.cssfontstack.com/).
+!>  For this section we will refer to the page [CSS Units by W3Schools](https://www.w3schools.com/CSSref/css_units.asp).
 
 ## Responsive units
 
