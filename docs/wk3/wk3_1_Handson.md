@@ -14,8 +14,8 @@ Do the following exercises from W3Schools:
 
 - [CSS How To Exercise](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto1)
 
+- [CSS Dinner](https://flukeout.github.io/)
   
-
 ## Lab
 
 Use CSS to style the provided html so that it looks like the image below.
