@@ -2,7 +2,7 @@
 
 *This section was adapted from [CSS Fonts](https://www.w3schools.com/css/css_font.asp) by w3schools.com) and [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals) by MDN Web Docs*
 
-## Font Types
+# Font Types
 
 In CSS, there are two types of font family names:
 
@@ -21,7 +21,7 @@ In CSS, there are two types of font family names:
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
 <br>
 
-## Changing fonts with `font-family:`
+# Changing fonts with `font-family:`
 
 The fonts available to the browser depend largely on the fonts installed in the  operating system.
 
@@ -53,7 +53,7 @@ body {
 
 
 
-## Font size
+# Font size
 
 Font size can be set with the `font-size` property.
 
@@ -73,7 +73,7 @@ Font size can be set with the `font-size` property.
 
 
 
-### Recommendation & inheritance
+## Recommendation & inheritance
 
 > For `font-size` **it is recommended that you use relative CSS units over fixed units.**
 >
@@ -126,11 +126,11 @@ h1 {
 
 <br>
 
-## CSS Units
+# CSS Units
 
 !>  For this section we will refer to the page [CSS Units by W3Schools](https://www.cssfontstack.com/).
 
-### Responsive units
+## Responsive units
 
 Use the `vw` unit to scale the `font-size` according to the browser's window size.
 
@@ -145,7 +145,7 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
 <br>
 
-## VS Code Power-ups:
+# VS Code Power-ups:
 
 Now that you know what the viewport is you can unlock an [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
 
@@ -159,7 +159,7 @@ If you don't line Emmet's auto-complete, you can disable it:
 2. Search for Emmet
 3. Disable settings as required (play around until you get the desirable behaviour)	
 
-## Font Weight
+# Font Weight
 
 The [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) property sets how bold the text is, depending on the values supported by the font family.
 
@@ -181,7 +181,7 @@ font-weight: lighter;
 font-weight: 200;
 ```
 
-## Using Web Fonts
+# Using Web Fonts
 
 You can include external fonts in your CSS.
 
@@ -209,7 +209,7 @@ p {
 }
 ```
 
-## Text Decorations
+# Text Decorations
 
 The [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) sets the decorations on fonts (mainly used to change default underline on links).
 
@@ -219,7 +219,7 @@ Common values are:
 - `underline`: <u>Underlines the text</u>.
 - `line-through`: Puts a ~~strikethrough over the text~~.
 
-## Text Layout
+# Text Layout
 
 !>  For this section we will refer to the **section "Text layout"** of the [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#Text_layout) by MDN web docs.
 
@@ -234,7 +234,7 @@ Using the reference above, look at the following properties:
 
 
 
-### Line-height: Em vs Unit-less
+## Line-height: Em vs Unit-less
 
 `line-height` defined in length or percentage units can have bad inheritance behaviour.
 
@@ -243,8 +243,7 @@ Using the reference above, look at the following properties:
 -- [*Prefer unitless numbers for line-height values*](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) by MDN Web Docs
 
 
-
-## Other text styling
+# Other text styling
 
 There are many other text styling properties, some more used than others:
 
