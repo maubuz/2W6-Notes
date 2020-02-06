@@ -250,3 +250,12 @@ There are many other text styling properties, some more used than others:
 - [`font-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style): Used to turn italic text on and off. 
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): Transform you font to upper case, capitalised, full-width, etc.
 - [`text-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow): Applies drop shadows to your text.
+
+# Hands-on
+
+## Execises
+
+Complete the following exercises from W3Schools:
+
+1. [CSS Text](https://www.w3schools.com/css/exercise.asp?filename=exercise_text1)
+2. [CSS Font](https://www.w3schools.com/css/exercise.asp?filename=exercise_font1)
