@@ -63,7 +63,7 @@ Consider these commonly used website layouts:
 
 **`<header>`**
 
-Found at the top of a document, a section, or an article and  usually contains the main heading. It may some navigation and search tools.
+Found at the top of a document, a section, or an article and  usually contains the main heading. It may contain some navigation and search tools.
 
 ```html
 <header>
