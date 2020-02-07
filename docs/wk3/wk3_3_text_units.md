@@ -300,6 +300,16 @@ body{
 }
 ```
 
+## Font Shorthand Live Demo
+
+This live demo illustrates how the `font` shorthand property affects a paragraph element.
+
+[*This live demo is provided by MDN web docs*](https://developer.mozilla.org/en-US/docs/Web/CSS/font#frame_live_sample)
+
+<div style="background-color: rgb(248, 248, 246)">
+	<iframe class="live-sample-frame sample-code-frame" frameborder="0" height="400px" id="frame_live_sample" src="https://mdn.mozillademos.org/en-US/docs/Web/CSS/font$samples/live_sample?revision=1569828" width="100%"></iframe>
+</div>
+
 
 # Hands-on
 
