@@ -153,7 +153,7 @@ Now that you know what the viewport is you can unlock the `!` [Emmet](https://co
 
 ## Disabling Emmet
 
-If you don't line Emmet's auto-complete, you can disable it:
+If you don't like Emmet's auto-complete, you can disable it:
 
 1. File -> Preferences -> Settings
 2. Search for Emmet
@@ -177,7 +177,7 @@ and
 
 The `<meta>` viewport element tells the browser how to control the page's dimensions and scaling.
 
-The `width=` property controls the size of the viewport. It can be set to a specific number of pixels like width=600 or to the special value device-width, which is the width of the screen in CSS pixels at a scale of 100%.
+The `width=` property controls the size of the viewport. It can be set to a specific number of pixels or to the device-width, which is the width of the screen at a scale of 100%.
 
 The `initial-scale=` property controls the zoom level when the page is first loaded.
 
@@ -194,6 +194,37 @@ Internet Explorer (IE) supports the use of a document compatibility `<meta>` tag
 **Thanks to the recent obsolescence of Windows 7 (which shipped with old versions of IE) this compatibility meta tag will no longer be required.**
 
 See this [Stack Overflow article](https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do) for more information.
+
+
+# Using Web Fonts
+
+You can include external fonts in your CSS.
+
+A popular location to get external fonts is **Google Fonts:** https://fonts.google.com/
+
+![adding google font animation](./wk3/../assets/add_google_font.gif)
+
+<br>
+
+![image-20200206101124091](assets/image-20200206101124091.png)
+
+<br>
+
+Include the provided link in the head section of your HTML file, just like you would link a CSS Style sheet.
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+```
+
+<br>
+
+Add the f`font-family` property in your CSS. **Don't forget to add a fall-back font**
+
+```css
+p {
+	font-family: 'Roboto', sans-serif;
+}
+```
 
 # Font Weight
 
@@ -215,36 +246,6 @@ font-weight: bold;
 font-weight: lighter;
 
 font-weight: 200;
-```
-
-# Using Web Fonts
-
-You can include external fonts in your CSS.
-
-A popular location to get external fonts is **Google Fonts:** https://fonts.google.com/
-
-![adding google font animation](./wk3/../assets/add_google_font.gif)
-
-<br>
-
-![image-20200206101124091](assets/image-20200206101124091.png)
-
-<br>
-
-Include the link provided in the head section, just like a CSS Style sheet.
-
-```html
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-```
-
-<br>
-
-Add the f`font-family` property in your CSS. **Don't forget to add a fall-back font**
-
-```css
-p {
-	font-family: 'Roboto', sans-serif;
-}
 ```
 
 # Text Decorations
@@ -272,7 +273,7 @@ Using the reference above, look at the following properties:
 
 
 
-## Line-height: Em vs Unit-less
+## Which units: Em or Unitless ?
 
 `line-height` defined in length or percentage units can have bad inheritance behaviour.
 
