@@ -25,9 +25,8 @@ You have already been using basic semantic elements:
 - &lt;p>
 - &lt;h1>, &lt;h2>, etc  
 
+
 # Semantics: Page Structure
-
-
 
 There are [many html semantic elements](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) which are part of HTML5.
 
@@ -197,7 +196,7 @@ Defines contact information for the author of the article or web page. Should no
 	McClure</a> for questions about this article.
 </address>
 ```
-<br>
+
 
 # What about `<div>` ?
 
@@ -223,7 +222,7 @@ Below is a comparison of a website organized with divs vs semantic elements (fro
 ![Non-semantic HTML layout, with generic divs](https://www.springboardseo.com/img/non-semantic-html-layout.jpg)
 
 <p align="center"><em>Using Divs</em></p>
-<br>
+
 
 # References & Diving Deeper
 

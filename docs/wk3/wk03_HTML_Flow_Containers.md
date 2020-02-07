@@ -79,12 +79,11 @@ The document flow describes **the way elements are arranged in a sequence, one a
 - **Inline elements flow horizontally**, since they can align consecutively on the same line.
 
 
-
 ![image-20200131213741204](wk03_HTML_Flow_Containers.assets/image-20200131213741204.png)
 
 <p align="center"><a href="https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet"><em>CSS layout cheat sheet</em></a> <em>- algonguindesign.ca</em></p>
 
-
+<br>
 
 The document flow is up and down at a block-level element and left to right at inline elements.
 
@@ -94,14 +93,13 @@ The document flow is up and down at a block-level element and left to right at i
 
 <p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow"><em>Block and inline layout in normal flow</em></a> <em> - MDN web docs</em></p>
 
-
+<br>
 
 The document flow becomes particularly important when creating website layouts with more than a single main column.
 
 
 
 # Div and Span Elements
-
 
 
 ## The `<div>` Element
@@ -111,13 +109,11 @@ The `<div>` element is a **generic block-level division** in the document.
 **Divs are normally used as a parent container to wrap around one or multiple elements.**
 
 
-
 In the example below, each block-level element was given a border of a different colour with CSS:
 
 - `<div>` element has a green border
 - `<h3>` element has a blue border
 - `<p>` element has a red border.
-
 
 
 *Code*
@@ -146,13 +142,11 @@ The `<span>` element is a **generic inline division** in the document.
 **Spans are normally used to style inline elements within a paragraph.**
 
 
-
 In the example below two `<span>` elements are used within a paragraph. Each element was given a different colour using CSS:
 
 - `<p>` element has a red border
 - the first `<span>` element has a blue border
 - the  second `<span>` element has a green border
-
 
 
 *Code*
@@ -166,7 +160,6 @@ In the example below two `<span>` elements are used within a paragraph. Each ele
 <div style="background-color: rgb(248, 248, 246)">
 <p style="border: 3px solid red;">Span elements <span style="border: 3px solid blue;">do not</span> break the <span style="border: 3px solid green;">flow of the</span> document</p>
 </div>
-
 
 
 ## Inline or Block ?

@@ -1,6 +1,6 @@
 # Fonts
 
-*This section was adapted from [CSS Fonts](https://www.w3schools.com/css/css_font.asp) by w3schools.com) and [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals) by MDN Web Docs*
+*This section was adapted from [CSS Fonts](https://www.w3schools.com/css/css_font.asp) by w3schools.com and [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals) by MDN Web Docs*.
 
 # Font Types
 
@@ -11,7 +11,6 @@ In CSS, there are two types of font family names:
 
 
 
-
 <img src="./wk3/assets/image-20200205233657479.png" alt="image-20200205233657479" style="width:400px;"/>
 
 <br>
@@ -19,7 +18,7 @@ In CSS, there are two types of font family names:
 <img src="https://drmarkwomack.com/images/serif-vs-sans-serif.png" alt="img" style="width:500px;" />
 
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
-<br>
+
 
 # Changing fonts with `font-family:`
 
@@ -34,13 +33,11 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 ```
-
 <br>
 
 Here is a [list of fonts considered to be **Web Safe Fonts**](https://www.w3schools.com/cssref/css_websafe_fonts.asp), meaning you can count on them being available in most browsers.
 
 > Font names composed of more than one word need to be written between quotations, such as "Times New Roman" above.
-
 
 
 Fonts styles are normally applied to the entire page, do you can add them to the body selector:
@@ -50,8 +47,6 @@ body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ```
-
-
 
 # Font size
 
@@ -65,12 +60,10 @@ Font size can be set with the `font-size` property.
 - User cannot adjust it (eg. increase font size in the browser).
 
 
-
 **Relative size:**
 
 - Size relative to another element in the page (see CSS Units below).
 - User can adjust it.
-
 
 
 ## Recommendation & inheritance
@@ -79,8 +72,7 @@ Font size can be set with the `font-size` property.
 >
 > You need to be aware of where you HTML element is inheriting these units from
 
-
-
+<br>
 Two common relative units for `font-size` are:
 
 **em:**
@@ -90,8 +82,7 @@ Two common relative units for `font-size` are:
 
 **rem:**
 
-- 1 `rem` is equal to the font size **set on the root element of the document** ( the `<html>`), not the parent element. 
-
+- 1 `rem` is equal to the font size **set on the root element of the document** ( the `<html>`), not the parent element.
 
 
 > It is recommended to use rem units for setting `font-size`
@@ -124,7 +115,6 @@ h1 {
     <p style="font-size:0.7rem; color:blue;">Aliquam repellendus, debitis perspiciatis asperiores aut deleniti maxime totam neque dolores enim labore placeat facilis expedita iure!</p>
 </section>
 
-<br>
 
 # CSS Units
 
@@ -143,7 +133,7 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 ![browser](https://www.kirupa.com/html5/images/browser_size.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
-<br>
+
 
 # VS Code Power-ups:
 
@@ -310,7 +300,6 @@ body{
 }
 ```
 
-<br>
 
 # Hands-on
 

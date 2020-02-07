@@ -1,12 +1,9 @@
 # Intro to CSS
 
-
 **CSS**  (**C**ascading **S**tyle **S**heets) describes the visual styling of how HTML elements should be displayed.
 
 - CSS was created to separate the responsibility of structuring the content from the responsibility of styling the content.
 - The exact same HTML document can feel and look totally different thanks to CSS.
-
-
 
 Here are two projects that illustrate the separation between CSS and HTML:
 
@@ -34,16 +31,10 @@ Summarized from [CSS Syntax](https://www.w3schools.com/css/css_syntax.asp) by W3
 </dl>
 
 
-
-
-
 ![CSS selector](https://www.w3schools.com/css/selector.gif)
 
 
-
 <p align="center"><a href="https://www.w3schools.com/css/css_syntax.asp"><em>Hyperlink</em></a> <em>- CSS Syntax by W3Schools</em></p>
-
-
 
 In the example below selects all `<p>` elements will be center-aligned, with a red text color:
 
@@ -53,7 +44,6 @@ p {
   text-align: center;
 }
 ```
-
 
 
 ## CSS Comments
@@ -74,8 +64,6 @@ comment */
 
 
 
-
-
 # Implementing CSS with HTML
 
 There are three different ways to use CSS with your HTML document:
@@ -90,8 +78,6 @@ There are three different ways to use CSS with your HTML document:
 
 Add the `style=`  attribute **inside the html tag** followed by the CSS property and value:
 
-
-
 *Code*
 
 ```html
@@ -105,12 +91,9 @@ Add the `style=`  attribute **inside the html tag** followed by the CSS property
 </div>
 
 
-
 ## Internal CSS
 
 Add the CSS rules **in the head section of the html page** by adding a `<style>` section.
-
-
 
  ```html
 <head>
@@ -125,22 +108,15 @@ Add the CSS rules **in the head section of the html page** by adding a `<style>`
  ```
 
 
-
-
-
 ## External CSS
 
 Use a separate CSS file (often a separate folder). **This is the preferred method out of the three **.
 
 
-
 ![image-20200202214419604](wk03_Intro_CSS.assets/image-20200202214419604.png)
 
 
-
 In the `<head>` of the html file include the `<link>` tag with the `ref="stylesheet"` attribute and value and within the same `<link>` tag add the `href="relative file path to css file"` attribute:
-
-
 
 ```html
 <head>
@@ -148,10 +124,7 @@ In the `<head>` of the html file include the `<link>` tag with the `ref="stylesh
 </head>
 ```
 
-
-
 With the rest of the HMTL document the external CSS declaration should look like:
-
 
 
 ```html
@@ -172,7 +145,6 @@ With the rest of the HMTL document the external CSS declaration should look like
 # CSS Selectors
 
 
-
 ## Global Selectors
 
 When using the html element tag as the selector **all elements of the same tag type will be affected**.
@@ -188,7 +160,6 @@ When using the html element tag as the selector **all elements of the same tag t
 This will affect every `<h2>`  element in the page.
 
 
-
 ## Id Selectors
 
 Target a specific HTML element by adding the `id="..."` attribute inside the opening html tag.
@@ -196,8 +167,6 @@ Target a specific HTML element by adding the `id="..."` attribute inside the ope
 ```html
 <h2 id="unique-heading">Welcome</h2>
 ```
-
-
 
 In the styling section reference the element's id with the `#` id selector:
 
@@ -209,24 +178,19 @@ In the styling section reference the element's id with the `#` id selector:
 </style>
 ```
 
-
-
 **Element Id's should be unique.** It is standard practice to never give the same id to more than one element.
-
 
 
 ### Website Bookmarking with ID and Links
 
 Use Id's to create bookmarks inside your website and use links `<a>` to jump to those Id's
 
-
-
 Create a bookmark with the id attribute:
+
 
 ```html
 <h2 id="references">Important References</h2>
 ```
-
 
 
 Then, within the same page create a hyperlink that references the bookmark (note the use of `#` for ids):
@@ -236,13 +200,11 @@ Then, within the same page create a hyperlink that references the bookmark (note
 ```
 
 
-
 It's also possible to bookmark other pages within your website:
 
 ```html
 <a href="./contact.html#contact">Jump to the Contact Page</a>
 ```
-
 
 
 ## Class Selectors
@@ -252,11 +214,9 @@ Classes are a styling template generally associated with more than one element.
 Associate an html element to a class by adding the `class="..."` attribute inside the opening html tag.
 
 
-
 ```html
 <h2 class="generic-heading">Contact</h2>
 ```
-
 
 
 In the styling section reference the element's id with the `.` class selector:
@@ -268,7 +228,6 @@ In the styling section reference the element's id with the `.` class selector:
 	}
 </style>
 ```
-
 
 
 ## Multiple Selectors
@@ -284,7 +243,6 @@ If you would like to add the same styling to the multiple selectors, it is possi
 ```
 
 
-
 ## Nested selector
 
 It is possible to target the inner elements of an element that has been given an id using a nested selector.
@@ -298,9 +256,7 @@ It is possible to target the inner elements of an element that has been given an
 ```
 
 
-
 **When using nested selections** remember that the property must be modified on the element that uses it, not on its parent. Therefore, **the last element to be called should be the element to be modified.**
-
 
 
 ## Select the entire page with the Body
@@ -314,7 +270,6 @@ In order to apply a styling to the whole page use the body selector:
 	}	
 </style>
 ```
-
 
 
 ## Universal Selector
