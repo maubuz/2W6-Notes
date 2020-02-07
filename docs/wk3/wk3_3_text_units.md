@@ -147,17 +147,53 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 
 # VS Code Power-ups:
 
-Now that you know what the viewport is you can unlock an [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
+Now that you know what the viewport is you can unlock the `!` [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
 
 ![Peek 2020-02-06 10-48](./wk3/assets/../../assets/vscodeemmet.gif)
 
-
+## Disabling Emmet
 
 If you don't line Emmet's auto-complete, you can disable it:
 
 1. File -> Preferences -> Settings
 2. Search for Emmet
 3. Disable settings as required (play around until you get the desirable behaviour)	
+
+
+# Meta Attributes: viewport & IE compatibility
+
+If you use the `!` Emmet shortcut shown above you will notice it comes with two new `<meta>` attributes:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+and 
+
+```html
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+```
+
+## Viewport device-width and initial-scale
+
+The `<meta>` viewport element tells the browser how to control the page's dimensions and scaling.
+
+The `width=` property controls the size of the viewport. It can be set to a specific number of pixels like width=600 or to the special value device-width, which is the width of the screen in CSS pixels at a scale of 100%.
+
+The `initial-scale=` property controls the zoom level when the page is first loaded.
+
+See [*Using the viewport meta tag to control layout on mobile browsers*](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) for more info.
+
+## IE compatibility mode
+
+>When a browser encounters html code it cannot understand it will fallback to its "compatibility mode", where unexpected things might happen.
+
+Internet Explorer (IE) supports the use of a document compatibility `<meta>` tag to specify what version of IE the page should be rendered as a fallback plan.
+
+`content="ie=edge"` instructs IE to use the latest supported mode by using edge mode.
+
+**Thanks to the recent obsolescence of Windows 7 (which shipped with old versions of IE) this compatibility meta tag will no longer be required.**
+
+See this [Stack Overflow article](https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do) for more information.
 
 # Font Weight
 
@@ -186,6 +222,8 @@ font-weight: 200;
 You can include external fonts in your CSS.
 
 A popular location to get external fonts is **Google Fonts:** https://fonts.google.com/
+
+![adding google font animation](./wk3/../assets/add_google_font.gif)
 
 <br>
 
@@ -240,7 +278,7 @@ Using the reference above, look at the following properties:
 
 > Avoid unexpected results by using unitless line-height.
 
--- [*Prefer unitless numbers for line-height values*](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) by MDN Web Docs
+See [*Prefer unitless numbers for line-height values*](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) by MDN Web Docs for more info.
 
 
 # Other text styling
@@ -252,7 +290,7 @@ There are many other text styling properties, some more used than others:
 - [`text-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow): Applies drop shadows to your text.
 
 # Shorthand Properties Notation
-Like many CSS properties, you can set multiple font values in one shoot by using the shorthand `<font>` property:
+You can set multiple font values in one shoot by using the shorthand `<font>` property (many CSS properties have a shorthand version):
 
 > Refer to the MDN web doc page on the [**`<font>` property**](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
