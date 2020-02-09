@@ -7,4 +7,4 @@
 - [HTML Semantics](./wk3/wk3_2_HTML_Semantics.md)
 - [3.2 Hands-on](./wk3/wk3_2_Handson.md)
 - [Fonts & CSS Units](./wk/../wk3/wk3_3_text_units.md)
-- [Background, Borders & Lists](./wk4/wk4_1_background_border_list.md)
+- [Background, Width & Borders](./wk4/wk4_1_background_width_border.md)
