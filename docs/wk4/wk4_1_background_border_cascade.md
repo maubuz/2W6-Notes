@@ -1,15 +1,3 @@
-# Include
-
-- [x] Background
-  - [x] Image
-  - [x] color
-- [ ] Borders
-- [ ] List styles
-- [ ] Overflow
-- [ ] The Cascade
-
-
-
 # CSS Backgrounds
 
 !>  For this section we will refer to the page **[CSS Backgrounds](https://www.w3schools.com/css/css_background.asp)** by W3Schools.
@@ -94,8 +82,6 @@ See the d[emo below for an illustration](https://developer.mozilla.org/en-US/doc
 <br>
 
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
-
-
 ## Background Shorthand Property
 
 All the background properties mentioned abover can be set at once using the [`background` shorthand property](https://www.w3schools.com/cssref/css3_pr_background.asp):
@@ -236,14 +222,52 @@ border-width: 10px 2px;
 *Result*
 
 <h4 style="border-style: solid; border-width: 10px 2px; ">Two-value declaration</h4>
-# References and Diving Deeper
 
-> I strongly encourage you to read the [**Backgrounds and borders**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) page by MDN web docs
+
+# The Cascade
+
+The first "C" in CSS stands for Cascade, which is **the way how the browser will prioritise competing styles**.
+
+There are four important concepts which are part of the Cascade:
+
+
+
+<dl style="border: 1px solid gray; padding: 20px 20px 30px 20px; border-radius: 20px;
+:">
+    <dt><strong>Inheritance</strong></dt>
+    <dd>Always starts on a new line and takes up the full  width available (stretches out to the left and right as far as it can).</dd>
+    <br>
+    <dt><strong>Inline elements</strong></dt>
+    <dd>Only occupy the space bounded by the tags defining the element (continues on the same line).</dd>
+</dl>
+
+
+
+**Inheritance**: whether or not values are inherited from their parents.
+
+**Source Origin**
+
+- **Origin**: where the rule was defined.
+- **Order**: the sequential order in which the style was positioned.
+
+**Specificity**: how specific a selector.
+
+**Importance**: the type of style rule being applied (not covered here)
+
+
+
+
+
+# References & Diving Deeper
+
+> I strongly encourage you to read the [**Backgrounds and borders**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) page by MDN web docs.
 
 Other resources:
 
 - [CSS Backgrounds](https://www.w3schools.com/css/css_background.asp) by W3Schools
 - [CSS Borders](https://www.w3schools.com/css/css_border.asp) by W3Schools
+- [CSS Rounded Corners](https://www.w3schools.com/css/css3_borders.asp) (and shorthand notation)
+- 
 
 
 
@@ -256,4 +280,22 @@ Complete the following exercises by W3Schools:
 - [CSS Background](https://www.w3schools.com/css/exercise.asp?filename=exercise_background1)
 - [CSS Border](https://www.w3schools.com/css/exercise.asp?filename=exercise_border1)
 - [CSS Rounded Corners](https://www.w3schools.com/css/exercise.asp?filename=exercise_css3_borders1)
-- 
+
+
+
+## Lab 1
+
+Create a simple "Hero" page with a call to action button.
+
+
+
+A "Hero" section in typically when you have an large image that will represent the general message or feeling of you website.
+
+<img src="assets/image-20200208113747755.png" alt="image-20200208113747755" style="width:400px;" />
+
+
+
+The button must link to the contact us page provided in the zip file:
+
+
+
