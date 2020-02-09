@@ -40,7 +40,6 @@ The `background-attachment` property can be confusing at first.  The [example be
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
 
-
 ## Gradients
 
 HTML can support the use of color gradients with the property `linear-gradient`.
@@ -118,26 +117,95 @@ It is ok if some values are missing from the shorthand "declaration".
 
 The following website are excellent sources of stock images that are free and licensed as creative commons:
 
-- Unsplash
-- 
+- [Unsplash (site)](https://unsplash.com/)
+- [Unsplash Source (API)](https://source.unsplash.com/)
+- [Burst](https://burst.shopify.com/) (must sign-up or it's download only)
+- [Pixabay](https://pixabay.com/)
 
 
 
-Using thematic background images you can create "Hero" sections on your website:
+Photo by <a href="https://burst.shopify.com/@cindymalette?utm_campaign=photo_credit&amp;utm_content=High+Res+Low+Flying+Gull+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Cindy Malette</a> from <a href="https://burst.shopify.com/outdoor?utm_campaign=photo_credit&amp;utm_content=High+Res+Low+Flying+Gull+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>
+
+## URL's for External Images
+
+Once you find an external image, **you must obtain the URL to the image file, not the page that contains it**.
+
+> If you would like to confirm whether you have the URL to the exact image, open the URL in a private browsing session. You should see only the image and nothing else.
+
+
+
+**Follow the instruction bellow to be directed to the image's URL using a modern browser:**
+
+1. Open the page containing the image;
+2. Right-click on the image;
+3. Select "View image" (Firefox) or "Open image in new tab" (Chromium)
+   - Alternatively, you can select "Copy Image Location / address" directly.
+4. The image will open in it's natural size
+5. Copy the URL from the address bar
+
+
+
+<img src="assets/image_url_extraction.gif" alt="image_url_extraction" style="width: 600px;" />
 
 
 
 
 
+## Hosting or Referencing ?
+
+For online images that you source you must decide whether to:
+
+- Download the image and host it  yourself; or 
+- Simply reference the external image via its URL.
 
 
-https://unsplash.com/photos/aiBYhrzsQw4
 
+>  In both cases make sure the image license allows you to use it.
+
+
+
+**Download and host**
+
+- You control whether or not it image is available.
+- Must keep track of your server's storage space and file structure.
+
+**External References**
+
+- You have no control of the image's up-time (availability).
+
+
+
+## Hero images
+
+A "Hero" image is a large image at the top of your home page that will represent the general message or feeling of you website.
+
+
+
+<img src="assets/image-20200208113747755.png" alt="image-20200208113747755" style="width:500px;" />
+
+<p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
+
+
+
+**Hero images are used in order to:**
+
+- Add a personal touch and engage the user.
+- Transmit quality, credibility or trust.
+- Give a "sneak preview" of your service or product.
+- Launch a "call to action"
+
+
+
+[Learn more about hero images and see some examples here](https://www.optimizely.com/optimization-glossary/hero-image/).
+
+
+
+---
 
 
 # Height & Width
 
-It is recommended to set height and width of elements using CSS (instead of using HTML).
+**It is recommended to set height and width of elements using CSS (instead of using HTML).**
 
 !>  For this section we will refer to the page **[CSS Height and Width](https://www.w3schools.com/css/css_dimension.asp)** by W3Schools.
 
@@ -154,9 +222,9 @@ Using the reference above, look at the following CSS properties:
 
 <br>
 
-> For content sections, you control the width and let the content control the height.
+> **Recommendation:** for content sections, you control the width and let the content control the height.
 >
-> Width is often used for setting the size of block-level elements so that they don't take 100% of the space and auto positioning can occur (more on this later).
+> **Note:** Width is often used for setting the size of block-level elements so that they don't take 100% of the space and auto positioning can occur (more on this later).
 
 
 
@@ -169,7 +237,7 @@ They are useful for:
 - Control the min or max size of a background-image.
 - Setting limits to your page width so text lines are not too long.
 
-
+---
 
 # Borders
 
@@ -246,7 +314,7 @@ h4 {
 *Result*
 
 <h4 style="border: 2px dotted red;">Border shorthand notation</h4>
-
+---
 
 # Shorthand declarations
 
@@ -275,16 +343,13 @@ border-style: dotted solid double dashed;
 - left border is dashed
 
 
-
 ## Two values: top-bottom  left-right
-
 
 
 If the declaration uses only two values, the typical order is:
 
 1. First entry sets **top** and **bottom** values
 2. Second entry sets the **left** and **right** values
-
 
 
 *Code*
@@ -298,10 +363,7 @@ border-width: 10px 2px;
 
 <h4 style="border-style: solid; border-width: 10px 2px; ">Two-value declaration</h4>
 
-
-
-
-
+---
 
 # References & Diving Deeper
 
@@ -317,7 +379,7 @@ Other resources:
 
   
 
-
+---
 
 # Hands-on
 
@@ -332,39 +394,33 @@ Complete the following exercises by W3Schools:
 
 
 
-## Lab 1
+## Lab 1 - Code validators
 
-Use the HTML and CSS validador to correct the errors contained in the provided website.
+Use the HTML and CSS validators (see top of this page) to correct the errors contained in the provided website.
 
 **Note:** there might be errors that are syntactically correct and the validators will not flag.
 
-> Download Lab 1 files here
+[**Download Lab 1 files here**](https://drive.google.com/drive/folders/1_zFkurxx7Vw551XOofpHEwbr5-N2CdHI?usp=sharing)
 
-!> This example site contains "hacks" that are not recommended for real development, namelly:
-
-- Using `&nbsp;` for creating white spacing
+!> This example site contains a "hack" not recommended for real development: using `&nbsp;` for creating white spacing.
 
 
+## Lab 2 - The hero page
 
-## Lab 2
+Create the simple "Hero" page show below.
 
-Create a simple "Hero" page with a call to action button.
+**Requirements**
+
+- The html file will be provided and should not be modified.
+- Create an external CSS file and include the following:
+  - The page should stop expanding once a certain width is reached (as shown below).
+  - Use the following image from **Unsplash**: https://unsplash.com/photos/aiBYhrzsQw4
 
 
-
-A "Hero" section in typically when you have an large image that will represent the general message or feeling of you website.
 
 
 
 ![Hero_1_lab](assets/Hero_1_lab.gif)
-
-
-
-The button must link to the contact us page provided in the zip file.
-
-
-
-To create a buttom, insert a hyperlink inside a div and give the div a hight and a width.
 
 
 
