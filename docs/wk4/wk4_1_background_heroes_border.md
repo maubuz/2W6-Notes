@@ -6,7 +6,7 @@ It is possible to validate both your HTML and your CSS using W3C's code validato
 
 - [**CSS Validation Service**](https://jigsaw.w3.org/css-validator/)
 
-- **[Markup Validation Service](https://validator.w3.org/)**
+- [**Markup Validation Service**](https://validator.w3.org/)
 
 
 
@@ -63,6 +63,8 @@ In order to use images as the background we must use the `url(*address*)`  notat
 The `background-attachment` property can be confusing at first.  The [example below from MDN web docs](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html) helps illustrate how they are different:
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
+
+
 ## Gradients
 
 HTML can support the use of color gradients with the property `linear-gradient`.
@@ -106,6 +108,7 @@ See the [demo below for an illustration](https://developer.mozilla.org/en-US/doc
 <br>
 
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
+
 > Combining a background-image image with a linear gradients is a great way to add a darker "overlay" to an image before adding text over it.
 
 
@@ -150,8 +153,6 @@ The following website are excellent sources of stock images that are free and li
 - [Pixabay](https://pixabay.com/)
 
 
-
-Photo by <a href="https://burst.shopify.com/@cindymalette?utm_campaign=photo_credit&amp;utm_content=High+Res+Low+Flying+Gull+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Cindy Malette</a> from <a href="https://burst.shopify.com/outdoor?utm_campaign=photo_credit&amp;utm_content=High+Res+Low+Flying+Gull+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>
 
 ## URL's for External Images
 
@@ -207,7 +208,6 @@ A "Hero" image is a large image at the top of your home page that will represent
 ![Hero Image example](assets/image-20200208113747755.png ':size=400')
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
-
 
 **Why use a hero image:**
 
@@ -336,6 +336,8 @@ h4 {
 *Result*
 
 <h4 style="border: 2px dotted red;">Border shorthand notation</h4>
+
+
 ---
 
 # Shorthand declarations
