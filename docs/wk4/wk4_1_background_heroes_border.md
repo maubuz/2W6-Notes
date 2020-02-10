@@ -1,6 +1,24 @@
-# Background, Heroes  & Borders
+# 
+
+# Code Validators: HTML & CSS
+
+It is possible to validate both your HTML and your CSS using W3C's code validators:
+
+- [**CSS Validation Service**](https://jigsaw.w3.org/css-validator/)
+
+- **[Markup Validation Service](https://validator.w3.org/)**
 
 
+
+Both services can validade code provided in three different ways:
+
+1. By linking a URL to the source code;
+2. By uploading a file with the source code;
+3. By pasting source code directly into the validator.
+
+
+
+> This tool is particularly useful if you get unexpected results and you don't understand why.
 
 
 
@@ -189,12 +207,14 @@ A "Hero" image is a large image at the top of your home page that will represent
 ![Hero Image example](assets/image-20200208113747755.png ':size=400')
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
-**Hero images are used in order to:**
+
+
+**Why use a hero image:**
 
 - Add a personal touch and engage the user.
 - Transmit quality, credibility or trust.
 - Give a "sneak preview" of your service or product.
-- Launch a "call to action"
+- Introduce a "call to action"
 
 
 
