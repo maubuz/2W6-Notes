@@ -420,6 +420,10 @@ Complete the following exercises by W3Schools:
 
 Use the HTML and CSS validators (see top of this page) to correct the errors contained in the provided website.
 
+**Requirements:**
+- Download the website files.
+- Correct all error in order to correctly render the wite o your browser.
+
 **Note:** there might be errors that are syntactically correct and the validators will not flag.
 
 [**Download Lab 1 files here**](https://drive.google.com/drive/folders/1_zFkurxx7Vw551XOofpHEwbr5-N2CdHI?usp=sharing)
