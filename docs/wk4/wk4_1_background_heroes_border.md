@@ -1,18 +1,24 @@
+# Background, Heroes  & Borders
+
+
+
+
+
 # CSS Backgrounds
 
 !>  For this section we will refer to the page **[CSS Backgrounds](https://www.w3schools.com/css/css_background.asp)** by W3Schools.
 
 Using the reference above, look at the following CSS properties:
 
-| Property                                                     | Description                                               |
-| ------------------------------------------------------------ | --------------------------------------------------------- |
-| [background-color](https://www.w3schools.com/cssref/pr_background-color.asp) | Sets the background color of an element                   |
-| [background-image](https://www.w3schools.com/cssref/pr_background-image.asp) | Sets the background image for an element                  |
-| [background-repeat](https://www.w3schools.com/cssref/pr_background-repeat.asp) | Sets how a background image will be repeated              |
-| [background-position](https://www.w3schools.com/cssref/pr_background-position.asp) | Sets the starting position of a background image          |
-| [background-size](https://www.w3schools.com/cssref/css3_pr_background-size.asp) * | Specifies the size of the background image(s)             |
+| Property                                                                               | Description                                               |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [background-color](https://www.w3schools.com/cssref/pr_background-color.asp)           | Sets the background color of an element                   |
+| [background-image](https://www.w3schools.com/cssref/pr_background-image.asp)           | Sets the background image for an element                  |
+| [background-repeat](https://www.w3schools.com/cssref/pr_background-repeat.asp)         | Sets how a background image will be repeated              |
+| [background-position](https://www.w3schools.com/cssref/pr_background-position.asp)     | Sets the starting position of a background image          |
+| [background-size](https://www.w3schools.com/cssref/css3_pr_background-size.asp) *      | Specifies the size of the background image(s)             |
 | [background-attachment](https://www.w3schools.com/cssref/pr_background-attachment.asp) | Sets background image as fixed or scrolling with the page |
-| [background](https://www.w3schools.com/cssref/css3_pr_background.asp) | Sets all the background properties in one declaration     |
+| [background](https://www.w3schools.com/cssref/css3_pr_background.asp)                  | Sets all the background properties in one declaration     |
 
 ** `background-size` is the only property is not covered in the W3S page listed above.*
 
@@ -39,7 +45,6 @@ In order to use images as the background we must use the `url(*address*)`  notat
 The `background-attachment` property can be confusing at first.  The [example below from MDN web docs](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html) helps illustrate how they are different:
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
-
 ## Gradients
 
 HTML can support the use of color gradients with the property `linear-gradient`.
@@ -111,7 +116,11 @@ It is ok if some values are missing from the shorthand "declaration".
 
 
 
-## Sourcing background images
+---
+
+
+
+# Sourcing Images
 
 
 
@@ -139,15 +148,12 @@ Once you find an external image, **you must obtain the URL to the image file, no
 1. Open the page containing the image;
 2. Right-click on the image;
 3. Select "View image" (Firefox) or "Open image in new tab" (Chromium)
-   - Alternatively, you can select "Copy Image Location / address" directly.
+   - Alternatively, you can select "Copy Image Location / Address" directly.
 4. The image will open in it's natural size
 5. Copy the URL from the address bar
 
 
-
-<img src="assets/image_url_extraction.gif" alt="image_url_extraction" style="width: 600px;" />
-
-
+![extracting URLs from web image](assets/image_url_extraction.gif ':size=500')
 
 
 
@@ -173,20 +179,16 @@ For online images that you source you must decide whether to:
 
 - You have no control of the image's up-time (availability).
 
+---
 
-
-## Hero images
+# Hero images
 
 A "Hero" image is a large image at the top of your home page that will represent the general message or feeling of you website.
 
 
-
-<img src="assets/image-20200208113747755.png" alt="image-20200208113747755" style="width:500px;" />
+![Hero Image example](assets/image-20200208113747755.png ':size=400')
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
-
-
-
 **Hero images are used in order to:**
 
 - Add a personal touch and engage the user.
@@ -211,14 +213,14 @@ A "Hero" image is a large image at the top of your home page that will represent
 
 Using the reference above, look at the following CSS properties:
 
-| Property                                                     | Description                           |
-| ------------------------------------------------------------ | ------------------------------------- |
-| [height](https://www.w3schools.com/cssref/pr_dim_height.asp) | Sets the height of an element         |
-| [width](https://www.w3schools.com/cssref/pr_dim_width.asp)   | Sets the width of an element          |
+| Property                                                             | Description                           |
+| -------------------------------------------------------------------- | ------------------------------------- |
+| [height](https://www.w3schools.com/cssref/pr_dim_height.asp)         | Sets the height of an element         |
+| [width](https://www.w3schools.com/cssref/pr_dim_width.asp)           | Sets the width of an element          |
 | [max-height](https://www.w3schools.com/cssref/pr_dim_max-height.asp) | Sets the maximum height of an element |
-| [max-width](https://www.w3schools.com/cssref/pr_dim_max-width.asp) | Sets the maximum width of an element  |
+| [max-width](https://www.w3schools.com/cssref/pr_dim_max-width.asp)   | Sets the maximum width of an element  |
 | [min-height](https://www.w3schools.com/cssref/pr_dim_min-height.asp) | Sets the minimum height of an element |
-| [min-width](https://www.w3schools.com/cssref/pr_dim_min-width.asp) | Sets the minimum width of an element  |
+| [min-width](https://www.w3schools.com/cssref/pr_dim_min-width.asp)   | Sets the minimum width of an element  |
 
 <br>
 
@@ -245,12 +247,12 @@ They are useful for:
 
 Using the reference above, look at the following CSS properties:
 
-| Property                                                     | Description                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [border-style](https://www.w3schools.com/cssref/pr_border-style.asp) | Sets the background color of an element                      |
-| [border-width](https://www.w3schools.com/cssref/pr_border-width.asp) | Sets the width of the four borders                           |
-| [border-color](https://www.w3schools.com/cssref/pr_border-color.asp) | Sets the color of the four borders                           |
-| [border](https://www.w3schools.com/cssref/pr_border.asp) (shorthand) | Sets all the border properties in one declaration            |
+| Property                                                                    | Description                                                      |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| [border-style](https://www.w3schools.com/cssref/pr_border-style.asp)        | Sets the background color of an element                          |
+| [border-width](https://www.w3schools.com/cssref/pr_border-width.asp)        | Sets the width of the four borders                               |
+| [border-color](https://www.w3schools.com/cssref/pr_border-color.asp)        | Sets the color of the four borders                               |
+| [border](https://www.w3schools.com/cssref/pr_border.asp) (shorthand)        | Sets all the border properties in one declaration                |
 | [border-radius](https://www.w3schools.com/cssref/css3_pr_border-radius.asp) | Sets all the four border-*-radius properties for rounded corners |
 
 <br>
@@ -319,7 +321,6 @@ h4 {
 # Shorthand declarations
 
 
-
 ## Four values: TRBL "trouble"
 
 Most shorthand notations that use 4 values follow the "trouble" declaration order:
@@ -362,7 +363,6 @@ border-width: 10px 2px;
 *Result*
 
 <h4 style="border-style: solid; border-width: 10px 2px; ">Two-value declaration</h4>
-
 ---
 
 # References & Diving Deeper
@@ -402,7 +402,7 @@ Use the HTML and CSS validators (see top of this page) to correct the errors con
 
 [**Download Lab 1 files here**](https://drive.google.com/drive/folders/1_zFkurxx7Vw551XOofpHEwbr5-N2CdHI?usp=sharing)
 
-!> This example site contains a "hack" not recommended for real development: using `&nbsp;` for creating white spacing.
+!> This example site contains a "hack" not recommended for real development: using `&nbsp;` for creating horizontal spacing.
 
 
 ## Lab 2 - The hero page
@@ -416,11 +416,20 @@ Create the simple "Hero" page show below.
   - The page should stop expanding once a certain width is reached (as shown below).
   - Use the following image from **Unsplash**: https://unsplash.com/photos/aiBYhrzsQw4
 
+[**Download the html file here**](https://drive.google.com/file/d/1SQOuQhGD0WYeFYMKOLlukYFwDj1gnnyf/view?usp=sharing)
 
-
-
+!> This example site contains two "hacks" not recommended for real development: using `&nbsp;` for creating horizontal empty spacing and `<br>` for vertical empty spacing.
 
 ![Hero_1_lab](assets/Hero_1_lab.gif)
 
+<details>
+  <summary>Hints for Lab 2</summary>
+  <ul>
+    <li>Use a linear gradient in combination with the background image in order to make the image darker.</li>
+    <li>Look at previous lessons to change text decorators.</li>
+    <li>Add a thick border to the hyperlink to increase the spacing around it.</li>
+    <li>Give a max width to the background's parent so that the image stops growing</li>
+  </ul>
 
+</details>
 
