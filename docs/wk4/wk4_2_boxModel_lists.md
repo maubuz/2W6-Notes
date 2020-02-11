@@ -15,6 +15,7 @@ The size of an element in a webpage is described by
 
 > The Box model is the combination of margin, border, padding and content of an element, which determines how much space each element will take on the page.
 
+<br>
 
 
 ![image-20200211070956424](assets/image-20200211070956424.png ':size=400') 
@@ -80,10 +81,12 @@ In the section we will cover:
 
 > Follow the activity in the page to create the page below and manipulate the box properties of it's elements
 
+<br>
+
 ![image-20200211111905814](assets/image-20200211111905814.png)
 
 
-
+<br>
 
 
 ## Changing the Flow Behaviour

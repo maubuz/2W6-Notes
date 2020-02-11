@@ -9,3 +9,4 @@
 - [Fonts & CSS Units](./wk/../wk3/wk3_3_text_units.md)
 - **Week 4**
 - [Background, Heroes & Borders](./wk4/wk4_1_background_heroes_border.md)
+- [Box Model & Lists](./wk4/wk4_2_boxModel_lists.md)
