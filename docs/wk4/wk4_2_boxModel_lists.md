@@ -1,3 +1,115 @@
+#
+
+# The Box Model
+
+
+
+The size of an element in a webpage is described by
+
+- **Content** inside the element;
+- **Padding** around the content;
+- **Border** around the padding;
+- **Marging** around the borders;
+
+
+
+> The Box model is the combination of margin, border, padding and content of an element, which determines how much space each element will take on the page.
+
+
+
+![image-20200211070956424](assets/image-20200211070956424.png ':size=400') 
+
+
+
+## Block vs Inline Elements
+
+[Remember from week 3](../wk3/wk03_HTML_Flow_Containers.md) that certain elements are of type Inline while other elements are of type block-level.
+
+This determines the space that is allocated to them in the document flow.
+
+
+
+![image-20200131213741204](../wk3/wk03_HTML_Flow_Containers.assets/image-20200131213741204.png)
+
+<p align="center"><a href="https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet"><em>CSS layout cheat sheet</em></a> <em>- algonguindesign.ca</em></p>
+<br>
+
+
+
+# Browser Dev Tools
+
+There are build-in tools in our browser to help us inspect elements and visualise their box properties.
+
+**In either Firefox or Chrome press `F12` to open the Developer's Console**
+
+<br>
+
+![image-20200211110856844](assets/image-20200211110856844.png)
+
+<br>
+
+Once the Dev Consolde is open, press `Shift` + `Ctrl` + `C`  or select the **Inspector Picker** to inspect elements in the page.
+
+<br>
+
+![Inspector picker](assets/Inspector picker.gif)
+
+<br>
+
+
+
+# Manipulating the Box
+
+
+
+!>  For this section we will refer to the page **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/)** by Interneting is Hard.
+
+
+
+In the section we will cover:
+
+- Changing the box behaviour;
+- Padding
+- Margins
+- Vertical Margin Collapse
+- Content vs Border Boxes (`box-sizing`)
+- Aligning Boxes (an introduction)
+- Resetting Styles
+
+
+
+> Follow the activity in the page to create the page below and manipulate the box properties of it's elements
+
+![image-20200211111905814](assets/image-20200211111905814.png)
+
+
+
+
+
+## Changing the Flow Behaviour
+
+**It is possible to change the flow behaviour of an element from Inline to Block-level and vice-versa.**
+
+
+
+This is achieved with the [`display` property](https://www.w3schools.com/cssref/pr_class_display.asp) in CSS.
+
+
+
+| Value          | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| `inline`       | Displays an element as an inline element (like `<span>`). Any height and width properties will have no effect. |
+| `block`        | Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width. |
+| `inline-block` | Displays an element as an inline-level block container. The element itself is formatted as an element, but you can apply height and width values. |
+
+<br>
+
+
+
+> There are many other possible values for the `display` property but for now we will focus on the three above
+
+<br>
+
 # List Styles
 
 !>  For this section we will refer to the page **[CSS Lists](https://www.w3schools.com/css/css_list.asp)** by W3Schools.
@@ -11,7 +123,7 @@ Using the reference above, look at the following CSS properties:
 | [list-style-position](https://www.w3schools.com/cssref/pr_list-style-position.asp) | Specifies the position of the list-item markers (bullet points) |
 | [list-style-type](https://www.w3schools.com/cssref/pr_list-style-type.asp) | Specifies the type of list-item marker                       |
 
-<br>
+
 
 ## List Style Position
 

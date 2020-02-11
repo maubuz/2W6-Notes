@@ -27,7 +27,7 @@ Use CSS to style the provided html so that it looks like the image below.
 
 
 
-**[Download the initial html file here](https://drive.google.com/file/d/1sFctwIzPGUXpiXdWt0uygwHo2_hD3Mny/view?usp=sharing).**
+**[Download the initial html file here](https://drive.google.com/open?id=1sFctwIzPGUXpiXdWt0uygwHo2_hD3Mny).**
 
 
 
