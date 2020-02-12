@@ -1,4 +1,6 @@
-#
+# 
+*This lesson was based on the page **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/)** by Interneting is Hard.*
+
 
 # The Box Model
 
@@ -6,10 +8,10 @@
 
 The size of an element in a webpage is described by
 
-- **Content** inside the element;
-- **Padding** around the content;
-- **Border** around the padding;
-- **Marging** around the borders;
+- **Content**
+- **Padding**
+- **Border**
+- **Marging**
 
 
 
@@ -24,9 +26,9 @@ The size of an element in a webpage is described by
 
 ## Block vs Inline Elements
 
-[Remember from week 3](../wk3/wk03_HTML_Flow_Containers.md) that certain elements are of type Inline while other elements are of type block-level.
+[Remember from week 3](../wk3/wk03_HTML_Flow_Containers.md) that **certain elements are of type Inline while other elements are of type block-level.**
 
-This determines the space that is allocated to them in the document flow.
+This characteristic determines the space that is allocated to them in the document flow.
 
 
 
@@ -41,21 +43,29 @@ This determines the space that is allocated to them in the document flow.
 
 There are build-in tools in our browser to help us inspect elements and visualise their box properties.
 
-**In either Firefox or Chrome press `F12` to open the Developer's Console**
+> **In Firefox or Chrome press `F12` to open the Developer's Console**
 
 <br>
 
-![image-20200211110856844](assets/image-20200211110856844.png)
+![image-20200211110856844](assets/dev_tools_extended.svg.png)
 
 <br>
 
-Once the Dev Consolde is open, press `Shift` + `Ctrl` + `C`  or select the **Inspector Picker** to inspect elements in the page.
+Once the Dev Tools are open, select the **Inspector Picker**  or press `Shift` + `Ctrl` + `C`  to inspect elements in the page.
+
+![Inspector picker](assets/Inspector_picker.gif)
 
 <br>
 
-![Inspector picker](assets/Inspector picker.gif)
 
-<br>
+
+To learn more about the Dev Tools visit  [this link for the Firefox Dev Tools](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/UI_Tour) or [this link for the Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/).
+
+
+
+> **The Box Pane of the Dev Tools is a great cheat-sheet** if you forget the order of the border, margin and padding in the box model:
+>
+> ![image-20200212105647384](assets/image-20200212105647384.png ':size=400')
 
 
 
@@ -79,39 +89,381 @@ In the section we will cover:
 
 
 
-> Follow the activity in the page to create the page below and manipulate the box properties of it's elements
-
-<br>
-
-![image-20200211111905814](assets/image-20200211111905814.png)
-
+> Follow the activity in the referenced article in order to create the demo below by manipulating the box properties.
 
 <br>
 
 
-## Changing the Flow Behaviour
 
-**It is possible to change the flow behaviour of an element from Inline to Block-level and vice-versa.**
+![image-20200211172530320](assets/image-20200211172530320.png)
+
+<br>
 
 
 
-This is achieved with the [`display` property](https://www.w3schools.com/cssref/pr_class_display.asp) in CSS.
+1. Start with the HTML and CSS below:
+
+   ```html
+   <!DOCTYPE html>
+   <html lang='en'>
+     <head>
+       <meta charset='UTF-8'/>
+       <title>Boxes Are Easy!</title>
+       <link rel='stylesheet' href='box-styles.css'/>
+     </head>
+     <body>
+       <h1>Headings Are Block Elements</h1>
+   
+       <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+          elements are not. They are <strong>inline</strong> elements.</p>
+   
+       <p>Block elements define the flow of the HTML document, while inline elements
+          do not.</p>
+     </body>
+   </html>
+   ```
+
+   ```css
+   h1, p {
+     background-color: #DDE0E3;    /* Light gray */
+   }
+   
+   em, strong {
+     background-color: #B2D6FF;    /* Light blue */
+   }
+   ```
+
+
+
+## Changing the Box Behaviour
+
+
+
+> **It is possible to change the flow behaviour of an element from Inline to Block-level and vice-versa.**
+>
+> This is achieved with the [`display` property](https://www.w3schools.com/cssref/pr_class_display.asp) in CSS.
+
+
+
+| Value    | Description                                                  |
+| -------- | ------------------------------------------------------------ |
+| `inline` | Displays an element as an inline element (like `<span>`). Any height and width properties will have no effect. |
+| `block`  | Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width. |
+
+
+
+<br>
+
+1. **Temporarily** change the `display` property of the `<em>` and the `<strong>` elements. 
+
+   ```css
+   em, strong {
+     background-color: #B2D6FF;
+     display: block;
+   }
+   ```
+
+   
+
+2. Once you've observed the change above, **revert the display property**  by setting `display: inline` (the default for `<em>` and `<strong>`).
+
+
+
+
+# Padding
+
+3. Add an **all-around padding** to the `<h1>` element:
+
+   ```css
+   h1 {
+     padding: 50px;
+   }
+   ```
+
+   
+
+4. Use the **Element Inspector from the Dev Tools** to observe the padding;
+
+   
+
+5. Use the shorthand notation to the padding of the `<p>` element:
+
+   ```css
+   p {
+     padding: 20px 0 20px 10px;  /* Top  Right  Bottom  Left */
+   }
+   ```
+
+   <br>
+
+   When **four values are provided** the shorthand order is T.R.B.L. ( read *"trouble"*), or clockwise.
+
+   - **1st value** is top;
+
+   - **2nd value** is right;
+
+   - **3rd value** is bottom;
+
+   - **4th value** is left;
+
+   
+
+   ![image-20200212100736361](assets/image-20200212100736361.png ':size=400')
+
+<br>
+
+When **two values are provided** for a shorthand notation:
+
+- **1st value** is top & bottom;
+- **2nd value** is left &right;
+
+![image-20200212100426283](assets/image-20200212100426283.png ':size=400')
+
+
+
+6. Use the **Element Inspector ** in the Dev Tools to observe the padding difference between the four directions.
+
+   
+
+7. Change the borders to 50px wide. Observe the padding using the Dev Tools.
+
+```css
+h1 {
+  padding: 50px;
+}
+```
+
+
+
+<br>
+
+# Borders
+
+
+
+​	[From the previous lesson](./wk4_1_background_heroes_border.md#Border) , the **shorthand notation for the border property** is:
+
+​	![image-20200212102823264](assets/image-20200212102823264.png ':size=400')
+
+​	<br>
+
+8. Add a border to the around the `<h1>` element:
+
+   ```css
+h1 {
+	  padding: 50px;
+	  border: 1px solid #5D6063;   /*  Shorthand notation for the border  */
+	}
+	```
+	
+
+
+
+9. Change the full-border behaviour **on the `<h1>` element** to a single border by specifying the bottom direction:
+
+   ```css
+   border-bottom: 1px solid #5D6063;
+   ```
+
+<br>
+
+# Margins
+
+Margins create space between the selected element and neighbouring elements.
+
+
+
+![image-20200212112503812](assets/image-20200212112503812.png)
+
+<br>
+
+
+
+10. Add a bottom margin to the `<p>` element:
+
+   ```css
+   p {
+     padding: 20px 0 20px 10px;
+     margin-bottom: 50px;
+   }
+   ```
+
+   
+
+11. Use the Element Inspector in the Dev Tools to observe the margin.
+
+
+
+### Margins vs Padding
+
+At a first glance Margins and Padding might seem very similar, but they have some important differences:
+
+> - The padding of a box has a background, while margins are  always transparent.
+> - Padding is included in the click area of an element, while margins aren’t.
+> - Margins collapse vertically, while padding doesn’t (more below).
+
+
+
+If you are unsure of which one to use, **experiment with both** and observe the difference.
+
+
+
+### Inline vs Block: Margins & Padding
+
+
+
+**Margins behave slightly differently for Inline vs Block element.**
+
+> **Margins for inline elements:**
+>
+> - top and bottom margins are ignored.
+>
+> - horizontal margins behave normally.
+>
+> **Padding for inline elements:**
+>
+> - padding is applied in all directions but does not affect the vertical layout.
+>
+> 
+>
+> **Summary:** the vertical spacing of inline elements is not affected by its box margins, padding or border). 
+
+
+
+<br>
+
+12. Add a margin to the `<strong>` element:
+
+    ```css
+    strong {
+      margin: 50px;
+    }
+    ```
+
+    
+
+13. Use the Element Inspector in the Dev Tools to observe the margin.
+
+    - From here on I refer to this step simply as "**Inspect it**".
+    
+
+<br>
+
+At this point, your page should look like this:
+
+![image-20200212124612642](assets/image-20200212124612642.png)
+
+
+
+14. **Temporarily** add a padding and a border to the `<strong>` element, **and inspect it.**
+
+    
+
+   ```css
+strong {
+    margin: 50px;
+	padding: 50px;
+	border: 2px solid red;
+}
+   ```
+
+   
+
+> **Remember:** the vertical spacing of inline elements is not affected by its box. 
+
+
+
+
+# Inline-block Display Behaviour
+
+As seen above, we can change the display behaviour of an element between Inline and Block.
+
+> **There is a hybrid `display` value of `inline-block`,** which will:
+>
+> - Make an element respect the document inline flow without a line-break
+>   - Ex.: multiple elements per line.
+> - Force all box properties (padding, border and margin) to take vertical and horizontal space.
+>   - Ex.: pushing neighbouring elements away in all four directions
+
+
+
+These are the 3 values of the `display` property we have used so far:
 
 
 
 | Value          | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | `inline`       | Displays an element as an inline element (like `<span>`). Any height and width properties will have no effect. |
-| `block`        | Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width. |
-| `inline-block` | Displays an element as an inline-level block container. The element itself is formatted as an element, but you can apply height and width values. |
+| `block`        | Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width unless specified by the  `width` property. |
+| `inline-block` | Displays an element as an inline block-level container. The element itself is formatted as an box element, and you can apply height and width values. |
 
 <br>
 
+15. Change the display value of the `<strong>` element to `inline-block` **and inspect it.**
+
+```css
+strong {
+	padding: 50px;
+	border: 2px solid red;
+	margin: 50px;
+    display: inline-block;
+}
+```
 
 
-> There are many other possible values for the `display` property but for now we will focus on the three above
+
+16. **Remove** the `padding` ,  `border`  and the `display` properties added to the  `<strong>` element.
+
+
+
+# Vertical Margin Collapse
+
+The vertical margin collapse can be a **counter-intuitive behaviour** in CSS.
+
+
+
+> When two block-level elements are stacked vertically and both have a padding that "touch", the smaller of the two paddings will "collapse" inside the larger padding.
+
+
+
+![image-20200212141941350](assets/image-20200212141941350.png)
+
+
 
 <br>
+
+16. Add a top margin to the `<p>` element (it alreadt had a bottom margin):
+
+```css
+p {
+	padding: 20px 0 20px 10px;
+    margin-bottom: 50px;
+  	
+    margin-top: 25px;
+}
+```
+
+
+
+17. Inspect the neighbouring `<p>` elements and identify what is the actual margin between them.
+
+
+
+## Dealing with Vertical Margin Collapse
+
+There are three approaches to dealing with the verticasl margin collapse:
+
+> - Embrace it and take it into consideration when designing your spacing (recommended).
+>   - Ex.: Adopt a convention system of top-only or bottom-only margins.
+> - Use padding to add spacing since it never collapses.
+>   - One works if you are not using padding for something else
+> - Use a div with padding-top: 1px to act as a buffer and "clear" the collapse (not recommended)
+
+
+
+**Note:** Flexbox does not have collapsing margins so this won't be a problem once we learn it. #webdev2020
+
+
 
 # List Styles
 

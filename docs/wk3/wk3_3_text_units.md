@@ -19,7 +19,6 @@ In CSS, there are two types of font family names:
 
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
 
-
 # Changing fonts with `font-family:`
 
 The fonts available to the browser depend largely on the fonts installed in the  operating system.
@@ -133,7 +132,6 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 ![browser](https://www.kirupa.com/html5/images/browser_size.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
-
 
 # VS Code Power-ups:
 
@@ -307,7 +305,7 @@ This live demo illustrates how the `font` shorthand property affects a paragraph
 [*This live demo is provided by MDN web docs*](https://developer.mozilla.org/en-US/docs/Web/CSS/font#frame_live_sample)
 
 <div style="background-color: rgb(248, 248, 246)">
-	<iframe class="live-sample-frame sample-code-frame" frameborder="0" height="400px" id="frame_live_sample" src="https://mdn.mozillademos.org/en-US/docs/Web/CSS/font$samples/live_sample?revision=1569828" width="100%"></iframe>
+	<iframe class="live-sample-frame sample-code-frame" frameborder="0" height="450px" id="frame_live_sample" src="https://mdn.mozillademos.org/en-US/docs/Web/CSS/font$samples/live_sample?revision=1569828" width="100%"></iframe>
 </div>
 
 
