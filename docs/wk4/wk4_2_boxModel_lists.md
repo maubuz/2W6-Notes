@@ -432,7 +432,7 @@ The vertical margin collapse can be a **counter-intuitive behaviour** in CSS.
 
 <br>
 
-16. Add a top margin to the `<p>` element (it alreadt had a bottom margin):
+16. Add a top margin to the `<p>` element (it already had a bottom margin):
 
 ```css
 p {
@@ -451,17 +451,200 @@ p {
 
 ## Dealing with Vertical Margin Collapse
 
-There are three approaches to dealing with the verticasl margin collapse:
+There are three approaches to dealing with the vertical margin collapse:
 
 > - Embrace it and take it into consideration when designing your spacing (recommended).
+>
 >   - Ex.: Adopt a convention system of top-only or bottom-only margins.
+>
+>     
+>
 > - Use padding to add spacing since it never collapses.
+>
 >   - One works if you are not using padding for something else
+>
+>     
+>
 > - Use a div with padding-top: 1px to act as a buffer and "clear" the collapse (not recommended)
 
 
 
 **Note:** Flexbox does not have collapsing margins so this won't be a problem once we learn it. #webdev2020
+
+
+
+
+
+# Explicit Dimensions: Width & Height
+
+
+
+> By default, a container will grow or shrink automatically according to it's content, however, you can explicitly define its dimension with the properties `width` and `height`.
+
+
+
+18. Create a div container at the bottom of your html file and add the following style to the css file:
+
+    *HTML*
+
+    ```html
+    <!--  The rest of the html document -->
+    
+    <div>Button</div>
+    ```
+
+    *CSS*
+
+    ```css
+    div {
+      color: #FFF;
+      background-color: #5995DA;
+      font-weight: bold;
+      padding: 20px;
+      text-align: center;
+      border: 2px solid #5D6063;
+      border-radius: 5px;
+    }
+    ```
+
+
+
+<br>
+
+Since the `<div>` is a block-level element, it will take the entire width of the view port by default:
+
+<br>
+
+
+
+![image-20200212155545812](assets/image-20200212155545812.png ':size=400')
+
+
+
+19. Explicitly define the width of the `<div>` element to be 200px:
+
+    ```css
+    div {
+        
+      /* [Existing Declarations] */
+        
+      width: 200px;
+    }
+    ```
+
+
+
+<br>
+
+Now that the div is smaller than the view-port width, it will by default "justify" left:
+
+
+
+![image-20200212160201849](assets/image-20200212160201849.png ':size=400')
+
+
+
+> Now that a explicit width has been defined (locked-in), the div will always keep it's width (200px) and will grow vertically in order to accommodate new content:
+>
+> 
+>
+> ![image-20200212160847539](assets/image-20200212160847539.png)
+
+
+
+
+
+# Content vs Border Boxes
+
+> The `width` and the `height` properties define the size of the box's content. 
+>
+> **By default, padding, margin and border dimensions are added on top of the content dimensions to define the final box size.**  
+>
+> This creates a box bigger than the dimensions explicitly defined by `width` and `height`.
+
+
+
+The auto-sizing behaviour is determined by the property `box-sizing`, which has the default value of `content-box`.
+
+
+
+![image-20200212182734801](assets/image-20200212182734801.png ':size=400')
+
+
+
+> In order to include the padding and border in an element's total width and height we must set the property `box-sizing` to `border-box`.
+
+
+
+![image-20200212183000292](assets/image-20200212183000292.png ':size=400')
+
+
+
+<br>
+
+In the [demo bellow from MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) you can manipulate the `box-sizing` properties of the Child container.
+
+- Notice how the child container will overflow its parent container if the width is the to 100% (of the parent's width) and there is a border and padding thickness.
+
+<br>
+
+
+
+<iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/box-sizing.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
+
+
+
+To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools.
+
+
+
+<br>
+
+
+
+20. Inspect the `<div>` element and observe it's box size. What is it's total box size in the screen (including padding, border and padding)?
+
+    
+
+21. Change the `box-sizing` property to `border-box`. 
+
+    ```css
+    div {
+    	color: #FFF;
+    	background-color: #5995DA;
+    	font-weight: bold;
+    	padding: 20px;
+    	text-align: center;
+    	border: 2px solid #5D6063;
+    	border-radius: 5px;
+    	width: 200px;
+    	
+        box-sizing: border-box;  /* Add this */
+    }
+    
+    ```
+
+    
+
+22. Inspect the `<div>`. What is the new total box size of the element ?
+
+
+
+> Changing the box sizing to `border-box` is considered a best practice.
+>
+> This is usually done at the beginning of the project using a CSS reset (see below).
+
+
+
+# Intro to Aligning Boxes
+
+
+
+## Aligning Text
+
+
+
+## Aligning Boxes with Auto-Margins
 
 
 
