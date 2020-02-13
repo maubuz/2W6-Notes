@@ -654,6 +654,8 @@ There are several ways to align text and containers in CSS. We will look at two 
 
 
 
+<br>
+
 23. Add the `text-align` property with the value of `center` to the body of the document:
 
 ```css
@@ -688,13 +690,13 @@ We will not learn about floats in this course since it's "hacky", error prone an
 
 
 
-!> Auto-margins do not work for vertical alignment. At this point use margins or paddings for vertical positioning.
+!> Auto-margins do not work for vertical alignment. At this point use margins or paddings for vertical positioning. Flexbox will solve this problem in the future.
 
 
 
 If a width is not explicitly declared for a block level container it will by default take the full width of the browser, making “center alignment” meaningless.
 
-
+<br>
 
 24. Add a horizontal auto-margin to the div and inspect it's margins.
     - What are the margins values ?
