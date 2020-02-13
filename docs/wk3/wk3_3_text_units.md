@@ -18,7 +18,6 @@ In CSS, there are two types of font family names:
 <img src="https://drmarkwomack.com/images/serif-vs-sans-serif.png" alt="img" style="width:500px;" />
 
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
-
 # Changing fonts with `font-family:`
 
 The fonts available to the browser depend largely on the fonts installed in the  operating system.
@@ -132,12 +131,15 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 ![browser](https://www.kirupa.com/html5/images/browser_size.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
-
 # VS Code Power-ups:
 
 Now that you know what the viewport is you can unlock the `!` [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
 
 ![Peek 2020-02-06 10-48](./wk3/assets/../../assets/vscodeemmet.gif)
+
+
+
+<br>
 
 ## Disabling Emmet
 
@@ -145,7 +147,9 @@ If you don't like Emmet's auto-complete, you can disable it:
 
 1. File -> Preferences -> Settings
 2. Search for Emmet
-3. Disable settings as required (play around until you get the desirable behaviour)	
+3. Disable settings as required (play around until you get the desirable behaviour)
+
+
 
 
 # Meta Attributes: viewport & IE compatibility
@@ -161,6 +165,10 @@ and
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
+
+
+<br>
+
 ## Viewport device-width and initial-scale
 
 The `<meta>` viewport element tells the browser how to control the page's dimensions and scaling.
@@ -170,6 +178,10 @@ The `width=` property controls the size of the viewport. It can be set to a spec
 The `initial-scale=` property controls the zoom level when the page is first loaded.
 
 See [*Using the viewport meta tag to control layout on mobile browsers*](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) for more info.
+
+
+
+<br>
 
 ## IE compatibility mode
 
@@ -183,6 +195,7 @@ Internet Explorer (IE) supports the use of a document compatibility `<meta>` tag
 
 See this [Stack Overflow article](https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do) for more information.
 
+<br>
 
 # Using Web Fonts
 
@@ -213,6 +226,10 @@ p {
 	font-family: 'Roboto', sans-serif;
 }
 ```
+
+
+
+<br>
 
 # Font Weight
 
@@ -246,7 +263,7 @@ Common values are:
 - `underline`: <u>Underlines the text</u>.
 - `line-through`: Puts a ~~strikethrough over the text~~.
 
-# Text Layout
+# Text Layout & Alignment
 
 !>  For this section we will refer to the **section "Text layout"** of the [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#Text_layout) by MDN web docs.
 

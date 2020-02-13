@@ -1,4 +1,5 @@
 # 
+
 *This lesson was based on the page **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/)** by Interneting is Hard.*
 
 
@@ -93,15 +94,13 @@ In the section we will cover:
 
 <br>
 
-
-
-![image-20200211172530320](assets/image-20200211172530320.png)
+![image-20200213094611840](assets/image-20200213094611840.png ':size=400')
 
 <br>
 
 
 
-1. Start with the HTML and CSS below:
+0. Start with the HTML and CSS below:
 
    ```html
    <!DOCTYPE html>
@@ -445,7 +444,7 @@ p {
 
 
 
-17. Inspect the neighbouring `<p>` elements and identify what is the actual margin between them.
+17. Inspect the neighbouring `<p>` elements and identify what is the actual margin between them.
 
 
 
@@ -479,7 +478,7 @@ There are three approaches to dealing with the vertical margin collapse:
 
 
 
-> By default, a container will grow or shrink automatically according to it's content, however, you can explicitly define its dimension with the properties `width` and `height`.
+> By default, a container will grow or shrink automatically according to it's content, however, you can explicitly define its dimension with the properties `width` and `height`.
 
 
 
@@ -517,7 +516,7 @@ Since the `<div>` is a block-level element, it will take the entire width of the
 
 
 
-![image-20200212155545812](assets/image-20200212155545812.png ':size=400')
+![image-20200212155545812](assets/image-20200212155545812.png ':size=400')
 
 
 
@@ -540,7 +539,7 @@ Now that the div is smaller than the view-port width, it will by default "justif
 
 
 
-![image-20200212160201849](assets/image-20200212160201849.png ':size=400')
+![image-20200212160201849](assets/image-20200212160201849.png ':size=400')
 
 
 
@@ -568,15 +567,15 @@ The auto-sizing behaviour is determined by the property `box-sizing`, which has 
 
 
 
-![image-20200212182734801](assets/image-20200212182734801.png ':size=400')
+![image-20200212182734801](assets/image-20200212182734801.png ':size=400')
 
 
 
-> In order to include the padding and border in an element's total width and height we must set the property `box-sizing` to `border-box`.
+> In order to include the padding and border in an element's total width and height we must set the property `box-sizing` to `border-box`.
 
 
 
-![image-20200212183000292](assets/image-20200212183000292.png ':size=400')
+![image-20200212183000292](assets/image-20200212183000292.png ':size=400')
 
 
 
@@ -593,8 +592,7 @@ In the [demo bellow from MDN web docs](https://developer.mozilla.org/en-US/docs/
 <iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/box-sizing.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
 
 
-
-To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools.
+To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools.
 
 
 
@@ -638,15 +636,94 @@ To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](htt
 
 # Intro to Aligning Boxes
 
+There are several ways to align text and containers in CSS. We will look at two techniques (one you've already seen, and one new).
+
+> It is important to make a distinction between block-level alignment and text alignment.
+>
+> They are unrelated and will behave differently.
+
 
 
 ## Aligning Text
 
+[In week 3 (Text Layout & Alignment)](../wk3/wk3_3_text_units.md)  we looked at how to align text withing it's parent container using the `text-align` property.
 
+
+
+> **Text-align property will only align the text inside a container, not the container itself.**
+
+
+
+23. Add the `text-align` property with the value of `center` to the body of the document:
+
+```css
+body {
+  text-align: center;
+}
+```
+
+
+
+<br>
 
 ## Aligning Boxes with Auto-Margins
 
+There are three methods for horizontally aligning block-level elements:
 
+- **"auto-margins"** for center alignment;
+- **"floats"** for left/right alignment (not recommended);
+- **"flexbox"** for complete control over alignment (we will learn later i the course).
+
+
+
+We will not learn about floats in this course since it's "hacky", error prone and flexbox has made it obsolete.
+
+
+
+> Once the size of a container is specified using `width` the `margin` property can be set to `auto`.
+>
+> The value `auto` will automatically increase the margins of the container to occupy the available space.
+>
+> **Auto-margin on block-level containers will only work horizontally if `width` has been specified.**
+
+
+
+!> Auto-margins do not work for vertical alignment. At this point use margins or paddings for vertical positioning.
+
+
+
+If a width is not explicitly declared for a block level container it will by default take the full width of the browser, making “center alignment” meaningless.
+
+
+
+24. Add a horizontal auto-margin to the div and inspect it's margins.
+    - What are the margins values ?
+
+```css
+div {
+	color: #FFF;
+	background-color: #4A90E2;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+    width: 200px;
+	box-sizing: border-box;
+	
+    margin: 20px auto; /* Vertical  Horizontal */
+}
+```
+
+
+
+<br>
+
+Your page should now look similar to this:
+
+![image-20200213094611840](assets/image-20200213094611840.png ':size=400')
+
+
+
+<br>
 
 # List Styles
 
@@ -694,25 +771,69 @@ li {
 
 <br>
 
-> Its common practice to use list-items in a navigation bar by resetting their default values:
+> Its common practice to use list-items in a navigation bar by resetting default values.
 
 
 
-```css
-ul {
-    list-style: none;
-    padding: 0px;
-    width: 200px;
-}
-li {
-    background-color: #6287DB;
-    color: white;
-    text-align: center;
-    border-raidius: 10px;
-    padding: 0.8rem;
-    margin: 0.4rem;
-}
+# References & Diving Deeper
+
+> Recommended reading: **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/) by Interneting is Hard**.
+
+
+
+Other resources:
+
+- [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) by MDN web docs
+- [CSS Box Sizing](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools
+
+
+
+# Hands-on
+
+## Exercises
+
+1. Do the following exercises from W3Schools:
+
+   - [CSS Padding](https://www.w3schools.com/Css/exercise.asp?filename=exercise_padding1)
+   - [CSS Margin](https://www.w3schools.com/Css/exercise.asp?filename=exercise_margin1)
+   - [CSS Height/Width](https://www.w3schools.com/Css/exercise.asp?filename=exercise_dimension1)
+- [CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel1)
+   
+<br>
+   
+2. **CSS Box Model extended**. Continuing from the completed [Exercise 4 of the CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel4), complete the following tasks:
+
+   
+
+   - Add a top margin of 2 rem to the div;
+
+   - Center the div horizontally in the document;
+
+   - To the `body` element add a height of 400px and set the `background-color` to green;
+
+   - Inspect the `body` element. What is happening to the background-color ?
+
+   <br>
+
+3. Complete the [Boxer Model Challenge from Khan Academy](https://www.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pc/challenge-the-boxer-model)
+
+   <br>
+
+4. Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties:
+
+   
+
+   *HTML*
+
+```html
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
 ```
+
+*Result*
 
 <ul style="list-style: none; padding: 0px; width:200px">
   <li style="background-color: #6287DB; color: white; text-align: center; border-radius: 10px; padding: 0.8rem; margin: 0.4rem;">Home</li>
@@ -722,4 +843,6 @@ li {
 
 
 
-In the example above the shorthand notation was used with only one value. **For non-specified values, their default values are loaded.**
+<br>
+
+5. Transform the vertical navigation bar from the previous exercise into a horizontal bar using the `display` property.
