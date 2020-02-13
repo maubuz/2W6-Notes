@@ -154,7 +154,7 @@ In the section we will cover:
 
 <br>
 
-1. **Temporarily** change the `display` property of the `<em>` and the `<strong>` elements. 
+1. **Temporarily** change the `display` property of the `<em>` and the `<strong>` elements to `block`.
 
    ```css
    em, strong {
@@ -636,15 +636,7 @@ To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](htt
 
 
 
-# Intro to Aligning Boxes
-
-
-
-## Aligning Text
-
-
-
-## Aligning Boxes with Auto-Margins
+## 
 
 
 
