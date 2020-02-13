@@ -131,6 +131,10 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 ![browser](https://www.kirupa.com/html5/images/browser_size.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
+
+
+<br>
+
 # VS Code Power-ups:
 
 Now that you know what the viewport is you can unlock the `!` [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
