@@ -1,3 +1,6 @@
+# 
+
+
 # List Styles
 
 !>  For this section we will refer to the page **[CSS Lists](https://www.w3schools.com/css/css_list.asp)** by W3Schools.
@@ -46,7 +49,7 @@ li {
 
 
 
-## Lists & Navigation Bars
+# Lists & Navigation Bars
 
 > Its good practice to use list-items in a navigation bar by resetting default values.
 
@@ -60,32 +63,66 @@ HTML List elements are used as navigation bars because they offer a range of sem
 
 
 
-If you would like to learn more see this [Stackoverflow discussion on Why do navigation bars in HTML5 as lists?](https://stackoverflow.com/questions/36811224/why-do-navigation-bars-in-html5-as-lists)
+If you would like to learn more about why we use lists, see this [Stackoverflow discussion on Why do navigation bars in HTML5 as lists?](https://stackoverflow.com/questions/36811224/why-do-navigation-bars-in-html5-as-lists)
 
 
 
 **When creating your navigation bar from a list remember to:**
 
-- Reset unwanted paddings (specially the default left padding);
-- Reset text decorators on the `<a>` element;
-- Add paddings on the `<a>` element so it has a clickable area;
-- Setup appropriate `display` properties between the child and parent elements.
+- Reset `text-decoration` on the `<a>` element and `list-style` on the `<li>` element;
+
+  ![image-20200216134241665](assets/image-20200216134241665.png)
+
+  
+
+- Reset unwanted paddings and margins (specially the default left padding);
+
+  ![image-20200216134004629](assets/image-20200216134004629.png)
+
+  <br>
+
+- Add paddings on the `<a>` element (rather than the `<li>` element) so it has a clickable area;
+
+  ![image-20200216135015617](assets/image-20200216135015617.png)
+
+<br>
+
+- Set the `display`  property of the `<a>` element to `block` or `inline-block` (depending on who is setting the width).
+  - Otherwise the default `inline` value will ignore any vertical paddings or margins.
+
+![display_a_nav_bar](assets/display_a_nav_bar.gif)
 
 
+
+<br>
+
+- For horizontal alignment, setup the `display` property of the `<li>` to `inline-block`.
+  - Otherwise, the `<li>` has a default behaviour of block-level, putting each item on a new line.
+  - Note: it is possible to achieve a similar behaviour using floats but it is not recommended.
+
+![display_li_nav_horizontal](assets/display_li_nav_horizontal.gif)
+
+<br>
+
+# References & Diving Deeper
+
+> Recommended reading: **[CSS Navigation Bar](https://www.w3schools.com/Css/css_navbar.asp)** by W3Schools
+
+
+
+<br>
 
 ## Lab #1
 
+Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
+
+**Requirements:**
+
+- The colored part of the hyperlink should be "clickable" (the mouse cursor should change as soon as you hover it).
 
 
-1. Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
 
-   **Requirements:**
-
-   - The colored part of the hyperlink should be "clickable" (the mouse cursor should change as soon as you hover it).
-
-   
-
-   *HTML*
+*HTML*
 
 ```html
 <nav>
@@ -112,3 +149,34 @@ If you would like to learn more see this [Stackoverflow discussion on Why do nav
 
 
 ![image-20200216104216085](assets/image-20200216104216085.png ':zoom:500')
+
+
+
+<br>
+
+## Lab #3
+
+Style the starting html code in order to create the 3 column section illustrated below:
+
+```html
+<body>
+    <main>
+        <section id="container">
+            <h2>The 3 Column Container</h2>
+            <article class="first">
+                <h3>First box</h3>
+            </article>
+            <article class="second">
+                <h3>Second box</h3>
+            </article>
+            <article class="third">
+                <h3>Third box</h3>
+            </article>
+        </section>
+    </main>
+</body>
+```
+
+
+
+![image-20200216150238379](assets/image-20200216150238379.png)
