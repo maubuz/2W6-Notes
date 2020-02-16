@@ -83,11 +83,13 @@ If there are conflicting CSS declarations, **the order of priority is as follows
 
 <br>
 
-![Source Origin Priority](assets/proximity.png)
+![proximity](../wk4/assets/proximity.png)
 
 <p align="center"><a href="https://cssway.thebigerns.com/special/master-item-styles/"><em>The effect of Proximity on Specificity value in the Cascade Order</em></a></p>
 
 
+
+<br>
 
 ### Order of declaration
 
@@ -131,7 +133,6 @@ h3 { color: blue; }
 *Result*
 
 <h3 style="color: blue;">Top to Bottom</h3>
-
 <br>
 
 *Code*
@@ -143,7 +144,6 @@ h3 { color: blue; }
 *Result*
 
 <h3 style="color: blue; color: red;">Left to Right</h3>
-
 
 
 ## Specificity
@@ -190,20 +190,18 @@ Every selector has its place in the specificity hierarchy. There are four  categ
 
 > There is a formal way of determining the specificity of elements using a score system, from 1 to 1000, however, we will not cover here.
 >
-> For more information see *[How to Calculate Specificity](https://www.w3schools.com/css/css_specificity.asp)* by W3Schools
+> For more information see *[How to Calculate Specificity](https://www.w3schools.com/css/css_specificity.asp)* by W3Schools
 
 
 
 ![CSS Specificitry](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/media/image6-1.png)
 
 <p align="center"><a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies"><em>CSS Specificity rules, in order</em></a></p>
-
 <br>
 
 <img src="https://cssway.thebigerns.com/special/master-item-styles/Resources/selectoricity.gif" style="width:600px;">
 
 <p align="center"><a href="https://cssway.thebigerns.com/special/master-item-styles/"><em>Example of specificity ranking with regard to selector types</em></a></p>
-
 <br>
 
 ## Importance

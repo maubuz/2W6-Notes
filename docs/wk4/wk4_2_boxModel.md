@@ -725,54 +725,6 @@ Your page should now look similar to this:
 
 <br>
 
-# List Styles
-
-!>  For this section we will refer to the page **[CSS Lists](https://www.w3schools.com/css/css_list.asp)** by W3Schools.
-
-Using the reference above, look at the following CSS properties:
-
-| Property                                                     | Description                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [list-style ](https://www.w3schools.com/cssref/pr_list-style.asp) (shorthand) | Sets all the properties for a list in one declaration        |
-| [list-style-image](https://www.w3schools.com/cssref/pr_list-style-image.asp) | Specifies an image as the list-item marker                   |
-| [list-style-position](https://www.w3schools.com/cssref/pr_list-style-position.asp) | Specifies the position of the list-item markers (bullet points) |
-| [list-style-type](https://www.w3schools.com/cssref/pr_list-style-type.asp) | Specifies the type of list-item marker                       |
-
-
-
-## List Style Position
-
-Note that the **default value** of `list-style-position` is `ouitside`.
-
-This means two things:
-
--  the markers will fall **outside the list items but inside the list itself**
-- The **list items have a left padding** (empty space) by default.
-
-*Code*:
-
-```css
-ul {
-    border: solid 1px gray;
-    width: 200px;
-}
-li {
-    border:solid 1px blue;
-}
-```
-
-*Result*:
-
-<ul style="border:solid 1px gray; width:200px">
-  <li style="border:solid 1px blue;">Coffee</li>
-  <li style="border:solid 1px blue;">Tea</li>
-  <li style="border:solid 1px blue;">Coca Cola</li>
-</ul>
-
-<br>
-
-> Its common practice to use list-items in a navigation bar by resetting default values.
-
 
 
 # References & Diving Deeper
@@ -801,7 +753,7 @@ Other resources:
 
 <br>
 
-2. **CSS Box Model extended**. Continuing from the completed [Exercise 4 of the CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel4), complete the following tasks:
+2. **CSS Box Model extended**. Continuing from the completed [Exercise 4 of the CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel4), perform the following tasks:
 
    
 
@@ -819,40 +771,3 @@ Other resources:
 
    <br>
 
-## Labs
-
-
-
-1. Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
-
-   **Requirements:**
-
-   - The colored part of the hyperlink should be "clickable" (the mouse cursor should change as soon as you hover it).
-
-   
-
-   *HTML*
-
-```html
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-```
-
-
-
-![lab4_nav_list](assets/lab4_nav_list.gif)
-
-
-
-<br>
-
-2. Transform the vertical navigation bar from the previous lab into a horizontal bar using the `display` property (see example below)
-
-
-
-![image-20200216104216085](assets/image-20200216104216085.png ':zoom:500')
