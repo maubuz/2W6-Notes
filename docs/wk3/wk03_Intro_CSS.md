@@ -35,7 +35,6 @@ Summarized from [CSS Syntax](https://www.w3schools.com/css/css_syntax.asp) by W3
 
 
 <p align="center"><a href="https://www.w3schools.com/css/css_syntax.asp"><em>Hyperlink</em></a> <em>- CSS Syntax by W3Schools</em></p>
-
 In the example below selects all `<p>` elements will be center-aligned, with a red text color:
 
 ```css
@@ -308,4 +307,47 @@ We will cover:
 - [CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
 
 - [HTML Id Attributes](https://www.w3schools.com/html/html_id.asp)
+
+
+
+# Hands-on
+
+
+
+## Exercises
+
+Do the following exercises from W3Schools:
+
+- [HTML Classes Exercise](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_classes1)
+
+- [HTML Id Exercise](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_id1)
+
+- [HTML CSS Exercise](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_css1)
+
+- [CSS Selectors Exercise](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors1)
+
+- [CSS How To Exercise](https://www.w3schools.com/css/exercise.asp?filename=exercise_howto1)
+
+- [CSS Dinner](https://flukeout.github.io/)
+
+
+
+## Labs
+
+Use CSS to style the provided html so that it looks like the image below.
+
+**Requirements:**
+
+1. Use an external CSS sheet.
+2. Do minimal changes to the html file.
+
+
+
+**[Download the initial html file here](https://drive.google.com/open?id=1sFctwIzPGUXpiXdWt0uygwHo2_hD3Mny).**
+
+
+
+![Result_Site](assets/Result_Site.png)
+
+
 

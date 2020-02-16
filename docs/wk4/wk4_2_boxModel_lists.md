@@ -134,7 +134,7 @@ In the section we will cover:
 
 
 
-## Changing the Box Behaviour
+## Display: Changing the Box Behaviour
 
 
 
@@ -373,11 +373,11 @@ strong {
 
 
 
-# Inline-block Display Behaviour
+# Display: Inline-block
 
 As seen above, we can change the display behaviour of an element between Inline and Block.
 
-> **There is a hybrid `display` value of `inline-block`,** which will:
+> **There is a hybrid  [`display`](https://www.w3schools.com/cssref/pr_class_display.asp) value of `inline-block`,** which will:
 >
 > - Make an element respect the document inline flow without a line-break
 >   - Ex.: multiple elements per line.
@@ -386,7 +386,7 @@ As seen above, we can change the display behaviour of an element between Inline 
 
 
 
-These are the 3 values of the `display` property we have used so far:
+These are the 3 values of the [`display`](https://www.w3schools.com/cssref/pr_class_display.asp) property we have used so far:
 
 
 
@@ -590,8 +590,6 @@ In the [demo bellow from MDN web docs](https://developer.mozilla.org/en-US/docs/
 
 
 <iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/box-sizing.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
-
-
 To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools.
 
 
@@ -674,7 +672,7 @@ There are three methods for horizontally aligning block-level elements:
 
 - **"auto-margins"** for center alignment;
 - **"floats"** for left/right alignment (not recommended);
-- **"flexbox"** for complete control over alignment (we will learn later i the course).
+- **"flexbox"** for complete control over alignment (we will learn it later in the course).
 
 
 
@@ -694,7 +692,7 @@ We will not learn about floats in this course since it's "hacky", error prone an
 
 
 
-If a width is not explicitly declared for a block level container it will by default take the full width of the browser, making “center alignment” meaningless.
+**Again:** If a width is not explicitly declared for a block level container it will by default take the full width of the browser, making “center alignment” meaningless.
 
 <br>
 
@@ -800,9 +798,9 @@ Other resources:
    - [CSS Margin](https://www.w3schools.com/Css/exercise.asp?filename=exercise_margin1)
    - [CSS Height/Width](https://www.w3schools.com/Css/exercise.asp?filename=exercise_dimension1)
 - [CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel1)
-   
+
 <br>
-   
+
 2. **CSS Box Model extended**. Continuing from the completed [Exercise 4 of the CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel4), complete the following tasks:
 
    
@@ -821,30 +819,40 @@ Other resources:
 
    <br>
 
-4. Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties:
+## Labs
+
+
+
+1. Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
+
+   **Requirements:**
+
+   - The colored part of the hyperlink should be "clickable" (the mouse cursor should change as soon as you hover it).
 
    
 
    *HTML*
 
 ```html
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 ```
 
-*Result*
 
-<ul style="list-style: none; padding: 0px; width:200px">
-  <li style="background-color: #6287DB; color: white; text-align: center; border-radius: 10px; padding: 0.8rem; margin: 0.4rem;">Home</li>
-  <li style="background-color: #6287DB; color: white; text-align: center; border-radius: 10px; padding: 0.8rem; margin: 0.4rem;">Products</li>
-  <li style="background-color: #6287DB; color: white; text-align: center; border-radius: 10px; padding: 0.8rem; margin: 0.4rem;">Contact</li>
-</ul>
+
+![lab4_nav_list](assets/lab4_nav_list.gif)
 
 
 
 <br>
 
-5. Transform the vertical navigation bar from the previous exercise into a horizontal bar using the `display` property.
+2. Transform the vertical navigation bar from the previous lab into a horizontal bar using the `display` property (see example below)
+
+
+
+![image-20200216104216085](assets/image-20200216104216085.png ':zoom:500')

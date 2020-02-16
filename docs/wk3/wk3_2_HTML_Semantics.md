@@ -51,13 +51,11 @@ Consider these commonly used website layouts:
 <img src="https://internetingishard.com/html-and-css/semantic-html/html-sectioning-elements-00c3fd.png" style="width:300px;">
 
 <p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
-
 <br>
 
 ![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
 
 <p align="center"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><em>HTML Semantic Elements</em></a> <em>- w3schools.org</em></p>
-
 <br>
 
 **`<header>`**
@@ -222,8 +220,6 @@ Below is a comparison of a website organized with divs vs semantic elements (fro
 ![Non-semantic HTML layout, with generic divs](https://www.springboardseo.com/img/non-semantic-html-layout.jpg)
 
 <p align="center"><em>Using Divs</em></p>
-
-
 # References & Diving Deeper
 
 > **I strongly encourage you to read the** [**Semantic HTML**](https://internetingishard.com/html-and-css/semantic-html/) by internetingishard.com  
@@ -235,3 +231,19 @@ Other useful references:
 - [HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp) by W3Schools
 
 - [**HTML semantics cheat sheet**](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) by algonquindesign.ca
+
+
+
+
+# Hands-on
+
+## Lab #1
+
+Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](./wk3/wk3_1_Handson) in order to use semantic HTML elements in your html file.
+
+## Lab #2
+
+For this lab we will use the project [**Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
+
+Please complete the instructions as described in the **Starting point** and **Project brief** section of the page above.
+
