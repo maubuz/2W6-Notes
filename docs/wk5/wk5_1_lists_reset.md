@@ -53,15 +53,11 @@ li {
 
 <br>
 
-> If these default values are not desired (most cases), you must override them manually.
+> If these default values are not desired (most cases), you must override them manually (see CSS Reset below).
 
 <br>
 
 # Lists & Navigation Bars
-
-> Its good practice to use list-items in a navigation bar by resetting default values.
-
-
 
 HTML List elements are used as navigation bars because they offer a range of semantic advantages:
 
@@ -71,17 +67,23 @@ HTML List elements are used as navigation bars because they offer a range of sem
 
 
 
+> Its best practice to use list-items in a navigation bar by resetting default values.
+
+
+
 If you would like to learn more about why we use lists, see this [Stackoverflow discussion on Why do navigation bars in HTML5 as lists?](https://stackoverflow.com/questions/36811224/why-do-navigation-bars-in-html5-as-lists)
 
-
+<br>
 
 **When creating your navigation bar from a list remember to:**
+
+<br>
 
 - Reset `text-decoration` on the `<a>` element and `list-style` on the `<li>` element;
 
   ![image-20200216134241665](assets/image-20200216134241665.png)
 
-  
+  <br>
 
 - Reset unwanted paddings and margins (specially the default left padding);
 
@@ -136,7 +138,9 @@ The universal selector `*`  matchs every html element on the document.
 
 <br>
 
-If we apply the 
+If we add the CSS Reset to the stylesheet of [the page we created in the previous section](../wk4/wk4_2_boxModel.md), it will cover the entire viewport (notice the margins of the `<body>` element):
+
+ ![image-20200216154014961](assets/image-20200216154014961.png)
 
 
 
@@ -147,6 +151,8 @@ If we apply the
 
 
 <br>
+
+# Hands-on
 
 ## Lab #1
 
