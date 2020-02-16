@@ -25,6 +25,12 @@ This means two things:
 -  the markers will fall **outside the list items but inside the list itself**
 -  The **list items have a left padding** (empty space) by default.
 
+<br>
+
+When we add borders to the `<ul>` and the `<li>` elements we can "see" their default values:
+
+
+
 *Code*:
 
 ```css
@@ -47,7 +53,9 @@ li {
 
 <br>
 
+> If these default values are not desired (most cases), you must override them manually.
 
+<br>
 
 # Lists & Navigation Bars
 
@@ -103,6 +111,34 @@ If you would like to learn more about why we use lists, see this [Stackoverflow 
 ![display_li_nav_horizontal](assets/display_li_nav_horizontal.gif)
 
 <br>
+
+# CSS Reset
+
+In order to avoid default spacing behaviours (`margin`, `padding`, and `box-sizing`) from causing unforseen situations, we can reset them.
+
+> It is common practice to **reset** default spacing properties for all elements using the **universal CSS selector**.
+>
+> This is know as a **CSS Reset**.
+
+
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+
+
+The universal selector `*`  matchs every html element on the document. 
+
+<br>
+
+If we apply the 
+
+
 
 # References & Diving Deeper
 

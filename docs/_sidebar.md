@@ -9,4 +9,4 @@
 - [Background, Heroes & Borders](./wk4/wk4_1_background_heroes_border.md)
 - [Box Model & Display](./wk4/wk4_2_boxModel.md)
 - **Week 5**
-- [Lists, Nav bars & Resets](./wk5/wk5_1_lists_box_challenges.md)
+- [Lists, Nav bars & Resets](./wk5/wk5_1_lists_reset.md)
