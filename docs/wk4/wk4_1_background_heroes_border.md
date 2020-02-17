@@ -64,7 +64,6 @@ The `background-attachment` property can be confusing at first.  The [example be
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
 
-
 ## Gradients
 
 HTML can support the use of color gradients with the property `linear-gradient`.
@@ -108,7 +107,6 @@ See the [demo below for an illustration](https://developer.mozilla.org/en-US/doc
 <br>
 
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
-
 > Combining a background-image image with a linear gradients is a great way to add a darker "overlay" to an image before adding text over it.
 
 
@@ -208,7 +206,6 @@ A "Hero" image is a large image at the top of your home page that will represent
 ![Hero Image example](assets/image-20200208113747755.png ':size=400')
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
-
 **Why use a hero image:**
 
 - Add a personal touch and engage the user.
@@ -337,7 +334,6 @@ h4 {
 
 <h4 style="border: 2px dotted red;">Border shorthand notation</h4>
 
-
 ---
 
 # Shorthand declarations
@@ -456,6 +452,35 @@ Create the simple "Hero" page show below.
     <li>Add a thick border to the hyperlink to increase the spacing around it.</li>
     <li>Give a max width to the background's parent so that the image stops growing</li>
   </ul>
-
 </details>
+
+
+
+### Lab 2 Solution
+
+*CSS*
+
+```css
+section {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1558981285-501cd9af9426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-position: center;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: 1000px;
+}
+
+a {
+    background-color: blanchedalmond;
+    color: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid 10px blanchedalmond;
+}
+```
+
+
 

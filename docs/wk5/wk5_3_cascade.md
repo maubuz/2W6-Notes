@@ -88,7 +88,6 @@ If there are conflicting CSS declarations, **the order of priority is as follows
 <p align="center"><a href="https://cssway.thebigerns.com/special/master-item-styles/"><em>The effect of Proximity on Specificity value in the Cascade Order</em></a></p>
 
 
-
 <br>
 
 ### Order of declaration
@@ -144,7 +143,6 @@ h3 { color: blue; }
 *Result*
 
 <h3 style="color: blue; color: red;">Left to Right</h3>
-
 
 ## Specificity
 
@@ -229,4 +227,5 @@ Other resources:
 
 - [The CSS Cascade](https://wattenberger.com/blog/css-cascade#specificity) by Amelia Wattanberger
 - [The “C” in CSS: The Cascade](https://css-tricks.com/the-c-in-css-the-cascade/) by CSS-Tricks
-- 
+
+  

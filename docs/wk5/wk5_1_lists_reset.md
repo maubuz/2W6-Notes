@@ -222,3 +222,10 @@ Style the starting html code in order to create the 3 column section illustrated
 
 
 ![image-20200216150238379](assets/image-20200216150238379.png)
+
+
+
+**Notes:**
+
+- The width of the 3 collumns is set to a percentage of it's parent container.
+- The odd "white-space" between the 3 collumns is quite "tricky" to eliminate is no longer an issue when using Flexbox.
