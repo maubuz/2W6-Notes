@@ -112,7 +112,7 @@ The `position` property can take the following values:
 1. Do the following exercises from W3Schools:
 
    - [CSS Overflow](https://www.w3schools.com/css/exercise.asp?filename=exercise_overflow1)
-   - 
+   - [CSS Positioning](https://www.w3schools.com/css/exercise.asp?filename=exercise_positioning1) 
 
 <br>
 
