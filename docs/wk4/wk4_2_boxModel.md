@@ -460,7 +460,7 @@ There are three approaches to dealing with the vertical margin collapse:
 >
 > - Use padding to add spacing since it never collapses.
 >
->   - One works if you are not using padding for something else
+>   - Only works if you are not using padding for something else
 >
 >     
 >
@@ -551,7 +551,7 @@ Now that the div is smaller than the view-port width, it will by default "justif
 
 
 
-
+<br>
 
 # Content vs Border Boxes
 

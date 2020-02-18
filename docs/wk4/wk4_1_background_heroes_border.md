@@ -54,15 +54,24 @@ In order to use images as the background we must use the `url(*address*)`  notat
 
 ## background-size
 
-> T[his demo from W3Schools](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size) illustrates **how use the `background-size` property**
+> [This demo from W3Schools](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size) illustrates **how use the `background-size` property**
 
 
+
+[![image-20200218065511227](assets/image-20200218065511227.png)](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size)
+
+
+
+<br>
 
 ## background-attachment
 
 The `background-attachment` property can be confusing at first.  The [example below from MDN web docs](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html) helps illustrate how they are different:
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
+
+
+<br>
 
 ## Gradients
 
@@ -107,9 +116,27 @@ See the [demo below for an illustration](https://developer.mozilla.org/en-US/doc
 <br>
 
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
+
+<br>
+
+## Darker Background Images
+
 > Combining a background-image image with a linear gradients is a great way to add a darker "overlay" to an image before adding text over it.
 
+*CSS*
 
+```css
+background-image:
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(./img/coding.webp);
+```
+
+*Result*
+
+![darkened_backgrounds](assets/darkened_backgrounds.gif)
+
+
+
+<br>
 
 ## Background Shorthand Property
 
@@ -206,6 +233,8 @@ A "Hero" image is a large image at the top of your home page that will represent
 ![Hero Image example](assets/image-20200208113747755.png ':size=400')
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
+
+
 **Why use a hero image:**
 
 - Add a personal touch and engage the user.
@@ -333,7 +362,6 @@ h4 {
 *Result*
 
 <h4 style="border: 2px dotted red;">Border shorthand notation</h4>
-
 ---
 
 # Shorthand declarations
