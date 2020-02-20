@@ -80,7 +80,7 @@ The `position` property can take the following values:
 
 
 
-!> From here on no more `<br>` hacks for vertical positioning or $nbls; for horizontal spacing. **You must make full use of the box model and positioning.**
+!> From here on no more `<br>` hacks for vertical positioning or $nbsp; for horizontal spacing. **You must make full use of the box model and positioning.**
 
 
 
