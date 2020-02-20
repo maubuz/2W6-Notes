@@ -76,17 +76,15 @@ The `position` property can take the following values:
 (*Note: the `position: -webkit-sticky;` line is there for compatibility issues with older browsers*)
 
 <iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/position.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
-
 <br>
 
 
 
-!> From here on no more `<br>` hacks for vertical positioning
+!> From here on no more `<br>` hacks for vertical positioning or $nbls; for horizontal spacing. **You must make full use of the box model and positioning.**
 
 
 
 <iframe align="middle" src="https://giphy.com/embed/YOkrK8agZLEk2cXeLi" height="150" frameBorder="0" class="giphy-embed"></iframe>
-
 
 
 <br>
@@ -121,3 +119,4 @@ The `position` property can take the following values:
 Revisit the [Lab 2 - The hero page done on week 4)](../wk4/wk4_1_background_heroes_border.md#Hands-on) and use the `position` property to center the content.
 
 - Remove all `<br>`'s used for vertical spacing.
+

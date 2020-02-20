@@ -27,7 +27,7 @@ This means two things:
 
 <br>
 
-When we add borders to the `<ul>` and the `<li>` elements we can "see" their default values:
+When we add borders to the `<ul>` and the `<li>` elements we can "see" their default values:
 
 
 
@@ -134,11 +134,11 @@ In order to avoid default spacing behaviours (`margin`, `padding`, and `box-sizi
 
 
 
-The universal selector `*`  matchs every html element on the document. 
+The universal selector `*`  matchs every html element on the document. 
 
 <br>
 
-If we add the CSS Reset to the stylesheet of [the page we created in the previous section](../wk4/wk4_2_boxModel.md), it will cover the entire viewport (notice the margins of the `<body>` element):
+If we add the CSS Reset to the stylesheet of [the page we created in the previous section](../wk4/wk4_2_boxModel.md), it will cover the entire viewport (notice the margins of the `<body>` element):
 
  ![image-20200216154014961](assets/image-20200216154014961.png)
 
@@ -228,4 +228,4 @@ Style the starting html code in order to create the 3 column section illustrated
 **Notes:**
 
 - The width of the 3 collumns is set to a percentage of it's parent container.
-- The odd "white-space" between the 3 collumns is quite "tricky" to eliminate is no longer an issue when using Flexbox.
+- The odd "white-space" between the 3 collumns is quite "tricky" to eliminate. It will no longer be an issue once we start using Flexbox.
