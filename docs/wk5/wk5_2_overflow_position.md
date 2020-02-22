@@ -94,14 +94,15 @@ An element with greater stack order is always in front of an element with a lowe
 
 <br>
 
-![image-20200222141753625](assets/image-20200222141753625.png ':size= 400')
+![image-20200222155333220](assets/image-20200222155333220.png ':size=500')
 
 <br>
 
-In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)) you can change the `z-index` property of the yellow container:
+In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)) you can change the `z-index` property of the yellow container:
 
-<iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/z-index.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
 
+
+<iframe class="interactive" width="100%" height="400" frameborder="0" src="https://interactive-examples.mdn.mozilla.net/pages/css/z-index.html" title="MDN Web Docs Z-index Example"></iframe>
 
 
 <br>
