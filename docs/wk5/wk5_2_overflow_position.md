@@ -78,15 +78,50 @@ The `position` property can take the following values:
 <iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/position.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
 <br>
 
+# Z-index: Stack Order
+
+>  The `z-index` property specifies the stack order of an element.
+>
+> 
+>
+> **Note:** `z-index` only works on positioned elements (position: absolute, position: relative, position: fixed,  or position: sticky).
 
 
-!> From here on no more `<br>` hacks for vertical positioning or $nbsp; for horizontal spacing. **You must make full use of the box model and positioning.**
+
+<br>
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+<br>
+
+![image-20200222141753625](assets/image-20200222141753625.png ':size= 400')
+
+<br>
+
+In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)) you can change the `z-index` property of the yellow container:
+
+<iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/z-index.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
+
+
+
+<br>
+
+
+
+
+
+
+
+
+# No more Hacks
+
+
+
+!> From here on no more `<br>` hacks for vertical positioning or `&nbsp;` for horizontal spacing. **You must make full use of the box model and positioning.**
 
 
 
 <iframe align="middle" src="https://giphy.com/embed/YOkrK8agZLEk2cXeLi" height="150" frameBorder="0" class="giphy-embed"></iframe>
-
-
 <br>
 
 
