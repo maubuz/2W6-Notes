@@ -154,7 +154,7 @@ If we add the CSS Reset to the stylesheet of [the page we created in the previou
 
 # Hands-on
 
-## Lab #1
+## Lab 1
 
 Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
 
@@ -184,7 +184,7 @@ Create the vertical navigation menu below by using the provided html code and ma
 
 <br>
 
-## Lab #2
+## Lab 2
 
 2. Transform the vertical navigation bar from the previous lab into a horizontal bar using the `display` property (see example below)
 
@@ -196,7 +196,7 @@ Create the vertical navigation menu below by using the provided html code and ma
 
 <br>
 
-## Lab #3
+## Lab 3
 
 Style the starting html code in order to create the 3 column section illustrated below:
 

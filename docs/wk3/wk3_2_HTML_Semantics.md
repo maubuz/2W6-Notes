@@ -237,11 +237,11 @@ Other useful references:
 
 # Hands-on
 
-## Lab #1
+## Lab 2
 
 Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](./wk3/wk3_1_Handson) in order to use semantic HTML elements in your html file.
 
-## Lab #2
+## Lab 3
 
 For this lab we will use the project [**Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
 

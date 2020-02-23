@@ -332,7 +332,7 @@ Do the following exercises from W3Schools:
 
 
 
-## Labs
+## Lab 1
 
 Use CSS to style the provided html so that it looks like the image below.
 
