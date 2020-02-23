@@ -49,6 +49,14 @@ It is followed by the properties [`top`](https://developer.mozilla.org/en-US/doc
 
 <br>
 
+![image-20200223090144780](assets/image-20200223090144780.png ':size=600')
+
+<p align="center"><strong>Positioned vs Non-Positioned</strong> , <a href="https://internetingishard.com/html-and-css/advanced-positioning/"><em>Interneting is Hard</em></a></p>
+
+
+
+<br>
+
 The `position` property can take the following values:
 
 
@@ -65,17 +73,57 @@ The `position` property can take the following values:
 
 
 
+<br>
+
+<br>
+
 !>  For the remainder of this section we will refer to the page **[CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp)** by W3Schools.
+
+<br>
+
+<br>
+
+**[Live demo](https://developer.mozilla.org/en-US/docs/Web/CSS/position) from MDN web docs:**
+
+(*Note: the `position: -webkit-sticky;` line is there for compatibility issues with older browsers*)
+
+<iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/position.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
 
 
 
 <br>
 
-**Live demo from MDN web docs:**
+## Visual summary: Relative vs Absolute
 
-(*Note: the `position: -webkit-sticky;` line is there for compatibility issues with older browsers*)
 
-<iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/position.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
+
+### Position Relative
+
+- The element is positioned relative to its normal position in the document flow.
+- Other elements are not aware of its relative position and will act as if it never moved.
+
+![image-20200223090937692](assets/image-20200223090937692.png ':size=600')
+
+<p align="center">Position Relative to its normal document flow, <a href="https://internetingishard.com/html-and-css/advanced-positioning/"><em>Interneting is Hard</em></a></p>
+
+<br>
+
+### Position Absolute
+
+- Element searches an ancestor that has been positioned (anything other than static, the default).
+
+- If no positioned ancestors, will use the `<body>` element as reference (always positioned).
+
+  
+
+<br>
+
+![relative_illustration](assets/relative_illustration.png ':size=600')
+
+<p align="center">Position relative without (left) and with (right) a positioned ancestor, <a href="https://internetingishard.com/html-and-css/advanced-positioning/"><em>Interneting is Hard</em></a></p>
+
+
+
 <br>
 
 # Z-index: Stack Order
@@ -152,7 +200,7 @@ In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US
 
 ## Lab 1 - Positioning the hero page
 
-Revisit the [Lab 2 - The hero page done on week 4)](../wk4/wk4_1_background_heroes_border.md#Hands-on) and use the `position` property to center the content.
+Revisit the [Lab 2 - The hero page (done on week 4)](./wk4/wk4_1_background_heroes_border.md#Hands-on) and use the `position` property to center the content.
 
 - Remove all `<br>`'s used for vertical spacing.
 
