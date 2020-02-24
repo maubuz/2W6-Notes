@@ -262,7 +262,7 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-Revisit the [Lab 3 of week 5 (the 3 column container)](./wk5/wk5_2_background_heroes_border.md#Hands-on) and use `Flexbox` to equaly distribut the coulmns.
+Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io/2W6-UI/#/./wk5/wk5_1_lists_reset?id=hands-on) and use `Flexbox` to equaly distribut the coulmns.
 
 Notes:
 
