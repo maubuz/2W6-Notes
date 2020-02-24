@@ -266,7 +266,7 @@ Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io
 
 Notes:
 
-- Flexbox will remove the inherited spacing (whitespace) between the columns.
+- Flexbox will remove the inherited spacing (whitespace) between the columns (yay).
 
 <br>
 
