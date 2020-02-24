@@ -11,3 +11,6 @@
 - **Week 5**
 - [Lists, Nav bars & Resets](./wk5/wk5_1_lists_reset.md)
 - [Overflow & Position](./wk5/wk5_2_overflow_position.md)
+
+- **Week 6**
+- [Flexbox](./wk6/wk6_1_Flexbox.md)
