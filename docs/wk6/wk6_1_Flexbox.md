@@ -159,7 +159,6 @@ The `flex` property on the flex item works as a weight that tells the flex conta
 ![https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png](https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png)
 
 <p align="center"><strong>Assigning flex fractions </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
-
 <br>
 
 **Equal flex**
@@ -202,10 +201,9 @@ It is also possible to mix flex items with an assigned `flex` property and flex 
 
 <br>
 
-![image-20200224081537193](assets/image-20200224081537193.png ':size=500')
+![image-20200224081537193](assets/image-20200224081537193.png ':size=500')
 
 <p align="center"><strong>Mixing flex parts </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
-
 <br>
 
 
@@ -258,7 +256,21 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
    - Task #4 is particularly challenging and requires a good understanding of flex properties.
 
-     
+
+
+## Lab 1 - Recreating the 3 column page
+
+
+
+Revisit the [Lab 3 of week 5 (the 3 column container)](./wk5/wk5_2_background_heroes_border.md#Hands-on) and use `Flexbox` to equaly distribut the coulmns.
+
+Notes:
+
+- Flexbox will remove the inherited spacing (whitespace) between the columns.
+
+<br>
+
+![image-20200216150238379](../wk5/assets/image-20200216150238379.png)
 
 
 
