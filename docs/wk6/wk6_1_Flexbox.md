@@ -92,29 +92,29 @@ We will use the code below to explore Flexbox's default bahaviour:
 
 <br>
 
-> Once `display: flex` is added to the `<section>` element (the flex container),  **notice the following**:
->
-> - The block-level document flow of the `<article>` elements (the flex items) changes;
->
->   
->
-> - If space permits, the size of each flex item is only wide enogh to display the content in a single line;
->
->   
->
-> - Flex items stretches vertically to cover the height of the container;
->
->   
->
-> - Content is justified to the left;
->
->   
->
-> - If all items cannot fit without wrapping their content, space is distributed according to the ammount of content in each item.
->
->   
->
-> - If the items had a fixed width, flexbox will not stretch them. 
+Once `display: flex` is added to the `<section>` element (the flex container),  **notice the following**:
+
+- The block-level document flow of the `<article>` elements (the flex items) changes;
+  
+   
+  
+- If space permits, the size of each flex item is only wide enogh to display the content in a single line;
+
+   
+
+ - Flex items stretches vertically to cover the height of the container;
+
+   
+
+ - Content is justified to the left;
+
+   
+
+ - If all items cannot fit without wrapping their content, space is distributed according to the ammount of content in each item.
+
+   
+
+ - If the items had a fixed width, flexbox will not stretch them. 
 
 
 
@@ -132,15 +132,113 @@ The power of Flexbox comes from it's ability to resize and adapt to the spacial 
 
 !>  For the remainder of this section we will refer to the page **[A Complete Guide to Flexbox ](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** by CSS-Tricks.
 
+See each property in action by applying them to the CodePen from the previous section.
+
 <br>
 
 
+
+# Enabling flexibility with `flex`
+
+By default flex items do not share space evently (see the "Default behaviour" section). Their content determines how much space is allocated to them.
+
+
+
+The `flex` property on the flex item works as a weight that tells the flex container how to distribute extra space to each item. 
+
+ 
+
+> By assignning a number to the `flex` property you determine how many parts of the available space will be assigned to that item.
+>
+> In other words, it is like assigning a fraction of the total space distribute to the flex items
+
+
+
+<br>
+
+![https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png](https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png)
+
+<p align="center"><strong>Assigning flex fractions </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
+
+<br>
+
+**Equal flex**
+
+```CSS
+#my-container {
+  display: flex;
+}
+
+.my-item {
+  flex: 1;
+}
+```
+
+
+
+<br>
+
+**Unequal flex**
+
+```css
+#my-container {
+  display: flex;
+}
+
+.normal-item {
+  flex: 1;
+}
+
+.large-item {
+  flex: 2;
+}
+```
+
+
+
+<br>
+
+It is also possible to mix flex items with an assigned `flex` property and flex items with default behaviour.
+
+<br>
+
+![image-20200224081537193](assets/image-20200224081537193.png ':size=500')
+
+<p align="center"><strong>Mixing flex parts </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
+
+<br>
+
+
+
+## `flex`: combining  `-grow`, `-shrink` & `-basis`
+
+The property `flex` is the shorthand notation for:
+
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
+
+<br>
+
+The 2nd and 3rd parameters (`flex-shrink` and `flex-basis`) are optional.
+
+**Default is `0 1 auto`**, but if you set it with a single number value, it becomes `<number> 1 0`.
+
+<br>
+
+> **It is recommended that you use the `flex` shorthand property** rather than set the individual properties. The shorthand sets the other values intelligently.
+
+
+
+<br>
+
+## Obsolete after Flex
 
 Certain CSS properties **become obsolete** with the use of Flexbox:
 
 - The use of  [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) property for aligning  `inline-block` element.
 - The use of floats for layouts.
-- Using `position: abosolute` to center content inside a parent container.
+- Using `position: abosolute` to center content inside a parent container.
 
 
 
