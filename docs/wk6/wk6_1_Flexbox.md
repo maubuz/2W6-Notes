@@ -8,7 +8,7 @@
 
 
 
-# Flexbox
+# Intro to Flexbox
 
 **[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) is a one-dimensional layout method for laying out items in rows or columns.**
 
@@ -240,6 +240,26 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
+# References & Diving Deeper
+
+> Recommended **cheat-sheet for this course**:
+>
+> -  [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by CSS Tricks
+>
+>   
+>
+> For a **tutorial format** with step by step instructions (some reading required): 
+>
+> -  [Flexbox](https://internetingishard.com/html-and-css/flexbox/) by Interneting is Hard
+>
+>   or
+>
+> - [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) by MDN Web Docs
+
+
+
+<br>
+
 
 
 # Hands-on
@@ -262,11 +282,12 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io/2W6-UI/#/./wk5/wk5_1_lists_reset?id=hands-on) and use `Flexbox` to equaly distribut the coulmns.
+Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io/2W6-UI/#/./wk5/wk5_1_lists_reset?id=hands-on) and use `Flexbox` to equally distribute the columns.
 
 Notes:
 
 - Flexbox will remove the inherited spacing (whitespace) between the columns (yay).
+- The fact that the `<h2>` element is a sibling of the `<article>` elements makes this layout particularly challenging. Normally the `<h2>` element would be a sibling of the flex container. 
 
 <br>
 

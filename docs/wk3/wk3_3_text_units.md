@@ -18,6 +18,8 @@ In CSS, there are two types of font family names:
 <img src="https://drmarkwomack.com/images/serif-vs-sans-serif.png" alt="img" style="width:500px;" />
 
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
+
+
 # Changing fonts with `font-family:`
 
 The fonts available to the browser depend largely on the fonts installed in the  operating system.
@@ -131,7 +133,6 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 ![browser](https://www.kirupa.com/html5/images/browser_size.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/viewport_device_document_size.htm"><em>Viewport, Device, and Document Size</em></a></p>
-
 
 <br>
 
