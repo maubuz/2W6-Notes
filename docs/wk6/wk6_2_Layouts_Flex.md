@@ -1,6 +1,8 @@
 # 
 
-*This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard.*
+*This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
+
+
 
 # Page Layout with Flexbox
 
@@ -16,11 +18,11 @@ Flexbox opens a new strategy for creating more interesting layouts: **grouping e
 
 
 
-> Separate sibling flex items by grouping them into one or more flex containers.
+> Group sibling elements by **wrapping them into one or more flex containers** and position them using the flex properties.
 >
 > 
 >
-> When necessary, enable vertical configurations by changing the flex direction a wrapping container to column instead of row.
+> When necessary, **enable vertical configurations** by changing the flex direction of a container from row to  column.
 
 
 
@@ -139,7 +141,7 @@ Consider the starting code below.
 
 1. Convert ***.menu-container*** into a flex container with `display: flex;`
 
-   - Since `<nav>` only has one child nothing will change.
+   - Since `<nav>` only has one child, nothing will change.
 
 2. Add the flex property `justify-content: center;`  to the ***.menu-container*** element in order to center its single flex item.
 
@@ -169,7 +171,7 @@ Consider the starting code below.
 
    <br>
 
-6. Turn the ***.links*** element into a flex container so that its siblings lie side-by-side
+6. Turn the ***.links*** element into a flex container so that its siblings sit side-by-side
 
    - At the same time, add a solid white border to *.links* in order to see how the layout is happening
 
@@ -192,6 +194,56 @@ Consider the starting code below.
 
 
 <br>
+
+9. Remove all the white borders.
+
+<br>
+
+# References & Diving Deeper
+
+> Recommended reading:
+>
+> -   **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard
+>    -  *Includes the same tutorial with detailed explanations*
+>
+> Recommended video:
+>
+> <iframe width="560" height="315" src="https://www.youtube.com/embed/k32voqQhODc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+>
+> 
+
+
+
+<br>
+
+# Hands-on
+
+## Lab 2
+
+Use the provided starting code, create the layout in the image below:
+
+**Notes:**
+
+- You should not change the provided HTML.
+
+
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Wk6_2 - Lab2_start" src="https://codepen.io/maujac/embed/JjdWVzK?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/JjdWVzK'>Wk6_2 - Lab2_start</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+**Desired Layout:**
+
+
+
+![image-20200226225221671](assets/image-20200226225221671.png)
+
+
 
 
 
