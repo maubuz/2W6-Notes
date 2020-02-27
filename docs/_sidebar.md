@@ -13,3 +13,4 @@
 - [Overflow & Position](./wk5/wk5_2_overflow_position.md)
 - **Week 6**
 - [Flexbox](./wk6/wk6_1_Flexbox.md)
+- [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
