@@ -250,7 +250,7 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 >
 > For a **tutorial format** with step by step instructions (some reading required): 
 >
-> -  [Flexbox](https://internetingishard.com/html-and-css/flexbox/) by Interneting is Hard
+> -  [Flexbox](https://internetingishard.com/html-and-css/flexbox/) by Interneting is Hard
 >
 >   or
 >
