@@ -163,9 +163,23 @@ Consider the starting code below.
 
    - The flex behaviour `space-between`  should push the newly created container (the `<div>` with *.links*) away from it's sibling, the `<div>` with *.date*
 
-     <br>
+   <br>
 
-     ![Web page showing two menu bar <li> items wrapped in a container <div>](https://internetingishard.com/html-and-css/flexbox/menu-bar-grouped-items-1-31c157.png)
+   ```html
+   <div class='menu'>
+     <div class='date'>Aug 14, 2016</div>
+     <div class='links'>
+       <div class='signup'>Sign Up</div>
+       <div class='login'>Login</div>
+     </div>
+   </div>
+   ```
+
+   
+
+   <br>
+
+   ![Web page showing two menu bar <li> items wrapped in a container <div>](https://internetingishard.com/html-and-css/flexbox/menu-bar-grouped-items-1-31c157.png)
 
    <br>
 
@@ -194,6 +208,39 @@ Consider the starting code below.
 <br>
 
 9. Remove all the white borders.
+
+<br>
+
+# Flex & Auto-Margins 
+
+Auto-margins in flexbox can be used as an alternative to creating a wrapper `<div>` in order to align a group of items to the left/right of a container.
+
+> Auto-margins in a flex item can used to **create as much space as possible (separation)** between elements inside a container.
+>
+> The **auto-margin is set on a sibbling element**, not on the flex container.
+
+
+
+In the example above, the reparation between the date and "Sign Up" can be made with auto-margins:
+
+
+
+1. Flatten the ***.menu*** by removing the additional `<div>` tagged as *.links*
+
+2. Add a left auto-margin on the ***.signup*** element:
+
+   ```css
+   .signup {
+     margin-left: auto;
+   }
+   ```
+
+   
+
+   <br>
+
+   - Since the auto-margin is only on the left side, it will "eat up" all the extra space in a flex container.
+   - You should achieve the same result as before.
 
 <br>
 
@@ -242,6 +289,16 @@ Use the provided starting code, create the layout in the image below:
 ![image-20200226225221671](assets/image-20200226225221671.png)
 
 
+
+
+
+## Lab 3
+
+Use the starting code provided and create the website layout illustrated in the wireframe below:
+
+
+
+ 
 
 
 
