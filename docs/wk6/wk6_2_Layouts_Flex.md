@@ -303,9 +303,6 @@ Use the starting code provided and create the website layout illustrated in the 
 
 <br>
 
- (See layout on the board for now)
+***Desired Layout:***
 
-
-
-
-
+![image-20200227143834520](assets/image-20200227143834520.png ':size=500')
