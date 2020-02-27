@@ -31,7 +31,6 @@ Flexbox opens a new strategy for creating more interesting layouts: **grouping e
 ![Diagram: wrapping two flex items in a <div> to eliminate one of the flex items](https://internetingishard.com/html-and-css/flexbox/grouping-flex-items-1bb642.png ':size=500')
 
 <p align="center"><strong>Grouping Flex Items </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
-
 <br>
 
 ### Example 1:  Three equal columns
@@ -255,7 +254,6 @@ In the example above, the reparation between the date and "Sign Up" can be made 
 >
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/k32voqQhODc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 >
-> 
 
 
 
@@ -296,9 +294,16 @@ Use the provided starting code, create the layout in the image below:
 
 Use the starting code provided and create the website layout illustrated in the wireframe below:
 
+<iframe height="400" style="width: 100%;" scrolling="no" title="Wk6 - Lab 3" src="https://codepen.io/maujac/embed/qBdmOVL?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/qBdmOVL'>Wk6 - Lab 3</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
- 
+
+<br>
+
+ (See layout on the board for now)
 
 
 
