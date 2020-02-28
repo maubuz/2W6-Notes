@@ -272,7 +272,7 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 <br>
 
-2. Complete all **[four Flex Layout tasks inTest your skills: Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills)**
+2. Complete all **[four Flex Layout tasks in *Test your skills: Flexbox*](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills)**
 
    - Task #4 is particularly challenging and requires a good understanding of flex properties.
 
