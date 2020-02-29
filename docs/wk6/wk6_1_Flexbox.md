@@ -301,5 +301,5 @@ Notes:
 
 
 
-See the **[interactive video for step-by-step solution](https://scrimba.com/c/c67n3phG).**
+See the **[interactive video for step-by-step solution](http://bit.ly/2Pyexn8).**
 
