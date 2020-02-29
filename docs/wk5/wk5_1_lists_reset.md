@@ -229,3 +229,9 @@ Style the starting html code in order to create the 3 column section illustrated
 
 - The width of the 3 collumns is set to a percentage of it's parent container.
 - The odd "white-space" between the 3 collumns is quite "tricky" to eliminate. It will no longer be an issue once we start using Flexbox.
+
+
+
+### Lab 3 Solution
+
+See the [interactive video for step-by-step solution](https://scrimba.com/c/ckPb7DHP).
