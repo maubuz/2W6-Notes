@@ -295,7 +295,11 @@ Notes:
 
 
 
+<br>
+
+### Solution: Wk6 - Lab 1
 
 
 
+See the **[interactive video for step-by-step solution](https://scrimba.com/c/c67n3phG).**
 
