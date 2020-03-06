@@ -14,3 +14,4 @@
 - **Week 6**
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
+- [Test 1 Practice Questions](./wk6/Test1_Practice.md)
