@@ -268,7 +268,7 @@ Q.15) Given the code below, why is the color of the `<a>` element not red like i
 
 <br>
 
-Q.16) Based on the question above, without using a color code or name, how can we set the color of `<a>` to blue?
+Q.16) Based on the question above, without using a color code or name, how can we set the color of `<a>` to red? (This was indirectly covered in class).
 
 
 
@@ -372,9 +372,13 @@ Q.19) Using Flexbox, recreate this section of a website based on the starting ht
 
 <br>
 
+Q.20) Practice Flexbox with the [**Flexbox Defense game**](http://www.flexboxdefense.com/).
+
+
+
 ### Positioning
 
-Q.20) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
+Q.21) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
 
 > Use the proper `display` settings so that the if the view-port  width changes, the elements continue positioned.
 
@@ -395,7 +399,7 @@ Q.20) Using only the `display` property, place the platter on top of the hand a
 
 ### Selectors
 
-Q.21) Given the html structure below, how would you select all the children of the "features" section? (select all that apply)
+Q.22) Given the html structure below, how would you select all the children of the "features" section? (select all that apply)
 
 ```html
    <main>
