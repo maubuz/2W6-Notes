@@ -374,50 +374,22 @@ Q.19) Using Flexbox, recreate this section of a website based on the starting ht
 
 ### Positioning
 
-Q.20) Place the platter on top of the hand and the piece of text on top of the platter.
+Q.20) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
 
-Use the proper `display` settings so that the if the view-port  width changes, the elements continue positioned.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-    <section>
-        <div id="container">
-            <p>Place the platter on top of the hand and this <span>piece of text</span> on top of the platter.</p>
-
-        </div>
-        <img src="https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk6/assets/platter.png"
-             alt="platter in vector drawing">
-    </section>
-</body>
-</html>
-```
-
-```css
-section {
-    width: 600px;
-    margin: 50px auto;
-}
-#container {
-    background: url('https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk6/assets/hand.png') no-repeat center;
-    height: 500px;
-    background-color: aquamarine;
-}
-span {
-    background-color: bisque;
-    font-weight: 900;
-}
-p {
-    padding: 1rem;
-}
-```
+> Use the proper `display` settings so that the if the view-port  width changes, the elements continue positioned.
 
 
+
+<iframe height="674" style="width: 100%;" scrolling="no" title="Test1_Practice_Platter_start" src="https://codepen.io/maujac/embed/wvaPmyY?height=674&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/wvaPmyY'>Test1_Practice_Platter_start</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+(Result)
+
+![practice_platter](assets/practice_platter.gif)
 
 <br>
 
