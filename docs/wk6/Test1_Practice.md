@@ -391,7 +391,8 @@ Use the proper `display` settings so that the if the view-port  width changes, t
             <p>Place the platter on top of the hand and this <span>piece of text</span> on top of the platter.</p>
 
         </div>
-        <img src="platter.png" alt="platter in vector drawing">
+        <img src="https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk6/assets/platter.png"
+             alt="platter in vector drawing">
     </section>
 </body>
 </html>
@@ -403,7 +404,7 @@ section {
     margin: 50px auto;
 }
 #container {
-    background: url('./hand.png') no-repeat center;
+    background: url('https://raw.githubusercontent.com/mau-jac/2W6-UI/master/docs/wk6/assets/hand.png') no-repeat center;
     height: 500px;
     background-color: aquamarine;
 }
