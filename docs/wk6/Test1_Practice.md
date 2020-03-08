@@ -18,7 +18,12 @@ Q.1) In the code below, who is the parent of the `<a>` element ?
     </nav>
 ```
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>&lt;li&gt;</li>
+  </ul>
+</details>
 
 <br>
 
@@ -43,7 +48,12 @@ Q.2) What is the relationship between the div element with `id = "selected"` and
 3. The `<div>` element is the grandchild of the root `<html>` element
 4. The `<div>` element is the sibling of the root `<html>` element
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>3</li>
+  </ul>
+</details>
 
 <br>
 
@@ -52,6 +62,7 @@ Q.2) What is the relationship between the div element with `id = "selected"` and
 Q.3)  What will be the font size in pixels of the `<h1>` and `<p>` elements below ? Please explain why that is.
 
 ```html
+<!-- Assume that the browser's default font-size is 16px -->
 <head>
     <style>
         h1 {
@@ -74,6 +85,20 @@ Q.3)  What will be the font size in pixels of the `<h1>` and `<p>` elements belo
 </body>
 ```
 
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>h1 has font-size of 36px. Most modern browsers have the size of h1 elements set to 2em, which means 2x the like height of the parent element. In this case the parent of h1 is the main element, which has a font-size set to 18px.</li>
+    <li>p has a font-size of 16px. rem refers to the root html element, which in this case has a browser default font-size of 16px. </li>
+  </ul>
+</details>
+
+<br>
+
+Q.3.5) Test your understanding of em, rem, px and & units with the [Em Enforcer exercise](https://activities.learn-the-web.algonquindesign.ca/em-enforcer/) by Alogonquin College.
+
+(For the final 3 or 4 questions, you will need to be familiar with the concepts of Media Queries, which has not yet been covered in class.)
+
 
 
 <br>
@@ -87,7 +112,12 @@ Q.4) Which line of HTML code demonstrates an element having an attribute named `
 3. `<p title="each fact"> The Earth is round.</p>`
 4. `<p name="title">The Earth is round.</p>`
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>3. See week 2 for html syntax</li>
+  </ul>
+</details>
 
 <br>
 
@@ -100,7 +130,12 @@ Q.5) The following code is supposed to display an image, but fails to do so.  Wh
 3. The src attribute is missing and must be set equal to the imge URL.
 4. The image URL should be set in single quations marks. 
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>3</li>
+  </ul>
+</details>
 
 <br>
 
@@ -124,12 +159,19 @@ C. Inlike-block element
 4. `<div>`
 5. Will take up the whole width of its parent.
 6. Will collapse vertical margins into each-other.
-7. Paddings and Margins in the vertical direction are displayed in the page but do not displace elements.
+7. Paddings and Margins in the vertical direction are displayed in the page but does not displace elements.
 8. Paddings and Margins in the vertical direction will move elements up or down.
 9. Multiple elements can be placed in the same line.
 10. Can be centered horizontally by applying `text-align: center` to it's parent.
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+	<li>Inline: 1, 2, 7, 9. </li>
+    <li>Block: 3, 4, 5, 6, 8, 10.</li>
+	<li>Inline-block: 8, 9. </li>
+  </ul>
+</details>
 
 <br>
 
@@ -138,16 +180,21 @@ C. Inlike-block element
 
 Q.7) Markup languages use special symbols in human readable text in order to create a hierarchy of information which serves several purposes. Which statement below is not a purpose of html markup:
 
-- it allows users scanning a site to quickly pick out the most important ideas.
-- it helps visually impaired users navigate the content of a page using special software.
-- it helps search engines pick out important keywords that might otherwise get lost in a sea of text.
-- it helps developers style the document in a dynamic way.
+1. it allows users scanning a site to quickly pick out the most important ideas.
+2. it helps visually impaired users navigate the content of a page using special software.
+3. it helps search engines pick out important keywords that might otherwise get lost in a sea of text.
+4. it helps developers style the document in a dynamic way.
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>4</li>
+  </ul>
+</details>
 
 <br>
 
-Q.8) Given the following directory structure, how would one create a link the the page second_page.html from the page index.html ?
+Q.8) Given the following directory structure, how would one create a link to second_page.html from the page index.html ?
 
 ![image-20200306171753846](assets/image-20200306171753846.png)
 
@@ -158,7 +205,12 @@ Q.8) Given the following directory structure, how would one create a link the th
 3. `.. / Simple_Page / second_page.html`
 4. `. / img / second_page.png`
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>2</li>
+  </ul>
+</details>
 
 <br>
 
@@ -168,14 +220,19 @@ Q.8) Given the following directory structure, how would one create a link the th
 
 ### Syntax
 
-Q.9) .Which type of CSS declaration goes in the opening tag of an element?
+Q.9) .Which type of CSS declaration goes in the opening tag of a html element?
 
 1. embedded
 2. inline
 3. external
 4. internal
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>2</li>
+  </ul>
+</details>
 
 <br>
 
@@ -186,7 +243,12 @@ Q.10) Which type of selector is used to apply styling to more than one element?
 3. link
 4. class
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>4</li>
+  </ul>
+</details>
 
 <br>
 
@@ -197,7 +259,12 @@ Q.11) Which box property configures the empty space between adjacent elements?
 3. margin
 4. display
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>3</li>
+  </ul>
+</details>
 
 <br>
 
@@ -208,7 +275,12 @@ Q.12) This rule is used along with the 'width' property to center page content:
 3. margin: auto 20px;
 4. margin: margin 15px 0 5px 0;
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>1</li>
+  </ul>
+</details>
 
 <br>
 
@@ -219,7 +291,12 @@ Q.13) Which CSS property can be used to darken a background image ?
 3. background-clip
 4. linear-gradient
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>4</li>
+  </ul>
+</details>
 
 <br>
 
@@ -230,7 +307,12 @@ Q.14) This would cause the element not to display...
 3. display: none;
 4. display: inline;
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>3</li>
+  </ul>
+</details>
 
 <br>
 
@@ -264,13 +346,23 @@ Q.15) Given the code below, why is the color of the `<a>` element not red like i
     <a href="#">Click here for more</a>
 </div>
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>Because the color property is not being inherited by the anchor element. Instead, the browser applies default styling that make it blue.</li>
+  </ul>
+</details>
 
 <br>
 
 Q.16) Based on the question above, without using a color code or name, how can we set the color of `<a>` to red? (This was indirectly covered in class).
 
-
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>By setting color: inherit; which would force the anchor element to inherit its color from it's parent.</li>
+  </ul>
+</details>
 
 <br>
 
@@ -378,7 +470,7 @@ Q.20) Practice Flexbox with the [**Flexbox Defense game**](http://www.flexboxdef
 
 ### Positioning
 
-Q.21) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
+Q.21) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
 
 > Use the proper `display` settings so that the if the view-port  width changes, the elements continue positioned.
 
@@ -437,3 +529,10 @@ Q.22) Given the html structure below, how would you select all the children of t
 3. #featured article { ... }
 4. #featured #feat-1, #feat-2, #feat-3 { ... }
 5. article { ... }
+
+<details>
+  <summary>Solution</summary>
+  <ul>
+    <li>2, 3 and 5</li>
+  </ul>
+</details>
