@@ -1,5 +1,7 @@
 - **Home**
 - [About](/)
+- **Week 2**
+- [VS Code, Links & Images](./wk2/wk2b_intro_html.md)
 - **Week 3**
 - [HTML Flow: div & span](./wk3/wk03_HTML_Flow_Containers.md)
 - [Intro to CSS](./wk3/wk03_Intro_CSS.md)
