@@ -241,7 +241,7 @@ Other resources:
 
    
 
-2. Overwrite every css rule at least once.
+2. Use the Cascade and create new css rules in order to overwrite (chage the styling) every rule at least once. You can add but you cannot modify the current code.
 
 <br>
 
