@@ -245,5 +245,10 @@ Other resources:
 
 <br>
 
+<iframe height="422" style="width: 100%;" scrolling="no" title="wk7 - Hands-on_1" src="https://codepen.io/maujac/embed/wvapMWZ?height=422&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/wvapMWZ'>wk7 - Hands-on_1</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 
 
