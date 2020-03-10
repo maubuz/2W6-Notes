@@ -470,9 +470,9 @@ Q.20) Practice Flexbox with the [**Flexbox Defense game**](http://www.flexboxdef
 
 ### Positioning
 
-Q.21) Using only the `display` property, place the platter on top of the hand and the piece of text on top of the platter.
+Q.21) Using only the `position` property, place the platter on top of the hand and the piece of text on top of the platter.
 
-> Use the proper `display` settings so that the if the view-port  width changes, the elements continue positioned.
+> Use the proper `position` settings so that the if the view-port  width changes, the elements continue positioned.
 
 
 
@@ -491,7 +491,7 @@ Q.21) Using only the `display` property, place the platter on top of the hand an
 
 ### Selectors
 
-Q.22) Given the html structure below, how would you select all the children of the "features" section? (select all that apply)
+Q.22) Given the html structure below, how would you select all the children of the "featured" section? (select all that apply)
 
 ```html
    <main>
