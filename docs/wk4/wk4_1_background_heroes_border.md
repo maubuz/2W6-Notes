@@ -70,7 +70,6 @@ The `background-attachment` property can be confusing at first.  The [example be
 
 <iframe src="https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" width="100%" height="500px"></iframe>
 
-
 <br>
 
 ## Gradients
@@ -116,7 +115,6 @@ See the [demo below for an illustration](https://developer.mozilla.org/en-US/doc
 <br>
 
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
-
 <br>
 
 ## Darker Background Images
@@ -230,10 +228,9 @@ For online images that you source you must decide whether to:
 A "Hero" image is a large image at the top of your home page that will represent the general message or feeling of you website.
 
 
-![Hero Image example](assets/image-20200208113747755.png ':size=400')
+![Hero Image example](assets/image-20200208113747755.png)
 
 <p align="center"><a href="https://www.w3schools.com/howto/howto_css_hero_image.asp"><em>How TO - Hero Image by W3Schools</em></a></p>
-
 
 **Why use a hero image:**
 
