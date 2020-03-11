@@ -178,7 +178,7 @@ Consider the starting code below.
 
    <br>
 
-   ![Web page showing two menu bar <li> items wrapped in a container <div>](https://internetingishard.com/html-and-css/flexbox/menu-bar-grouped-items-1-31c157.png)
+   ![Web page showing two menu bar <li> items wrapped in a container <div>](./assets/menu-bar-grouped-items-1-31c157.png)
 
    <br>
 
@@ -200,7 +200,7 @@ Consider the starting code below.
 
 <br>
 
-![Web page <li> elements laid out with nested flexbox containers](https://internetingishard.com/html-and-css/flexbox/menu-bar-grouped-items-2-50cec0.png)
+![Web page <li> elements laid out with nested flexbox containers](./assets/menu-bar-grouped-items-2-50cec0.png)
 
 
 
@@ -311,6 +311,6 @@ Use the starting code provided and create the website layout illustrated in the 
 
 <br>
 
-***Desired Layout:***
+***Desired [Wireframe](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399) Layout:***
 
 ![image-20200227143834520](assets/image-20200227143834520.png ':size=500')
