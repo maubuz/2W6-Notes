@@ -156,7 +156,7 @@ The `flex` property on the flex item works as a weight that tells the flex conta
 
 <br>
 
-![https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png](https://internetingishard.com/html-and-css/flexbox/flexible-items-cfe7a3.png)
+![Diagram: no flex (3 square boxes), equal flex (3 rectangle boxes), unequal flex (2 smaller boxes, one stretched out box)](./assets/flexible-items-cfe7a3.png)
 
 <p align="center"><strong>Assigning flex fractions </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
 <br>

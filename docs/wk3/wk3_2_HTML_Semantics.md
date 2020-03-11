@@ -12,7 +12,7 @@
 
 <br>
 
-![page_talking](https://internetingishard.com/html-and-css/icons/social/semantic-markup-096a41.png ':size=400')
+![page_talking](https://web.archive.org/web/20190712210225im_/https://internetingishard.com/html-and-css/icons/social/semantic-markup-096a41.png ':size=400')
 
 
 <p align="center"><a href="https://internetingishard.com/html-and-css/icons/social/semantic-markup-096a41.png"><em>Semantic HTML Tutorial</em></a> <em>- internetingishard.com</em></p>
@@ -48,7 +48,7 @@ Consider these commonly used website layouts:
 
 
 
-<img src="https://internetingishard.com/html-and-css/semantic-html/html-sectioning-elements-00c3fd.png" style="width:300px;">
+![Wireframe example of semantic elements in a page](assets/html-sectioning-elements-00c3fd.png)
 
 <p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
 <br>
