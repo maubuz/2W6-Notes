@@ -164,14 +164,7 @@ C. Inlike-block element
 9. Multiple elements can be placed in the same line.
 10. Can be centered horizontally by applying `text-align: center` to it's parent.
 
-<details>
-  <summary>Solution</summary>
-  <ul>
-	<li>Inline: 1, 2, 7, 9. </li>
-    <li>Block: 3, 4, 5, 6, 8, 10.</li>
-	<li>Inline-block: 8, 9. </li>
-  </ul>
-</details>
+
 
 <br>
 
