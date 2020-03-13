@@ -237,7 +237,7 @@ Other resources:
 
 ## Exercises
 
-1. Do the *[Active learning: playing with the cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#Active_learning_playing_with_the_cascade)* exercise from MDN Web docs.
+1. Do the *[Active learning: playing with the cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks)* exercise from MDN Web docs.
 
    
 
