@@ -196,6 +196,31 @@ Defines contact information for the author of the article or web page. Should no
 ```
 
 
+
+<br>
+
+# Recommended Semantics
+
+
+
+>  There is no single way to organise the semantic elements in a page. As long as you intentionally use the elements for their intended purpose your semantics will be correct
+
+
+
+For beginners it can be difficult to understand the difference between the different HTML semantic elements.
+
+**Below is a recommendation for a semantic structure that will work for basic webpages:**
+
+<br>
+
+![semantic_html_recommendation](assets/semantic_html_recommendation.png ':size=500')
+
+
+
+
+
+
+
 # What about `<div>` ?
 
 Divs are still useful as containers for layout purposes or when no other elements make sense, however, they are meaningless semantically.
