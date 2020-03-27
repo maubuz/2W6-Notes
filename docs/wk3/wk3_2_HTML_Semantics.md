@@ -48,12 +48,12 @@ Consider these commonly used website layouts:
 
 
 
-![Wireframe example of semantic elements in a page](assets/html-sectioning-elements-00c3fd.png)
+![Wireframe example of semantic elements in a page](assets/html-sectioning-elements-00c3fd.png ':size=300')
 
 <p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
 <br>
 
-![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif)
+![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif ':size=250')
 
 <p align="center"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><em>HTML Semantic Elements</em></a> <em>- w3schools.org</em></p>
 <br>
