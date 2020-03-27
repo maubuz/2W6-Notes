@@ -19,3 +19,4 @@
 - [Test 1 Practice Questions](./wk6/Test1_Practice.md)
 - **Week 7**
 - [Cascade](./wk7/wk7_1_cascade.md)
+- [Test 1 Solution](./wk7/Test_1_Solution.md)
