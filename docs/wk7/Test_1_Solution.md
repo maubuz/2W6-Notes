@@ -2,7 +2,7 @@
 
 I've recorded the solution to Test over 3 Scrimba videos.
 
-> These videos offer an interactrive IDE, so at any moment you can stop the video and edit the code in the screen. Once you are done, hit play again and the video will resume.
+> These videos offer an interactive IDE, so at any moment you can stop the video and edit the code in the screen. Once you are done, hit play again and the video will resume.
 
 
 

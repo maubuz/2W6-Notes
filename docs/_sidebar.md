@@ -20,3 +20,5 @@
 - **Week 7**
 - [Cascade](./wk7/wk7_1_cascade.md)
 - [Test 1 Solution](./wk7/Test_1_Solution.md)
+- **Week 8**
+- [Media Queries](./wk8/media_queries.md)
