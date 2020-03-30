@@ -34,7 +34,6 @@ This is particularly important in Web Design because it allows us to change and 
 ![media query syntax](http://blog.mycode.website/wp-content/uploads/2018/01/mobile-media-query-componets.png ':size=600')
 
 <p align="center"><a href="https://blog.mycode.website/media-queries/"><em>Media Queries</em></a></p>
-
 <br>
 
 **Example Syntax**
@@ -106,9 +105,18 @@ The most commonly used media features are **width**, **height, orientation and r
 
 <br>
 
-
-
 ### Example 1
+
+<iframe height="500" style="width: 100%;" scrolling="no" title="wk8 - Ex_MediaQueries_1a" src="https://codepen.io/maujac/embed/OJVdrdq?height=500&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/OJVdrdq'>wk8 - Ex_MediaQueries_1a</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+### Example 2
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="wk8 - Ex_MediaQueries_1" src="https://codepen.io/maujac/embed/wvaNMPZ?height=500&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/wvaNMPZ'>wk8 - Ex_MediaQueries_1</a> by Mauricio Buschinelli
@@ -137,7 +145,7 @@ Both Chrome and Firefox have specific features in their Dev Tools to facilitate 
 
 <br>
 
-![image-20200330080227012](assets/image-20200330080227012.png ':size=500')
+![image-20200330080227012](assets/image-20200330080227012.png ':size=500')
 
 
 
@@ -147,13 +155,13 @@ Both Chrome and Firefox have specific features in their Dev Tools to facilitate 
 
 
 
-![image-20200330080541643](assets/image-20200330080541643.png ':size=500')
+![image-20200330080541643](assets/image-20200330080541643.png ':size=500')
 
 
 
 <br>
 
-![image-20200330080613874](assets/image-20200330080613874.png ':size=500')
+![image-20200330080613874](assets/image-20200330080613874.png ':size=500')
 
 <br>
 
@@ -172,7 +180,7 @@ It is possible to combine media query expressions with AND and OR logic.
 **AND logic syntax**
 
 ```css
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 900px) {
   div.example {
     font-size: 50px;
     background: yellow;
@@ -186,7 +194,7 @@ It is possible to combine media query expressions with AND and OR logic.
 
 ```css
 /* When the width is between 600px and 900px OR above 1100px */
-@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+@media screen and (max-width: 600px) and (min-width: 900px), (min-width: 1100px) {
   div.example {
     font-size: 50px;
     background: yellow;
@@ -260,8 +268,6 @@ There are currently hundreds of screen sizes to be considered, so choosing these
 
 <p align="center"><a href="https://blog.mycode.website/media-queries/"><em>Media Queries</em></a></p>
 
-
-
 <br>
 
 >  There is no consensus on the screen sizes to be used as breakpoints.
@@ -275,8 +281,6 @@ There are currently hundreds of screen sizes to be considered, so choosing these
 ![Device screen sizes and query break points](https://miro.medium.com/max/730/1*il1k_A3GthG45NWeD7w6DA.png)
 
 <p align="center"><a href="https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b"><em>Responsive Design Best Practices</em></a></p>
-
-
 
 <br>
 
@@ -304,11 +308,9 @@ Since we can now adapt website layouts to any screen size, we are faced with the
 
 
 
-![mobile-first-media-query illustration](https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2016/12/media-query-for-mobile-first.png?resize=666%2C500&quality=100&strip=all&ssl=1 ':size=450')
+![mobile-first-media-query illustration](https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2016/12/media-query-for-mobile-first.png?resize=666%2C500&quality=100&strip=all&ssl=1 ':size=450')
 
 <p align="center"><a href="https://www.silocreativo.com/en/media-queries-css-work/"><em>Media Queries in CSS. How do They Work?</em></a></p>
-
-
 
 <br>
 
@@ -334,7 +336,7 @@ There three good reasons for this:
 
 When using the mobile first approach, a breakpoint should be "activated" whenever we reach a new minimum screen size.
 
-> Use `min-width: value px` when introducing breakpoints in mobile first development.
+> Use `min-width: value px` when introducing breakpoints in mobile first development.
 
 
 
