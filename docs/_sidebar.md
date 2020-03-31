@@ -22,3 +22,4 @@
 - [Test 1 Solution](./wk7/Test_1_Solution.md)
 - **Week 8**
 - [Media Queries](./wk8/media_queries.md)
+- [Advanced Selectors](./wk8/advanced_selectors.md)
