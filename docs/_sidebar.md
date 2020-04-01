@@ -23,3 +23,5 @@
 - **Week 8**
 - [Media Queries](./wk8/media_queries.md)
 - [Advanced Selectors](./wk8/advanced_selectors.md)
+- [Git & GitHub Primer](./wk8/git_github.md)
+- 
