@@ -231,8 +231,6 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
 
 ## Video Guides
 
-If you would like more detailed information I recommend that you watch the videos below.
-
 **These three videos go over similar steps as the ones described in this page.**
 
 
