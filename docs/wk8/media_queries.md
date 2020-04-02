@@ -180,7 +180,7 @@ It is possible to combine media query expressions with AND and OR logic.
 **AND logic syntax**
 
 ```css
-@media screen and (max-width: 600px) and (min-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   div.example {
     font-size: 50px;
     background: yellow;
@@ -194,7 +194,7 @@ It is possible to combine media query expressions with AND and OR logic.
 
 ```css
 /* When the width is between 600px and 900px OR above 1100px */
-@media screen and (max-width: 600px) and (min-width: 900px), (min-width: 1100px) {
+@media screen and (min-width: 600px) and (max-width: 900px), (max-width: 1100px) {
   div.example {
     font-size: 50px;
     background: yellow;
@@ -267,7 +267,6 @@ There are currently hundreds of screen sizes to be considered, so choosing these
 ![commonly used break points](http://blog.mycode.website/wp-content/uploads/2018/01/br2.png)
 
 <p align="center"><a href="https://blog.mycode.website/media-queries/"><em>Media Queries</em></a></p>
-
 <br>
 
 >  There is no consensus on the screen sizes to be used as breakpoints.
@@ -281,7 +280,6 @@ There are currently hundreds of screen sizes to be considered, so choosing these
 ![Device screen sizes and query break points](https://miro.medium.com/max/730/1*il1k_A3GthG45NWeD7w6DA.png)
 
 <p align="center"><a href="https://uxplanet.org/responsive-design-best-practices-c6d3f5fd163b"><em>Responsive Design Best Practices</em></a></p>
-
 <br>
 
 Some designers suggest that [**we don't need device specific breakpoints**](https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints/) on what makes the most sense to our individual design. Therefore, we should introduce breakpoints when we feel that the design no longer looks good for smaller or larger screen sizes.
@@ -311,7 +309,6 @@ Since we can now adapt website layouts to any screen size, we are faced with the
 ![mobile-first-media-query illustration](https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2016/12/media-query-for-mobile-first.png?resize=666%2C500&quality=100&strip=all&ssl=1 ':size=450')
 
 <p align="center"><a href="https://www.silocreativo.com/en/media-queries-css-work/"><em>Media Queries in CSS. How do They Work?</em></a></p>
-
 <br>
 
 There three good reasons for this:
