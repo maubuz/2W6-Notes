@@ -4,32 +4,30 @@
 
 ## Git vs GitHub
 
-**Git** is a command-line application and a workflow for managing code throught the practice of version control.
+**Git** is a command-line application and a workflow for managing code through the practice of version control.
 
-**GitHub** is a cloud service for uploading seeing and hosting **Git projects**.
+**GitHub** is a cloud service for uploading, seeing and hosting Git projects.
 
 
 
-A code-base managed by the Git program can be hosted only locally (a repository in your computer), or both locally and remotely (a repository in GitHub).
-
-The local and the remote repositories need to kept in sync.
+A code-base managed by with the Git program can be hosted just locally (a repository in your computer), or both locally and remotely (a repository in GitHub).
 
 
 
 ## Setting up Git in your computer
 
-The remote repository (GitHub) and the local repository (your computer) need to stay syncronized.
+The remote repository (GitHub) and the local repository (your computer) need to stay synchronised.
 
 
 
 There are basically two ways of doing that:
 
-- Installing and using **Git itself** since it is a command line application.
-- Installing and using a graphical applications such as **GitHub Desktop** or **GitKraken**.
+- Using **Git itself**, which is a command line application.
+- Using a graphical applications such as **GitHub Desktop** or **GitKraken**.
 
 
 
-**Graphical applications wrap-around and use Git**. They simply give you a more user-friendly way of interacting with Git.
+**Graphical applications wrap-around and use Git**. They simply give you a more user-friendly way of running Git commands.
 
 
 
@@ -52,7 +50,7 @@ Regardless of your choice of application, you will need Git installed in your co
 
 <br>
 
-![image-20200401135029007](assets/image-20200401135029007.png ':size=400')
+![image-20200401135029007](assets/image-20200401135029007.png ':size=500')
 
 
 
@@ -71,7 +69,7 @@ Regardless of your choice of application, you will need Git installed in your co
 
 GitHub gives students free access to amazing pro developer tools, **including GitKraKen** (see more below).
 
-It involves a few steps but I highly encourage you to get it.
+The verification involves a few steps but it is totally worth it.
 
 
 
@@ -81,7 +79,7 @@ It involves a few steps but I highly encourage you to get it.
 
    
 
-   ![image-20200401145343313](assets/image-20200401145343313.png ':size=400')
+   ![image-20200401145343313](assets/image-20200401145343313.png ':size=500')
 
    
 
@@ -102,15 +100,17 @@ It involves a few steps but I highly encourage you to get it.
 5. In the "how do you plan to use GitHub?" field, enter I plan to use GitHub for personal and school
    projects.
 
+6. Wait for further verification instructions from GitHub.
 
 
-### Step 3: Create a Remote Repository
+
+### Step 4: Create a Remote Repository
 
 1. Create a new GitHub repository by clicking on the + icon in the top right of any GitHub page while logged in. Alternatively, go to https://github.com/new.
 
    
 
-   ![image-20200401151627577](assets/image-20200401151627577.png ':size=400')
+   ![image-20200401151627577](assets/image-20200401151627577.png ':size=600')
 
    
 
@@ -120,15 +120,15 @@ It involves a few steps but I highly encourage you to get it.
 
 3. Make sure the repository is **private**.
 
-4. (Optional) Check Initialize this repository with a README if you would like to greet visitors with information.
+4. (Optional) Check Initialize this repository with a README if you would like to greet visitors with information about your repository.
 
 5. Don't worry about the gitignore and the license fields.
 
 6. Click Create repository. 
 
-7. In the navigation (Code, Issues, etc.) click on Settings.
+7. In the main navigation bar (Code, Issues, etc.) select Settings.
 
-8. Choose Click on Collaborators.
+8. Click on Collaborators.
 
 9. Enter the teacher's username into the box and click Add collaborator.
 
@@ -138,7 +138,7 @@ It involves a few steps but I highly encourage you to get it.
 
 
 
-### Step 4: Choose a Graphical Application
+### Step 5: Choose a Graphical Application
 
 
 
@@ -151,8 +151,8 @@ I recommend the following graphical tools:
 
 
 - **GitHub Desktop** - is the easiest to setup. Integrates seamlessly with GitHub accounts.
-- **GitKraken** - offers the most complete feature set. Requires a GitHub student account for private repositories (see how to get one above).
-- **VS Code's Source Control module** - does not requires additional software but is not as visual as the previous two. The initial clone or download of the repository must be done by another way.
+- **GitKraken** - offers the most complete feature set. Requires a GitHub student account for private repositories (see step 3 above).
+- **VS Code's Source Control module** - does not requires additional software but is not as visual as the previous two. The initial clone or download of the repository must be done by another method (normally via the command line).
 
 
 
@@ -166,13 +166,13 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
 
 
 
-### Step 5: Install GitHub Desktop (or GitKraKen)
+### Step 6: Install GitHub Desktop (or GitKraKen)
 
 1. Visit [the official GitHub Desktop website](https://desktop.github.com/) and download the application.
 
 <br>
 
-![image-20200401135214528](assets/image-20200401135214528.png ':size=300')
+![image-20200401135214528](assets/image-20200401135214528.png ':size=500')
 
 
 
@@ -182,7 +182,7 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
 
 
 
-### Step 6a: Clone Your Repository (via a GUI application)
+### Step 7a: Clone Your Repository (via a GUI application)
 
 1. Select ***Clone a repository***
 
@@ -203,7 +203,7 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
    
 
 
-### Step 6b: Clone Your Repository (via HTTPS)
+### Step 7b: Clone Your Repository (via HTTPS)
 
 1. Open the GitHub repository page to be cloned.
 
@@ -219,9 +219,9 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
 
    <br>
 
-5. Open the application **Git Bash** (installed with Git in step 1) or the **command-line in VS Code**.
+5. Open the application **Git Bash** (installed with Git in step 1) or the **console in VS Code**.
 
-6. In the command line navigate to the directory where you will clone the repository.
+6. In the command line navigate to the directory where you will download the repository.
 
 7. To clone use the command: `git clone <HTTPS url copied from GitHub>`
 
@@ -231,9 +231,9 @@ The rest of this guide will focus on GitHub Desktop since it is the easiest for 
 
 ## Video Guides
 
-If you would like more detailed information I recommend that you watch these tree videos.
+If you would like more detailed information I recommend that you watch the videos below.
 
-**These three videos go over similar steps as described above.**
+**These three videos go over similar steps as the ones described in this page.**
 
 
 
