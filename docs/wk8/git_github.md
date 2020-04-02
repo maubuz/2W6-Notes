@@ -6,21 +6,21 @@
 
 **Git** is a command-line application and a workflow for managing code through the practice of version control.
 
-**GitHub** is a cloud service for uploading, seeing and hosting Git projects.
+**GitHub** is a cloud service for uploading, seeing and hosting Git repositories.
 
 
 
-A code-base managed by with the Git program can be hosted just locally (a repository in your computer), or both locally and remotely (a repository in GitHub).
+A code-base managed with the Git program can be hosted just locally (a repository in your computer), or both locally and remotely (a repository in GitHub).
 
 
 
 ## Setting up Git in your computer
 
-The remote repository (GitHub) and the local repository (your computer) need to stay synchronised.
+The remote repository (in GitHub) and the local repository (in your computer) need to stay synchronised.
 
 
 
-There are basically two ways of doing that:
+There are two ways of doing that:
 
 - Using **Git itself**, which is a command line application.
 - Using a graphical applications such as **GitHub Desktop** or **GitKraken**.
@@ -31,7 +31,7 @@ There are basically two ways of doing that:
 
 
 
-Regardless of your choice of application, you will need Git installed in your computer anyway. Some graphical applications will install Git in the background.
+Regardless of your choice of application, you will need Git installed in your computer. Some graphical applications will install Git in the background.
 
 
 
@@ -61,15 +61,15 @@ Regardless of your choice of application, you will need Git installed in your co
 1. Go to https://github.com
    and create an account.
 
-2. For your username, I encourage you to choose something professional. This account will showcase your work going forward in the program and can be used when applying for jobs.
+2. For your **username**, I encourage you to **choose something professional**. This account will showcase your work going forward in the program and can be used when applying for jobs.
 
    
 
 ### Step 3: Get a GitHub Student Developer Pack
 
-GitHub gives students free access to amazing pro developer tools, **including GitKraKen** (see more below).
+GitHub gives students **free access** to amazing pro developer tools, **including GitKraKen** (see more below).
 
-The verification involves a few steps but it is totally worth it.
+This pack is **worth hundreds** of dollars and you get it **for free**.
 
 
 
@@ -142,7 +142,7 @@ The verification involves a few steps but it is totally worth it.
 
 
 
-Git is natively a command-line tool, however, a graphical application is recommended for beginners.
+Git is naively a command-line tool, however, a graphical application is recommended for beginners.
 
 
 
