@@ -339,6 +339,36 @@ When using the mobile first approach, a breakpoint should be "activated" wheneve
 
 <br>
 
+# The Viewport Meta Tag
+
+Many pages are not mobile optimized, and break (or at least look bad) when rendered at a small viewport width.
+
+Therefore, narrow screen devices (e.g. mobiles) render pages in a virtual window or viewport, which is **usually wider than the screen, and then shrink the  rendered result down** so it can all be seen at once.
+
+
+
+>  The "viewport meta tag" let web developers control the viewport's size and scale of a site and request that the site be **loaded at the correct device width.**
+
+
+
+<br>
+
+```css
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+
+
+<br>
+
+Make sure to include this in your website when using Media Queries or the browser might not load the correct page layout.
+
+For more information please see [Using the viewport meta tag to control layout on mobile browsers](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) by MDN web docs.
+
+<br>
+
+
+
 
 
 # Hands-on
