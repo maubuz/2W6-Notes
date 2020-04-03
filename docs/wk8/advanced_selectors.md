@@ -58,7 +58,7 @@ There are four different combinators in CSS:
 | :---------------: | :----------------------------------------------------------: | ------------------------------------------------------------ |
 |      (space)      | [descendant selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator) | selects nodes that are **descendants** of the first element. |
 |       **>**       | [Child selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) | selects nodes that are **direct children** of the first element. |
-|       **+**       | [adjacent sibling selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) | selects **adjacent sibling**.                                |
+|       **+**       | [adjacent sibling selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) | selects **subsequent adjacent siblings**.                    |
 |       **~**       | [general sibling selector](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) | selects **all subsequent siblings**.                         |
 
 
@@ -80,7 +80,7 @@ Selects nodes that are **direct children** of the first element.
 
 ## +  Adjacent Sibling Selector
 
-Selects **adjacent siblings**
+Selects **subsequent adjacent siblings**.
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="wk8 - Ex combinator selectors_2" src="https://codepen.io/maujac/embed/gOpqEbM?height=400&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/gOpqEbM'>wk8 - Ex combinator selectors_2</a> by Mauricio Buschinelli
@@ -254,7 +254,7 @@ Common examples are:
 
 
 
-In previous versions of CSS, pseudo-element were identified with single  `:` , however, is now used with double `::` . You might see it used with both notations.
+In previous versions of CSS, pseudo-element were identified with single  `:` , however, is now used with double `::` . You might see it used with both notations.
 
 
 
