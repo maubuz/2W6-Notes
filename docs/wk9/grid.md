@@ -145,7 +145,7 @@ Using the  `fr` unit it is possible to fill all the space with proportional spac
 ```css
 .wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 100px 200px;
 }
 ```
@@ -538,15 +538,4 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 2. Visit both websites below and use the Gris Inspector in the Dev Tools to visualise their Grid System:
    - [**Futurismo**](http://labs.jensimmons.com/2016/examples/futurismo-1.html)
-   -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html)
-
-
-
-
-
-
-
-
-
-
-
+   -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html) 
