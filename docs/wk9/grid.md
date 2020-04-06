@@ -223,7 +223,7 @@ You can also define a set size for **automatically created tracks** (created in 
 
 <br>
 
-In the example below, only the height of the first row was explicitly declared, all subsequent rows were created out of implicitly (out of necessity) and they took the value described by `grid-auto-rows: 200px`;
+In the example below, only the height of the first row was explicitly declared, all subsequent rows were created out of implicitly (out of necessity) and they took the value described by `grid-auto-rows: 120px`;
 
 
 
@@ -253,7 +253,7 @@ If you would like to give have explicit and implicit tracks a **minimum size but
 
 <br>
 
-In the example below the rows will never collapse bellow 100 pixels, however they will stretch to accommodate for the content of the tallest cell.
+In the example below the rows will never collapse bellow 75 pixels, however they will stretch to accommodate for the content of the tallest cell.
 
 
 
@@ -262,7 +262,7 @@ In the example below the rows will never collapse bellow 100 pixels, however the
 	<div>One</div>
     <div>Two
         <p>I have some more content in.</p>
-        <p>This makes me taller than 100 pixels.</p>
+        <p>This makes me taller than 75 pixels.</p>
     </div>
     <div>Three</div>
     <div>Four</div>
@@ -397,7 +397,7 @@ Syntax:**
 
 <br>
 
-![image-20200406012919320](assets/image-20200406012919320.png ':size=600')
+![image-20200406012919320](assets/image-20200406012919320.png ':size=700')
 
 
 
@@ -439,7 +439,7 @@ Therefore, it is possible to replace the code below:
 
 
 
-With the following code:
+**Using the span keyword:**
 
 
 
@@ -474,7 +474,7 @@ Adding the following CSS to the example above gives the result below;
 
 ```css
 .wrapper {
-    gap: 1em 20px;
+    gap: 0.5em 20px;
 }
 ```
 
@@ -510,7 +510,7 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 <br>
 
-2. In the **Layout pane**, expand the *Grid* tab:
+2. In the **Layout pane**, expand the ***Grid* tab**:
 
    <br>
 
