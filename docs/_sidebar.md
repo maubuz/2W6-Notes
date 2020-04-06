@@ -25,5 +25,5 @@
 - [Advanced Selectors](./wk8/advanced_selectors.md)
 - [Git & GitHub Primer](./wk8/git_github.md)
 - **Week 9**
-- [CSS Grid](./wk9/grid.md)
+- [Intro to CSS Grid](./wk9/grid.md)
 - 

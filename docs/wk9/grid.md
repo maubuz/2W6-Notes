@@ -2,7 +2,7 @@ This lesson was based on the page **[Basic Concepts of grid layout](https://deve
 
 
 
-# Grid
+# Intro to CSS Grid
 
 CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows.
 
@@ -11,7 +11,6 @@ CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-d
 ![img](https://seesparkbox.com/uploads/article_uploads/cssgrid_flexbox_fallbacks.png ':size=500')
 
 <p align="center"><a href="https://seesparkbox.com/foundry/css_grid_layout_guide_with_flexbox_fallbacks"><em>Layout Perfection with CSS Grid and Flexbox Fallbacks</em></a></p>
-
 
 <br>
 
@@ -24,9 +23,11 @@ CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-d
 <p align="center"><a href="https://eastbaywp.com/2017/04/slides-flexbox-css-grid/"><em>Slides: Flexbox + CSS Grid: Magic for Responsive Layouts</em></a></p>
 
 
+<br>
+
 The basic Grid terminology includes:
 
-
+<br>
 
 **Grid Container** - The element on which `display: grid` is applied. It’s the direct parent of all the grid items. 
 
@@ -40,7 +41,7 @@ The basic Grid terminology includes:
 
 **Grid Area** - The total space surrounded by four grid lines. A grid area may be composed of any number of grid cells. 
 
-
+<br>
 
 ![image-20200406000135189](assets/image-20200406000135189.png ':size=600')
 
@@ -62,7 +63,6 @@ It is important to note that Grid is not necessarily a replacement for Flexbox, 
 
 <p align="center"><a href="https://pogaltd.com/advancing-css-grid-two-dimensional-framework/"><em>Advancing to CSS Grid a Two Dimensional Framework</em></a></p>
 
-
 <br>
 
 How would you accomplish the layout on the right with Flexbox?
@@ -71,9 +71,9 @@ How would you accomplish the layout on the right with Flexbox?
 
 ## Setting up the Grid
 
-### display: grid;
+### Display: grid;
 
-Create a Grid, use `display: grid;` on a parent container.
+To create a Grid, use `display: grid;` on a parent container.
 
 
 
@@ -85,7 +85,7 @@ Use `grid-template-columns` for the width of the columns;
 
 Use `grid-template-rows` for the height of the rows;
 
-
+<br>
 
 Sizes of the grid columns and rows can be specified using:
 
@@ -136,6 +136,8 @@ The CSS bellow will create three columns and two rows:
 
 <br>
 
+<br>
+
 Using the  `fr` unit it is possible to fill all the space with proportional spaces:
 
 
@@ -171,6 +173,8 @@ repeat( <number of repetitions> , <pattern> );
 
 
 
+<br>
+
 **For example:**
 
 `grid-template-columns: 1fr 1fr 1fr;`
@@ -179,7 +183,7 @@ is equivalent to:
 
 `grid-template-columns: repeat(3, 1fr);`
 
-
+<br>
 
 The repeat() notation can be used to mix fixed and fraction units:
 
@@ -211,9 +215,13 @@ Grid created it's own rows, which are part of the **implicit grid.**
 
 
 
+<br>
+
 You can also define a set size for **automatically created tracks** (created in the implicit grid) with the [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) and [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) properties.
 
 
+
+<br>
 
 In the example below, only the height of the first row was explicitly declared, all subsequent rows were created out of implicitly (out of necessity) and they took the value described by `grid-auto-rows: 200px`;
 
@@ -243,7 +251,7 @@ In the example below, only the height of the first row was explicitly declared, 
 
 If you would like to give have explicit and implicit tracks a **minimum size but also allow them to expand** use the `minmax( )` property.
 
-
+<br>
 
 In the example below the rows will never collapse bellow 100 pixels, however they will stretch to accommodate for the content of the tallest cell.
 
@@ -294,7 +302,6 @@ When the grid tracks are defined, **Grid automatically numbers the lines** betwe
 <p align="center"><a href="https://www.w3schools.com/css/css_grid.asp"><em>CSS Grid Layout Module</em></a></p>
 
 
-
 <br>
 
 Note that while **positive lines go from left to right**, there are also **negative line numbers that go from right to left**:
@@ -304,7 +311,6 @@ Note that while **positive lines go from left to right**, there are also **negat
 ![image-20200406021628096](assets/image-20200406021628096.png)
 
 <p align="center"><a href="https://heropy.blog/2019/08/17/css-grid/"><em>CSS Grid 완벽 가이드</em></a></p>
-
 
 
 
@@ -318,18 +324,20 @@ It is possible to **control where the items sit on the grid according to grid li
 
 - As you position some items, other items are laid out using auto placement rules.
 
-
+<br>
 
 Use the properties `grid-column` and `grid-row` to define the grid-item's starting and ending grid lines:
 
-**Syntax:**
+<br>
+
+Syntax:**
 
 `grid-column: <starting-line-number> / <ending-linen-number> `
 
 - The first value, `<starting-line-number>` , is where the grid item will start
 - The second value, `<ending-linen-number>` , is where the grid will end.
 
-
+<br>
 
 <br>
 
@@ -383,7 +391,9 @@ Use the properties `grid-column` and `grid-row` to define the grid-item's starti
 
 <br>
 
-Visualising the line numbers might help understand how the items are being placed:
+<br>
+
+**Visualising the line numbers might help understand how the items are being placed:**
 
 <br>
 
@@ -416,7 +426,7 @@ Note that if only one value is given, the grid item will start at that line numb
 
 You can specify a start line and then the number of tracks you would like the area to span.
 
-
+<br>
 
 Therefore, it is possible to replace the code below:
 
@@ -450,13 +460,15 @@ With the following code:
 
 Grid gaps are spaces between grid cells. They can be controlled with:
 
+<br>
+
 - [`column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) - for the space between the columns;
 - [`row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap) - for the space between the rows;
 - the shorthand [`gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) 
   - if two values are provided: first value is row, second value is columns;
   - if a single value is provided, it is for both row and column.
 
-
+<br>
 
 Adding the following CSS to the example above gives the result below;
 
@@ -483,17 +495,24 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 
 
-To enable the Grid Inspector follow these steps:
+<br>
+
+**To enable the Grid Inspector follow these steps:**
 
 
 
 1. In the **HTML pane** locate a Grid container identified with the `grid` keyword.
 
+   <br>
+   
    ![image-20200406015730540](assets/image-20200406015730540.png)
 
-   
+
+<br>
 
 2. In the **Layout pane**, expand the *Grid* tab:
+
+   <br>
 
    ![image-20200406020019103](assets/image-20200406020019103.png)
 
@@ -503,17 +522,23 @@ To enable the Grid Inspector follow these steps:
 
 3. Select the **Overlays you would like to visualise** as well as it's **display settings**
 
+<br>
+
 
 
 ## Hands-on
 
-Complete the [**Levels 1 to 15  and 20 to 28 of Grid Garden**](https://cssgridgarden.com/)
+1. Complete the [**Levels 1 to 15  and 20 to 28 of Grid Garden**](https://cssgridgarden.com/)
 
 
 
 ![image-20200406023630432](assets/image-20200406023630432.png)
 
 
+
+2. Visit both websites below and use the Gris Inspector in the Dev Tools to visualise their Grid System:
+   - [**Futurismo**](http://labs.jensimmons.com/2016/examples/futurismo-1.html)
+   -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html)
 
 
 
