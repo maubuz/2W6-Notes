@@ -14,7 +14,7 @@ CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-d
 
 <br>
 
-## Grid Terminology
+# Grid Terminology
 
 
 
@@ -51,7 +51,7 @@ The basic Grid terminology includes:
 
 <br>
 
-## Why Grid when we have Flexbox?
+# Why Grid when we have Flexbox?
 
 **Grid enables 2 dimensional layouts without the need for several nested containers.**
 
@@ -69,7 +69,7 @@ How would you accomplish the layout on the right with Flexbox?
 
 
 
-## Setting up the Grid
+# Setting up the Grid
 
 ### Display: grid;
 
@@ -291,7 +291,7 @@ In the example below the rows will never collapse bellow 75 pixels, however they
 
 <br>
 
-## Grid Lines
+# Grid Lines
 
 When the grid tracks are defined, **Grid automatically numbers the lines** between the tracks:
 
@@ -422,7 +422,7 @@ Note that if only one value is given, the grid item will start at that line numb
 
 <br>
 
-### The span keyword
+## The span keyword
 
 You can specify a start line and then the number of tracks you would like the area to span.
 
@@ -456,7 +456,7 @@ Therefore, it is possible to replace the code below:
 
 
 
-## Grid Gap (gutters)
+# Grid Gap (gutters)
 
 Grid gaps are spaces between grid cells. They can be controlled with:
 
@@ -487,7 +487,7 @@ Adding the following CSS to the example above gives the result below;
 
 
 
-## Grid Inspector: Dev Tools
+# Grid Inspector: Dev Tools
 
 With the growing layout complexity of CSS Grid, it becomes very important to see the Grid.
 
@@ -526,7 +526,7 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 
 
-## Hands-on
+# Hands-on
 
 1. Complete the [**Levels 1 to 15  and 20 to 28 of Grid Garden**](https://cssgridgarden.com/)
 
