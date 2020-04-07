@@ -26,4 +26,4 @@
 - [Git & GitHub Primer](./wk8/git_github.md)
 - **Week 9**
 - [Intro to CSS Grid](./wk9/grid.md)
-- 
+- [Web Layouts with Grid](./wk9/layouts_grid.md)

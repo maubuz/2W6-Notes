@@ -326,7 +326,7 @@ It is possible to **control where the items sit on the grid according to grid li
 
 <br>
 
-Use the properties `grid-column` and `grid-row` to define the grid-item's starting and ending grid lines:
+Use the properties `grid-row` and `grid-column`to define the grid-item's starting and ending grid lines:
 
 <br>
 
