@@ -132,6 +132,7 @@ Considering the previous example, we will place .box2 on top of .box1 **and** .b
 .box2 {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
+  z-index: 1;
 }
 ```
 
