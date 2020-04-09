@@ -369,6 +369,10 @@ For more information please see [Using the viewport meta tag to control layout o
 
 
 
+# References & Diving Deeper
+
+> Recommended reading: [**Responsive Web Design Basics**](https://developers.google.com/web/fundamentals/design-and-ux/responsive/) by Google's Web Fundamentals page
+
 
 
 # Hands-on
