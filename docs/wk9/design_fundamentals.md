@@ -73,7 +73,7 @@ Align your elements based on these theoretical rows and columns.,
 
 The imaghe below has 4 elements and only 2 of them align (see green vertical lines).
 
-
+<br>
 
 ![image-20200408225101688](assets/image-20200408225101688.png)
 
@@ -101,7 +101,7 @@ In design there are mostly two alignment principles:
 
 <br>
 
-![image-20200409081714754](assets/image-20200409081714754.png ':size=600')
+![image-20200409081714754](assets/image-20200409081714754.png ':size=500')
 
 <p align="center"><a href="https://254-online.com/alignment-principle-design/"><em>Alignment Principle Of Design</em></a></p>
 <br>
@@ -128,7 +128,6 @@ Not all elements need to align to the same line. In mixed alignement there shoul
 
 <p align="center"><a href="https://254-online.com/alignment-principle-design/"><em>Alignment Principle Of Design</em></a></p>
 
-
 <br>
 
 > Remember: **the browser itself is a container.**
@@ -143,7 +142,7 @@ Contrast is a 'strinkingly' different state between two or more things.
 
 **Contrast allows us to notice things**
 
-
+<br>
 
 In the image below there is contrast between every element:
 
@@ -169,9 +168,11 @@ Black and white offer the highest contrast level which is 21:1
 
 
 
-In Canada and the USA every governmental website must **minimaly comply** to the AA level of the [Web Content Accessibility Guidelines (WCAG) version 2.0](https://www.w3.org/TR/WCAG20/).
+>  In Canada and the USA every governmental website must **minimaly comply** to the AA level of the [Web Content Accessibility Guidelines (WCAG) version 2.0](https://www.w3.org/TR/WCAG20/).
 
 
+
+<br>
 
 There are three levels of conformance:
 
@@ -183,7 +184,7 @@ There are three levels of conformance:
 
 - [**AAA (Enhanced)**](https://www.w3.org/WAI/GL/WCAG20/): Presentation of text has a **contrast ratio of at least 7:1**, except for large text which should have a contrast ratio of at least **4.5:1**.
 
-
+<br>
 
 ## Contrast Checking Tools
 
@@ -216,7 +217,7 @@ In the example below, **both smaller texts fail** the contrast check.
 
 The size of one element compared to another is a form of contrast and must be considered.
 
-
+<br>
 
 Ask yourself:
 
@@ -249,18 +250,17 @@ To adjust the scale of the design above we can:
 
 # Color
 
-Color choices has a strong psychological impact on the "feel" of your website. The transmitted impressions can change depending on culture so always keep your target audience in mind.
+Color choices has a strong psychological impact on the "feel" of your website.
 
-
-
-Bellow are some commonly used examples:
+The transmitted impressions can change depending on culture so always keep your target audience in mind.
 
 <br>
+
+Bellow are some commonly used examples:
 
 ![img](https://www.usertesting.com/sites/default/files/uploads/2019/02/Color-psychology.png)
 
 <p align="center"><a href="https://www.usertesting.com/blog/color-ux-conversion-rates"><em>How color impacts conversion rates and UX</em></a></p>
-
 <br>
 
 **Limit the number of colors in your design to a color palette (a set of a few compatible colors)**
@@ -399,7 +399,7 @@ As a beginner you don't have to reinvent the wheel. You can learn from the best.
 
 The next time you visit a website or use an app, ***observe*** at it and ***think*** about why it looks and behaves the way it does.
 
-
+<br>
 
 **Ask yourself the following:**
 
@@ -427,16 +427,6 @@ Some popular design agglomerators:
 - [**awwwards.com**](https://www.awwwards.com/)
 
 
-
-
-
-# References & Diving Deeper
-
-Recommended readings:
-
-
-
- -   
 
 <br>
 
