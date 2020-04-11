@@ -127,7 +127,6 @@ Not all elements need to align to the same line. In mixed alignement there shoul
 ![image-20200409083052377](assets/image-20200409083052377.png ':size=600')
 
 <p align="center"><a href="https://254-online.com/alignment-principle-design/"><em>Alignment Principle Of Design</em></a></p>
-
 <br>
 
 > Remember: **the browser itself is a container.**
@@ -269,6 +268,9 @@ Bellow are some commonly used examples:
 
 Compare the number of colors between both designs below:
 
+- The card on the right has more colors than necessary (6 colors).
+- The same can be accomplished with 4 colors (on the right).
+
 ![image-20200409104611358](assets/image-20200409104611358.png ':size=600')
 
 <br>
@@ -340,18 +342,37 @@ The example code below has a bad color selection. We will improve by working wit
 
 <br>
 
-All of the design fundamentals mentioned here are related to one another. Typography is closely related to:
+![img](https://miro.medium.com/max/1232/1*8nj_Kvk_K-wEkzwvZ25R-Q.png ':size=500')
 
-- Scale (font size)
-- Alignment
-- Color & contrast
-- Visual Hierarchy
-- White space
-- Limit line length
+<p align="center"><a href="https://www.instagram.com/typeverything/"><em>Typeverything Fonts</em></a></p>
 
 
+<br>
 
-> As a rule of thumb, try to use **no more than 2 to 3 different font families**
+All of the design fundamentals mentioned here are related to one another.
+
+<br>
+
+Typography is closely related to:
+
+<br>
+
+- **Scale** - font size of near by text.
+- **Alignment** - text justification should be consistent.
+- **Color & contrast** - must be easy on the eyes and readable against background.
+- **Visual Hierarchy** - headings and position must communicate importance and priority.
+- **White space** - enough line spacing and paddings to make it pleasant to read.
+- **Limit line length** - users shouldn't need to move their heads to read a line.
+
+
+
+> **Tip 1:** Avoid using **more than 2 to 3 different font types**
+>
+> **Tip 2: ** When using more than one font type, **mix *serif* and *sans-serif* fonts**.
+>
+> **Tip 3**: Try limiting **line length to 60 characters**.
+>
+> 
 >
 > To learn more see [**10 Tips On Typography in Web Design**](https://uxplanet.org/10-tips-on-typography-in-web-design-13a378f4aa0d)
 
@@ -361,7 +382,7 @@ All of the design fundamentals mentioned here are related to one another. Typogr
 
 # Visual Hierarchy
 
-Every element on a user interface has a level of important. Visual hierarchy is how you establish the priority between the elements.
+Every element on a user interface has a level of importance. Visual hierarchy is how you establish the priority between the elements.
 
 
 
@@ -397,19 +418,17 @@ As a beginner you don't have to reinvent the wheel. You can learn from the best.
 
 
 
-The next time you visit a website or use an app, ***observe*** at it and ***think*** about why it looks and behaves the way it does.
+The next time you visit a website or use an app, ***observe*** it and ***think*** about why it looks and behaves the way it does.
 
 <br>
 
 **Ask yourself the following:**
 
 - Why are elements placed where they are?
-- Is there a color scheme to things?
-- Can you infer functionality from the looks of elements?
+- Is there a color scheme to things? How are the colors making you feel?
+- Can you infer functionality from the looks and placement of elements?
 - Do you have to perform actions in a certain order? If so, why?
 - Do you like it? If so, why?
-
-
 
 <br>
 
@@ -417,7 +436,7 @@ The next time you visit a website or use an app, ***observe*** at it and ***thin
 
 Make sure to save or bookmark sites that you find interesting.
 
-This will help you understand what you like and help you develop your own style.
+> This will help you understand what you like and help you develop your own style.
 
 
 
@@ -427,6 +446,16 @@ Some popular design agglomerators:
 - [**awwwards.com**](https://www.awwwards.com/)
 
 
+
+<br>
+
+# References & Diving Deeper
+
+Recommended readings:
+
+
+
+ - [**Design fundamentals every creative should know**](https://gridbyexample.com/examples/) by [Michelle Chiu](https://uxdesign.cc/@michelle_chiu?source=post_page-----29067128f548----------------------).
 
 <br>
 
