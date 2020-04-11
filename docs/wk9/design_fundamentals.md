@@ -368,13 +368,15 @@ Typography is closely related to:
 
 > **Tip 1:** Avoid using **more than 2 to 3 different font types**
 >
-> **Tip 2: ** When using more than one font type, **mix *serif* and *sans-serif* fonts**.
+> **Tip 2: ** When using more than one font type, try **mixing *serif* and *sans-serif* fonts**.
+>
+> - Alternatively, use [fontsinuse.com](https://fontsinuse.com/) to see collections of fonts that work well together.
 >
 > **Tip 3**: Try limiting **line length to 60 characters**.
->
-> 
->
-> To learn more see [**10 Tips On Typography in Web Design**](https://uxplanet.org/10-tips-on-typography-in-web-design-13a378f4aa0d)
+
+<br>
+
+To learn more see [**10 Tips On Typography in Web Design**](https://uxplanet.org/10-tips-on-typography-in-web-design-13a378f4aa0d)
 
 
 
@@ -396,7 +398,13 @@ Visual hierarchy combines all the other design fundamentals seen above, however,
 
 <br>
 
-Compare the hierarchy between the two examples below:
+Compare the hierarchy between the two examples below.
+
+The second illustration is much more effective in "guiding" the order reading order in a logical way:
+
+1. What this is all about;
+2. How to use/engage with it;
+3. Extra, secondary information that I might want to know.
 
 
 
