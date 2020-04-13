@@ -346,7 +346,6 @@ The example code below has a bad color selection. We will improve by working wit
 
 <p align="center"><a href="https://www.instagram.com/typeverything/"><em>Typeverything Fonts</em></a></p>
 
-
 <br>
 
 All of the design fundamentals mentioned here are related to one another.
@@ -419,6 +418,18 @@ The second illustration is much more effective in "guiding" the order reading or
 
 
 <br>
+
+The best visual hierarchies lead users to take the action confidently. They have a clear, obvious order in which to view and act on things, with the most important things first. 
+
+<br>
+
+![image](https://66.media.tumblr.com/c44014bbab58404ed65c26992a486df7/b2490c6a0183f6e7-82/s400x600/85bc784633c644ed6c3b7d7699414a19e5ed0638.png)
+
+<p align="center"><a href="https://52weeksofux.com/post/443828775/visual-hierarchy"><em>Visual Hierarchy</em></a></p>
+
+<br>
+
+
 
 # Observe, think, mimic
 
