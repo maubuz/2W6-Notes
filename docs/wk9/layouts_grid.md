@@ -439,14 +439,13 @@ Recommended readings:
  -   **[Grid by Example](https://gridbyexample.com/examples/)** by Rachel Andrew.
      -  *Includes several layout examples*
 -   [**Realizing common layouts using CSS Grid Layout**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout) by MDN web docs.
--    **[A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)** by CSS Tricks
+-    **[A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)** by CSS Tricks
 
 
 
  Recommended video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/br-0i3U1VCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 
 <br>
@@ -471,7 +470,9 @@ Strating with the provided code, create the layout below using **Flexbox and Gri
 
 
 
-![image-20200407110517387](assets/image-20200407110517387.png ':size=400')
+![image-20200407110517387](assets/image-20200407110517387.png ':size=400')
+
+
 
 <br>
 
@@ -481,6 +482,10 @@ Strating with the provided code, create the layout below using **Flexbox and Gri
 </iframe>
 
 
+
+<br>
+
+Lab 1 solution available [here](https://codepen.io/maujac/pen/VwvvawB)
 
 <br>
 
@@ -509,3 +514,13 @@ Create a responsive website that follows the layouts below. Follow these require
 
 
 ![image-20200407111645372](assets/image-20200407111645372.png)
+
+
+
+<br>
+
+**Lab 2 solution** available [here](https://codepen.io/maujac/pen/bGVVpdb)
+
+
+
+<br>
