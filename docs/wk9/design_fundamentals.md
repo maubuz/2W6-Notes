@@ -13,10 +13,10 @@ This is not a Design course, however, in order to create attractice user interfa
 **We will focus on 7 design fundamentals:**
 
 - White space
-- Color
+- Alignment
 - Contrast
 - Scale
-- Alignment
+- Color
 - Typography
 - Visual Hierarchy
 
@@ -345,7 +345,6 @@ The example code below has a bad color selection. We will improve by working wit
 ![img](https://miro.medium.com/max/1232/1*8nj_Kvk_K-wEkzwvZ25R-Q.png ':size=500')
 
 <p align="center"><a href="https://www.instagram.com/typeverything/"><em>Typeverything Fonts</em></a></p>
-
 <br>
 
 All of the design fundamentals mentioned here are related to one another.
@@ -426,7 +425,6 @@ The best visual hierarchies lead users to take the action confidently. They have
 ![image](https://66.media.tumblr.com/c44014bbab58404ed65c26992a486df7/b2490c6a0183f6e7-82/s400x600/85bc784633c644ed6c3b7d7699414a19e5ed0638.png)
 
 <p align="center"><a href="https://52weeksofux.com/post/443828775/visual-hierarchy"><em>Visual Hierarchy</em></a></p>
-
 <br>
 
 
