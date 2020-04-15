@@ -472,7 +472,7 @@ Recommended readings:
 
 
 
- - [**Design fundamentals every creative should know**](https://gridbyexample.com/examples/) by [Michelle Chiu](https://uxdesign.cc/@michelle_chiu?source=post_page-----29067128f548----------------------).
+ - [**Design fundamentals every creative should know**](https://uxdesign.cc/design-fundamentals-every-creative-should-know-29067128f548) by [Michelle Chiu](https://uxdesign.cc/@michelle_chiu?source=post_page-----29067128f548----------------------).
 
 <br>
 
@@ -480,7 +480,7 @@ Recommended readings:
 
 
 
-## Lab 1
+## Lab 3
 
 Strating with the provided code, improve the visual design by using the selectors provided in the CSS.
 
@@ -509,5 +509,9 @@ Focus on the following CSS properties:
 </iframe>
 
 
+
+<br>
+
+**Lab 3 solution** available [here](https://codepen.io/maujac/pen/ExVPNME)
 
 <br>
