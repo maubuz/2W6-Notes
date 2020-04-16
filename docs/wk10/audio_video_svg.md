@@ -1,10 +1,6 @@
 #
 
-This lesson was based on the page **[Video and audio content](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)** by MDN web docs,  **[Lesson 9: Adding Media](https://learn.shayhowe.com/html-css/adding-media/#adding-video)** by Shay Howe.
-
-
-
-[Multimedia and Embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding) by MDN web docs
+This lesson was based on the page **[Video and audio content](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)** by MDN web docs,  **[Lesson 9: Adding Media](https://learn.shayhowe.com/html-css/adding-media/#adding-video)** by Shay Howe and [**Multimedia and Embedding**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding) by MDN web docs.
 
 
 
@@ -444,7 +440,7 @@ There is one important step to using SVGs which is not needed in raster images:
 
 <br>
 
-<iframe height="602" style="width: 100%;" scrolling="no" title="wk10 - svg_img - Ex4" src="https://codepen.io/maujac/embed/vYNLjVe?height=602&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="305" style="width: 100%;" scrolling="no" title="wk10 - svg_img - Ex4" src="https://codepen.io/maujac/embed/vYNLjVe?height=305&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/maujac/pen/vYNLjVe'>wk10 - svg_img - Ex4</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -453,15 +449,11 @@ There is one important step to using SVGs which is not needed in raster images:
 
 
 
-## Inline SVGs
+### Inline SVGs
 
 
 
-
-
-
-
-<iframe height="610" style="width: 100%;" scrolling="no" title="wk10 - svg_img_inline - Ex5" src="https://codepen.io/maujac/embed/OJyMBvY?height=610&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="286" style="width: 100%;" scrolling="no" title="wk10 - svg_img_inline - Ex5" src="https://codepen.io/maujac/embed/OJyMBvY?height=286&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/maujac/pen/OJyMBvY'>wk10 - svg_img_inline - Ex5</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -485,11 +477,9 @@ First you must tag the element to be styled with an ID or a class:
 
 
 
+<br>
 
-
-
-
-
+# SVG Icons with Font Awesome
 
 
 
@@ -507,11 +497,30 @@ Recommended readings:
 
 
 
- -   **[Grid by Example](https://gridbyexample.com/examples/)** by Rachel Andrew.
+ -   **[Video and audio content](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)** by MDN web docs.
+ -   **[Adding vector graphics to the Web]()** by MDN web docs.
 
 
 
- Recommended video:
+ Recommended videos:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2QYpkrX2N48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZJSCl6XEdP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<br>
+
+If you want to see the power of SVGs, animations and art, I highlight recommend the video below:
+
+<br>
+
+<iframe width="560" height="450" src="https://www.youtube.com/embed/8p5SDI4TNDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<br>
+
+
+
