@@ -28,3 +28,5 @@
 - [Intro to CSS Grid](./wk9/grid.md)
 - [Web Layouts with Grid](./wk9/layouts_grid.md)
 - [Design Fundamentals](./wk9/design_fundamentals.md)
+- **Week 10**
+- [Audio, Video & SVG](./wk10/audio_video_svg.md)
