@@ -144,8 +144,6 @@ Adding video is very similar to adding audio. Use the `<video>` tag and specify 
 ```
 
 <video src="./wk10/assets/rabbit.webm" controls></video>
-
-
 <br>
 
 The `<video>` element supports the following attributes (in most browsers):
@@ -206,7 +204,8 @@ Note that the last paragraph will only be displayed if the video formats provide
   <p>If you see this, your browser can't open mp4 or webm videos.</p>
 </video>
 
-    <p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"><em>The Video Embed element</em></a></p>
+<p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"><em>The Video Embed element</em></a></p>
+
 
 <br>
 
@@ -237,8 +236,6 @@ The `poster` attribute allows us to specify an image, in the form of a URL, to b
 </video>
 
 <p align="center"><a href="https://www.videvo.net/"><em>Audio Levels Visualisation</em></a></p>
-
-
 <br>
 
 ## Resizing Videos
@@ -331,8 +328,6 @@ So far we've been only using raster images in website, however, vector images ar
 
 <p align="center"><a href="https://academickids.com/encyclopedia/index.php/Raster_graphics"><em>Raster graphics</em></a></p>
 
-
-
 <br>
 
 **Vector images** on the other hand are defined using algorithms. The shapes and paths that compose a vector image are described by math and therefore can create perfect lines at any given zoom level.
@@ -341,11 +336,9 @@ So far we've been only using raster images in website, however, vector images ar
 
 <br>
 
-![Picture](https://www.seekacreative.co.nz/uploads/3/0/6/7/30679021/vector-raster_orig.jpg ':size=500')
+![Picture](https://www.seekacreative.co.nz/uploads/3/0/6/7/30679021/vector-raster_orig.jpg ':size=500')
 
 <p align="center"><a href="https://www.seekacreative.co.nz/resources/vector-vs-raster-files"><em>Vector vs Raster Files</em></a></p>
-
-
 
 <br>
 
@@ -356,7 +349,6 @@ One of the images below is a raster image and the other is a vector image. Zoom 
 <img src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-vector-graphics-to-the-web/star.png" alt="red start in raster format"> <img src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-vector-graphics-to-the-web/star.svg" alt="red start in raster format">
 
 <p align="center"><a href="https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-vector-graphics-to-the-web/vector-versus-raster.html"><em>Vector versus raster by MDN web docs</em></a></p>
-
 <br>
 
 In addition to creating images with perfect definition, vector images are generally much lighter than raster formats.
@@ -395,9 +387,9 @@ In the svg above, `cx` and `cy` are the coordinates of the center of the circle.
 
 <br>
 
-## Using SVGs
+## Using SVG's
 
-There are 3 main ways to include SVGs in a webpage:
+There are 3 main ways to include SVG's in a webpage:
 
 - Importing as an `<img>` source;
 - As an inline element inside the HTML; 
@@ -407,7 +399,7 @@ There are 3 main ways to include SVGs in a webpage:
 
 <br>
 
-### SVG's in `<img>` elements
+### SVG's in `<img>` elements
 
 The simplest way to use a SVG is by including it inside a `<img>` element:
 
@@ -421,8 +413,6 @@ The simplest way to use a SVG is by including it inside a `<img>` element:
 
 <p align="center"><a href="https://www.flaticon.com/free-icon/data_1197409"><em>Data free icon by Flaticon</em></a></p>
 
-
-
 <br>
 
 There is one important step to using SVGs which is not needed in raster images:
@@ -431,7 +421,7 @@ There is one important step to using SVGs which is not needed in raster images:
 
 > By default, raster images will render in their natural size.
 >
-> **Vector images don't always have a set size**. If you don't set their size, SVGs might grow to **take all available space**.
+> **Vector images don't always have a set size**. If you don't set their size, SVG's might grow to **take all available space**.
 
 
 
@@ -439,7 +429,7 @@ There is one important step to using SVGs which is not needed in raster images:
 
 **Remember to set the size of the SVG image**. You can do this in two ways:
 
-- With the inline `widght` and `height` attributes on the `<svg>` element;
+- With the inline `widght` and `height` attributes on the `<svg>` element;
 - By using styling via CSS.
 
 <br>
@@ -500,7 +490,7 @@ To see an SVG in production let's look at the logo of the Pexels Video website:
 
 <br>
 
-This nav bar uses three different SVG's: the Pexels logo (left) and two icons (serach and hamburger menu on the right).
+This nav bar uses three different SVG's: the Pexels logo (left) and two icons (search and hamburger menu on the right).
 
 <br>
 
@@ -551,10 +541,10 @@ For the  other SVG's that are icons:
 
 In this case:
 
-- Instead of a `<a>` tag the outer element is a `<button>`, but they behave in a very similar way.
+- Instead of a `<a>` tag the outer element is a `<button>`, but they serve a similar function.
 - The svg is wrapped in an `<i>` which is a simple `inline` element. This means you can have elements on the same line.
 - The svg has a set `height` and `width`.
-- The `xmls` attribute specifies the "version of this SVG standard".
+- The `xmls` attribute specifies the version of this SVG standard.
 
 
 
@@ -573,8 +563,6 @@ When a new font is imported into a page we are "teaching" the browser how to "dr
 ![image-20200416101232352](assets/image-20200416101232352.png)
 
 <p align="center"><a href="https://fonts.google.com/"><em>Google Fonts</em></a></p>
-
-
 
 <br>
 
@@ -600,7 +588,13 @@ font-family: 'Ultra', serif;
 
 <br>
 
-The icon is inserted in the document by targeting a specific class name using the `::before`  pseudo-element selector.
+The icon is inserted in the document by targeting a specific class name, similarly to using the `::before`  pseudo-element selector.
+
+<br>
+
+To illustrate this, observe the use of `::before` in the code below:
+
+
 
 <br>
 
@@ -642,51 +636,37 @@ The icon is inserted in the document by targeting a specific class name using th
 
 
 
-There are two ways of using Font on the web:
+**[Font Awesome 5](https://fontawesome.com/) :**
+
+1. Create an account and get the `<script>` tag that will be generated for you.
+
+- With this unique script you can create custom "icon kits" customized to your project.
+
+  ```html
+  <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
+  ```
+
+  
 
 <br>
 
-- Create an account and include an `<script>` tag in your document (required for Font Awesome 5)
-
-  - This way you can create custom "icon kits" customized to your project.
-
-    ```html
-    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
-    ```
-
-    
-
-  <br>
-
-- Importing an external CSS `<link>`  style sheet in your document (only works for Font Awesome 4 and below).
-
-  - Works great but has less icons available.
-
-    ```html
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    ```
-
-    
-
-
-
-<br>
-
-Using Font Awesome in your html is done nearly the same way for both methods:
-
-<br>
-
-1. Find a font that you like and **make note of it's class names** (Ex.: [hamburger menu using Font Awesome 4](https://fontawesome.com/v4.7.0/icon/bars)):
+2. Find a icon that you like and **make note of it's class names** (Ex.: [**bars** hamburger menu](https://fontawesome.com/icons/bars?style=solid))
 
    <br>
 
-   ![image-20200416104706411](assets/image-20200416104706411.png)
+   <img src="assets/bars-solid.svg" alt="bars-solid" style="width:50px;" />
+
+   
+
+   ![image-20200416153928997](assets/image-20200416153928997.png)
+
+   
 
    <br>
 
-   In this case the class names are:
+   In this case there are two class names to be added:
 
-   -  `fa` - mandatory for all Font Awesome 4 icons.
+   -  `fas` - mandatory for all Font Awesome 5 solid icons.
    - `fa-bars` - unique to this icon.
 
    <br>
@@ -697,12 +677,12 @@ Using Font Awesome in your html is done nearly the same way for both methods:
 
    ```html
    <head>
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
    </head>
    
    <body>
        <header>     
-           <p> The Hamburger menu <i class="fa fa-bars"></i></p>  
+           <p> The Hamburger menu <i class="fas fa-bars"></i></p>  
      </header>
    </body>
    ```
@@ -718,7 +698,7 @@ Using Font Awesome in your html is done nearly the same way for both methods:
 
 <br>
 
-> To see a more detailed guide to using Font Awesome 4, visit **[Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)** by W3C Schools
+> To see a more detailed guide to using Font Awesome 5, visit **[Font Awesome 5 Introduction](https://www.w3schools.com/icons/fontawesome5_intro.asp)** by W3C Schools
 
 
 
@@ -743,8 +723,6 @@ Recommended readings:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJSCl6XEdP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 <br>
 
 If you want to see the power of SVGs, animations and art, I highlight recommend the video below:
@@ -752,8 +730,6 @@ If you want to see the power of SVGs, animations and art, I highlight recommend 
 <br>
 
 <iframe width="560" height="450" src="https://www.youtube.com/embed/8p5SDI4TNDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 <br>
 
