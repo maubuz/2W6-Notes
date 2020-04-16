@@ -4,7 +4,7 @@ This lesson was based on the page **[Video and audio content](https://developer.
 
 
 
-# Audio & Video
+# HTML5 & Multimedia
 
 The [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) specification includes native support for `<video>` and `<audio>` elements as well as new [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) [APIs](https://developer.mozilla.org/en-US/docs/Glossary/API) for controlling them. For now we will only focus on the HTML functionality.
 
@@ -305,7 +305,7 @@ The `<video>` element is being used with:
 - `loop`
 - `muted`
 - `poster`
-- 2 different `<souce>` files (mp4 & webm)
+- Two different `<source>` files (mp4 & webm)
 
 
 
@@ -315,13 +315,15 @@ The empty values in `autoplay`, `loop` & `muted` are ignored since they are Bool
 
 <br>
 
-# Vector Images
+# Vector Images & SVG
 
 So far we've been only using raster images in website, however, vector images are also widely used due to their light weight and native responsiveness.
 
 <br>
 
 **Raster images** such as `.png`, `.jpg`, and `.gif`, are defined using a grid of pixels. Each pixels has a specific color based on the addition of Red Green Blue.
+
+<br>
 
 
 
@@ -330,6 +332,8 @@ So far we've been only using raster images in website, however, vector images ar
 <p align="center"><a href="https://academickids.com/encyclopedia/index.php/Raster_graphics"><em>Raster graphics</em></a></p>
 
 
+
+<br>
 
 **Vector images** on the other hand are defined using algorithms. The shapes and paths that compose a vector image are described by math and therefore can create perfect lines at any given zoom level.
 
@@ -359,7 +363,7 @@ In addition to creating images with perfect definition, vector images are genera
 
 <br>
 
-# SVGs
+## SVGs
 
 [Scalable Vector Graphics (SVG)](https://developer.mozilla.org/en-US/docs/Web/SVG) is a markup language based on [XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction) used to describe vector images. It shares many similarities with HTML.
 
@@ -479,13 +483,240 @@ First you must tag the element to be styled with an ID or a class:
 
 <br>
 
-# SVG Icons with Font Awesome
+## SVG's "in the wild"
+
+The two websites below are a great source of SVG's that are free to use (attribution required):
+
+- [Flaticon.com](https://www.flaticon.com/)
+- [freesvg.org](https://freesvg.org/)
+
+<br>
+
+To see an SVG in production let's look at the logo of the Pexels Video website:
+
+<br>
+
+![image-20200416095051095](assets/image-20200416095051095.png)
+
+<br>
+
+This nav bar uses three different SVG's: the Pexels logo (left) and two icons (serach and hamburger menu on the right).
+
+<br>
+
+When we **inspect the logo** we find the following (after removing non-relevant attributes):
+
+<br>
+
+```css
+<a class="main-nav-bar__logo" href="/" title="Free Stock Photos">
+	<div class="main-nav-bar__logo__img">
+		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
+			<path d="M2 0h28a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" fill="#05A081"></path>
+        	<path d="M13 21h3.863v-3.752h1.167a3.124 3.124 0 1 0 0-6.248H13v10zm5.863 2H11V9h7.03a5.124 5.124 0 0 1 .833 10.18V23z" fill="#fff"></path>
+        </svg>
+    </div>
+</a>
+```
 
 
 
+<br>
+
+Note the following:
+
+- Everything is wrapped in an `<a>` tag which will lead you to the root directory "/", where index.html is located.
+- The `<svg>`  has a defined size and is wrapped in an `<div>` for styling purposes but that is not strictly necessary.
+- There are only two `<path>`s inside the SVG and we can see their colors.
+
+<br>
+
+For the  other SVG's that are icons:
+
+<br>
+
+```html
+<button class="js-nav-ham main-nav-bar__sub-nav__item">
+    <i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+    </i>
+</button>
+```
 
 
 
+<br>
+
+In this case:
+
+- Instead of a `<a>` tag the outer element is a `<button>`, but they behave in a very similar way.
+- The svg is wrapped in an `<i>` which is a simple `inline` element. This means you can have elements on the same line.
+- The svg has a set `height` and `width`.
+- The `xmls` attribute specifies the "version of this SVG standard".
+
+
+
+<br>
+
+
+
+## SVG Icons with Font Awesome
+
+Most [computer type fonts](https://en.wikipedia.org/wiki/Computer_font) used today are drawn using vector images.
+
+When a new font is imported into a page we are "teaching" the browser how to "draw" the font with vectors.
+
+<br>
+
+![image-20200416101232352](assets/image-20200416101232352.png)
+
+<p align="center"><a href="https://fonts.google.com/"><em>Google Fonts</em></a></p>
+
+
+
+<br>
+
+For example, using Google fonts we ask the browser to import an external style sheet with the instruction on how to render a particular font:
+
+```html
+<!-- In the HTML <head> section -->
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet"> 
+```
+
+```css
+/* In the CSS */
+font-family: 'Ultra', serif;
+```
+
+<br>
+
+
+
+> Font Awesome works in exactly the same principle, however, **instead of teaching the browser how to draw a font character, you teach it how to draw an icon.**
+
+
+
+<br>
+
+The icon is inserted in the document by targeting a specific class name using the `::before`  pseudo-element selector.
+
+<br>
+
+```html
+<div>
+    <p class="text"> My paragraph. </p>
+    <ul>
+        <li> <a class="target" href="#">Link Item 1</a> </li>
+        <li> <a href="#">Link Item 2</a> </li>
+    </ul>
+    <p>Inline <span class="target"></span> elements are <i class="target"></i> great! </p>
+</div>
+```
+
+
+
+<iframe height="342" style="width: 100%;" scrolling="no" title="wk10 - fontAwesome - Ex7" src="https://codepen.io/maujac/embed/MWayYgB?height=342&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/MWayYgB'>wk10 - fontAwesome - Ex7</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+>  **Emojis are a great example of font icons**
+
+
+
+### Using Font Awesome
+
+
+
+![image-20200416104434274](assets/image-20200416104434274.png)
+
+
+
+<br>
+
+
+
+There are two ways of using Font on the web:
+
+<br>
+
+- Create an account and include an `<script>` tag in your document (required for Font Awesome 5)
+
+  - This way you can create custom "icon kits" customized to your project.
+
+    ```html
+    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
+    ```
+
+    
+
+  <br>
+
+- Importing an external CSS `<link>`  style sheet in your document (only works for Font Awesome 4 and below).
+
+  - Works great but has less icons available.
+
+    ```html
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    ```
+
+    
+
+
+
+<br>
+
+Using Font Awesome in your html is done nearly the same way for both methods:
+
+<br>
+
+1. Find a font that you like and **make note of it's class names** (Ex.: [hamburger menu using Font Awesome 4](https://fontawesome.com/v4.7.0/icon/bars)):
+
+   <br>
+
+   ![image-20200416104706411](assets/image-20200416104706411.png)
+
+   <br>
+
+   In this case the class names are:
+
+   -  `fa` - mandatory for all Font Awesome 4 icons.
+   - `fa-bars` - unique to this icon.
+
+   <br>
+
+2. Add those classes to an `inline` element such as `<i>` or `<span>`:
+
+   
+
+   ```html
+   <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   
+   <body>
+       <header>     
+           <p> The Hamburger menu <i class="fa fa-bars"></i></p>  
+     </header>
+   </body>
+   ```
+
+   
+
+   <iframe height="183" style="width: 100%;" scrolling="no" title="wk10 - fa_bars_hamburger - Ex8" src="https://codepen.io/maujac/embed/eYpZNpp?height=183&theme-id=light&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+     See the Pen <a href='https://codepen.io/maujac/pen/eYpZNpp'>wk10 - fa_bars_hamburger - Ex8</a> by Mauricio Buschinelli
+     (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+   </iframe>
+
+   
+
+<br>
 
 
 
