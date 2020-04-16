@@ -799,3 +799,12 @@ Try to change the color of the inline SVG to blue;
 
 
 
+<br>
+
+<iframe height="204" style="width: 100%;" scrolling="no" title="wk10 - Exercise 2" src="https://codepen.io/maujac/embed/MWaywMJ?height=204&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/MWaywMJ'>wk10 - Exercise 2</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
