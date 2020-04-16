@@ -717,7 +717,7 @@ Recommended readings:
 
 
 
- Recommended videos:
+Recommended videos:
 
 <br>
 
