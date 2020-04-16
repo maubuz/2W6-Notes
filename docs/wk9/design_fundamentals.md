@@ -482,7 +482,7 @@ Recommended readings:
 
 ## Lab 3
 
-Strating with the provided code, improve the visual design by using the selectors provided in the CSS.
+Starting with the provided code, improve the visual design by using the selectors provided in the CSS.
 
 Focus on the following CSS properties:
 

@@ -687,7 +687,7 @@ Using Font Awesome in your html is done nearly the same way for both methods:
    In this case the class names are:
 
    -  `fa` - mandatory for all Font Awesome 4 icons.
-   - `fa-bars` - unique to this icon.
+   - `fa-bars` - unique to this icon.
 
    <br>
 
@@ -718,7 +718,11 @@ Using Font Awesome in your html is done nearly the same way for both methods:
 
 <br>
 
+> To see a more detailed guide to using Font Awesome 4, visit **[Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)** by W3C Schools
 
+
+
+<br>
 
 
 
@@ -752,6 +756,46 @@ If you want to see the power of SVGs, animations and art, I highlight recommend 
 
 
 <br>
+
+
+
+# Hands-on
+
+
+
+## Exercise 1
+
+
+
+Using Font Awesome, insert the following icons **on the same line** inside the `<header>` section of the code provided:
+
+- [Search](https://fontawesome.com/v4.7.0/icon/search) icon
+- [Shopping](https://fontawesome.com/v4.7.0/icon/shopping-cart) cart
+
+
+
+<iframe height="245" style="width: 100%;" scrolling="no" title="wk10 - Exercise 1" src="https://codepen.io/maujac/embed/OJyNVoY?height=245&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/OJyNVoY'>wk10 - Exercise 1</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+## Exercise 2
+
+
+
+Using Flaticon, insert this ["settings" SVG icon](https://www.flaticon.com/free-icon/settings_126472) inside the `<article>` section using the two methods below:
+
+- Inline SVG
+
+- External SVG (`<img>` element)
+
+  
+
+Try to change the color of the inline SVG to blue;
 
 
 
