@@ -102,6 +102,10 @@ Raster images should be used for complex scenes with lots of irregular shapes an
 
 <br>
 
+Note that **SVG images can also be optimized via lossless compression** (see more below).
+
+<br>
+
 The .svg image below has 3.7 kB in size while the .png equivalent has 9.5 kB. Thats 2.5x smaller.
 
 <br>
@@ -204,8 +208,8 @@ Some online services offer the ability to optimize and further compress images:
 
 
 - [TinyPNG](https://tinypng.com/) and [TinyJPG](https://tinyjpg.com/)
-
 - [CompressPNG](https://compresspng.com/) and [CompressJPEG](https://compressjpeg.com/)
+- [SVGOMG](https://jakearchibald.github.io/svgomg/)
 
 
 
