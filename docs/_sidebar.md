@@ -30,3 +30,4 @@
 - [Design Fundamentals](./wk9/design_fundamentals.md)
 - **Week 10**
 - [Audio, Video & SVG](./wk10/audio_video_svg.md)
+- [Optimization & Responsive Images](./wk10/responsive_images.md)
