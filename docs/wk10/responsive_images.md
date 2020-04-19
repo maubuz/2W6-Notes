@@ -33,6 +33,7 @@ Let's look at what we are loading:
 
 <p align="center"><a href="https://httparchive.org/reports/page-weight?view=grid"><em>HTTP Archive - Page Weight Report</em></a></p>
 
+
 <br>
 
 Most of the data moved over the Internet are videos.
@@ -90,8 +91,6 @@ While there is no definite answer, below is a recommendation based on a few basi
 ![image_selection_diagram](assets/image_selection_diagram.svg)
 
 <p align="center"><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#eliminating_and_replacing_images"><em>Adapted from "Image Optimization" by developers.google.com</em></a></p>
-
-
 <br>
 
 ## Vector vs. Raster images
@@ -117,8 +116,6 @@ The .svg image below has 3.7 kB in size while the .png equivalent has 9.5 kB. Th
 ![webpage](assets/webpage.png)
 
 <p align="center"><a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp"><em>Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</em></a></p>
-
-
 
 
 # Optimizing Compression
@@ -175,7 +172,6 @@ In the image below, the same picture is exported using different color palettes 
 ![artifacts](assets/artifacts.png)
 
 <p align="center"><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#eliminating_and_replacing_images"><em>Image Optimisation - developers.google.com</em></a></p>
-
 <br>
 
 ## Lossless
@@ -239,8 +235,6 @@ There are two approaches in native HTML to ensure the right image size is used f
 ![Diagram: low-resolution image sent to standard screen desktop devices and all mobile devices versus high-resolution image sent to retina desktop devices](https://www.internetingishard.com/html-and-css/responsive-images/responsive-images-overview-890631.png ':size=600')
 
 <p align="center"><a href="https://www.internetingishard.com/html-and-css/responsive-images/"><em>Image by Interneting is Hard</em></a></p>
-
-
 
 <br>
 
