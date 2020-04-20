@@ -33,7 +33,6 @@ Let's look at what we are loading:
 
 <p align="center"><a href="https://httparchive.org/reports/page-weight?view=grid"><em>HTTP Archive - Page Weight Report</em></a></p>
 
-
 <br>
 
 Most of the data moved over the Internet are videos.
@@ -43,22 +42,26 @@ However:
 - Videos are typically not downloaded at initial load time;
 - Most pages don't serve videos (every 2 out of 76 resource requests are videos);
 
-<br>
+
 
 
 
 The next largest asset type slowing down load times are images.
 
-In order to reduce image load times we will focus on the following approaches:
+<br>
+
+**In order to reduce image load times we will focus on the following approaches:**
 
 
 
-1. Choosing the right image format;
-2. Optimize compression;
-3. Use responsive images;
-4. Lazy-load images;
+1. **Choosing the right image format;**
+2. **Optimize compression;**
+3. **Use responsive images;**
+4. **Lazy-load images;**
 
 
+
+<br>
 
 > Image optimization is both an art and science: an art because there is  no one definitive answer for how best to compress an image,  and a science because there are many techniques that can significantly reduce the size of an image. 
 >
@@ -68,7 +71,7 @@ In order to reduce image load times we will focus on the following approaches:
 
 # Choosing the image format
 
-There are six widely used image formats for the web:
+There are five widely used image formats for the web:
 
 <br>
 
@@ -116,7 +119,6 @@ The .svg image below has 3.7 kB in size while the .png equivalent has 9.5 kB. Th
 ![webpage](assets/webpage.png)
 
 <p align="center"><a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp"><em>Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</em></a></p>
-
 
 # Optimizing Compression
 
@@ -235,7 +237,6 @@ There are two approaches in native HTML to ensure the right image size is used f
 ![Diagram: low-resolution image sent to standard screen desktop devices and all mobile devices versus high-resolution image sent to retina desktop devices](https://www.internetingishard.com/html-and-css/responsive-images/responsive-images-overview-890631.png ':size=600')
 
 <p align="center"><a href="https://www.internetingishard.com/html-and-css/responsive-images/"><em>Image by Interneting is Hard</em></a></p>
-
 <br>
 
 

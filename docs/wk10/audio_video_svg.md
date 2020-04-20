@@ -206,7 +206,6 @@ Note that the last paragraph will only be displayed if the video formats provide
 
 <p align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"><em>The Video Embed element</em></a></p>
 
-
 <br>
 
 
@@ -327,7 +326,6 @@ So far we've been only using raster images in website, however, vector images ar
 ![Suppose the  in the top left corner is an RGB bitmap image. When zoomed in, it might look like the big smiley face to the right. Every square represents a pixel. Zoomed in further we see three pixels whose colors are constructed by adding the values for red, green and blue.](https://academickids.com/encyclopedia/images/6/6e/Rgb-raster-image.png)
 
 <p align="center"><a href="https://academickids.com/encyclopedia/index.php/Raster_graphics"><em>Raster graphics</em></a></p>
-
 <br>
 
 **Vector images** on the other hand are defined using algorithms. The shapes and paths that compose a vector image are described by math and therefore can create perfect lines at any given zoom level.
@@ -339,7 +337,6 @@ So far we've been only using raster images in website, however, vector images ar
 ![Picture](https://www.seekacreative.co.nz/uploads/3/0/6/7/30679021/vector-raster_orig.jpg ':size=500')
 
 <p align="center"><a href="https://www.seekacreative.co.nz/resources/vector-vs-raster-files"><em>Vector vs Raster Files</em></a></p>
-
 <br>
 
 One of the images below is a raster image and the other is a vector image. Zoom in and try to notice the difference.
@@ -412,7 +409,6 @@ The simplest way to use a SVG is by including it inside a `<img>` element:
 <img style="width:200px;" src="https://image.flaticon.com/icons/svg/1197/1197409.svg" alt="play media icon">
 
 <p align="center"><a href="https://www.flaticon.com/free-icon/data_1197409"><em>Data free icon by Flaticon</em></a></p>
-
 <br>
 
 There is one important step to using SVGs which is not needed in raster images:
@@ -563,7 +559,6 @@ When a new font is imported into a page we are "teaching" the browser how to "dr
 ![image-20200416101232352](assets/image-20200416101232352.png)
 
 <p align="center"><a href="https://fonts.google.com/"><em>Google Fonts</em></a></p>
-
 <br>
 
 For example, using Google fonts we ask the browser to import an external style sheet with the instruction on how to render a particular font:
@@ -599,14 +594,12 @@ To illustrate this, observe the use of `::before` in the code below:
 <br>
 
 ```html
-<div>
-    <p class="text"> My paragraph. </p>
-    <ul>
-        <li> <a class="target" href="#">Link Item 1</a> </li>
-        <li> <a href="#">Link Item 2</a> </li>
-    </ul>
-    <p>Inline <span class="target"></span> elements are <i class="target"></i> great! </p>
-</div>
+<p class="text"> My paragraph. </p>
+<ul>
+    <li> <a class="target" href="#">Link Item 1</a> </li>
+    <li> <a href="#">Link Item 2</a> </li>
+</ul>
+<p>Inline <span class="target"></span> elements are <i class="target"></i> great! </p>
 ```
 
 
@@ -722,7 +715,6 @@ Recommended videos:
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJSCl6XEdP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <br>
 
 If you want to see the power of SVGs, animations and art, I highlight recommend the video below:
@@ -730,7 +722,6 @@ If you want to see the power of SVGs, animations and art, I highlight recommend 
 <br>
 
 <iframe width="560" height="450" src="https://www.youtube.com/embed/8p5SDI4TNDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <br>
 
 
