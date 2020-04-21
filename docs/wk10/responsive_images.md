@@ -1,5 +1,3 @@
-#
-
 This lesson was based on the pages [**Image Optimization**](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization) by developers.google.com, **[Responsive Images the Simple Way](https://cloudfour.com/thinks/responsive-images-the-simple-way/)** by CloudFour and 
 
 
@@ -279,10 +277,9 @@ If you are curious:
 
 <br>
 
-![Diagram: standard-resolution screen with 4 pixels versus high-resolution screen with 16 pixels](https://www.internetingishard.com/html-and-css/responsive-images/standard-vs-retina-resolution-64f6b6.png ':size=600')
+![Diagram: standard-resolution screen with 4 pixels versus high-resolution screen with 16 pixels](https://www.internetingishard.com/html-and-css/responsive-images/standard-vs-retina-resolution-64f6b6.png ':size=600')
 
 <p align="center"><a href="https://www.internetingishard.com/html-and-css/responsive-images/"><em>Standart vs Retina Resolution by Interneting is Hard</em></a></p>
-
 <br>
 
 This means that a container of size 400x200 CSS pixels will be display at 200x100 hardware pixels in a retina display of 2x.
@@ -317,16 +314,15 @@ You can use the `srcset` attribute in order to serve a different sized copy of t
 ![Diagram: low-resolution image sent to standard screen desktop devices and all mobile devices versus high-resolution image sent to retina desktop devices](https://www.internetingishard.com/html-and-css/responsive-images/responsive-images-overview-890631.png ':size=600')
 
 <p align="center"><a href="https://www.internetingishard.com/html-and-css/responsive-images/"><em>The srcset attribute by Interneting is Hard</em></a></p>
-
 <br>
 
-## `srcset` syntax
+## `srcset` syntax
 
 The `srcset` attribute is used within the `<img>` tag in order to give the browser multiple download options.
 
 
 
-It must always include a fallback image in the regular `src` attribute in case the browser does not support the `srcset` attribute.
+It must always include a fallback image in the regular `src` attribute in case the browser does not support the `srcset` attribute.
 
 <br>
 
@@ -350,7 +346,6 @@ It must always include a fallback image in the regular `src` attribute in case 
 ![Labeled screenshot of responsive image code example, showing the srcset attribute, pointing out that it contains image URLs and the widths of those images, and that the browser picks the best source from the set, including retina.](https://29comwzoq712ml5vj5gf479x-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/srcset.png)
 
 <p align="center"><a href="https://cloudfour.com/thinks/responsive-images-the-simple-way/"><em>The srcset attribute by CloudFour</em></a></p>
-
 <br>
 
 We will convert the images from the first example into responsive images with the `srcset` attribute:
@@ -372,8 +367,6 @@ We will convert the images from the first example into responsive images with th
 
 
 <br>
-
-To observe the page outside of CodePen, [follow this link for the example page](./wk10/example_pages/srcset_ex1.html).
 
 In order to observe `srcset` working:
 
@@ -447,7 +440,6 @@ The `<picture>` element is normally used to completely change images in favor of
 ![a cute kitten](https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png)
 
 <p align="center"><a href="https://cloudfour.com/examples/img-currentsrc/"><em>Art Direction by CloudFour</em></a></p>
-
 
 
 <br>
