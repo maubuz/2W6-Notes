@@ -8,13 +8,13 @@ Forms allow users to enter data, which is generally sent to a web server for pro
 
 <br>
 
-HTML forms are made primerely of 4 components:
+HTML forms are made primarily of 4 components:
 
 
 
 1. One `<form>` container element that wraps all other elements;
 2. One or more `<input>` element where users enter data;
-3. A special submit `<input>` element or a `<button>` element for triggering the submission;
+3. A special submit `<input>` element or a `<button>` element for triggering the submission;
 4. `<label>` elements that visually identifies the `<input>` elements
 
 <br>
@@ -35,7 +35,7 @@ A few notes about this form:
 - The `<form>` is a `block` level element, **however, it's items are `inline` elements.**
 - The labels must have the same name as their respective inputs;
 - The `<form>` container and it's children can be styled as usual via CSS;
-- Notice the `focus` "glow" when an `<inpute>`  is selected.
+- Notice the `focus` "glow" when an `<input>`  is selected.
 
 <br>
 
@@ -43,13 +43,13 @@ Now we will look at each form component in a little more detail:
 
 <br>
 
-## &lt;form&gt; Element
+## &lt;form&gt; Element
 
 As mentioned, the the `<form>` tag is used to create an HTML form for user input.
 
 
 
->  The two most important attribute of `<form>` is `action` , which defines the URL of where to send the data.
+>  The most important attributes of `<form>`  is `action` , which defines the URL of where to send the data.
 
 <br> The URL usually points to a server-site script which will parse the data (categorizer it) and store it.
 
@@ -57,7 +57,7 @@ In this course we will not look at server side processing. Typical languages use
 
 <br>
 
-The `<form>` element can receive the following atributes:
+The `<form>` element can receive the following attributes:
 
 | Attribute                                                    | Value                                                        | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -194,7 +194,7 @@ In addition, the [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 # &lt;textarea&gt; Element
 
-The `<textare>` element provides a multiline text field for larger messages:
+The `<textare>` element provides a multi-line text field for larger messages:
 
 <br>
 
@@ -261,7 +261,6 @@ Recommended readings:
  Recommended video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E5MEzC0prd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <br>
 
 # Hands-on
@@ -270,7 +269,7 @@ Recommended readings:
 
 ## Exercises
 
-Complete the folslowing exercises from W3C Schools:
+Complete the following exercises from W3C Schools:
 
 1. [HTML Forms](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_forms1)
 2. [Form Elements](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements1)
