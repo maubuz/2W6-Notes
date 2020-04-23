@@ -441,7 +441,6 @@ The `<picture>` element is normally used to completely change images in favor of
 
 <p align="center"><a href="https://cloudfour.com/examples/img-currentsrc/"><em>Art Direction by CloudFour</em></a></p>
 
-
 <br>
 
 > **We will not use the `<picture>` element in this course.**
@@ -456,7 +455,17 @@ If you would like to learn more about the `<picture>` element, see the [HTML Pic
 
 <br>
 
+## Image Resizing Tools
 
+If you would like to serve smaller versions of an image but only have access to the large sized version, you can use the online tools below to export smaller versions:
+
+- [PicResize.com](https://picresize.com/)
+- [ResizeImage.net](https://resizeimage.net/)
+- [ImageResizer.com](https://imageresizer.com/)
+
+
+
+<br>
 
 # References & Diving Deeper
 
