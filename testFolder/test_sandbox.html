@@ -2,51 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Sandbox</title>
-    <style>
-      
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Sandbox</title>
+  <style>
+
+  </style>
 </head>
 
 <body>
-    <section class="gallery">
-        
-    </section>
-    
+
+  <h2>HTML Forms</h2>
+
+  <form action="http://www.foo.com">
+      <h2>Submit Button</h2>
+  
+      <p>This button submits the form.</p>
+      <label for="fname">Name:</label>
+      <input type="text" name="fname">
+      <input type="submit" value="Submit">
+    </form>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-<script>
-    let angles = [30, 10, 45, 35, 60, 38, 75, 67];
 
-function setup() {
-  createCanvas(720, 400);
-  noStroke();
-  noLoop(); // Run once and stop
-}
-
-function draw() {
-  background(100);
-  pieChart(300, angles);
-}
-
-function pieChart(diameter, data) {
-  let lastAngle = 0;
-  for (let i = 0; i < data.length; i++) {
-    let gray = map(i, 0, data.length, 0, 255);
-    fill(gray);
-    arc(
-      width / 2,
-      height / 2,
-      diameter,
-      diameter,
-      lastAngle,
-      lastAngle + radians(angles[i])
-    );
-    lastAngle += radians(angles[i]);
-  }
-}
-
-</script>
 </html>
