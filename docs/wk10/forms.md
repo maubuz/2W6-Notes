@@ -252,6 +252,7 @@ Recommended readings:
 
 
  -   [Web forms — Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms) by MDN web docs
+ -   [Form Design Patterns Book Excerpt: A Registration Form](https://www.smashingmagazine.com/2018/10/form-design-patterns-excerpt-a-registration-form/) by Smashing Magazine
 
 
 
