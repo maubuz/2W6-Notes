@@ -11,9 +11,7 @@ The “root” object is called `window`. It has two roles:
 1. It represents the “browser window” and provides methods to query and control it.
 2. It is a global object accessible to all running instances of JavaScript code.
 
-
-
-> There are 
+<br>
 
 
 
