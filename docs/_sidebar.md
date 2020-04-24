@@ -33,3 +33,4 @@
 - [Optimization & Responsive Images](./wk10/responsive_images.md)
 - **Week 11**
 - [HTML Forms](./wk11/forms.md)
+- [The DOM](./wk11/dom.md)
