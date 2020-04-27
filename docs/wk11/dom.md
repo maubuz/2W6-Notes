@@ -23,12 +23,37 @@ The `document` object is the main “entry point” to the page. Each branch of 
 
 <p align="center"><a href="https://www.kirupa.com/html5/finding_elements_dom_using_querySelector.htm"><em>The DOM Tree by Kirupa</em></a></p>
 
-
 <br>
 
 >  While the browser is reading the HTML file and rendering the page, it is in parallel also building a Document Object Model.
 
+<br>
 
+The DOM is a collection of nodes and every tree node is an object.
+
+There are 3 types of nodes:
+
+- Element nodes;
+- Attribute nodes;
+- Text nodes.
+
+
+
+<br>
+
+In the example below:
+
+- the white square boxes are elements ( `<p>` and `<a>` )
+
+- the green boxes are text nodes
+
+- the white box with rounds edges is an attribute node
+
+  <br>
+
+![image-20200427081031517](assets/image-20200427081031517.png)
+
+<p align="center"><a href="https://www.oreilly.com/pub/au/383"><em>Learning Web Design by Jennifer Robbins</em></a></p>
 
 <br>
 
@@ -53,12 +78,11 @@ See the code below and it's corresponding DOM Tree:
 <p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavScript.info</em></a></p>
 
 
-
 <br>
 
-Every tree node is an object.
+The text inside elements forms *text nodes*, labeled as `#text`.
 
-The text inside elements forms *text nodes*, labelled as `#text`. A text node contains only a string. It may not have children and is always a leaf of the tree.
+A text node contains only a string. It may not have children and is always a leaf of the tree.
 
 
 
@@ -131,7 +155,7 @@ Similarly, the [**Document Object** also has a list of common properties and met
 
 Below we use the **onclick event** and access the **innerHeight** property of the **browser window object**.
 
-We then output it as an allert message:
+We then output it as an alert message:
 
 <br>
 
@@ -142,7 +166,7 @@ We then output it as an allert message:
 
 <br>
 
-Note: there many types of "events" we can use to trigger actions. The **onclick event**  is just one example. We will look into others later.
+Note: there many types of "events" we can use to trigger actions. The **onclick event**  is just one example. We will look into others later.
 
 
 
@@ -159,7 +183,7 @@ In the following example we will change the content  (the `innerHTML`) of the `<
 
 <br>
 
-In this case, `getElementById` is a **method**, while `innerHTML` is a  **property** of the `<p>` element.
+In this case, `getElementById` is a **method**, while `innerHTML` is a  **property** of the `<p>` element.
 
 <br>
 
@@ -235,7 +259,7 @@ We will use the console to manipulate some of the elements in the example above.
 Lets change the following:
 
 - The background color of the element with `id="tips"` ;
-- The text inside `<h1>` ;
+- The text inside `<h1>` ;
 
 
 
@@ -247,9 +271,13 @@ Since the DOM has a tree structure, it is possible to "walk" or move inside it f
 
 <br>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="316" viewBox="0 0 440 316"><defs><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans:bold,italic,bolditalic%7CPT+Mono);@font-face{font-family:'PT Mono';font-weight:700;font-style:normal;src:local('PT MonoBold'),url(/font/PTMonoBold.woff2) format('woff2'),url(/font/PTMonoBold.woff) format('woff'),url(/font/PTMonoBold.ttf) format('truetype')}</style></defs><g id="dom" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="dom-links-elements.svg"><path id="Rectangle-8" fill="#FFF9EB" stroke="#E8C48E" stroke-width="2" d="M129 10h198v28H129z"/><text id="document.documentEle" fill="#8A704D" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="142.6" y="29">document.documentElement </tspan></text><text id="Type-something" fill="#8A704D" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="336.9" y="29">&lt;HTML&gt;</tspan></text><path id="Rectangle-7" fill="#FFF9EB" stroke="#E8C48E" stroke-width="2" d="M163 78h117v28H163z"/><text id="document.body--" fill="#8A704D" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="174.2" y="95">document.body </tspan></text><text id="(if-inside-body)" fill="#8A704D" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="300.9" y="95">(if inside body)</tspan></text><path id="Line-5" stroke="#8A704D" stroke-linecap="square" stroke-width="2" d="M14.5 115H427"/><text id="parentElement" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="175" y="172" fill="#8A704D">parent</tspan> <tspan x="218.2" y="172" fill="#EE6B47">Element</tspan></text><path id="Rectangle-6" fill="#FFF9EB" stroke="#E8C48E" stroke-width="2" d="M180 213h80v28h-80z"/><text id="&lt;DIV&gt;" fill="#8A704D" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal"><tspan x="204.192" y="232">&lt;DIV&gt;</tspan></text><path id="Line-6" fill="#EE6B47" fill-rule="nonzero" d="M220.5 178.71l.872 1.55 6.75 12 .49.871-1.743.98-.49-.87-4.879-8.674V208.5h-2v-23.933l-4.878 8.673-.49.872-1.744-.98.49-.872 6.75-12 .872-1.55z"/><path id="Line-7" fill="#EE6B47" fill-rule="nonzero" d="M415.369 218.388l.871.49 12 6.75 1.55.872-1.55.872-12 6.75-.871.49-.98-1.743.87-.49 8.673-4.879H266.5v-2h157.432l-8.672-4.878-.872-.49.98-1.744z"/><text id="nextElementSibling" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="276" y="212" fill="#8A704D">next</tspan> <tspan x="304.8" y="212" fill="#EE6B47">Element</tspan> <tspan x="355.2" y="212" fill="#8A704D">Sibling</tspan></text><path id="Line-8" fill="#EE6B47" fill-rule="nonzero" d="M23.631 218.388l.98 1.743-.87.49-8.674 4.879H169v2H15.067l8.673 4.878.872.49-.98 1.744-.872-.49-12-6.75-1.55-.872 1.55-.872 12-6.75.871-.49z"/><text id="previousElementSibli" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="6" y="212" fill="#8A704D">previous</tspan> <tspan x="63.6" y="212" fill="#EE6B47">Element</tspan> <tspan x="114" y="212" fill="#8A704D">Sibling</tspan></text><path id="Line" fill="#EE6B47" fill-rule="nonzero" d="M174.822 248.123l1.055 1.7-.85.527-48.476 30.089-6.917 4.292 9.941-.428 1-.043.085 1.998-.999.043-13.755.594-1.776.076.857-1.557 6.636-12.064.482-.876 1.752.964-.482.876-4.797 8.718 6.918-4.293 48.477-30.089.85-.527z"/><path id="Line-3" fill="#EE6B47" fill-rule="nonzero" d="M269.214 248.115l.835.55 46.157 30.354 6.78 4.46-4.565-8.841-.459-.889 1.777-.918.459.889 6.317 12.233.816 1.58-1.774-.123-13.735-.954-.997-.07.138-1.995.998.07 9.926.689-6.78-4.46-46.156-30.354-.836-.55 1.099-1.671z"/><text id="children" fill="#EE6B47" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="188" y="273">children</tspan></text><text id="firstElementChild--" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="43" y="307" fill="#8A704D">first</tspan> <tspan x="79" y="307" fill="#EE6B47">Element</tspan> <tspan x="129.4" y="307" fill="#8A704D">Child </tspan></text><text id="lastElementChild" font-family="PTMono-Regular, PT Mono" font-size="12" font-weight="normal"><tspan x="273" y="307" fill="#8A704D">last</tspan> <tspan x="301.8" y="307" fill="#EE6B47">Element</tspan> <tspan x="352.2" y="307" fill="#8A704D">Child</tspan></text><path id="Line-Copy-2" fill="#EE6B47" fill-rule="nonzero" d="M222.5 151.5v4h-2v-4h2zm0-6v4h-2v-4h2zm0-6v4h-2v-4h2zm-1-14.29l.872 1.55 6.75 12 .49.871-1.743.98-.49-.87-4.88-8.676.001.435h-2l-.001-.432-4.877 8.672-.49.872-1.744-.98.49-.872 6.75-12 .872-1.55zm1 8.29v4h-2v-4h2z"/><path id="Line-2-Copy" fill="#EE6B47" fill-rule="nonzero" d="M221.5 44.71l.872 1.55 6.75 12 .49.871-1.743.98-.49-.87-4.879-8.674v21.528h-2V50.567l-4.878 8.673-.49.872-1.744-.98.49-.872 6.75-12 .872-1.55z"/></g></g></svg>
+![image-20200427080634078](assets/image-20200427080634078.png)
+
+
 
 <p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavScript.info</em></a></p>
+
+
 
 <br>
 
@@ -259,7 +287,7 @@ Since the DOM has a tree structure, it is possible to "walk" or move inside it f
 
 
 
-In order to nagivate between element nodes you can use the following methods:
+In order to navigate between **element nodes only** you can use the following methods:
 
 <br>
 
@@ -270,7 +298,7 @@ In order to nagivate between element nodes you can use the following methods:
 
 <br>
 
-For your information, the equivalent methods for selecting any node (including text nodes) are:
+For your information, the equivalent methods for selecting any node, **including text nodes**:
 
 -  `parentNode`, `childNodes`, `firstChild`, `lastChild`, `previousSibling`, `nextSibling`.
 
