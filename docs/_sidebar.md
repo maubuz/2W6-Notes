@@ -34,3 +34,5 @@
 - **Week 11**
 - [HTML Forms](./wk11/forms.md)
 - [The DOM](./wk11/dom.md)
+- **Week 12**
+- [Intro to JavaScript](./wk12/javascript_intro.md)

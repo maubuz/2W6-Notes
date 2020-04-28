@@ -85,38 +85,69 @@ Our search is done. **We now understand what is happening, why it's happening an
 
 ## Inserting elements in the DOM
 
-- (show process for inserting new notes)
-- (read from a form input and insert)
-
-
-
-
-
-## Event Listeners & Call back function
-
-
-
-(add list of common events)
-
-
-
-## querySelector & querySelectorAll
-
-Use the CSS selectors that you know and love!
-
-
-
-### querySelectAll vs getElements
-
-
-
-One returns an HTMLCollection object while the other returns a NodeList.
-
-They have different types of methods available and we need to understand how to iterate through them.
+We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` propert.
 
 <br>
 
-Now we need to take a short break from the DOM and focus on JavaScript so we can fully manipulate the DOM at will.
+<iframe height="342" style="width: 100%;" scrolling="no" title="wk11 - inserting_1 -ex6" src="https://codepen.io/maujac/embed/gOaRKjY?height=342&theme-id=light&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/gOaRKjY'>wk11 - inserting_1 -ex6</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+However, this method can easily lead to typos and missed syntax.
+
+<br>
+
+Instead, use following method for **adding and deleting HTML elements**:
+
+<br>
+
+1. Create a new element and store it in a variable with  `createElement`
+2. Add the content of the new element with `createTextNode` or `innerHTML` 
+3. Select the note to receive the new element
+4. Append the new node to the selected element with:
+   1.  `appendChild` if the new content should go as the last child
+   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
+
+<br>
+
+Use the following methods:
+
+<br>
+
+| Method                                                       | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Create an HTML element                                       |
+| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Remove an HTML element                                       |
+| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Add an HTML element                                          |
+| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replace an HTML element                                      |
+| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11 - creating_elements -ex8" src="https://codepen.io/maujac/embed/abvwjBX?height=265&theme-id=light&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/abvwjBX'>wk11 - creating_elements -ex8</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+## Next Steps in the DOM
+
+The next steps in terms of DOM manipulation is to learn:
+
+- the document methods `querySelect` and `querySelectAll` 
+  - (allows us to use CSS selectors to access element )
+- window **events** and event **callback functions**
+  - (allows us to trigger functions based on DOM events like `onclick` and `onkeypress` )
+
+<br>
+
+However, to trully benefity from these concepts we need to learn JavaScript. We will go back to the DOM shortly.
 
 <br>
 
@@ -134,427 +165,72 @@ Netscape had to cease it's opperations. As a last move, they open sourced JavaSc
 
 
 
-## Including JavaScript
+## Adding JavaScript to HTML
 
-- What are the places that we can run JavaScript in the HTML document?
+What are the places that we can run JavaScript in the HTML document?
 
-- Inline
+**In-line**
 
-- Internally
+- Attached to a window event such as `onClick`
 
-- External file
+  ```html
+  <button onclick="alert('Inline JavaScript!')">
+      Click me for JS
+  <button>
+  ```
+
+
+
+<br>
+
+**In the HTML document**, inside the `<script>` element.
+
+- Normally done just before the end of the `<body>`.
+
+  ```html
+  ... rest of the body
+  
+      <script>
+          console.log('JavaScript inside the HTML document!');
+      </script>
+  </body>
+  ```
 
   
 
+<br>**External file**
 
+- By including a `src =` attribute to the `<script>` tag inside the HTML document
 
-
-
-## JavaScript Objects
-
-In JavaScript objects are **name-value pairs**, this includes functions and variables inside the object.
-
-
-
-## Execution Context
-
-At any given moment, the JavaScript engine is wrapping code being run inside an execution context (this of this as a bubble or a mini-world). This context includes four components:
-
-- The Global Object
-- The special 'this' object (pointer)
-- The Outer Environment
-- Your Code
-
-<img src="assets/image-20200426121718253.png" alt="image-20200426121718253" style="zoom:67%;" />
-
-
-
-### The Global execution context :
-
-Global means "not inside a function". When running any code, the JavaScript engine automatically creates the following:
-
-- The Global execution object;
-- The 'this' special object;
-
-
-
-When JavaScript is run in your browser, the global execution context includes:
-
-
-
-- The 'window' object as the Global execution object (top-level object, accessible to everyone)
-
-- The special object 'this' points to the 'window'.
-
+  ```html
+  ... rest of the body
   
+  	<script src='code.js'></script>
+  </body>
+  ```
 
-  ![image-20200426112411870](assets/image-20200426112411870.png)
+- Then inside the file *code.js*:
 
+  ```javascript
+  // Inside code.js file
   
-
-  <br>
-
-  <img src="assets/image-20200426111840198.png" alt="image-20200426111840198" style="zoom:60%;" />
-
-<br>
-
-
-
-When a function or variable is created in the browser's global execution context, they become part of the global object (aka. the window object).
-
-
-
-![image-20200426115519942](assets/image-20200426115519942.png)
-
-
-
-> Note that this is running environment is unique to JavaScript being run inside a browser.
->
-> The global context would be different if you were running JavaScript in the sever using Node.Js
-
-<br>
-
-
-
-The specific execution environment changes when you go inside a function. The global execution context is like a universe and the specific execution context is like moving inside a planet. The specific execution environment between different functions cannot be shared.
-
-<br>
-
-![The Pact Worlds system.](https://starfinderwiki.com/mediawikisf/images/thumb/7/7a/Pact_Worlds_system.jpg/619px-Pact_Worlds_system.jpg)
-
-<p align="center"><a href="https://starfinderwiki.com/sf/Pact_Worlds_system"><em>Pact Worlds system by starfinderwiki.com</em></a></p>
-
-
-### The outer execution environment
-
-The **outer execution environment** is the environment one level above the current environment. The global execution environment does not have a outer environment since it's the top level environment (it is absolute and available to everyone). 
-
-
-
-
-
-## Hoisting
-
-The code below will create an unexpected result:
-
-```javascript
-b(); 
-console.log(a);
-
-var a = "Hello World!";
-
-function b() {
-    console.log('Called b!');
-}
-```
-
-Console result:
-
-```javascript
-Called b!
-undefined
-```
+  console.log("Linking to an external JS file!");
+  ```
 
 
 
 <br>
 
-The function be is ran even though it is declared after it is being called. Also, trying to log `a` gives us `undefined`.
-
-Notice how `undefined` is not the same as if variable `a` was never declared:
+The example below illustrates all 3 cases:
 
 <br>
 
-```javascript
-b();
-console.log(a);
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - JavaScript - executing -ex2" src="https://codepen.io/maujac/embed/XWmgXXJ?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/XWmgXXJ'>wk12 - JavaScript - executing -ex2</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-function b() {
-    console.log('Called b!');
-}
-```
 
-Console result:
-
-```javascript
-Called b!
-ReferenceError: a is not defined
-```
-
-<br>
-
-### Creating an Execution Environment
-
-The execution environment is created in two phases:
-
-1. Creation phase.
-
-2. Execution phase.
-
-   
-
-#### Creation phase
-
-The following steps happen:
-
-1. The parser is reading and interpreting your code
-2. It recognizes the creating of variables and functions
-3. Sets up memory space for them (variables and functions)
-4. Maps what is the outer environment of this function (more on this later).
-
-
-
-> By the time the code is executed line by line, **the variables and functions references already exists in memory** and thus, can be "accessed", even if they haven't been initialized yet.
->
-> This is what is known as **hoisting**.
-
-
-
-<br>
-
-However, memory gets initialized differently for variables and for functions:
-
-
-
-**Functions** are fully loaded in memory, meaning all execution lines are known.
-
-**Variables** are initialized to `undefined` (as a placeholder) since it's true value will only be known during the execution phase.
-
-<br>
-
-> It is not recommended to rely on hoisting for the execution of your code.
-
-<br>
-
-#### Execution Phase
-
-JavaScript simply runs your code line by line
-
-<br>
-
-## The undefined keyword.
-
-Note that **`undefined`** is a special value in JavaScript and it means slightly different things when dealing with variables, methods or functions:
-
-- A **variable** that has not been assigned a value is of type `undefined`. 
-- A **method** or statement also returns `undefined` if the variable that is being evaluated does not have an assigned value.
-- A **function** returns `undefined` if a value was not [`returned`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return).
-
-
-
-<br>
-
-## Single Threaded & Synchronous
-
-JavaScript is executed in a single threaded manner, meaning, one command or instruction at a time.
-
-The browser has the ability to execute multiple processes in parallel (multi-threading), however the JavaScript process is executed in a single thread.
-
-
-
-JavaScript is also run in a synchronous manner.
-
-This means that code is executed one line at a time and in order. It waits for functions to terminate before moving onto the next line.
-
-
-
-More on this when we talk about event listeners.
-
-<br>
-
-## Functions & Invocation
-
-Invoking a function simply means:
-
-1. Write the function name.
-2. Add parenthesis "()" at the end.
-
-
-
-Every time a new function is invoked, it creates a new execution environment which must finish before going moving to the line after the function:
-
-
-
-```javascript
-function a(){
-    b();
-    var c;
-}
-function b(){
-    b();
-    var d;
-}
-a();
-var d;
-```
-
-<br>
-
-In the code above, lines 1 to 8 are read but they are only function declarations, which is different than invoking the functions.
-
-When a function is declared, it is not executed. Think of function declarations as an announcement that describes what will be done without necessarily doing it.
-
-<br>
-
-The code above will create the execution stack illustrated below. 
-
-
-
-<img src="assets/image-20200426141730317.png" alt="image-20200426141730317" style="zoom:80%;" />
-
-
-
-<br>
-
-The code at the top of the stack is always the one being executed. Once an execution context is done, it is removed from the stack (also known as "popped") and the next execution context starts.
-
-<br>
-
-## Context & Variable Environments
-
-Variable environment is where a variable "lives" and how they relate to each other in memory.
-
-
-
-> Every execution environment has it's own unique set of variables which is not available outside of that environment.
-
-
-
-## Outer Environments & Scope Chain
-
-When a variable is referenced but is not present in the current execution environment, JavaScript will look at the **outer environment** in order to find the reference.
-
-
-
-> A function's outer environment is determined by the **lexical environment** of that function.
->
-> In other words, where is the function declaration is physically sitting in the lines of code.
-
-
-
-An alternative way of determining where the outer context's reference points to is to ask "where is this function being declared or created?".
-
-
-
-<br>
-
-For example, in the code below, the lexical environment of function `b()`'s declaration is the global environment (the outermost point in the code).
-
-This lexical level (where the code is physically written) is the same as function `a()`.
-
-
-
-```javascript
-function b() {
-  console.log(myVar);
-}
-
-function a(){
-  var myVar = 2;
-  b();
-}
-
-var myVar = 1;
-a();
-```
-
-<br>
-
-Therefore, the **outer environment** of `b()` is the same as the **execution context ** where  `a()` is sitting, which also happens to be the global execution context.
-
-<br>
-
-### The Scope Chain
-
-In order for JavaScript to keep track of what is the outer environment of each function, it maps all the lexical environment's during the creating phase. This map of outer environments is called the **scope chain**.
-
-<br>
-
-<img src="assets/image-20200426150200645.png" alt="image-20200426150200645" style="zoom:80%;" />
-
-<br>
-
-If the declaration of `b()` is moved inside `a()`, it's outer environment will be different.
-
-```javascript
-function a() {
-
-    function b() {
-        console.log(myVar);
-    }
-    var myVar = 2;
-    b();
-}
-
-var myVar = 1;
-a();
-```
-
-<br>
-
-In this new scenario,  when JavaScript executes line 4 inside `b()` will not find a variable `myvar` declared and will look at it's outer environment for a reference to `myVar`.
-
-<br>
-
-<img src="assets/image-20200426153521500.png" alt="image-20200426153521500" style="zoom:80%;" />
-
-<br>
-
-> JavaScript will continue to move up the scope chain in order to find the variable reference. This can continue all the way to the global execution environment.
-
-
-
-If we comment out line 6 and no longer declare `myVar` inside `a()`, the output of this code will be `1`.
-
-```javascript
-function a() {
-
-    function b() {
-        console.log(myVar);
-    }
-   // var myVar = 2;
-    b();
-}
-
-var myVar = 1;
-a();  // the console will output 1
-```
-
-
-
-This happens because function `b()` will look at it's outer environment for a declaration of `myVar`,  which is the execution environment of function `a()`. In turn, function `a()` will look at it's outer environment for a declaration of `myVar` and find it in the global execution environment.
-
-<br>
-
-The path of references of outer environments is the scope chain.
-
-<br>
-
-### Block Scoping with let
-
-In the ES6 version of JavaScript, variables can be declared with the keyword `let`.
-
-```javascript
-if (a > b) {
-    let c = true;
-}
-```
-
-<br>
-
-The keyword `let` creates a limited scope that exists only inside the curly braces "{ }".
-
-
-
-> The limited scope created with `let`  is called **block scoping** and is the type of scope commonly expected in other programming languages.
-
-
-
-<br>
-
-Both `var` and `let ` can be very useful depending on the task at hand.
-
-> For people who are new to JavaScript, it is recommended to use `let` since the scope is more  intuitive.
 
 <br>
 
@@ -573,7 +249,7 @@ Because of this, the same variable can hold different types of values inside the
 In contrast, in static typed languages such as Java or C#, variable types must declared and respected.
 
 ```c#
-bool isNew = "hello!"; // gives an error
+bool isNew = "hello!"; // gives an error in C#
 ```
 
 
@@ -581,29 +257,105 @@ bool isNew = "hello!"; // gives an error
 However, in JavaScript the sequence of lines below are valid:
 
 ```javascript
-let isNew = true;  // no error
-isNew = "It's all good";
+let isNew = true;  // no error in JavaScript
 isNew = 1;
+isNew = "It's all good";
 ```
 
 <br>
 
-### Primitive Types
+### Variable Declaration
 
-Remember, a primitive type is a type of data that holds a single value.
+In order to declare a variable, use the keywords **let** or **const**:
 
-In other words, variables that are not objects (made of one or more key-value pairs).
+**let** - Declares a block scope local variable, optionally initializing it to a value.
+
+**const** - creates a read-only reference to a value which must be specified in the same statement. Constants are block scoped.
+
+<br>
+
+Examples of `let`:
+
+<iframe height="306" style="width: 100%;" scrolling="no" title="wk12 - JavaScript -  -ex3" src="https://codepen.io/maujac/embed/eYpRJRN?height=306&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/eYpRJRN'>wk12 - JavaScript -  -ex3</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+Examples of `const`:
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12  - const -ex4" src="https://codepen.io/maujac/embed/eYpRzQo?height=265&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/eYpRzQo'>wk12  - const -ex4</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
 
 
 
-- `undefined` - lack of existence. The use of `undefined` should be reserved for the JavaScript engine. We don't use it, we just observe it;
-- `null` - lack of existence; We can use this;
-- `boolean` - `true` or `false`;
-- `number` - The only number type available. It's a floating point number (always some decimal attached);
-- `string` - a sequence of characters. Either ' ' or " " can be used. Most other languages consider strings as a sequence of characters, but in JavaScript it is a primitive type.
-- `symbol` - new in ES6. Not covered here.
+<br>
+
+#### The `var` keyword
+
+Older versions of JavaScript only used the keyword **var** for declaring variables. It is a large source of JavaScript bugs and is not recommended if you are new to the language. 
 
 
+
+>  Do not use the the keyword **var** for declaring variables.
+>
+> It can create unexpected results due to scoping conflicts.
+
+
+
+To illustrate this:
+
+```javascript
+var i = 5;
+for (var i = 0; i < 10; i++) {
+  // some statements
+}
+console.log(i);
+```
+
+What would you expect the value of `i` to be ?
+
+<details>
+    <summary>Output</summary>
+    <ul>
+        <li>i = 10</li>
+        <li>One would likely expect i to stay unchanged outside of the for-loop scope.</li>
+    </ul>
+</details>
+
+See  the [JavaScript let page by W3C Schools](https://www.w3schools.com/JS/js_let.asp) for more information on the differences between `let` and `var` .
+
+<br>
+
+## Primitive Types
+
+Primitive types are the most basic variable types in JavaScript.
+
+A primitive type is a type of data that holds a single value. In other words, variables that are not objects (more on objects later).
+
+<br>
+
+| Type        | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| `undefined` | Lack of existence. The use of `undefined` should be reserved for the JavaScript engine. |
+| `null`      | Lack of existence. Can be assigned to variables by developers . |
+| `boolean`   | `true` or `false`                                            |
+| `number`    | The only number type available. It's a floating point number (some decimals are always attached) |
+| `string`    | A sequence of characters. Either ' ' or " " can be used. Most other languages consider strings as an array of characters, but in JavaScript it is a primitive type. |
+| `symbol`    | New in ES6. Not covered in this course.                      |
+
+
+
+<br>
+
+See [JavaScript data types and data structures page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) by MDN web docs for more info on primitive types.
+
+<br>
 
 ### The typeof Operator
 
@@ -626,278 +378,93 @@ typeof window;  // returns "object"
 
 <br>
 
-##  Operators
+### The undefined keyword.
 
-### Operator Precedence & Associativity
+Note that **`undefined`** is a special value in JavaScript and it means slightly different things when dealing with variables, methods or functions:
 
-Operator precedence determines which components in a expression get evaluated first.
+- A **variable** that has not been assigned a value is of type `undefined`. 
+- A **method** or statement also returns `undefined` if the variable that is being evaluated does not have an assigned value.
+- A **function** returns `undefined` if a value was not [`returned`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return).
 
-Operator associativity determines the direction in which the expression is evaluated.
+<br>
+
+### The NaN special value
+
+The `NaN` value in JavaScript is a special Global property which represents **Not-A-Number**.
+
+For practical purpuses `Nan` can be considered as a primitive type. 
+
+It is normally observed when performing arithimetic opperations to non-numeric variables.
+
+<br>
+
+## Arrays
+
+Arrays in JavaScript work similarly to other languages.
 
 
 
-Which operator gets called first (has higher precedence) ?
+- Initialization can happen in a single line or in over multiple line breaks (for readability)
+- Arrays have the `length` property
+- Array elements can be accessed and modified using thier index position
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12  - arrays -ex5" src="https://codepen.io/maujac/embed/mdewOmg?height=265&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/mdewOmg'>wk12  - arrays -ex5</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
+Unline most languages, it is possible to **hold multiple data types** inside an array:
 
 ```javascript
- if( a & b != c ) { ... }
-```
-
-
-
-The precedence (who is evaluated first) and the associativity (direction of evaluation, ei. left to right or right to left) is different for each operator.
-
-
-
-The precedence is determined by a precedence level number, which can be found in the [operator precedence table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence) from MDN web docs.
-
-<br>
-
-## Coercion
-
-Coercion means converting a value from one type to another. Also know as type casting in other languages.
-
-Since JavaScript is a dynamically typed language, coercion happens ofter.
-
-
-
-### Implicit coercion
-
->  Some coercions are intuitive while others are **super counter-intuitive**. 
-
-<br>
-
-For example, let's add the `number` and the `string`  '2' :
-
-```javascript
-let a = 1 + '2';
-console.log(a);
-// returns '12'
-```
-
-<br>
-
-JavaScript coerced the `number` 1 into the  `string` '1' and concatenated it with the second string '2'.
-
-
-
->  Because JavaScript is a dynamically typed language, it is constantly trying to "guess" variable types.
->
-> It will coerce variables in order to make a line of code executable.
-
-<br>
-
-Understanding coercion is very important so we can identify and debug unexpected behavior.
-
-<br>
-
-In the specific case of the `+` operator, if either of the operands (variables being added) is a string, it will perform string concatenation. Otherwise, it will perform numeric addition.
-
-<br>
-
-```javascript
-1 + 2 + '3';	// "33"
-'1' + 2 + 3;	// "123"
-
-2 + 2 + 2;		// 6
-2 + 2 + '2';	// "42"
-'2' + 2 + 2;	// "222"
+let myArray = [123, "Hello!" , true, null];		// allowed
 ```
 
 <br>
 
-However, each operator might have a specific behavior and coercion mechanics.
+### Array Methods
+
+Array objects contain several methods. Below are some commonly used:
+
+| Method                                                       | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [concat()](https://www.w3schools.com/jsref/jsref_concat_array.asp) | Joins two or more arrays, and returns a copy of the joined arrays |
+| [find()](https://www.w3schools.com/jsref/jsref_find.asp)     | Returns the value of the first element in an array that pass a test |
+| [forEach()](https://www.w3schools.com/jsref/jsref_foreach.asp) | Calls a function for each array element                      |
+| [includes()](https://www.w3schools.com/jsref/jsref_includes_array.asp) | Check if an array contains the specified element             |
+| [indexOf()](https://www.w3schools.com/jsref/jsref_indexof_array.asp) | Search the array for an element and returns its position     |
+| [isArray()](https://www.w3schools.com/jsref/jsref_isarray.asp) | Checks whether an object is an array                         |
+| [join()](https://www.w3schools.com/jsref/jsref_join.asp)     | Joins all elements of an array into a string                 |
+| [pop()](https://www.w3schools.com/jsref/jsref_pop.asp)       | Removes the last element of an array, and returns that element |
+| [push()](https://www.w3schools.com/jsref/jsref_push.asp)     | Adds new elements to the end of an array, and returns the new length |
+| [shift()](https://www.w3schools.com/jsref/jsref_shift.asp)   | Removes the first element of an array, and returns that element |
+| [slice()](https://www.w3schools.com/jsref/jsref_slice_array.asp) | Selects a part of an array, and returns the new array        |
+| [sort()](https://www.w3schools.com/jsref/jsref_sort.asp)     | Sorts the elements of an array                               |
+| [splice()](https://www.w3schools.com/jsref/jsref_splice.asp) | Adds/Removes elements from an array                          |
+| [toString()](https://www.w3schools.com/jsref/jsref_tostring_array.asp) | Converts an array to a string, and returns the result        |
+
+See [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array.asp) by W3C Schools for a list of Array methods.
 
 <br>
 
-### Explicit coercion
+## Objects
 
-There are mechanisms we can use to *explicitly* cause values to be coerced, such as using the built-in type “wrapper” objects.
+In JavaScript objects are **name-value pairs** (also refered to as **key-value pairs**)
 
-```javascript
-String(42); // "42"
-Boolean(42); // true
-Number(true); // 1
-```
-
-<br>
-
-For more information on coercion, see [JavaScript type coercion explained](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/) by freeCodeCamp or [JavaScript Type Conversion](https://www.w3schools.com/js/js_type_conversion.asp) by W3C Schools.
-
-<br>
-
-## Comparison Operators
-
-Combining operator precedence and associativity with coercion we can understand many "weird" comparisons of JavaScript. 
-
-<br>
-
-First, we must understand the following coercion rule:
-
-> If a comparison operator receives an unexpected data type, JavaScript will try to coerce it into the expected type.
-
-<br>
-
-```javascript
-3 == 3;		// true (as expected)
-"3" == 3;	// true (due to coersion)
-```
-
-<br>
-
-In the example above, JavaScript coerced the `string` 
-"3" into the `number 3.
+> Everything that is not a primitive type is an object, including functions and properties inside the object.
 
 
 
 <br>
 
-Consider the code below:
+### Objects creation
 
-```javascript
-console.log(3 < 2 < 1);   // outputs true;
-```
-
-<br>
-
-When looking at the [operator precedence table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table), we see that the "less than" sign has an associativity (evaluation direction) of left-to-right.
-
-<br>
-
-This means that `3 < 2` will be evaluated first:
-
-```javascript
-3 < 2 ;		// false
-```
-
-Which is intuitive and expected.
-
-Looking at what is left:
-
-```javascript
-console.log( false < 1 );		//true
-```
-
-<br>
-
-This is unexpected but can be explained by coercion.
-
-The less than operator is expecting to receive two `numbers`, however, it receives a `boolean` and a `number`. 
-
-JavaScript then tries to coerce the `boolean` `false` into a number.
-
-<br>
-
-To understand what will happen, we can use an explicit coercion with `Number( )`:
-
-```javascript
-Number(false);		// 0
-```
-
-<br>
-
-Now we understand that the comparison `false < 1`  becomes:
-
-```javascript
-console.log( 0 < 1 );		// true
-```
-
-<br>
-
-### The special || operator (don't cover)l
-
-The `+` "sum" operator had a particular behavior when coercing different data types (see Implicit coercion above).
-
-
-
-Similarly, the `||` (OR )  operator also has a special behavior. When comparing two different types, it will return the first type that can be coerced to `true`.
-
-
-
-```javascript
-undefined || 'hello';	// "hello"
-Boolearn('hello');		// true
-
-0 || 1;					// 1
-Boolean(1);				// true
-
-null || 'hello';		// "hello"
-"" || 'hello';			// "hello"
-```
-
-
-
-<br>
-
-### Equality
-
-Due to coercion, some equality comparisons can be quite counter-intuitive, which makes the code very difficult to anticipate.
-
-
-
-For example:
-
-```javascript
-false == 0;		// true
-null == 0;		// false
-null < 1;		// true
-
-"" == 0;		// true
-"" == false;	// true
-```
-
-<br>
-
-The equality operator `==`  is know as **loose equality**.
-
-In order to solve this ambiguity, we can use the "strict equality" operator `===` .
-
-<br>
-
-### Strict Equality ===
-
-The strict equality operator, compares two variables **without trying to coerce their data types**.
-
-
-
-```javascript
-"3" === "3";	// true
-"3" === 3;		// false
-```
-
-<br>
-
-> Use `===` and `!==`  by default in your code.
-
-<br>
-
-### The Equality Table
-
-To know what the  `==`  (loose equality operator) and the  `===`  (strict equality operator) will return when comparing data types, refer to [**the equality table**](https://dorey.github.io/JavaScript-Equality-Table/unified/)
-
-<br>
-
-![img](https://web-fundamentals.dev/static/df92e5e8e1ee04149b4b7bde883888c2/e11df/js-equality-table.png)
-
-<p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
-<br>
-
-## Function default values
-
-JavaScript does not throws an error if you do not pass an expected argument to a function:
-
-```javascript
-function greet(name){
-    console.log('Hello ' + name);
-}
-
-greet();	// Output: 'Hello' undefined
-```
-
-<br>
-
-## Objects & Object Literals
-
-The classic notation for creating a new object in JavaScript is the following:
+The "classic" notation for creating a new objects the following:
 
 ```javascript
 let person = new Object();		// creates a new person object
@@ -905,19 +472,162 @@ let person = new Object();		// creates a new person object
 
 <br>
 
-You can then add attributes to to this object by using the "." (dot) operator:
+You can **access and add attributes** to to this object by using the "." (dot) operator:
 
 ```javascript
 person.firstName = "John";
 person.lastName = "Tremblant";
 person.age = 27;
+
+console.log(person);
 ```
 
+<br>
+
+![image-20200427130039068](assets/image-20200427130039068.png)
+
+<br>
+
+If we return the person object and expand it's properties, we can clearly see the list of key-value pairs:
+
+![image-20200427211435669](assets/image-20200427211435669.png)
+
+<br>
+
+### Object Literals { }
 
 
-<div>
-    <a class="jsbin-embed" href="https://jsbin.com/kilucaj/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.7"></script>
-</div>
+
+Objects are more easily created using the **object literal { } shorthand notation**:
+
+<br>
+
+```javascript
+let address = {};		// object literal to create a new object
+
+address.street = "Sherbrooke";
+address.number = 1234;
+
+console.log(address);
+```
+
+![image-20200427130359702](assets/image-20200427130359702.png)
+
+<br>
+
+It is also possible to use the object literal to **create the object and it's properties at the same time**:
+
+```javascript
+let car = {				// using line breaks for readability
+    manufacturer: "Toyota",
+    year: 2019,
+    color: "red"
+};
+
+console.log(car);
+```
+
+![image-20200427131153677](assets/image-20200427131153677.png)
+
+<br>
+
+An object can contain one or multiple other objects.
+
+The object literal notation is very convenient for creating nested objects in "one shot":
+
+<br>
+
+<iframe height="328" style="width: 100%;" scrolling="no" title="wk12  - object literals -ex6" src="https://codepen.io/maujac/embed/yLYXVrP?height=328&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/yLYXVrP'>wk12  - object literals -ex6</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+The expnaded output is:
+
+![image-20200427213222007](assets/image-20200427213222007.png)
+
+<br>
+
+## Functions
+
+There are 3 different ways of creating functions in JavaScript:
+
+- Function Declaration
+- Function Expressions (Named & Anonymous)
+- Arrow Functions
+
+<br>
+
+In this course **we will focus on Function Declarations**. We will only touch on Function Expressions.
+
+<br>
+
+### Function Declarations
+
+Function declarations in JavaScript work similarly to other languages:
+
+- Start the declaration with the keyword `function`
+- Add a function **name**
+- Optionally return something with the keyword `return`
+- To invoke it use its name followed by parenthesis **( )**
+
+<br>
+
+
+
+<iframe height="326" style="width: 100%;" scrolling="no" title="wk12  - function declarations -ex7" src="https://codepen.io/maujac/embed/oNjwqyX?height=326&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/oNjwqyX'>wk12  - function declarations -ex7</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+Major differences from other languages:
+
+<br>
+
+- It is not necessary to specify the data type returned
+- If parameters are expected but not provided the function **will not throw an error**.
+  - If no default values are provided,  `NaN`  or  `undefined` will be provided.
+
+<br>
+
+<iframe height="318" style="width: 100%;" scrolling="no" title="wk12  - argumentless function -ex8" src="https://codepen.io/maujac/embed/ExVXErq?height=318&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/ExVXErq'>wk12  - argumentless function -ex8</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+### Global and Local Variables Inside Functions
+
+The distinction between global and local variables is very important in JavaScript.
+
+This topic is related to Scope Chain and Execution Environments, which will not be covered.
+
+<br>
+
+As a summary:
+
+- Variables declared outside of any function are **Global variables**
+  - Global variables are visible from any function
+- Variables declared inside a function are **Local variables**
+  - Local variables are only visible inside the function
+
+> - If a variable is never declared locally but it is referenced, **it can be shadowed by a global variable with the same name** 
+
+
+
+<br>
+
+<iframe height="266" style="width: 100%;" scrolling="no" title="wk12  - local shadowing - ex9" src="https://codepen.io/maujac/embed/QWjgrbZ?height=266&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/QWjgrbZ'>wk12  - local shadowing - ex9</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 
@@ -925,36 +635,131 @@ person.age = 27;
 
 <br>
 
-## Code Style Guide for JavaScript
+## For-loops
+
+There are several ways of using for-loops in Js. We will focus on two approaches:
+
+- Classic `for( ) ` loop
+- The `for...of` loop
+
+<br>
+
+### Classic for-loop
+
+Works similarly as other languages:
+
+<iframe height="245" style="width: 100%;" scrolling="no" title="wk12  - classic for-loop - ex11" src="https://codepen.io/maujac/embed/zYvzjjB?height=245&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/zYvzjjB'>wk12  - classic for-loop - ex11</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+#### Classic with a twist (optional)
+
+Notice that the `limit` variable could also have been declared inside the for-loop statement.
+
+In fact, multiple variables could have been declared inside the for-loop statement. Their declarations must be separated by a comma ",".
+
+<br>
+
+<iframe height="227" style="width: 100%;" scrolling="no" title="wk12  - for-loop-twist - ex12" src="https://codepen.io/maujac/embed/MWaoGRa?height=227&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/MWaoGRa'>wk12  - for-loop-twist - ex12</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
+### for...of
+
+The `for...of` loop provides a method for directly accessing the items in the list (as opposed to using the array index).
+
+<br>
+
+<iframe height="219" style="width: 100%;" scrolling="no" title="wk12  - for-each - ex13" src="https://codepen.io/maujac/embed/XWmgYrp?height=219&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/XWmgYrp'>wk12  - for-each - ex13</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+### While-loops
+
+While-loops also work similarly as other languages:
+
+<iframe height="248" style="width: 100%;" scrolling="no" title="wk12  - while_loop - ex14" src="https://codepen.io/maujac/embed/KKdqedd?height=248&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/KKdqedd'>wk12  - while_loop - ex14</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+If you prefer `do...while` loops, they are also available. See [the do...while documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) for more info.
+
+<br>
+
+## If Statements
+
+If statements work similarly to other languages
+
+<iframe height="258" style="width: 100%;" scrolling="no" title="wk12  - if statements - ex10" src="https://codepen.io/maujac/embed/oNjwdoW?height=258&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/oNjwdoW'>wk12  - if statements - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+
+
+<br>
+
+# References & Diving Deeper
+
+#### JavaScript Reference Pages
+
+1. [**JavaScript reference**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) by MDN web docs.
+2. [**JavaScript Array Reference**](https://www.w3schools.com/jsref/jsref_obj_array.asp) by W3C Schools
+3. [**Operator Precedence Table**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table) by MDN web docs
+
+
+
+<br>
+
+#### Code Style Guide for JavaScript
 
 [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
 
 
 
-
-
-## WTF JavaScript
+#### WTF JavaScript (humour & quirks)
 
 JavaScript has some particularities, specially if you are coming from other languages.
 
-A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behavirous
+A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behavirous.
 
 
 
+<br>
 
 
-# To Clarify
 
-- When to transform DOM collections into an array and when to not?
+# Hands-on
 
-  - Eg.: querySelectorAll() (returns an NodeList Array) vs getElementsByClassName() (returns a HTMLCollection)
 
-- How to iterate through a HTMLCollection vs a NodeList? NodeList has forEach, the other has not.
 
-  - Verify: are for-loops are a safe for both.
+## Exercises
 
-- `this` and function context. (from [thecodebarbarian.com](https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript.html))
+Complete the following exercises from W3C Schools:
 
-  - > . `for`, `for/in`, and `for/of` retain the outside scope's value of `this`, but the `forEach()` callback will have a different `this` *unless* you use an [arrow function](https://medium.freecodecamp.org/learn-es6-the-dope-way-part-ii-arrow-functions-and-the-this-keyword-381ac7a32881).
+1. [JavaScript Arrays](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1) and [Array methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_array_methods1)
+2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
+3. [Js Strings](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_strings1) and [String Methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_string_methods1)
+4. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
+5. 
 
-- 
