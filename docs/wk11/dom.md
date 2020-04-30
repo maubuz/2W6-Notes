@@ -22,7 +22,6 @@ The `document` object is the main “entry point” to the page. Each branch of 
 ![THE DOM!](https://www.kirupa.com/html5/images/DOM_js_72.png)
 
 <p align="center"><a href="https://www.kirupa.com/html5/finding_elements_dom_using_querySelector.htm"><em>The DOM Tree by Kirupa</em></a></p>
-
 <br>
 
 >  While the browser is reading the HTML file and rendering the page, it is in parallel also building a Document Object Model.
@@ -35,7 +34,7 @@ There are 3 types of nodes:
 
 - Element nodes;
 - Attribute nodes;
-- Text nodes.
+- Text nodes (including comments).
 
 
 
@@ -54,7 +53,6 @@ In the example below:
 ![image-20200427081031517](assets/image-20200427081031517.png)
 
 <p align="center"><a href="https://www.oreilly.com/pub/au/383"><em>Learning Web Design by Jennifer Robbins</em></a></p>
-
 <br>
 
 ## White Spacce & Comments
@@ -76,8 +74,6 @@ See the code below and it's corresponding DOM Tree:
   The truth of the DOM.</text></g><g class="node" transform="translate(66.66666412353516,60)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣␣␣</text></g><g class="node" transform="translate(66.66666412353516,90)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">TITLE</text></g><g class="node" transform="translate(100,120)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text The DOM</text></g><g class="node" transform="translate(66.66666412353516,150)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣</text></g></g></svg></img>
 
 <p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavScript.info</em></a></p>
-
-
 <br>
 
 The text inside elements forms *text nodes*, labeled as `#text`.
@@ -276,9 +272,6 @@ Since the DOM has a tree structure, it is possible to "walk" or move inside it f
 
 
 <p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavScript.info</em></a></p>
-
-
-
 <br>
 
 >  We will focus on navigation that take only **element nodes** into account since Element nodes represent HTML tags and form the structure of the page.
@@ -317,17 +310,39 @@ In the example below, we move inside the DOM in order to select and modify relat
 
 # References & Diving Deeper
 
-Recommended readings:
-
-- [DOM tree](https://javascript.info/dom-nodes) by javescript.info
+**Quick Reference:**
 
 
 
-**For a list of common DOM API Methods and properties:**
+![dom-tree](assets/dom-tree.png)
 
- - [JavaScript HTML DOM Document](https://www.w3schools.com/js/js_htmldom_document.asp) by W3C Schools
+<p align="center"><a href="https://blog.scrapinghub.com/2016/10/27/an-introduction-to-xpath-with-examples"><em>DOM Tree by Valdir Stumm</em></a></p>
+<br>
+
+Start here:
+
+1. **[Common DOM API Methods & Properties](https://www.w3schools.com/js/js_htmldom_document.asp)** (short)
+
+
+
+<br>
+
+Can't find a method or property? Use Ctrl + F in pages below:
+
+
+
+2. [**Window API**](https://developer.mozilla.org/en-US/docs/Web/API/Window) (complete)
+2. [**Document API**](https://developer.mozilla.org/en-US/docs/Web/API/Document) (complete)
+3. [**Nodes API**](https://developer.mozilla.org/en-US/docs/Web/API/Node) (complete)
+4. [**Elements API**](https://developer.mozilla.org/en-US/docs/Web/API/Element) (complete)
 
    
+
+<br>
+
+**Recommended readings:**
+
+- [DOM tree](https://javascript.info/dom-nodes) by javescript.info
 
 <br>
 
