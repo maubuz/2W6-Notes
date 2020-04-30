@@ -321,7 +321,7 @@ In the example below, we move inside the DOM in order to select and modify relat
 
 Start here:
 
-1. **[Common DOM API Methods & Properties](https://www.w3schools.com/js/js_htmldom_document.asp)** (short)
+1. **[Common DOM API Methods & Properties](https://www.w3schools.com/js/js_htmldom_document.asp)** (summary)
 
 
 
