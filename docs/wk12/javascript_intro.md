@@ -109,7 +109,7 @@ Instead, use following method for **adding and deleting HTML elements**:
 3. Select the note to receive the new element
 4. Append the new node to the selected element with:
    1.  `appendChild` if the new content should go as the last child
-   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
+   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
 
 <br>
 
@@ -143,7 +143,7 @@ The next steps in terms of DOM manipulation is to learn:
 - the document methods `querySelect` and `querySelectAll` 
   - (allows us to use CSS selectors to access element )
 - window **events** and event **callback functions**
-  - (allows us to trigger functions based on DOM events like `onclick` and `onkeypress` )
+  - (allows us to trigger functions based on DOM events like `onclick` and `onkeypress` )
 
 <br>
 
@@ -165,7 +165,7 @@ Netscape had to cease it's opperations. As a last move, they open sourced JavaSc
 
 
 
-## Adding JavaScript to HTML
+# Adding JavaScript to HTML
 
 What are the places that we can run JavaScript in the HTML document?
 
@@ -296,15 +296,15 @@ Examples of `const`:
 
 <br>
 
-#### The `var` keyword
+#### The `var` keyword
 
-Older versions of JavaScript only used the keyword **var** for declaring variables. It is a large source of JavaScript bugs and is not recommended if you are new to the language. 
+Older versions of JavaScript only used the keyword **var** for declaring variables. It is a large source of JavaScript bugs and is not recommended if you are new to the language. 
 
 
 
 >  Do not use the the keyword **var** for declaring variables.
 >
-> It can create unexpected results due to scoping conflicts.
+> It can create unexpected results due to scoping "conflicts".
 
 
 
@@ -328,7 +328,7 @@ What would you expect the value of `i` to be ?
     </ul>
 </details>
 
-See  the [JavaScript let page by W3C Schools](https://www.w3schools.com/JS/js_let.asp) for more information on the differences between `let` and `var` .
+See  the [JavaScript **Let page** by W3C Schools](https://www.w3schools.com/JS/js_let.asp) for more information on the differences between `let` and `var` .
 
 <br>
 
@@ -406,7 +406,7 @@ Arrays in JavaScript work similarly to other languages.
 
 - Initialization can happen in a single line or in over multiple line breaks (for readability)
 - Arrays have the `length` property
-- Array elements can be accessed and modified using thier index position
+- Array elements can be accessed and modified using their index position
 
 <br>
 
@@ -419,7 +419,7 @@ Arrays in JavaScript work similarly to other languages.
 
 
 
-Unline most languages, it is possible to **hold multiple data types** inside an array:
+Unlike most languages, it is possible to **hold multiple data types** inside the same array:
 
 ```javascript
 let myArray = [123, "Hello!" , true, null];		// allowed
@@ -454,7 +454,7 @@ See [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array
 
 ## Objects
 
-In JavaScript objects are **name-value pairs** (also refered to as **key-value pairs**)
+In JavaScript objects are **name-value pairs** (also referred to as **key-value pairs**)
 
 > Everything that is not a primitive type is an object, including functions and properties inside the object.
 
@@ -544,7 +544,7 @@ The object literal notation is very convenient for creating nested objects in "o
 
 <br>
 
-The expnaded output is:
+The expanded output is:
 
 ![image-20200427213222007](assets/image-20200427213222007.png)
 
@@ -592,7 +592,7 @@ Major differences from other languages:
 
 - It is not necessary to specify the data type returned
 - If parameters are expected but not provided the function **will not throw an error**.
-  - If no default values are provided,  `NaN`  or  `undefined` will be provided.
+  - If no default values are provided,  `NaN`  or  `undefined` will be provided.
 
 <br>
 
@@ -639,8 +639,8 @@ As a summary:
 
 There are several ways of using for-loops in Js. We will focus on two approaches:
 
-- Classic `for( ) ` loop
-- The `for...of` loop
+- Classic `for( ) ` loop
+- The `for...of` loop
 
 <br>
 
@@ -655,7 +655,7 @@ Works similarly as other languages:
 
 <br>
 
-#### Classic with a twist (optional)
+#### Multi-variable initialization (the classic with a twist)
 
 Notice that the `limit` variable could also have been declared inside the for-loop statement.
 
@@ -698,7 +698,7 @@ While-loops also work similarly as other languages:
 
 <br>
 
-If you prefer `do...while` loops, they are also available. See [the do...while documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) for more info.
+If you prefer `do...while` loops, they are also available. See [the do...while documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) for more info.
 
 <br>
 
@@ -714,6 +714,10 @@ If statements work similarly to other languages
 
 
 <br>
+
+> Careful! **The equality operator "==" behaves differently** than most languages.
+>
+> This is a design decision that [Brendan Eich regrets](https://thenewstack.io/brendan-eich-on-creating-javascript-in-10-days-and-what-hed-do-differently-today/). See next lecture for details.
 
 
 
@@ -761,5 +765,58 @@ Complete the following exercises from W3C Schools:
 2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
 3. [Js Strings](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_strings1) and [String Methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_string_methods1)
 4. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
-5. 
+
+
+
+## Lab 1 - Simple Array Manipulation
+
+Perform the following steps in the console of your browser (use the Dev Tools).
+
+1. Create a variable called `friends`
+   and assign it an array with four of
+   your friends’ names.
+2. Show the user a dialog that displays
+   the third name in your list of
+   `friends`.
+3. Create a variable called `name` and
+   assign it a string value that is your
+   first name.
+4. If the value of `name` is identical to
+   Jennifer, show the user a dialog
+   box that says, “That’s my name too!”
+5. Create a variable called `myVariable`
+   and assign it a number value
+   between 1 and 10.
+6. If `myVariable`
+   is greater than five, show the user a
+   dialog that says “hight.” If not, show
+   the user a dialog that says “low.”
+
+
+
+## Lab 2 - Colors on Click
+
+Use the code below to change the color of the `<h1>` element when the button is clicked.
+
+
+
+Implement the following steps:
+
+1. Create a global array containing 3 valid HTML color names.
+2. On click, change the `<h1>` background color to one of the 3 colors.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - Lab 2" src="https://codepen.io/maujac/embed/OJygwjW?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/OJygwjW'>wk12 - Lab 2</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+
+
+
 
