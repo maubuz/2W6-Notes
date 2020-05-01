@@ -14,7 +14,7 @@ Except for `null` and `undefined`, all primitive types have object equivalents t
 
 - [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) for the string primitive.
 - [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) for the number primitive.
-- [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) for the bigint primitive.
+- [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) for the number primitive.
 - [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) for the boolean primitive.
 
 <br>
@@ -431,7 +431,7 @@ A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), 
 
 #### Exercise 1
 
-Practice your equality skills by playing the [**JavaScript Equality Minesweeper**](https://eqeq.js.org/) by slikts
+Practice your equality skills by playing the [**JavaScript Equality Minesweeper**](https://eqeq.js.org/) by slikts
 
 <br>
 
