@@ -630,23 +630,8 @@ If statements work similarly to other languages
 
 1. [**JavaScript reference**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) by MDN web docs.
 2. [**JavaScript Array Reference**](https://www.w3schools.com/jsref/jsref_obj_array.asp) by W3C Schools
-3. [**Operator Precedence Table**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table) by MDN web docs
 
-
-
-<br>
-
-#### Code Style Guide for JavaScript
-
-[Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js)
-
-
-
-#### WTF JavaScript (humour & quirks)
-
-JavaScript has some particularities, specially if you are coming from other languages.
-
-A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behavirous.
+   
 
 <br>
 
