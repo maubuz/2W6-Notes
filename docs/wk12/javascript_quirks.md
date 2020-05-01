@@ -2,7 +2,7 @@
 
 JavaScript can seem a little weird at first, **unless you learn some of the things under the hood**.
 
-Here we'll learn enough to not get caugh off guarsd by JS.
+Here we'll learn enough to not get caught off guard by JS.
 
 <br>
 
