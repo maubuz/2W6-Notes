@@ -372,9 +372,13 @@ The strict equality operator, compares two variables **without trying to coerce 
 
 <br>
 
-## Take-away
+## Take-aways
 
 > Use `===` and `!==`  by default in your code.
+
+<br>
+
+> When using the  `+` operator, if one of the operands is a string, it will perform string concatenation. Otherwise, it will perform numeric addition.
 
 <br>
 
@@ -388,8 +392,6 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 
 <p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
 <br>
-
-
 
 
 
@@ -415,9 +417,7 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 
 ### WTF JavaScript (humour & quirks)
 
-JavaScript has some particularities, specially if you are coming from other languages.
-
-A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behavirous.
+A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behaviors.
 
 <br>
 
@@ -451,7 +451,7 @@ Example output :
 
 #### Exercise 3
 
-Write a JavaScript program which compute, the average marks of the  following students Then, this average is used to determine the  corresponding grade.
+Write a JavaScript program which compute, the average marks of the  following students Then, this average is used to determine the corresponding letter grade of the whole class.
 
 | **Student Name** | **Marks** |
 | ---------------- | --------- |
@@ -471,7 +471,7 @@ The grades are computed as follows :
 | <70       | D         |
 | <80       | C         |
 | <90       | B         |
-| <100      | A         |
+| =100      | A         |
 
 <br>
 
