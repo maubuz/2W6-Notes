@@ -1,3 +1,74 @@
+This section is based on the page [Introduction to browser events](https://javascript.info/introduction-browser-events) by javascript.info
+
+
+
+# Event Listeners & Call back function
+
+An **event** is a signal that something has happened. All DOM nodes generate such signals.
+
+Here’s a list of the most useful DOM events, just to take a look at:
+
+**Mouse events:**
+
+- `click` – when the mouse clicks on an element (touchscreen devices generate it on a tap).
+- `contextmenu` – when the mouse right-clicks on an element.
+- `mouseover` / `mouseout` – when the mouse cursor comes over / leaves an element.
+- `mousedown` / `mouseup` – when the mouse button is pressed / released over an element.
+- `mousemove` – when the mouse is moved.
+
+**Form element events:**
+
+- `submit` – when the visitor submits a `<form>`.
+- `focus` –  when the visitor focuses on an element, e.g. on an `<input>`.
+
+**Keyboard events:**
+
+- `keydown` and `keyup` – when the visitor presses and then releases the button.
+
+**Document events:**
+
+- `DOMContentLoaded` – when the HTML is loaded and processed, DOM is fully built.
+
+
+
+<br>
+
+> For a complete list of events see [**MDN's Event reference page**](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+
+
+<br>
+
+# Event handlers
+
+In order to react to an event we need to assign an event handler. 
+
+
+
+<br>
+
+# querySelector & querySelectorAll
+
+In addition to accessing elements by Id name, Class name or element Type you can use the same CSS-selector syntax that you use in the CSS file.
+
+
+
+
+
+### querySelectAll vs getElements
+
+
+
+One returns an HTMLCollection object while the other returns a NodeList.
+
+They have different types of methods available and we need to understand how to iterate through them.
+
+<br>
+
+
+
+[**Exercises: JavaScript conditional statements and loops - Exercises, Practice, Solution**](https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php)
+
 
 
 <br>
@@ -241,7 +312,6 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 ![img](https://web-fundamentals.dev/static/df92e5e8e1ee04149b4b7bde883888c2/e11df/js-equality-table.png)
 
 <p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
-
 <br>
 
 ## Function default values
@@ -260,63 +330,13 @@ greet();	// Output: 'Hello' undefined
 
 
 
-## Primitive wrapper objects
-
-Except for `null` and `undefined`, all primitive values have object equivalents that wrap around the primitive values:
-
-- [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) for the string primitive.
-- [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) for the number primitive.
-- [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) for the bigint primitive.
-- [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) for the boolean primitive.
-- [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) for the symbol primitive.
-
-<br>
-
-Here is how primitive wrapper objects work:
-
-<br>
-
-1. Primitives are still primitive. A single value, as desired.
-2. The language allows access to methods and properties of strings, numbers, booleans and symbols.
-3. In order for that to work, a special “object wrapper” that provides the extra functionality is created, and then is destroyed.
-
-<br>
 
 
 
 
 
-# querySelector & querySelectorAll
-
-In addition to accessing elements by Id name, Class name or element Type you can use the same CSS-selector syntax that you use in the CSS file.
 
 
-
-
-
-### querySelectAll vs getElements
-
-
-
-One returns an HTMLCollection object while the other returns a NodeList.
-
-They have different types of methods available and we need to understand how to iterate through them.
-
-<br>
-
-
-
-# Event Listeners & Call back function
-
-
-
-(add list of common events)
-
-
-
-
-
-Now we need to take a short break from the DOM and focus on JavaScript so we can fully manipulate the DOM at will.
 
 
 
@@ -745,3 +765,88 @@ null || 'hello';		// "hello"
 
 
 <br>
+
+Example of using a window method**
+
+<br>
+
+#### Multi-variable initialization (the classic with a twist)
+
+Notice that the `limit` variable could also have been declared inside the for-loop statement.
+
+In fact, multiple variables could have been declared inside the for-loop statement. Their declarations must be separated by a comma ",".
+
+<br>
+
+<iframe height="227" style="width: 100%;" scrolling="no" title="wk12  - for-loop-twist - ex12" src="https://codepen.io/maujac/embed/MWaoGRa?height=227&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/maujac/pen/MWaoGRa'>wk12  - for-loop-twist - ex12</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
+## A "read the docs" example
+
+We tried to use the `window.resizeTo()` method in order to resize an open window, but **it failed!**
+
+The syntax and use of the method was correct and we were able to reproduce this [copy-paste example from W3C Schools](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_resizeby_resizeto). 
+
+<br>
+
+```
+<body>
+    <button onclick="openWin()">Create window</button>
+    <button onclick="resizeWinTo()">Resize to 800px * 600px</button>
+
+    <script>
+        function openWin() {
+          var myWindow = window.open("", "", "width=250, height=250");
+        }
+
+        function resizeWinTo() {
+          myWindow.resizeTo(800, 600);
+        }
+    </script>
+</body>
+```
+
+<br>
+
+However, when using `window.resizeTo(800,600)` in the Dev Tools console we got `undefined`. **What was wrong?!**
+
+<br>
+
+A search return points us to [a StackOverflow question](https://stackoverflow.com/questions/7602078/javascripts-window-resizeto-isnt-working), where someone points out that in order to resize windows there are two rules:
+
+<br>
+
+> Two rules:
+>
+> 1. Can't resize a window/tab that hasn't been created by window.open.
+> 2. Can't resize a tab if the tab is in a window with more than one tab.
+
+<br>
+
+However, this answer is from 2011 and therefore it is important to verify it with a reference from the documentation.
+
+The only additional information listed in the MDN documentation for `window.resizeToo()` is a note in the compatibility table:
+
+![image-20200425115421243](assets/image-20200425115421243.png)
+
+<br>
+
+This tells us that we cannot use and points us to a Bug report where we can read the discussion on why this limitation was implement..
+
+Also, the **See also** section suggests that we look at similar method `window.resizeBy()` . In the page for `window.resizeBy()` we find this section:
+
+<br>
+
+> ### Creating and resizing an external window
+>
+> For security reasons, it's no longer possible in Firefox for a  website to change the default size of a window in a browser if the  window wasn’t created by `window.open()`, or contains more than one tab. See the comparability table for details on the change.
+
+<br>
+
+Our search is done. **We now understand what is happening, why it's happening and how to properly use the method.**

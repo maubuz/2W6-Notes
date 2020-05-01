@@ -1,89 +1,6 @@
 
 
-# DOM Manipulation Review
-
-Last class we looked at manipulating the DOM via it's API. The DOM is comprised at it's root of a Window object.
-
-<br>
-
-Here are two documentation pages for the Window object API's:
-
-- [The Window Object](https://www.w3schools.com/jsref/obj_window.asp) by W3C Schools (best for beginners)
-- [Window's web API](https://developer.mozilla.org/en-US/docs/Web/API/Window) by MDN web docs (more complete and less beginner friendly)
-
-<br>
-
-**Example of using a window method**
-
-<br>
-
-## A "read the docs" example
-
-We tried to use the `window.resizeTo()` method in order to resize an open window, but **it failed!**
-
-The syntax and use of the method was correct and we were able to reproduce this [copy-paste example from W3C Schools](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_resizeby_resizeto). 
-
-<br>
-
-```
-<body>
-    <button onclick="openWin()">Create window</button>
-    <button onclick="resizeWinTo()">Resize to 800px * 600px</button>
-
-    <script>
-        function openWin() {
-          var myWindow = window.open("", "", "width=250, height=250");
-        }
-
-        function resizeWinTo() {
-          myWindow.resizeTo(800, 600);
-        }
-    </script>
-</body>
-```
-
-<br>
-
-However, when using `window.resizeTo(800,600)` in the Dev Tools console we got `undefined`. **What was wrong?!**
-
-<br>
-
-A search return points us to [a StackOverflow question](https://stackoverflow.com/questions/7602078/javascripts-window-resizeto-isnt-working), where someone points out that in order to resize windows there are two rules:
-
-<br>
-
-> Two rules:
->
-> 1. Can't resize a window/tab that hasn't been created by window.open.
-> 2. Can't resize a tab if the tab is in a window with more than one tab.
-
-<br>
-
-However, this answer is from 2011 and therefore it is important to verify it with a reference from the documentation.
-
-The only additional information listed in the MDN documentation for `window.resizeToo()` is a note in the compatibility table:
-
-![image-20200425115421243](assets/image-20200425115421243.png)
-
-<br>
-
-This tells us that we cannot use and points us to a Bug report where we can read the discussion on why this limitation was implement..
-
-Also, the **See also** section suggests that we look at similar method `window.resizeBy()` . In the page for `window.resizeBy()` we find this section:
-
-<br>
-
-> ### Creating and resizing an external window
->
-> For security reasons, it's no longer possible in Firefox for a  website to change the default size of a window in a browser if the  window wasn’t created by `window.open()`, or contains more than one tab. See the comparability table for details on the change.
-
-<br>
-
-Our search is done. **We now understand what is happening, why it's happening and how to properly use the method.**
-
-<br>
-
-## Inserting elements in the DOM
+# Inserting elements in the DOM
 
 We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` propert.
 
@@ -147,7 +64,7 @@ The next steps in terms of DOM manipulation is to learn:
 
 <br>
 
-However, to trully benefity from these concepts we need to learn JavaScript. We will go back to the DOM shortly.
+However, to truly benefit from these concepts we need to learn JavaScript. We will go back to the DOM shortly.
 
 <br>
 
@@ -157,11 +74,11 @@ However, to trully benefity from these concepts we need to learn JavaScript. We 
 
 ## Origins
 
-JavaScript was created during the browser wars in the mid 90's. In an ambitious maneuver to outperform Microsoft's Internet Explorer (IE), the team behind Netscape Navigator commissioner Brendan Eich to create a powerfull, dynamic, language  that could run in the browser.  Brendan created JavaScript in 10 days.
+JavaScript was created during the browser wars in the mid 90's. In an ambitious maneuver to outperform Microsoft's Internet Explorer (IE), the team behind Netscape Navigator commissioner Brendan Eich to create a powerful, dynamic, language  that could run in the browser.  Brendan created JavaScript in 10 days.
 
 Microsoft reverse engineered Netscape's JavaScript interpreter and dominated the market-share by including IE with Windows.
 
-Netscape had to cease it's opperations. As a last move, they open sourced JavaScript. Brendan and others behind Netscape Navigator went on to cofound the Mozilla foundation.
+Netscape had to cease it's operations. As a last move, they open sourced JavaScript. Brendan and others behind Netscape Navigator went on to co-found the Mozilla foundation.
 
 
 
@@ -618,7 +535,8 @@ As a summary:
 - Variables declared inside a function are **Local variables**
   - Local variables are only visible inside the function
 
-> - If a variable is never declared locally but it is referenced, **it can be shadowed by a global variable with the same name** 
+> - If a variable is referenced locally but has never been declared, JavaScript will try to find that variable in the global environment.
+> - If the undeclared variable is found in the global environment, **will over-shadow the local variable with the same name** 
 
 
 
@@ -628,8 +546,6 @@ As a summary:
   See the Pen <a href='https://codepen.io/maujac/pen/QWjgrbZ'>wk12  - local shadowing - ex9</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
-
 
 
 
@@ -650,21 +566,6 @@ Works similarly as other languages:
 
 <iframe height="245" style="width: 100%;" scrolling="no" title="wk12  - classic for-loop - ex11" src="https://codepen.io/maujac/embed/zYvzjjB?height=245&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/maujac/pen/zYvzjjB'>wk12  - classic for-loop - ex11</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-<br>
-
-#### Multi-variable initialization (the classic with a twist)
-
-Notice that the `limit` variable could also have been declared inside the for-loop statement.
-
-In fact, multiple variables could have been declared inside the for-loop statement. Their declarations must be separated by a comma ",".
-
-<br>
-
-<iframe height="227" style="width: 100%;" scrolling="no" title="wk12  - for-loop-twist - ex12" src="https://codepen.io/maujac/embed/MWaoGRa?height=227&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/MWaoGRa'>wk12  - for-loop-twist - ex12</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
@@ -698,7 +599,7 @@ While-loops also work similarly as other languages:
 
 <br>
 
-If you prefer `do...while` loops, they are also available. See [the do...while documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) for more info.
+If you prefer `do...while` loops, they also exist in JavaScript. See [the do...while documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) for more info.
 
 <br>
 
@@ -746,8 +647,6 @@ If statements work similarly to other languages
 JavaScript has some particularities, specially if you are coming from other languages.
 
 A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), where you will find a list of unexpected behavirous.
-
-
 
 <br>
 
@@ -816,7 +715,13 @@ Implement the following steps:
 
 <br>
 
+## Lab 3 - Multiply Two Numbers
 
+Write a function that will receive 3 numbers as input and it should return the multiplication of these
+3 numbers.
 
+**Input:** three numbers
 
+**Output:** number
 
+**Example**: inputs are (2,3,4), output is 24.

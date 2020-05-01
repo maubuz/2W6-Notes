@@ -36,3 +36,4 @@
 - [The DOM](./wk11/dom.md)
 - **Week 12**
 - [Intro to JavaScript](./wk12/javascript_intro.md)
+- [JS Operators & Coercion](./wk12/javascript_quirks.md)
