@@ -271,7 +271,7 @@ In the example above, JavaScript coerced the `string`
 Consider the code below:
 
 ```javascript
-console.log(3 < 2 < 1);   // outputs true;
+console.log(3 < 2 < 1);  // ?
 ```
 
 <br>
@@ -381,7 +381,6 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 ![img](https://web-fundamentals.dev/static/df92e5e8e1ee04149b4b7bde883888c2/e11df/js-equality-table.png)
 
 <p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
-
 <br>
 
 # Take-aways
