@@ -372,7 +372,19 @@ The strict equality operator, compares two variables **without trying to coerce 
 
 <br>
 
-## Take-aways
+## The Equality Table
+
+To know what the  `==`  (loose equality operator) and the  `===`  (strict equality operator) will return when comparing data types, refer to [**the equality table**](https://dorey.github.io/JavaScript-Equality-Table/unified/)
+
+<br>
+
+![img](https://web-fundamentals.dev/static/df92e5e8e1ee04149b4b7bde883888c2/e11df/js-equality-table.png)
+
+<p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
+
+<br>
+
+# Take-aways
 
 > Use `===` and `!==`  by default in your code.
 
@@ -382,20 +394,15 @@ The strict equality operator, compares two variables **without trying to coerce 
 
 <br>
 
-### The Equality Table
+> When comparing values of different types, JavaScript converts the values to numbers.
 
-To know what the  `==`  (loose equality operator) and the  `===`  (strict equality operator) will return when comparing data types, refer to [**the equality table**](https://dorey.github.io/JavaScript-Equality-Table/unified/)
-
-<br>
-
-![img](https://web-fundamentals.dev/static/df92e5e8e1ee04149b4b7bde883888c2/e11df/js-equality-table.png)
-
-<p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
 <br>
 
 
 
 # References & Diving Deeper
+
+
 
 ### JavaScript Reference Documentation Pages
 
