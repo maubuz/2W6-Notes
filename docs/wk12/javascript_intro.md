@@ -678,6 +678,10 @@ Perform the following steps in the console of your browser (use the Dev Tools).
 
 
 
+Solution [available here](https://codepen.io/maujac/pen/KKdZMzp)
+
+
+
 ## Lab 2 - Colors on Click
 
 Use the code below to change the color of the `<h1>` element when the button is clicked.
@@ -696,7 +700,7 @@ Implement the following steps:
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
+Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
 
 <br>
 
@@ -710,3 +714,7 @@ Write a function that will receive 3 numbers as input and it should return the m
 **Output:** number
 
 **Example**: inputs are (2,3,4), output is 24.
+
+
+
+Solution [available here](https://codepen.io/maujac/pen/qBOpNdP)
