@@ -37,3 +37,5 @@
 - **Week 12**
 - [Intro to JavaScript](./wk12/javascript_intro.md)
 - [JS Operators & Coercion](./wk12/javascript_quirks.md)
+- **Week 13**
+- [Events](./wk13/events.md)

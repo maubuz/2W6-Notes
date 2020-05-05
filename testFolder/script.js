@@ -90,10 +90,8 @@
 
 // console.log(myObj_1.greeting);
 
-let myObj_2 = {
-    action: function speak(sentence) {
-        console.log("Hi there! " + sentence)
-    }
-};
+function clicking(){
+  console.log( 'clicked' );
+}
 
-myObj_2.action('Whats up?');
+tips.onclick = clicking;
