@@ -43,13 +43,13 @@ Now we will look at each form component in a little more detail:
 
 <br>
 
-## &lt;form&gt; Element
+# &lt;form&gt; Element
 
 As mentioned, the the `<form>` tag is used to create an HTML form for user input.
 
 
 
->  The most important attributes of `<form>`  is `action` , which defines the URL of where to send the data.
+>  The most important attributes of `<form>`  is `action` , which defines the URL of where to send the data.
 
 <br> The URL usually points to a server-site script which will parse the data (categorizer it) and store it.
 
@@ -74,7 +74,7 @@ The `<form>` element can receive the following attributes:
 
 <br>
 
-## The Method Attribute
+# The Method Attribute
 
 One important mention is that the `method` attribute specifies the HTTP method (**GET** or  **POST**) to be used when submitting the form data.
 
@@ -107,7 +107,7 @@ One important mention is that the `method` attribute specifies the HTTP method (
 
 <br>
 
-## &lt;input&gt; Element
+# &lt;input&gt; Element
 
 The `<input>` element can be displayed in several ways, depending on the `type`  attribute.
 
@@ -218,7 +218,7 @@ To define the default value of an [`<input>`](https://developer.mozilla.org/en-U
 
 <br>
 
-## Built-in form validation
+# Built-in form validation
 
 One of the most significant features of [HTML5 form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types) is the ability to validate most user data without relying on  JavaScript.
 
