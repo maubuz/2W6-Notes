@@ -288,9 +288,9 @@ See the [Event API documentation](https://developer.mozilla.org/en-US/docs/Web/A
 
 <br>
 
-## Capturing event objects
+## Catching event objects
 
-When writing an event handler, it is possible to "capture" the event object created by the browser.
+When writing an event handler, it is possible to "catch" the event object created by the browser.
 
 Once captured, the event details (stored as object properties) can be used inside the event handler.
 
@@ -299,10 +299,9 @@ Once captured, the event details (stored as object properties) can be used insid
 ![image-20200505101131744](assets/image-20200505101131744.png ':size=600')
 
 <p align="center"><a href="https://www.fraghero.com/pokemon-lets-go-players-found-way-make-catching-easier-every-time/"><em>Image by fraghero.com</em></a></p>
-
 <br>
 
-To capture the event that triggered the callback function:
+To catch the event that triggered the callback function:
 
 1. List the event as a function argument in the function declaration
 2. Use the event object inside the function.
@@ -327,7 +326,7 @@ The event object is automatically passed to the callback function as the first a
 Note that:
 
 - The name of the "event argument" can be anything.  Common names are "event" or "e".
-- When assigning an event handler HTML attributes, the event object must be included in attribute description.
+- When assigning an event handler as HTML attributes, the event object must be included in attribute description and it must be named "event".
 
 
 
@@ -403,7 +402,6 @@ A click on the inner `` first runs `onclick`:
 <p align="center"><a href="https://javascript.info/bubbling-and-capturing"><em>Bubbling and capturing by jhavascript.info</em></a></p>
 
 
-
 <br>
 
 
@@ -412,7 +410,7 @@ A click on the inner `` first runs `onclick`:
 
 As you saw above, a handler on a parent element can always get the details about where it actually happened.
 
-> **The most deeply nested element that caused the event is called a "target" element, accessible as `event.target`.**
+> **The element that caused the event is called a "target" element, accessible as `event.target`.**
 
 
 
@@ -423,16 +421,35 @@ If we have a single handler on `form.onclick`, then it can “catch” all click
 <br>
 
 > **`event.currentTarget` returns the element who is firing the event handler.**
+>
+> In other words, `event.currentTarget` returns the element who was listening for the event and triggered the callback function.
 
 
 
 <br>
 
-## Stoping bubbling
+The use of `event.target`  vs  `event.currentTarget`  is particularly useful when trying to delete notes that are positioned relative to an element listening for an event.
+
+
+
+Notice the difference between  `event.target`  vs  `event.currentTarget`  when clicking on the icon:
+
+<br>
+
+<iframe height="316" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=316&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+## Stopping bubbling
 
 A bubbling event goes from the target element all the way to the `document` object. 
 
-**To stop the event bubbling** at a specific use the method `event.stopPropagation()`.
+**To stop the event bubbling** at a specific handler use the method `event.stopPropagation()`.
 
 
 
@@ -451,9 +468,22 @@ A bubbling event goes from the target element all the way to the `document` obje
 
 <br>
 
-## Preventing default behaviour
+Bubbling can be used in a pattern called **event-delegation** where all events are caught by a common parent but handled differently according to the `target` where the event is occurring:
 
-Sometimes it is desireble to stop a default behaviour without necessarily stoping bubbling.
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
+## Preventing default behavior
+
+Sometimes it is desirable to stop a default behavior without necessarily stopping bubbling.
 
 
 
@@ -465,7 +495,7 @@ For example, by default, when a `<button>` element is clicked inside a `<form>` 
 
 
 
-A common example of stoping defaiult behaviour is to stop the `<button>` from submitting without necesseraly stoping the `"click"` event from bubbling.
+A common example of stopping default behavior is to stop the `<button>` from submitting without necessarily stooping the `"click"` event from bubbling.
 
 <br>
 
