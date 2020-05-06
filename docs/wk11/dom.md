@@ -55,7 +55,7 @@ In the example below:
 <p align="center"><a href="https://www.oreilly.com/pub/au/383"><em>Learning Web Design by Jennifer Robbins</em></a></p>
 <br>
 
-## White Spacce & Comments
+## White Space & Comments
 
 See the code below and it's corresponding DOM Tree:
 
@@ -73,7 +73,8 @@ See the code below and it's corresponding DOM Tree:
 <svg width="690" height="320"><g transform="translate(20,30)"><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M7,0L7,30L40.333333333333336,30"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M7,0L7,180L40.333333333333336,180"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M7,0L7,210L40.333333333333336,210"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M40.333333333333336,210L40.333333333333336,240L73.66666666666667,240"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M40.333333333333336,30L40.333333333333336,60L73.66666666666667,60"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M40.333333333333336,30L40.333333333333336,90L73.66666666666667,90"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M40.333333333333336,30L40.333333333333336,150L73.66666666666667,150"></path><path class="link" style="fill: none; stroke: rgb(190, 195, 199); stroke-width: 1px;" d="M73.66666666666667,90L73.66666666666667,120L107,120"></path><g class="node" transform="translate(0,0)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">HTML</text></g><g class="node" transform="translate(33.33333206176758,30)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">HEAD</text></g><g class="node" transform="translate(33.33333206176758,180)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣</text></g><g class="node" transform="translate(33.33333206176758,210)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">BODY</text></g><g class="node" transform="translate(66.66666412353516,240)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text 
   The truth of the DOM.</text></g><g class="node" transform="translate(66.66666412353516,60)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣␣␣</text></g><g class="node" transform="translate(66.66666412353516,90)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(206, 224, 244); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;">▾ </text><text dy="4.5" dx="16.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">TITLE</text></g><g class="node" transform="translate(100,120)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text The DOM</text></g><g class="node" transform="translate(66.66666412353516,150)" style="opacity: 1;"><rect y="-12.5" x="-5" rx="4" ry="4" height="25" width="250" style="fill: rgb(255, 222, 153); cursor: pointer;"></rect><text dy="4.5" dx="3.5" style="fill: black; pointer-events: none;"></text><text dy="4.5" dx="5.5" style="font: 14px Consolas, Lucida Console, Menlo, Monaco, monospace; fill: rgb(51, 51, 51); pointer-events: none;">#text ↵␣␣</text></g></g></svg></img>
 
-<p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavScript.info</em></a></p>
+<p align="center"><a href="https://javascript.info/dom-nodes"><em>DOM tree by JavaScript.info</em></a></p>
+
 <br>
 
 The text inside elements forms *text nodes*, labeled as `#text`.
@@ -94,7 +95,7 @@ To see the DOM of a simple page use the [Live DOM Viewer](https://software.hixie
 
 <br>
 
-## The DOM API
+# The DOM API
 
 The DOM provides an API (application programming interface) for how to get, change, add, or delete HTML elements.
 
@@ -107,7 +108,7 @@ The API defines:
 
 <br>
 
-### The Window Object
+## The Window Object
 
 The window object represents an open window in a browser. It has many properties and methods that can be accessed via it's API.
 
@@ -199,7 +200,7 @@ Below are some comment DOM API methods available:
 
 
 
-## Finding HTML Elements
+# Finding HTML Elements
 
 The following methods belong to the Document object and can be used to select HTML elements on the page:
 
@@ -213,7 +214,7 @@ The following methods belong to the Document object and can be used to select HT
 
 <br>
 
-## Changing HTML Elements
+# Changing HTML Elements
 
 | Property                                                     | Description                                   |
 | ------------------------------------------------------------ | --------------------------------------------- |
