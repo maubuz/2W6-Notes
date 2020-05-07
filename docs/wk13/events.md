@@ -28,6 +28,7 @@ Here’s a list of the most useful DOM events, just to take a look at:
 | ---------- | ------------------------------------------------------------ |
 | `submit`   | When the visitor submits a `<form>`.                         |
 | `focus`    | When the visitor focuses on an element, e.g. on an `<input>`. |
+| `blur`     | Fires when an element loses focus                            |
 
 
 
@@ -400,7 +401,6 @@ A click on the inner `` first runs `onclick`:
 ![image-20200505111114930](assets/image-20200505111114930.png)
 
 <p align="center"><a href="https://javascript.info/bubbling-and-capturing"><em>Bubbling and capturing by jhavascript.info</em></a></p>
-
 <br>
 
 
