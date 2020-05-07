@@ -401,7 +401,6 @@ A click on the inner `` first runs `onclick`:
 
 <p align="center"><a href="https://javascript.info/bubbling-and-capturing"><em>Bubbling and capturing by jhavascript.info</em></a></p>
 
-
 <br>
 
 
@@ -464,7 +463,7 @@ A bubbling event goes from the target element all the way to the `document` obje
 
 > Don’t stop bubbling without a need.
 >
-> Most of the time bubbling is convenient and can be used in your favour.
+> Most of the time bubbling is convenient and can be used in your favor.
 
 <br>
 
@@ -491,7 +490,7 @@ Sometimes it is desirable to stop a default behavior without necessarily stoppin
 
 
 
-For example, by default, when a `<button>` element is clicked inside a `<form>` , the form is submitted automatically. 
+For example, by default, when a `<button>` element is clicked inside a `<form>` , the **form is submitted automatically**. 
 
 
 
@@ -506,15 +505,51 @@ A common example of stopping default behavior is to stop the `<button>` from sub
 
 
 
+<br>
+
+> Note that event bubbling and preventing default behavior are two different and isolated mechanism.
+>
+> You can stop one but not the other.
+
+
+
+For example, you can stop a form from being submitted on a button click, however, the click event will still bubble up through the DOM tree.
+
+<br>
+
+# Recommended reading
+
+[**Introduction to browser events**](https://javascript.info/introduction-browser-events) by javascript.info 
+
 
 
 <br>
+
+# References
+
+*Reference links by MDN web docs.*
+
+### Complete List of Browser Events
+
+[**Event reference**](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+<br>
+
+### Event Type API
+
+[**Generic event properties**](https://developer.mozilla.org/en-US/docs/Web/API/Event#Properties) (common to all event types).
+
+[**Specific event properties**](https://developer.mozilla.org/en-US/docs/Web/API/Event#Introduction) (choose the event type from the list. Eg.: *MouseEvent* or *KeyboardEvent*).
+
+<br>
+
+
 
 # Hands-on - wk13
 
 
 
-## Lab 1 - Baloon
+## Lab 1 - Balloon
 
 Write a page that displays a balloon (using the balloon emoji, 🎈).  When you press the up arrow, it should inflate (grow) 10 percent, and  when you press the down arrow, it should deflate (shrink) 10 percent.
 
@@ -536,6 +571,59 @@ When that works, add a feature where, if you blow up the balloon past a  certain
 </details>
 
 
+
+<br>
+
+## Lab 2 - Event Delegation
+
+In the event delegation section of the notes you were shown the example below.
+
+However, the buttons lacked implementation and only outputted a string to the console.
+
+Implement the functionality of all 3 buttons using the event delegation pattern:
+
+- **Add item** should add a new Item to the top of the list (the `<h2>` elements in this case).
+- **Change color** should change the background color of the list.
+- **Remove item** should remove the last item in the list.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+### Lab 3- Mouse colors
+
+#### Part 1
+
+Create a container where the background color changes depending on the mouse position over the container.
+
+**The color change should be consistent and not random.**
+
+
+
+#### Part 2
+
+Allow the color to change according to the mouse position (like above) but **only when the mouse is clicked while the alt key is pressed.**
+
+
+
+<br>
+
+<iframe height="368" style="width: 100%;" scrolling="no" title="wk13 - Lab 3 - Mouse colors" src="https://codepen.io/maujac/embed/GRpQaeM?height=368&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/GRpQaeM'>wk13 - Lab 3 - Mouse colors</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<details>
+    <summary>Display hint</summary>
+    <ul>
+        <li>For mouse events, you can use the event.offsetX and offsetY to get the mouse position with respect to the top-left of the element listening to the event.</li><br>
+    </ul>
+</details>
 
 <br>
 
