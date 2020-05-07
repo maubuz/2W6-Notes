@@ -438,7 +438,34 @@ null || 'hello';		// "hello"
 
 <br>
 
-Example of using a window method**
+# The this Keyword
+
+
+
+The keyword  `this`  refers to the calling context of a function.
+
+
+
+The rule for this is:
+
+> If called in the form `obj.function()` , then "this" equals the object
+>
+> else
+>
+> "this" equals "global" 
+
+<br>
+
+Another way to see it is:
+
+- If the function being called is a method, then "this" points to the object;
+- If it's a regular function, then "this" points to "global".
+
+<br>
+
+Arrow functions work slightly differently:
+
+> Take whatever "this" is in the context outside of the arrow function and apply it internally.
 
 <br>
 
