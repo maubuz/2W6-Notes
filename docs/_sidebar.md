@@ -39,3 +39,4 @@
 - [JS Operators & Coercion](./wk12/javascript_quirks.md)
 - **Week 13**
 - [Events](./wk13/events.md)
+- [DOM pt2](./wk13/DOM-manipulation_pt2.md)
