@@ -127,7 +127,7 @@ Let's perform the same styling manipulation to Item list example used earlier:
 The are a few important differences between 
 
 - `getElementsBy*`  methods returns a `HTMLCollection` 
--  `querySelectAll` returns a `NodeList` containing 
+-  `querySelectAll` returns a `NodeList` containing 
 
 <br>
 
@@ -295,9 +295,9 @@ There are many ways of accessing the text content of an element node:
 
 <br>
 
-The example below illustrates the difference between `textContent` vs `innerText`
+The example below illustrates the difference between `textContent` vs `innerText`
 
-The `span` inside the `h1` is hidden with  `display: none`. Notice how the outputs of `innerText` and `textContent` will differ:
+The `span` inside the `h1` is hidden with  `display: none`. Notice how the outputs of `innerText` and `textContent` will differ:
 
 <br>
 
@@ -308,5 +308,50 @@ The `span` inside the `h1` is hidden with  `display: none`. Notice how the outp
 
 <br>
 
+# nodeClone( ) Method
 
+It is possible to clone an existing node with all of it's attributes and their values
+
+The syntax is as follows:
+
+<br>
+
+```javascript
+node.cloneNode(deep)
+```
+
+Where deep is a optional Boolean that specifies whether all descendants of the node should be cloned.
+
+- true - Clone the node, its attributes, *and* its descendants
+- false - Default. Clone only the node and its attributes
+
+<br>
+
+For more information [see cloneNode( ) documentation](https://www.w3schools.com/jsref/met_node_clonenode.asp)
+
+<br>
+
+> Note: If you will use cloneNode( ) to build your DOM, make sure that the element you are cloning is always available and part of the DOM
+
+<br>
+
+# Remember: inserting elements in the DOM
+
+We've already looked at [how to insert new elements in the DOM.](https://mau-jac.github.io/2W6-UI/#/./wk12/javascript_intro?id=inserting-elements-in-the-dom)
+
+This is still very relevant and used in conjunction with the methods shown above.
+
+
+
+<br>
+
+# References
+
+**Recommended video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nx2AhrCIlXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<br>
 
