@@ -184,6 +184,8 @@ They are used in order to:
 
 
 
+<br>
+
 There are three different containers:
 
 - `.container`, which sets a `max-width` at each responsive breakpoint
@@ -307,7 +309,7 @@ Multiple breakpoint configurations can be added to the same column.
 
 # Bootstrap Content & Components
 
-> How the remaining of the notes refer to the following sections of the documentation:
+> For the remaining of the notes refer to the following sections of the documentation:
 >
 > - **Content**
 >   - [Typography](https://getbootstrap.com/docs/4.4/content/typography/)
