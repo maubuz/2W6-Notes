@@ -1,4 +1,11 @@
-#tips {
-    border: 3px solid rebeccapurple;
-    
+.container {
+}
+.row {
+  background: papayawhip;
+  margin: 0.5rem 0;
+}
+
+.col {
+  border: solid brown 2px;
+  padding: 0.5em 0.75em;
 }
