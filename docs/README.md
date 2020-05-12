@@ -35,7 +35,7 @@ You can have your own local copy of these notes:
 
 1. Clone the GitHub repository listed above
 
-2. From the command-line, navigate to the folder named ***docs*** of the repository
+2. From the command-line, navigate to the repository folder named ***docs*** 
 
 3. Start a simple python web-server inside the ***docs*** folder (make sure python is installed)
 
