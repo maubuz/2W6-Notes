@@ -22,9 +22,23 @@ The previous GitBook interface had a few limitations, namely:
   
   
 ## How is this page made?
-This webpage is written in [Markdown](https://www.markdownguide.org/), built with [Docsify](https://docsify.js.org/) and deployed to a [GitHub Page](https://pages.github.com/) project.
+This webpage is written in [Markdown](https://www.markdownguide.org/), built with [Docsify](https://docsify.js.org/) and deployed via [GitHub Page](https://pages.github.com/) .
 
 
 
 ## Source Code
 This page is open source, visit the [source code on GitHub](https://github.com/mau-jac/2W6-UI).
+
+### Download and run locally
+
+You can have your own local copy of these notes:
+
+1. Clone the GitHub repository listed above
+
+2. From the command-line, navigate to the folder named ***docs*** of the repository
+
+3. Start a simple python web-server inside the ***docs*** folder (make sure python is installed)
+
+   `python -m http.server`
+
+   
