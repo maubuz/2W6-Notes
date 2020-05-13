@@ -45,7 +45,7 @@ With a CSS Framework we can get a stylish button within a few seconds.
 
 We will look at one particular CSS Framework: **Bootstrap**
 
-There are many frameworks out there. Other popular options are **Materialize** by Google and **Foundation** by Zorg.
+There are many frameworks out there. Other popular options are **Materialize** by Google and **Foundation** by Zurb.
 
 Bootstrap and Materialize work in a very similar way and differ mostly in their syntax.
 
