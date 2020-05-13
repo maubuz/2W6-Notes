@@ -1,4 +1,4 @@
-.container {
+/* .container {
 }
 .row {
   background: papayawhip;
@@ -8,4 +8,8 @@
 .col {
   border: solid brown 2px;
   padding: 0.5em 0.75em;
+} */
+
+.jumbotron {
+  text-align: center;
 }

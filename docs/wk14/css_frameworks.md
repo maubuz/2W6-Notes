@@ -1,5 +1,7 @@
 This lesson was based on the [Boostrap 4 Tutorial](https://www.w3schools.com/bootstrap4/default.asp) by W3C Schools
 
+
+
 # CSS Frameworks
 
 CSS Frameworks are like **packages of pre-build styling and components** that can be added to a website.
@@ -7,6 +9,12 @@ CSS Frameworks are like **packages of pre-build styling and components** that ca
 By copying the right syntax from the documentation these elements can be copy-pasted into a website.
 
 This can make front-end development very fast.
+
+<br>
+
+![pngfuel.com](assets/pngfuel.com.png ':size=600')
+
+
 
 <br>
 
@@ -18,15 +26,28 @@ This can make front-end development very fast.
 
 <br>
 
-![pngfuel.com](assets/pngfuel.com.png ':size=600')
+## Example: button styling
 
+The default CSS button is know for not being particularly beautiful.
 
+How long will it take you to create a more interesting button?
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk14 - bootstrap - button - ex_1" src="https://codepen.io/maujac/embed/VwvBrZo?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/VwvBrZo'>wk14 - bootstrap - button - ex_1</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
-We will look at two CSS Frameworks: **Boostrap** and **Materialize** .
+With a CSS Framework we can get a stylish button within a few seconds.
 
-Both frameworks work in a very similar way and differ mostly in their syntax.
+<br>
+
+We will look at one particular CSS Framework: **Bootstrap**
+
+There are many frameworks out there. Other popular options are **Materialize** by Google and **Foundation** by Zorg.
+
+Bootstrap and Materialize work in a very similar way and differ mostly in their syntax.
 
 <br>
 
@@ -100,7 +121,7 @@ For simplicity we will use the CDN link option.
 
    <br>
 
-   Note that Bootstrap has a dependency on **jQuery** and **Popper.js**, which are two JS frameworks. Therefore you also have to include them in your pages, and thus forcing your visitors to download them.
+   Note that Bootstrap has a dependency on **jQuery** and **Popper.js**, which are two JS frameworks. Therefore you also have to include them in your pages, and thus force your visitors to download them.
 
    <br>
 
@@ -120,7 +141,17 @@ For simplicity we will use the CDN link option.
 
 <br>
 
+**Take Bootstrap for a spin:**
 
+1. In the documentation go to: *Components* > *Buttons* > *Outline buttons*
+
+2. Copy the HTML code for all buttons in that section to the `<body>`  of your page.
+
+3. Save and open it in the browser.
+
+
+
+<br>
 
 # Bootstrap Layout: Container & Grids
 
@@ -165,7 +196,6 @@ We will look into each component.
 ![img](https://user.oc-static.com/upload/2019/08/12/15656287611769_Bootstrap2c2a.png)
 
 <p align="center"><a href="https://openclassrooms.com/en/courses/5664281-create-responsive-websites-efficiently-with-bootstrap-4/6446496-implement-your-page-structure"><em>Bootstrap Grid by openclassrooms.com</em></a></p>
-
 <br>
 
 ## Containers
@@ -194,7 +224,7 @@ There are three different containers:
 
 <br>
 
-The use of `{breakpoint}`  above should be replaced by a **breakpoint code**.
+The use of `{breakpoint}`  above should be replaced by a **breakpoint code**.
 
 Bootstrap's default breakpoints are:
 
@@ -215,7 +245,6 @@ Bootstrap's default breakpoints are:
 ![bootstrap 4 grid](https://i2.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2016/11/Screen-Shot-2017-06-12-at-4.17.31-AM.png?resize=580%2C570&ssl=1 ':size=500')
 
 <p align="center"><a href="https://bootstrapcreative.com/bootstrap-4-grid-explained-examples/"><em>Bootstrap native breakpoints by BootstrapCreative</em></a></p>
-
 <br>
 
 Based on these breakpoints, the size and padding of the  `.container` can be controlled.
@@ -270,7 +299,6 @@ It is possible to specify how many columns a `.col` item will take by assigning 
 ![img](https://miro.medium.com/max/1171/1*6frm0pq5VjPcc71EqH7cKw.png)
 
 <p align="center"><a href="https://medium.com/gridbox/bootstrap-4-vs-foundation-6-grid-system-5874e0e87a95"><em>Bootstrap 4 Grid System by JR.Anand</em></a></p>
-
 <br>
 
 Using the number system above columns will always take the same amount of space in the grid.
@@ -303,7 +331,7 @@ Multiple breakpoint configurations can be added to the same column.
 
 <br>
 
-**📓 Now that you understand the basics of Bootstrap, you can learn the rest of the functionality from the documentation 📑**
+**📓 Now that you understand the basics of Bootstrap, you can learn the rest of the functionality from the documentation 📑**
 
 <br>
 
