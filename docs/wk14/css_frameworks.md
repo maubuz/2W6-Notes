@@ -45,7 +45,7 @@ With a CSS Framework we can get a stylish button within a few seconds.
 
 We will look at one particular CSS Framework: **Bootstrap**
 
-There are many frameworks out there. Other popular options are **Materialize** by Google and **Foundation** by Zurb.
+There are many frameworks out there. Other popular options are **Materialize** by Google and **Foundation** by Zurb.
 
 Bootstrap and Materialize work in a very similar way and differ mostly in their syntax.
 
@@ -155,13 +155,13 @@ For simplicity we will use the CDN link option.
 
 # Bootstrap Layout: Container & Grids
 
-> Bootstrap uses a mobile-first flexbox grid for layouts
+> Bootstrap uses a mobile-first grid for layouts
 >
 > **By default** all components are made to fit **mobile screens first.**
 
 <br>
 
-Bootstrap became popular before CSS Flexbox and CSS Grid. At the time, Bootstrap's grid system offered a mush easier alternative to creating responsive websites than using `tables` and `floats`.
+Bootstrap became popular before CSS Flexbox and CSS Grid. At the time, Bootstrap's grid system offered an easier alternative to creating responsive websites than using `tables` and `floats`.
 
 - Nowadays the same can be achieved with CSS Flexbox and Grid.
 
@@ -181,13 +181,13 @@ The following nesting structure is expected:
 
 1. Everything exists inside a `.container`
 
-2. A `.container` has one or multiple `.row` 
+2. A `.container` has one or more `.row`  (rows)
 
 3. A `.row` has one or more `.col` (columns).
 
    <br>
 
-We will look into each component.
+We will look into each of these component.
 
    <br>
 
@@ -204,7 +204,7 @@ We will look into each component.
 
 <br>
 
-Containers are **required when using our default grid system**.
+Containers are **required when using the default grid system**.
 
 They are used in order to:
 
@@ -216,7 +216,7 @@ They are used in order to:
 
 <br>
 
-There are three different containers:
+There are three different types of containers:
 
 - `.container`, which sets a `max-width` at each responsive breakpoint
 - `.container-fluid`, which is `width: 100%` at all breakpoints
@@ -290,7 +290,7 @@ This is the equivalent of giving each flex item `flex: 1`.
 
 ## Grid: 12 columns
 
-To control how much space each column will take in it's row Bootstrap uses a 12 grid system.
+To control how much space each column takes in a row, Bootstrap uses a 12 grid system.
 
 It is possible to specify how many columns a `.col` item will take by assigning it a number:
 
@@ -309,7 +309,17 @@ Using the number system above columns will always take the same amount of space 
 
 For responsive websites, it is possible to customize the size of your columns on different devices sizes.
 
-Add the **breakpoint keyword** to the column class to specify how many columns it will take once the breakpoint is reached. 
+Add the **breakpoint keyword** to the `col` class to specify how many columns it will take once the breakpoint is reached. 
+
+<br>
+
+For example:
+
+```html
+class ="col-sm-8"
+```
+
+Specifies that a div will take 8 columns once the **sm** (576px) breakpoint is reached.
 
 <br>
 
@@ -350,3 +360,35 @@ Multiple breakpoint configurations can be added to the same column.
 >   - [Buttons](https://getbootstrap.com/docs/4.4/components/buttons/)
 >   - [Navbar](https://getbootstrap.com/docs/4.4/components/navbar/)
 >   - [Cards](https://getbootstrap.com/docs/4.4/components/card/)
+
+
+
+# Hands-on
+
+
+
+## Lab 1 - Navbar & Three Cards
+
+#### Part 1
+
+Use boostrap to create the page layout below. The page contains:
+
+- One nave bar
+- 3 cards (each with a header and footer)
+
+
+
+![image-20200514110932195](assets/image-20200514110932195.png)
+
+
+
+#### Part 2
+
+Make it so that if the viewport width is under 576px the following changes take place:
+
+- all three cards will stack up vertically
+
+
+
+![image-20200514111515284](assets/image-20200514111515284.png)
+
