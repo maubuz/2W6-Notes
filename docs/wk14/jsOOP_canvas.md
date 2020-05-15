@@ -12,7 +12,7 @@ The list of which prototype links to what prototype is called the prototype chai
 
 
 
-![Untitled Diagram](assets/Untitled Diagram.png)
+![prototype_inheritance](assets/prototype_inheritance.png)
 
 
 
