@@ -63,7 +63,7 @@ class Person {
 
 <br>
 
-The Person object is being initialized with two properties: `firstName` and `lastName`.
+The Person object is being initialized with two properties: `firstName` and `lastName`.
 
 <br>
 
@@ -92,7 +92,7 @@ Notice the **new** keyword. It indicated the creation of a new object from the P
 
 <br>
 
-When logging `me` :
+When logging `me` :
 
 ```javascript
 {
@@ -138,7 +138,7 @@ me.greeting();  // 'Hello!'
 
 Methods can also refer to internal properties of the object by using the **this** keyword:
 
-```java
+```javascript
 class Person {
     constructor(name, surname) {
         this.firstName = name;
@@ -154,6 +154,8 @@ class Person {
     }
 }
 ```
+
+
 
 <br>
 
@@ -521,4 +523,4 @@ function animate() {
 As for what the bubble should do, try implementing logic that:
 
 1. When the bubble reaches the edges of the canvas, it changes direction (effectively bouncing from one side to another.)
-2. Make the speed of the bubble adjustable.
+2. Make the speed of the bubble adjustable via a variable.
