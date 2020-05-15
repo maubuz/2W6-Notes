@@ -228,6 +228,16 @@ The object will now be:
 
 <br>
 
+# Function Expression
+
+> For this part of the notes please refer to [**Function expression** by MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
+
+
+
+<br>
+
+
+
 # Intro to HTML &lt;canvas&gt;
 
 These notes were made by Vikram Singh
