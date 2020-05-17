@@ -570,6 +570,8 @@ When that works, add a feature where, if you blow up the balloon past a  certain
     </ul>
 </details>
 
+[**Link to solution**](https://codepen.io/maujac/pen/MWaBggj)
+
 
 
 <br>
@@ -595,7 +597,7 @@ Implement the functionality of all 3 buttons using the event delegation pattern:
 
 <br>
 
-### Lab 3- Mouse colors
+## Lab 3- Mouse colors
 
 #### Part 1
 
@@ -624,6 +626,8 @@ Allow the color to change according to the mouse position (like above) but **onl
         <li>For mouse events, you can use the event.offsetX and offsetY to get the mouse position with respect to the top-left of the element listening to the event.</li><br>
     </ul>
 </details>
+
+**[Link to Solution](https://codepen.io/maujac/pen/gOaKPGZ)**
 
 <br>
 

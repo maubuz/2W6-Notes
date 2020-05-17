@@ -371,7 +371,7 @@ Multiple breakpoint configurations can be added to the same column.
 
 #### Part 1
 
-Use boostrap to create the page layout below. The page contains:
+Use bootstrap to create the page layout below. The page contains:
 
 - One nave bar
 - 3 cards (each with a header and footer)
@@ -392,3 +392,6 @@ Make it so that if the viewport width is under 576px the following changes take 
 
 ![image-20200514111515284](assets/image-20200514111515284.png)
 
+
+
+[**Link to solution**](https://codepen.io/maujac/pen/QWjVYNe)

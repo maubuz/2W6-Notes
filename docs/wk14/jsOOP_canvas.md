@@ -492,6 +492,8 @@ Improve the Person class used in the notes by:
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+**[Link to solution](https://codepen.io/maujac/pen/QWjZxLY)**
+
 
 
 <br>
@@ -526,11 +528,18 @@ function animate() {
 
     bubble.update();
 }
+
+animate();
 ```
 
 <br>
 
-As for what the bubble should do, try implementing logic that:
+As for what the bubble should do, try implementing a logic that:
 
 1. When the bubble reaches the edges of the canvas, it changes direction (effectively bouncing from one side to another.)
 2. Make the speed of the bubble adjustable via a variable.
+
+
+
+[**Link to solution**](https://codepen.io/maujac/pen/GRpYGRQ)
+
