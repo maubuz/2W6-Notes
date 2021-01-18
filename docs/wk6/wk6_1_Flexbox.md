@@ -301,5 +301,5 @@ Notes:
 
 
 
-See the **[interactive video for step-by-step solution](http://bit.ly/2Pyexn8).**
+<!-- See the **[interactive video for step-by-step solution](http://bit.ly/2Pyexn8).** -->
 

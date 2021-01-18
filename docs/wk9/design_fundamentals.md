@@ -512,6 +512,6 @@ Focus on the following CSS properties:
 
 <br>
 
-**Lab 3 solution** available [here](https://codepen.io/maujac/pen/ExVPNME)
+<!-- **Lab 3 solution** available [here](https://codepen.io/maujac/pen/ExVPNME) -->
 
 <br>

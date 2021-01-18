@@ -292,7 +292,7 @@ Use the provided starting code, create the layout in the image below:
 
 ### Solution for Lab 2
 
-See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7).
+<!-- See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7). -->
 
 <br>
 

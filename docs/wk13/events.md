@@ -570,7 +570,7 @@ When that works, add a feature where, if you blow up the balloon past a  certain
     </ul>
 </details>
 
-[**Link to solution**](https://codepen.io/maujac/pen/MWaBggj)
+<!-- [**Link to solution**](https://codepen.io/maujac/pen/MWaBggj) -->
 
 
 
@@ -627,7 +627,7 @@ Allow the color to change according to the mouse position (like above) but **onl
     </ul>
 </details>
 
-**[Link to Solution](https://codepen.io/maujac/pen/gOaKPGZ)**
+<!-- **[Link to Solution](https://codepen.io/maujac/pen/gOaKPGZ)** -->
 
 <br>
 

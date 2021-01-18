@@ -234,5 +234,5 @@ Style the starting html code in order to create the 3 column section illustrated
 
 ### Lab 3 Solution
 
-See the [**interactive video for step-by-step solution**](http://bit.ly/2IiYSUZ).
+<!-- See the [**interactive video for step-by-step solution**](http://bit.ly/2IiYSUZ). -->
 
