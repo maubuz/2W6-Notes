@@ -57,23 +57,10 @@ In-class demo: Can you recognize the used elements?Enter a caption for this imag
 
 Sometimes you want to add characters that can be interpreted as an HTML tag:
 
-```html
-<h2>Presenting the <a> Tag!</h2>
-<p>Why can't I display the <a> tag?!</p>
-<p>Why are these paragraphs a link?</p>
-```
-
-
-
-*Result*
-
-<h2>Presenting the <a> Tag!</h2>
-<p>Why can't I display the <a> tag?!</p>
-<p>Why are these paragraphs a link?</p>
-
-
-
-
+<iframe height="265" style="width: 100%;" scrolling="no" title="BaLmNqW" src="https://codepen.io/meghrigJAC/embed/BaLmNqW?height=265&theme-id=light&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/meghrigJAC/pen/BaLmNqW'>BaLmNqW</a> by Meghrig
+  (<a href='https://codepen.io/meghrigJAC'>@meghrigJAC</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
