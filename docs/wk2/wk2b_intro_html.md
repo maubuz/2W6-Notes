@@ -191,7 +191,7 @@ Don't send the visitors away from your site, change the default link behaviour:
 
 ## Link titles
 
-It's possible to give extra information about the link with the `` attribute.
+It's possible to give extra information about the link with the `title` attribute.
 
 
 
