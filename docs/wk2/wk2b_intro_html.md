@@ -111,7 +111,7 @@ However, by adding the entities for *greater than* and *smaller than,* we can "f
 ‌
 
 ```html
-&lt;a href="http://google.com">Click for Google</a>
+&lt;a href="http://google.com">Click for Google &lt;</a>
 ```
 
 ‌
