@@ -2,8 +2,8 @@
 - [About](/)
 - **Week 2**
 - [VS Code, Links & Images](./wk2/wk2b_intro_html.md)
+- [HTML Flow: div & span](./wk2/wk02_HTML_Flow_Containers.md)
 - **Week 3**
-- [HTML Flow: div & span](./wk3/wk03_HTML_Flow_Containers.md)
 - [Intro to CSS](./wk3/wk03_Intro_CSS.md)
 - [HTML Semantics](./wk3/wk3_2_HTML_Semantics.md)
 - [Fonts & CSS Units](./wk/../wk3/wk3_3_text_units.md)
