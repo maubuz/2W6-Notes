@@ -400,6 +400,7 @@ Do the following exercises from W3Schools:
 Use the content from the zip file below and use it to recreate the home page of the website below:
 
 > [Download website assets here](https://drive.google.com/file/d/111XXSxDL-O7pgIBulJTR1Pv8aPL0O42E/view?usp=sharing).
+> https://drive.google.com/drive/folders/18xp4IbYKXV9KZ8oaqejEcBtmcsrIbVRu?usp=sharing
 
 
 
@@ -422,4 +423,6 @@ Use the content from the zip file below and use it to recreate the home page of 
 
 
 ![target site](https://blobs.gitbook.com/assets%2F-LzKOwj7ftX4mKfA3Iuu%2F-Lzt-geUoBJu02JBm0fD%2F-Lzt2-1cYPeDSEsRKTxY%2Fimage.png?alt=media&token=c40e3e0b-9f92-489c-8384-2971c3c2d07d)
+
+> [Download the solution from here](https://drive.google.com/file/d/1IOM44T-g--0HN90RH090gP3ar29M7gXH/view?usp=sharing).
 
