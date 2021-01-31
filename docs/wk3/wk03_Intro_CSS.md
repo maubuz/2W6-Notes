@@ -35,7 +35,7 @@ Summarized from [CSS Syntax](https://www.w3schools.com/css/css_syntax.asp) by W3
 
 
 <p align="center"><a href="https://www.w3schools.com/css/css_syntax.asp"><em>Hyperlink</em></a> <em>- CSS Syntax by W3Schools</em></p>
-In the example below selects all `<p>` elements will be center-aligned, with a red text color:
+The example below selects all `&lt;p>` elements. Makes them center-aligned with a red text color:
 
 ```css
 p {
@@ -47,7 +47,7 @@ p {
 
 ## CSS Comments
 
-Comments have a different styntax than HTML:
+Comments have a different syntax than HTML:
 
 ```css
  p {
@@ -115,7 +115,7 @@ Use a separate CSS file (often a separate folder). **This is the preferred metho
 ![image-20200202214419604](wk03_Intro_CSS.assets/image-20200202214419604.png)
 
 
-In the `<head>` of the html file include the `<link>` tag with the `ref="stylesheet"` attribute and value and within the same `<link>` tag add the `href="relative file path to css file"` attribute:
+In the `<head>` of the html file include the `<link>` tag with the `rel="stylesheet"` attribute and value and within the same `<link>` tag add the `href="relative file path to css file"` attribute:
 
 ```html
 <head>

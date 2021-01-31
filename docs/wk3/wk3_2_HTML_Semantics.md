@@ -264,7 +264,7 @@ Other useful references:
 
 ## Lab 2
 
-Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](./wk3/wk3_1_Handson) in order to use semantic HTML elements in your html file.
+Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](https://mau-jac.github.io/2W6-UI/#/./wk3/wk03_Intro_CSS?id=lab-1) in order to use semantic HTML elements in your html file.
 
 ## Lab 3
 
