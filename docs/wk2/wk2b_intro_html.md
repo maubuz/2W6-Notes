@@ -333,7 +333,7 @@ Recreate the site done during the live demo (see image below)
 
 ![img](https://blobs.gitbook.com/assets%2F-LzKOwj7ftX4mKfA3Iuu%2F-Lzgevn0iylAKGmAUFVv%2F-LzghU91_k8T5dLR1jcb%2Fimage-20200128092822904.png?alt=media&token=75d138be-c1e7-46b4-896f-bc6955f8deea)
 
-
+> [Download the solution from here](https://drive.google.com/file/d/10tvrMY-laJaWiZH2mqNv06Khtpr___SM/view?usp=sharing).
 
 <br>
 
@@ -372,7 +372,7 @@ Recreate the site done during the live demo (see image below)
 
 - A hyperlink that points to index.html.
 
-
+> [Download the solution from here](https://drive.google.com/file/d/1CsUEZJsbo0f4NT3cKbvWWgcMKOSYKgZN/view?usp=sharing).
 
 <br>
 
@@ -400,7 +400,6 @@ Do the following exercises from W3Schools:
 Use the content from the zip file below and use it to recreate the home page of the website below:
 
 > [Download website assets here](https://drive.google.com/file/d/111XXSxDL-O7pgIBulJTR1Pv8aPL0O42E/view?usp=sharing).
-> https://drive.google.com/drive/folders/18xp4IbYKXV9KZ8oaqejEcBtmcsrIbVRu?usp=sharing
 
 
 
