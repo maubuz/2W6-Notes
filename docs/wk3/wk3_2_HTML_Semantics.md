@@ -266,9 +266,14 @@ Other useful references:
 
 Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](https://mau-jac.github.io/2W6-UI/#/./wk3/wk03_Intro_CSS?id=lab-1) in order to use semantic HTML elements in your html file.
 
+
+
+> [Download the solution from here](https://drive.google.com/file/d/12Fw-UXRhTsmuF5cejv4xIYQqvUxEDZGS/view?usp=sharing).
+
 ## Lab 3
 
 For this lab we will use the project [**Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
 
 Please complete the instructions as described in the **Starting point** and **Project brief** section of the page above.
 
+> [Download the solution from here](https://drive.google.com/file/d/1zEVoYjac0oJFXptgNvePpM6n7PMTyf9o/view?usp=sharing).

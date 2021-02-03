@@ -330,7 +330,7 @@ Do the following exercises from W3Schools:
 
 - [CSS Dinner](https://flukeout.github.io/)
 
-
+> [Download the Dinner solution from here](https://drive.google.com/file/d/1zRybBC5UHHmVRwuHTrHUcTN8EzAbI9O0/view?usp=sharing).
 
 ## Lab 1
 
@@ -349,5 +349,6 @@ Use CSS to style the provided html so that it looks like the image below.
 
 ![Result_Site](assets/Result_Site.png)
 
+> [Download the solution from here](https://drive.google.com/file/d/1jOSEq4s6jqQLmlbR2gwoxjf1O1OEMQt1/view?usp=sharing).
 
 
