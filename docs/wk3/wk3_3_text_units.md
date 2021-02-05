@@ -40,7 +40,7 @@ Here is a [list of fonts considered to be **Web Safe Fonts**](https://www.w3scho
 > Font names composed of more than one word need to be written between quotations, such as "Times New Roman" above.
 
 
-Fonts styles are normally applied to the entire page, do you can add them to the body selector:
+Fonts styles are normally applied to the entire page, so you can add them to the body selector:
 
 ```css
 body {
@@ -56,7 +56,7 @@ Font size can be set with the `font-size` property.
 
 **Absolute size:**
 
-- Sets the text to a fixed side.
+- Sets the text to a fixed size.
 - User cannot adjust it (eg. increase font size in the browser).
 
 
@@ -78,7 +78,7 @@ Two common relative units for `font-size` are:
 **em:**
 
 - 1 `em` is equal to the font size **set on the parent element of the current element** we are styling.
-- Be be careful when styling nested elements.
+- Be careful when styling nested elements.
 
 **rem:**
 
