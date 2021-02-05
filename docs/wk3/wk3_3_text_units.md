@@ -164,13 +164,13 @@ If you use the `!` Emmet shortcut shown above you will notice it comes with two 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
-and 
+<!-- and 
 
 ```html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-
+-->
 
 <br>
 
@@ -188,7 +188,7 @@ See [*Using the viewport meta tag to control layout on mobile browsers*](https:/
 
 <br>
 
-## IE compatibility mode
+<!-- ## IE compatibility mode
 
 >When a browser encounters html code it cannot understand it will fallback to its "compatibility mode", where unexpected things might happen.
 
@@ -201,7 +201,7 @@ Internet Explorer (IE) supports the use of a document compatibility `<meta>` tag
 See this [Stack Overflow article](https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do) for more information.
 
 <br>
-
+-->
 # Using Web Fonts
 
 You can include external fonts in your CSS.
