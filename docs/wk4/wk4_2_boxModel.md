@@ -12,7 +12,7 @@ The size of an element in a webpage is described by
 - **Content**
 - **Padding**
 - **Border**
-- **Marging**
+- **Margin**
 
 
 
@@ -42,7 +42,7 @@ This characteristic determines the space that is allocated to them in the docume
 
 # Browser Dev Tools
 
-There are build-in tools in our browser to help us inspect elements and visualise their box properties.
+There are built-in tools in our browser to help us inspect elements and visualize their box properties.
 
 > **In Firefox or Chrome press `F12` to open the Developer's Console**
 
@@ -223,16 +223,6 @@ When **two values are provided** for a shorthand notation:
 6. Use the **Element Inspector ** in the Dev Tools to observe the padding difference between the four directions.
 
    
-
-7. Change the borders to 50px wide. Observe the padding using the Dev Tools.
-
-```css
-h1 {
-  padding: 50px;
-}
-```
-
-
 
 <br>
 
