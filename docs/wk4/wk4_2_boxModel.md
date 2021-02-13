@@ -547,7 +547,7 @@ Now that the div is smaller than the view-port width, it will by default "justif
 
 > The `width` and the `height` properties define the size of the box's content. 
 >
-> **By default, padding, margin and border dimensions are added on top of the content dimensions to define the final box size.**  
+> **By default, padding and border dimensions are added on top of the content dimensions to define the final box size.**  
 >
 > This creates a box bigger than the dimensions explicitly defined by `width` and `height`.
 
@@ -580,6 +580,8 @@ In the [demo bellow from MDN web docs](https://developer.mozilla.org/en-US/docs/
 
 
 <iframe class="interactive" src="https://interactive-examples.mdn.mozilla.net/pages/css/box-sizing.html" title="MDN Web Docs Interactive Example" width="100%" height="400" frameborder="0"></iframe>
+
+
 To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](https://www.w3schools.com/css/css3_box-sizing.asp) by W3Schools.
 
 
@@ -588,7 +590,7 @@ To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](http
 
 
 
-20. Inspect the `<div>` element and observe it's box size. What is it's total box size in the screen (including padding, border and padding)?
+20. Inspect the `<div>` element and observe it's box size. What is it's total box size in the screen (including  border and padding)?
 
     
 
@@ -634,7 +636,7 @@ There are several ways to align text and containers in CSS. We will look at two 
 
 ## Aligning Text
 
-[In week 3 (Text Layout & Alignment)](../wk3/wk3_3_text_units.md)  we looked at how to align text withing it's parent container using the `text-align` property.
+[In week 3 (Text Layout & Alignment)](../wk3/wk3_3_text_units.md)  we looked at how to align text within it's parent container using the `text-align` property.
 
 
 
@@ -739,7 +741,7 @@ Other resources:
    - [CSS Padding](https://www.w3schools.com/Css/exercise.asp?filename=exercise_padding1)
    - [CSS Margin](https://www.w3schools.com/Css/exercise.asp?filename=exercise_margin1)
    - [CSS Height/Width](https://www.w3schools.com/Css/exercise.asp?filename=exercise_dimension1)
-- [CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel1)
+	- [CSS Box Model](https://www.w3schools.com/Css/exercise.asp?filename=exercise_boxmodel1)
 
 <br>
 

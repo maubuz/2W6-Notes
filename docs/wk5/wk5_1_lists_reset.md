@@ -18,7 +18,7 @@ Using the reference above, look at the following CSS properties:
 
 ## List Style Position
 
-Note that the **default value** of `list-style-position` is `ouitside`.
+Note that the **default value** of `list-style-position` is `outside`.
 
 This means two things:
 

@@ -483,7 +483,7 @@ Create the simple "Hero" page show below.
 
 ### Lab 2 Solution
 
-<!-- *CSS*
+ *CSS*
 
 ```css
 section {
@@ -505,7 +505,9 @@ a {
     border-radius: 15px;
     border: solid 10px blanchedalmond;
 }
-``` -->
+ 
 
 
 
+
+```
