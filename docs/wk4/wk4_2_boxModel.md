@@ -411,7 +411,7 @@ The vertical margin collapse can be a **counter-intuitive behaviour** in CSS.
 
 
 
-> When two block-level elements are stacked vertically and both have a padding that "touch", the smaller of the two paddings will "collapse" inside the larger padding.
+> When two block-level elements are stacked vertically and both have a padding that "touch", the smaller of the two margins will "collapse" inside the larger padding.
 
 
 
