@@ -526,6 +526,7 @@ Q.22) Given the html structure below, how would you select all the children of t
 <details>
   <summary>Solution</summary>
   <ul>
-    <li>2, 3 and 5</li>
+    <li>1, 2, 3 4, and 5</li>
   </ul>
 </details>
+
