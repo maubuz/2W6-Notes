@@ -182,6 +182,30 @@ Create the vertical navigation menu below by using the provided html code and ma
 
 
 
+### Lab 1 Solution
+
+```css
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    background-color: #5F85D8;
+    color:white;
+    padding:15px;
+    display:inline-block;
+    border-radius: 10px;
+    width:150px;
+    text-align: center;
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+```
+
 <br>
 
 ## Lab 2
@@ -191,6 +215,15 @@ Create the vertical navigation menu below by using the provided html code and ma
 
 
 ![image-20200216104216085](assets/image-20200216104216085.png ':zoom:500')
+
+### Lab 2 Solution
+
+```css
+li{
+    display:inline-block;
+    margin:3px;
+}
+```
 
 
 
@@ -233,6 +266,43 @@ Style the starting html code in order to create the 3 column section illustrated
 
 
 ### Lab 3 Solution
+
+```css
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+h2{
+    padding:1em;
+    text-align: center;
+}
+article{
+    display:inline-block;
+    width:32%;
+    text-align: center;
+
+}
+#container{
+    border:10px solid #9ACD32;
+    background-color: #6495ED;
+}
+h3{
+    padding:25px;
+}
+.first{
+background-color: #00FFFF;
+}
+.second{
+background-color: #FFA07A;
+
+}
+.third{
+background-color: #F5DEB3;
+}
+
+```
+
 
 <!-- See the [**interactive video for step-by-step solution**](http://bit.ly/2IiYSUZ). -->
 
