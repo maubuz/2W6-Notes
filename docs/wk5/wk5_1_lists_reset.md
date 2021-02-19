@@ -195,7 +195,7 @@ a{
     text-decoration: none;
     background-color: #5F85D8;
     color:white;
-    padding:15px;
+    padding:0.6em;
     display:inline-block;
     border-radius: 10px;
     width:150px;
@@ -269,36 +269,36 @@ Style the starting html code in order to create the 3 column section illustrated
 
 ```css
 *{
-    box-sizing: border-box;
+    padding: 0;
     margin:0;
-    padding:0;
-}
-h2{
-    padding:1em;
-    text-align: center;
+    box-sizing: border-box;
 }
 article{
     display:inline-block;
     width:32%;
     text-align: center;
+    padding:1em;
+    font-size: 1.2rem;
+}
+h2{
+    text-align: center;
+    padding:1em;
+}
 
-}
 #container{
-    border:10px solid #9ACD32;
     background-color: #6495ED;
-}
-h3{
-    padding:25px;
+    border-width:10px;
+    border-color:#9ACD32;
+    border-style:solid;
 }
 .first{
-background-color: #00FFFF;
+    background-color: #00FFFF;
 }
 .second{
-background-color: #FFA07A;
-
+    background-color: #FFA07A;
 }
 .third{
-background-color: #F5DEB3;
+    background-color: #F5DEB3;
 }
 
 ```
