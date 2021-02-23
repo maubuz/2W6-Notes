@@ -9,15 +9,18 @@
 - [Fonts & CSS Units](./wk/../wk3/wk3_3_text_units.md)
 - **Week 4**
 - [Background, Heroes & Borders](./wk4/wk4_1_background_heroes_border.md)
-- [Box Model & Display](./wk4/wk4_2_boxModel.md)
 - **Week 5**
+- [Box Model & Display](./wk4/wk4_2_boxModel.md)
 - [Lists, Nav bars & Resets](./wk5/wk5_1_lists_reset.md)
-- [Overflow & Position](./wk5/wk5_2_overflow_position.md)
 - **Week 6**
+
+
+  Review
+  <!-- - [Test 1 Practice Questions](./wk6/Test1_Practice.md)-->
+- **Week 7**
+- [Overflow & Position](./wk5/wk5_2_overflow_position.md)
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
-<!-- - [Test 1 Practice Questions](./wk6/Test1_Practice.md)-->
-- **Week 7**
 - [Cascade](./wk7/wk7_1_cascade.md)
 <!-- - [Test 1 Solution](./wk7/Test_1_Solution.md) -->
 - **Week 8**
