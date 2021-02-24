@@ -1,6 +1,6 @@
 # HTML Semantics
 
-## Why Semantic HTML Elements ? 
+# Why Semantic HTML Elements ? 
 
 
 
@@ -33,29 +33,27 @@ There are [many html semantic elements](https://learn-the-web.algonquindesign.ca
 From here on, we will incorporate the following html elements into our sites:
 
 - `<header>`
+
 - `<nav>`
+
 - `<article>`
+
 - `<section>`
+
 - `<aside>`
+
 - `<footer>`
+
 - `<figure>` and `<figcaption>`
+
 - `<time>`
+
 - `<address>`
 
+  <br>
 
+Let's understand the purpose of each element:
 
-Consider these commonly used website layouts:
-
-
-
-![Wireframe example of semantic elements in a page](assets/html-sectioning-elements-00c3fd.png ':size=300')
-
-<p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
-<br>
-
-![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif ':size=250')
-
-<p align="center"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><em>HTML Semantic Elements</em></a> <em>- w3schools.org</em></p>
 <br>
 
 **`<header>`**
@@ -203,21 +201,35 @@ Defines contact information for the author of the article or web page. Should no
 
 
 
->  There is no single way to organise the semantic elements in a page. As long as you intentionally use the elements for their intended purpose your semantics will be correct
+>  There is no single way to organize the semantic elements in a page. As long as you use elements for their intended purpose your semantics will be correct
 
 
-
-For beginners it can be difficult to understand the difference between the different HTML semantic elements.
 
 **Below is a recommendation for a semantic structure that will work for basic webpages:**
 
 <br>
 
-![semantic_html_recommendation](assets/semantic_html_recommendation.png ':size=500')
+![semantic_html_recommendation](./assets/semantic_html_recommendation.png ':size=500')
 
+<br>
 
+## Other Semantic Layouts
 
+As mentioned, there is no single way of applying semantic elements. Below are other options.
 
+**Before using these layouts, make sure you understand the difference between `article`*and `section`**.
+
+![Wireframe example of semantic elements in a page](./assets/html-sectioning-elements-00c3fd.png ':size=300')
+
+<p align="center"><a href="https://internetingishard.com/html-and-css/semantic-html/"><em>Semantic HTML</em></a> <em>- internetingishard.com</em></p>  
+
+<br>
+
+![HTML5 Semantic Elements](https://www.w3schools.com/html/img_sem_elements.gif ':size=250')
+
+<p align="center"><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"><em>HTML Semantic Elements</em></a> <em>- w3schools.org</em></p>
+
+<br>
 
 
 
@@ -245,9 +257,13 @@ Below is a comparison of a website organized with divs vs semantic elements (fro
 ![Non-semantic HTML layout, with generic divs](https://www.springboardseo.com/img/non-semantic-html-layout.jpg)
 
 <p align="center"><em>Using Divs</em></p>
+<br>
+
 # References & Diving Deeper
 
-> **I strongly encourage you to read the** [**Semantic HTML**](https://internetingishard.com/html-and-css/semantic-html/) by internetingishard.com  
+
+
+> The article [**Semantic HTML**](https://internetingishard.com/html-and-css/semantic-html/) by internetingishard.com does a great job explaining this topic in mode is an 
 
 Other useful references:  
 
