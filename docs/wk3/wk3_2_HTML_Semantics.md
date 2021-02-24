@@ -209,7 +209,7 @@ Defines contact information for the author of the article or web page. Should no
 
 <br>
 
-![semantic_html_recommendation](./assets/semantic_html_recommendation.png ':size=500')
+![semantic_html_recommendation](assets/semantic_html_recommendation.png ':size=500')
 
 <br>
 
