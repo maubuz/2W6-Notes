@@ -1,10 +1,10 @@
+# 
+
 # HTML
 
 
 
-### Semantics
-
-
+## Semantics
 
 Q.1) In the code below, who is the parent of the `<a>` element ?
 
@@ -26,7 +26,7 @@ Q.1) In the code below, who is the parent of the `<a>` element ?
 </details>
 <br>
 
-### Units
+## Units
 
 Q.2)  What will be the font size in pixels of the `<h1>` and `<p>` elements below ? Please explain why that is.
 
@@ -68,11 +68,9 @@ Q.3) Test your understanding of em, rem, px and & units with the [Em Enforcer ex
 
 (For the final 3 or 4 questions, you will need to be familiar with the concepts of Media Queries, which has not yet been covered in class.)
 
-
-
 <br>
 
-### Syntax & HTML Elements
+## Syntax & HTML Elements
 
 Q.4) Which line of HTML code demonstrates an element having an attribute named `title`?
 
@@ -108,7 +106,7 @@ Q.5) The following code is supposed to display an image, but fails to do so.  Wh
 
 <br>
 
-### Box Model
+## Box Model
 
 
 
@@ -137,7 +135,7 @@ C. Inline-block element
 
 <br>
 
-### Function & Implementing HTML
+## Function & Implementing HTML
 
 
 Q.7) Markup languages use special symbols in human readable text in order to create a hierarchy of information which serves several purposes. Which statement below is not a purpose of html markup:
@@ -158,10 +156,9 @@ Q.7) Markup languages use special symbols in human readable text in order to cre
 # CSS
 
 
+## Syntax
 
-### Syntax
-
-Q.8) .Which type of CSS declaration goes in the opening tag of a html element?
+Q.8) Which type of CSS declaration goes in the opening tag of a html element?
 
 1. embedded
 2. inline
@@ -174,7 +171,6 @@ Q.8) .Which type of CSS declaration goes in the opening tag of a html element?
     <li>2</li>
   </ul>
 </details>
-
 <br>
 
 Q.9) Which type of selector is used to apply styling to more than one element?
@@ -238,26 +234,9 @@ Q.12) Which CSS property can be used to darken a background image ?
     <li>4</li>
   </ul>
 </details>
-
 <br>
 
-Q.13) This would cause the element not to display...
-
-1. display: block;
-2. display: 0px;
-3. display: none;
-4. display: inline;
-
-<details>
-  <summary>Solution</summary>
-  <ul>
-    <li>3</li>
-  </ul>
-</details>
-
-<br>
-
-### Browser Defaults
+## Browser Defaults
 
 
 
