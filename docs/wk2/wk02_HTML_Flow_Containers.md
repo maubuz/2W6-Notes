@@ -76,10 +76,14 @@ The document flow describes **the way elements are arranged in a sequence, one a
 
 
 - **Block-level elements flow by stacking vertically**, since the element before and the one after must start in a new line.
+
 - **Inline elements flow horizontally**, since they can align consecutively on the same line.
 
+  <br>
 
-![image-20200131213741204](wk03_HTML_Flow_Containers.assets/image-20200131213741204.png)
+![inline_vs_block_algonquin](./assets/inline_vs_block_algonquin.png "block comparison of inline vs block elements by algonquindesign.ca")
+
+<br>
 
 <p align="center"><a href="https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet"><em>CSS layout cheat sheet</em></a> <em>- algonguindesign.ca</em></p>
 
