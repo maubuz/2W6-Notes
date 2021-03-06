@@ -35,7 +35,7 @@
 - **Week 7**
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
-- [Overflow & Position](./wk5/wk5_2_overflow_position.md)
+- [Positioning & Overflow](./wk5/wk5_2_positioning_overflow.md)
 <!-- - [Test 1 Solution](./wk7/Test_1_Solution.md) -->
 
 - **Week 6**
