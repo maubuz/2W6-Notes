@@ -36,7 +36,6 @@
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
 - [Positioning & Overflow](./wk5/wk5_2_positioning_overflow.md)
-<!-- - [Test 1 Solution](./wk7/Test_1_Solution.md) -->
 
 **Week 6**
 - [Test 1 Practice Questions](./wk6/Test1_Practice_Meghrig.md)
