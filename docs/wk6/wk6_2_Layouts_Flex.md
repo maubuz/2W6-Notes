@@ -1,10 +1,7 @@
-# 
-
 *This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
 
 
-
-# Page Layout with Flexbox
+# Page Layouts with Flexbox
 
 
 
@@ -28,7 +25,7 @@ Flexbox opens a new strategy for creating more interesting layouts: **grouping e
 
 <br>
 
-![Diagram: wrapping two flex items in a <div> to eliminate one of the flex items](https://internetingishard.com/html-and-css/flexbox/grouping-flex-items-1bb642.png ':size=500')
+![Diagram: wrapping two flex items in a <div> to eliminate one of the flex items](https://www.internetingishard.com/html-and-css/flexbox/grouping-flex-items-1bb642.png ':size=500')
 
 <p align="center"><strong>Grouping Flex Items </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
 <br>
@@ -210,7 +207,7 @@ Consider the starting code below.
 
 <br>
 
-# Flex & Auto-Margins 
+## Flex & Auto-Margins 
 
 Auto-margins in flexbox can be used as an alternative to creating a wrapper `<div>` in order to align a group of items to the left/right of a container.
 
@@ -243,7 +240,7 @@ In the example above, the reparation between the date and "Sign Up" can be made 
 
 <br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended reading:
 >
@@ -259,9 +256,9 @@ In the example above, the reparation between the date and "Sign Up" can be made 
 
 <br>
 
-# Hands-on
+## Hands-on
 
-## Lab 2
+### Lab 2
 
 Use the provided starting code, create the layout in the image below:
 
@@ -290,7 +287,7 @@ Use the provided starting code, create the layout in the image below:
 
 <br>
 
-### Solution for Lab 2
+#### Solution for Lab 2
 
 <!-- See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7). -->
 
@@ -298,7 +295,7 @@ Use the provided starting code, create the layout in the image below:
 
 
 
-## Lab 3
+### Lab 3
 
 Use the starting code provided and create the website layout illustrated in the wireframe below:
 

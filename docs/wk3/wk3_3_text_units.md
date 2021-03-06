@@ -2,7 +2,7 @@
 
 *This section was adapted from [CSS Fonts](https://www.w3schools.com/css/css_font.asp) by w3schools.com and [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals) by MDN Web Docs*.
 
-# Font Types
+## Font Types
 
 In CSS, there are two types of font family names:
 
@@ -20,7 +20,7 @@ In CSS, there are two types of font family names:
 <p align="center"><a href="https://drmarkwomack.com/a-writing-handbook/style/typography/"><em>What Font Should I Use?</em></a></p>
 
 
-# Changing fonts with `font-family:`
+## Changing fonts with `font-family:`
 
 The fonts available to the browser depend largely on the fonts installed in the  operating system.
 
@@ -48,7 +48,7 @@ body {
 }
 ```
 
-# Font size
+## Font size
 
 Font size can be set with the `font-size` property.
 
@@ -66,7 +66,7 @@ Font size can be set with the `font-size` property.
 - User can adjust it.
 
 
-## Recommendation & inheritance
+### Recommendation & inheritance
 
 > For `font-size` **it is recommended that you use relative CSS units over fixed units.**
 >
@@ -116,11 +116,11 @@ h1 {
 </section>
 
 
-# CSS Units
+## CSS Units
 
 !>  For this section we will refer to the page [CSS Units by W3Schools](https://www.w3schools.com/CSSref/css_units.asp).
 
-## Responsive units
+### Responsive units
 
 Use the `vw` unit to scale the `font-size` according to the browser's window size.
 
@@ -136,7 +136,7 @@ Use the `vw` unit to scale the `font-size` according to the browser's window siz
 
 <br>
 
-# VS Code Power-ups:
+## VS Code Power-ups:
 
 Now that you know what the viewport is you can unlock the `!` [Emmet](https://code.visualstudio.com/docs/editor/emmet) shortcut:
 
@@ -146,7 +146,7 @@ Now that you know what the viewport is you can unlock the `!` [Emmet](https://co
 
 <br>
 
-## Disabling Emmet
+### Disabling Emmet
 
 If you don't like Emmet's auto-complete, you can disable it:
 
@@ -157,7 +157,7 @@ If you don't like Emmet's auto-complete, you can disable it:
 
 
 
-# Meta Attributes: viewport & IE compatibility
+## Meta Attributes: viewport & IE compatibility
 
 If you use the `!` Emmet shortcut shown above you will notice it comes with two new `<meta>` attributes:
 
@@ -174,7 +174,7 @@ If you use the `!` Emmet shortcut shown above you will notice it comes with two 
 
 <br>
 
-## Viewport device-width and initial-scale
+### Viewport device-width and initial-scale
 
 The `<meta>` viewport element tells the browser how to control the page's dimensions and scaling.
 
@@ -202,7 +202,7 @@ See this [Stack Overflow article](https://stackoverflow.com/questions/6771258/wh
 
 <br>
 -->
-# Using Web Fonts
+## Using Web Fonts
 
 You can include external fonts in your CSS.
 
@@ -236,7 +236,7 @@ p {
 
 <br>
 
-# Font Weight
+## Font Weight
 
 The [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) property sets how bold the text is, depending on the values supported by the font family.
 
@@ -258,7 +258,7 @@ font-weight: lighter;
 font-weight: 200;
 ```
 
-# Text Decorations
+## Text Decorations
 
 The [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) sets the decorations on fonts (mainly used to change default underline on links).
 
@@ -268,7 +268,7 @@ Common values are:
 - `underline`: <u>Underlines the text</u>.
 - `line-through`: Puts a ~~strikethrough over the text~~.
 
-# Text Layout & Alignment
+## Text Layout & Alignment
 
 !>  For this section we will refer to the **section "Text layout"** of the [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#Text_layout) by MDN web docs.
 
@@ -283,7 +283,7 @@ Using the reference above, look at the following properties:
 
 
 
-## Which units: Em or Unitless ?
+### Which units: Em or Unitless ?
 
 `line-height` defined in length or percentage units can have bad inheritance behaviour.
 
@@ -292,7 +292,7 @@ Using the reference above, look at the following properties:
 See [*Prefer unitless numbers for line-height values*](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) by MDN Web Docs for more info.
 
 
-# Other text styling
+## Other text styling
 
 There are many other text styling properties, some more used than others:
 
@@ -300,7 +300,7 @@ There are many other text styling properties, some more used than others:
 - [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): Transform you font to upper case, capitalised, full-width, etc.
 - [`text-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow): Applies drop shadows to your text.
 
-# Shorthand Properties Notation
+## Shorthand Properties Notation
 You can set multiple font values in one shoot by using the shorthand `<font>` property (many CSS properties have a shorthand version):
 
 > Refer to the MDN web doc page on the [**`<font>` property**](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
@@ -320,7 +320,7 @@ body{
 }
 ```
 
-## Font Shorthand Live Demo
+### Font Shorthand Live Demo
 
 This live demo illustrates how the `font` shorthand property affects a paragraph element.
 
@@ -331,9 +331,9 @@ This live demo illustrates how the `font` shorthand property affects a paragraph
 </div>
 
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 Complete the following exercises from W3Schools:
 

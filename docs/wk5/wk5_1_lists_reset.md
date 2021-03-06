@@ -1,7 +1,6 @@
-# 
+# Lists, Nav bars & Resets
 
-
-# List Styles
+## List Styles
 
 !>  For this section we will refer to the page **[CSS Lists](https://www.w3schools.com/css/css_list.asp)** by W3Schools.
 
@@ -57,7 +56,7 @@ li {
 
 <br>
 
-# Lists & Navigation Bars
+### Lists & Navigation Bars
 
 HTML List elements are used as navigation bars because they offer a range of semantic advantages:
 
@@ -114,7 +113,7 @@ If you would like to learn more about why we use lists, see this [Stackoverflow 
 
 <br>
 
-# CSS Reset
+## CSS Reset
 
 In order to avoid default spacing behaviours (`margin`, `padding`, and `box-sizing`) from causing unforseen situations, we can reset them.
 
@@ -144,7 +143,7 @@ If we add the CSS Reset to the stylesheet of [the page we created in the previou
 
 
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended reading: **[CSS Navigation Bar](https://www.w3schools.com/Css/css_navbar.asp)** by W3Schools
 
@@ -152,9 +151,9 @@ If we add the CSS Reset to the stylesheet of [the page we created in the previou
 
 <br>
 
-# Hands-on
+## Hands-on
 
-## Lab 1
+### Lab 1
 
 Create the vertical navigation menu below by using the provided html code and manipulating it's CSS properties.
 
@@ -182,7 +181,7 @@ Create the vertical navigation menu below by using the provided html code and ma
 
 
 
-### Lab 1 Solution
+#### Lab 1 Solution
 
 ```css
 
@@ -208,7 +207,7 @@ a{
 
 <br>
 
-## Lab 2
+### Lab 2
 
 2. Transform the vertical navigation bar from the previous lab into a horizontal bar using the `display` property (see example below)
 
@@ -216,7 +215,7 @@ a{
 
 ![image-20200216104216085](assets/image-20200216104216085.png ':zoom:500')
 
-### Lab 2 Solution
+#### Lab 2 Solution
 
 ```css
 li{
@@ -229,7 +228,7 @@ li{
 
 <br>
 
-## Lab 3
+### Lab 3
 
 Style the starting html code in order to create the 3 column section illustrated below:
 
@@ -265,7 +264,7 @@ Style the starting html code in order to create the 3 column section illustrated
 
 
 
-### Lab 3 Solution
+#### Lab 3 Solution
 
 ```css
 *{

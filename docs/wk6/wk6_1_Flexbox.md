@@ -1,9 +1,3 @@
-
-
-
-
-# 
-
 *This lesson is based on the pages **[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** by CSS-Tricks and **[Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)** by MDN Web Docs*
 
 
@@ -77,7 +71,7 @@ Once a flex container is defined, it enables the following properties:
 
 <br>
 
-# Default behaviour
+## Default behaviour
 
 We will use the code below to explore Flexbox's default bahaviour:
 
@@ -138,7 +132,7 @@ See each property in action by applying them to the CodePen from the previous se
 
 
 
-# Enabling flexibility with `flex`
+## Enabling flexibility with `flex`
 
 By default flex items do not share space evently (see the "Default behaviour" section). Their content determines how much space is allocated to them.
 
@@ -208,7 +202,7 @@ It is also possible to mix flex items with an assigned `flex` property and flex 
 
 
 
-## `flex`: combining  `-grow`, `-shrink` & `-basis`
+### `flex`: combining  `-grow`, `-shrink` & `-basis`
 
 The property `flex` is the shorthand notation for:
 
@@ -240,7 +234,7 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended **cheat-sheet for this course**:
 >
@@ -262,9 +256,9 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-# Hands-on
+## Hands-on
 
-## Execises
+### Execises
 
 1. Complete the **[flexbox challenges in  Flexbox Froggy](https://flexboxfroggy.com/)**
 
@@ -278,7 +272,7 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-## Lab 1 - Recreating the 3 column page
+### Lab 1 - Recreating the 3 column page
 
 
 
@@ -297,7 +291,7 @@ Notes:
 
 <br>
 
-### Solution: Wk6 - Lab 1
+#### Solution: Wk6 - Lab 1
 
 
 

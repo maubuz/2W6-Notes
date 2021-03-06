@@ -1,17 +1,8 @@
-
-
-
-
-
-
 # VS Code, HTML Links and Images
-
-
 
 ## Trying VS Code
 
 ### Finding Your Way Around
-
 
 
 ![img](https://blobs.gitbook.com/assets%2F-LzKOwj7ftX4mKfA3Iuu%2F-Lzgevn0iylAKGmAUFVv%2F-Lzgg81kuhNficVhCcWZ%2Fimage-20200128092221790.png?alt=media&token=1b1c15cb-29ea-4c5c-840b-738b25a9c160)
@@ -24,7 +15,7 @@
 
 <br>
 
-# File Explorer Menu
+## File Explorer Menu
 
 ‌
 
@@ -53,7 +44,7 @@ In-class demo: Can you recognize the used elements?Enter a caption for this imag
 
 
 
-# HTML Symbol Entities
+## HTML Symbol Entities
 
 Sometimes you want to add characters that can be interpreted as an HTML tag:
 
@@ -122,7 +113,7 @@ However, by adding the entities for *greater than* and *smaller than,* we can "f
 
 <br>
 
-## White space
+### White space
 
 A very common use of entity codes is adding white space between elements. Remember that the <p> tag will remove any extra white spaces:
 
@@ -159,7 +150,7 @@ There are two other very important concepts to know about html hyperlinks:
 
 
 
-## **Using local (relative) references**
+### **Using local (relative) references**
 
 
 
@@ -168,7 +159,7 @@ There are two other very important concepts to know about html hyperlinks:
 
 ‌
 
-## **The target attribute**
+### **The target attribute**
 
 Don't send the visitors away from your site, change the default link behaviour:
 
@@ -189,7 +180,7 @@ Don't send the visitors away from your site, change the default link behaviour:
 
 <br>
 
-## Link titles
+### Link titles
 
 It's possible to give extra information about the link with the `title` attribute.
 
@@ -208,7 +199,7 @@ Check the Documentation</a>
 
 <br>
 
-## Email links
+### Email links
 
 Create links that open an new outgoing email message rather than linking to another page.
 
@@ -224,7 +215,7 @@ Using the <a> element and the `mailto: URL` syntax:
 
 <br>
 
-## Further Reading
+### Further Reading
 
 Check-out the links below to review or dig deeper into the Anchor `<a>` tag:
 
@@ -237,7 +228,7 @@ Check-out the links below to review or dig deeper into the Anchor `<a>` tag:
 
 <br>
 
-# Images <img>
+## Images <img>
 
 ![img](https://blobs.gitbook.com/assets%2F-LzKOwj7ftX4mKfA3Iuu%2F-Lzql0FsMXBZE5RPkSl-%2F-LzqqDXXr8ZgyW8w95aq%2Fimage.png?alt=media&token=27540971-f493-4b17-8a1f-30c46bbeb2c3)
 
@@ -253,7 +244,7 @@ It' is unnecessary since the `` tag make that fact obvious.
 
 <br>
 
-## **Image sizing**
+### **Image sizing**
 
 
 
@@ -277,7 +268,7 @@ Although you can size images in the HTML element, it is recommended to specify t
 
 
 
-## Images as a Link
+### Images as a Link
 
 ‌To use an image as a link, put the `` tag inside the `` tag. This will create a clickable image that will send the user to another page:
 
@@ -299,7 +290,7 @@ Although you can size images in the HTML element, it is recommended to specify t
 
 <br>‌
 
-## Further Reading
+### Further Reading
 
 ‌
 
@@ -314,11 +305,11 @@ Check-out the links below to review or dig deeper into the image `` tag:
 
 <br>
 
-# Hands-on
+## Hands-on
 
 
 
-## Activity 1: VS Code
+### Activity 1: VS Code
 
 
 
@@ -337,7 +328,7 @@ Recreate the site done during the live demo (see image below)
 
 <br>
 
-## Activity 2: Hyperlinks
+### Activity 2: Hyperlinks
 
 ‌
 
@@ -376,7 +367,7 @@ Recreate the site done during the live demo (see image below)
 
 <br>
 
-## Activity 3: Exercises
+### Activity 3: Exercises
 
 
 
@@ -393,7 +384,7 @@ Do the following exercises from W3Schools:
 
 <br>
 
-## Activity 4: JAC's Hacker Club
+### Activity 4: JAC's Hacker Club
 
 
 
@@ -405,7 +396,7 @@ Use the content from the zip file below and use it to recreate the home page of 
 
 <br>
 
-### Website requirements
+#### Website requirements
 
 
 

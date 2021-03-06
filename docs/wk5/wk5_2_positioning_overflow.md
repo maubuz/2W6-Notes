@@ -1,40 +1,6 @@
-# 
+# Positioning & Overflow
 
-
-
-# Overflow
-
-!>  For this section we will refer to the page **[CSS overflow Property](https://www.w3schools.com/cssref/pr_pos_overflow.asp)** by W3Schools.
-
-Using the reference above, look at the following [`overflow` properties](https://www.w3schools.com/css/css_overflow.asp):
-
-| Value   | Description                                                  |
-| ------- | ------------------------------------------------------------ |
-| visible | Default. The overflow is not clipped. The content renders outside the element's box. |
-| hidden  | The overflow is clipped, and the rest of the content will be invisible. |
-| scroll  | The overflow is clipped, but a scroll-bar is added to see the rest of the content. |
-| auto    | Similar to `scroll`,  but it adds scrollbars only when necessary. |
-| initial | Sets this property to its default value. [Read about *initial*](https://www.w3schools.com/cssref/css_initial.asp) |
-| inherit | Inherits this property from its parent element. [Read about *inherit*](https://www.w3schools.com/cssref/css_inherit.asp) |
-
-
-
-<br>
-
-The live demo from MDN web docs concisely illustrate the `overflow` property:
-
-
-
-<iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/overflow.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
-<br>
-
-> For `overflow` to have an effect, the block-level container must have either a set height (`height` or `max-height`) or `white-space` set to `nowrap`.
-
-
-
-<br>
-
-# Position
+## Position
 
 The [**`position`** property](https://www.w3schools.com/cssref/pr_class_position.asp) sets how an element is positioned in a document.
 
@@ -122,7 +88,7 @@ The `position` property can take the following values:
 
 <br>
 
-# Z-index: Stack Order
+## Z-index: Stack Order
 
 >  The `z-index` property specifies the stack order of an element.
 >
@@ -150,14 +116,45 @@ In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US
 
 <br>
 
+## Overflow
+
+!>  For this section we will refer to the page **[CSS overflow Property](https://www.w3schools.com/cssref/pr_pos_overflow.asp)** by W3Schools.
+
+Using the reference above, look at the following [`overflow` properties](https://www.w3schools.com/css/css_overflow.asp):
+
+| Value   | Description                                                  |
+| ------- | ------------------------------------------------------------ |
+| visible | Default. The overflow is not clipped. The content renders outside the element's box. |
+| hidden  | The overflow is clipped, and the rest of the content will be invisible. |
+| scroll  | The overflow is clipped, but a scroll-bar is added to see the rest of the content. |
+| auto    | Similar to `scroll`,  but it adds scrollbars only when necessary. |
+| initial | Sets this property to its default value. [Read about *initial*](https://www.w3schools.com/cssref/css_initial.asp) |
+| inherit | Inherits this property from its parent element. [Read about *inherit*](https://www.w3schools.com/cssref/css_inherit.asp) |
+
+
+
+<br>
+
+The live demo from MDN web docs concisely illustrate the `overflow` property:
+
+
+
+<iframe class="interactive" frameborder="0" height="400" src="https://interactive-examples.mdn.mozilla.net/pages/css/overflow.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
+
+<br>
+
+> For `overflow` to have an effect, the block-level container must have either a set height (`height` or `max-height`) or `white-space` set to `nowrap`.
+
+
+
+<br>
 
 
 
 
 
 
-
-# No more Hacks
+## No more Hacks
 
 
 
@@ -171,7 +168,7 @@ In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US
 
 
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended readings:
 >
@@ -182,9 +179,9 @@ In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US
 
 <br>
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 1. Do the following exercises from W3Schools:
 
@@ -193,7 +190,7 @@ In the live demo below  ([from MDN web docs](https://developer.mozilla.org/en-US
 
 <br>
 
-## Lab 4 - Positioning the hero page
+### Lab 4 - Positioning the hero page
 
 Revisit the [Lab 2 of week 4 (the hero page)](./wk4/wk4_1_background_heroes_border.md#Hands-on) and use the `position` property to center the content.
 

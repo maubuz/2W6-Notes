@@ -15,7 +15,7 @@ All elements in HTML are of type Inline or Block. This determines how much space
 
 
 
-### Block-level examples: headings and paragraphs
+## Block-level examples: headings and paragraphs
 
 Headings and paragraph elements are block-level by default:
 
@@ -49,7 +49,7 @@ Headings and paragraph elements are block-level by default:
 
 
 
-### Inline examples: text formatting tags
+## Inline examples: text formatting tags
 
 Most text formating tags are inline elements by default
 
@@ -69,7 +69,7 @@ Result
 
 
 
-# Document Flow
+## Document Flow
 
 The document flow describes **the way elements are arranged in a sequence, one after the other**.
 
@@ -103,10 +103,10 @@ The document flow becomes particularly important when creating website layouts w
 
 
 
-# Div and Span Elements
+## Div and Span Elements
 
 
-## The `<div>` Element
+### The `<div>` Element
 
 The `<div>` element is a **generic block-level division** in the document.
 
@@ -139,7 +139,7 @@ In the example below, each block-level element was given a border of a different
 
 
 
-## The `<span>` Element
+### The `<span>` Element
 
 The `<span>` element is a **generic inline division** in the document.
 
@@ -166,7 +166,7 @@ In the example below two `<span>` elements are used within a paragraph. Each ele
 </div>
 
 
-## Inline or Block ?
+### Inline or Block ?
 
 It might be difficult to remember at first if an elements is inline or block-level.
 
@@ -174,7 +174,7 @@ It might be difficult to remember at first if an elements is inline or block-lev
 
 
 
-## HTML Structural Elements
+### HTML Structural Elements
 
 **Div's and Span's are generic meaningless container elements.**
 

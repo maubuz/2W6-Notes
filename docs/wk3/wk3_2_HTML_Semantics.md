@@ -1,6 +1,6 @@
 # HTML Semantics
 
-# Why Semantic HTML Elements ? 
+## Why Semantic HTML Elements ? 
 
 
 
@@ -26,7 +26,7 @@ You have already been using basic semantic elements:
 - &lt;h1>, &lt;h2>, etc  
 
 
-# Semantics: Page Structure
+## Semantics: Page Structure
 
 There are [many html semantic elements](https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/) which are part of HTML5.
 
@@ -197,7 +197,7 @@ Defines contact information for the author of the article or web page. Should no
 
 <br>
 
-# Recommended Semantics
+## Recommended Semantics
 
 
 
@@ -213,7 +213,7 @@ Defines contact information for the author of the article or web page. Should no
 
 <br>
 
-## Other Semantic Layouts
+### Other Semantic Layouts
 
 As mentioned, there is no single way of applying semantic elements. Below are other options.
 
@@ -233,7 +233,7 @@ As mentioned, there is no single way of applying semantic elements. Below are ot
 
 
 
-# What about `<div>` ?
+## What about `<div>` ?
 
 Divs are still useful as containers for layout purposes or when no other elements make sense, however, they are meaningless semantically.
 
@@ -259,7 +259,7 @@ Below is a comparison of a website organized with divs vs semantic elements (fro
 <p align="center"><em>Using Divs</em></p>
 <br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 
 
@@ -276,9 +276,9 @@ Other useful references:
 
 
 
-# Hands-on
+## Hands-on
 
-## Lab 2
+### Lab 2
 
 Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](https://mau-jac.github.io/2W6-UI/#/./wk3/wk03_Intro_CSS?id=lab-1) in order to use semantic HTML elements in your html file.
 
@@ -286,7 +286,7 @@ Refactor the HTML page done in the [Lab for wk3.1 Hands-on activity](https://mau
 
 > [Download the solution from here](https://drive.google.com/file/d/12Fw-UXRhTsmuF5cejv4xIYQqvUxEDZGS/view?usp=sharing).
 
-## Lab 3
+### Lab 3
 
 For this lab we will use the project [**Structuring a page of content**](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content) by MDN Web docs.
 

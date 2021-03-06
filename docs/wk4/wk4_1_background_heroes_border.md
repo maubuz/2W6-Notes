@@ -1,5 +1,3 @@
-# 
-
 # Code Validators: HTML & CSS
 
 It is possible to validate both your HTML and your CSS using W3C's code validators:
@@ -22,7 +20,7 @@ Both services can validade code provided in three different ways:
 
 
 
-# CSS Backgrounds
+## CSS Backgrounds
 
 !>  For this section we will refer to the page **[CSS Backgrounds](https://www.w3schools.com/css/css_background.asp)** by W3Schools.
 
@@ -46,13 +44,13 @@ There are other background properties such as `background-clip` and `background-
 
 
 
-## url(...) notation
+### url(...) notation
 
 In order to use images as the background we must use the `url(*address*)`  notation, which is different from hyper links or images.
 
 
 
-## background-size
+### background-size
 
 > [This demo from W3Schools](https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size) illustrates **how use the `background-size` property**
 
@@ -64,7 +62,7 @@ In order to use images as the background we must use the `url(*address*)`  notat
 
 <br>
 
-## background-attachment
+### background-attachment
 
 The `background-attachment` property can be confusing at first.  The [example below from MDN web docs](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html) helps illustrate how they are different:
 
@@ -72,7 +70,7 @@ The `background-attachment` property can be confusing at first.  The [example be
 
 <br>
 
-## Gradients
+### Gradients
 
 HTML can support the use of color gradients with the property `linear-gradient`.
 
@@ -100,7 +98,7 @@ To learn more about gradients see the [W3Schools page on gradients](https://www.
 
 
 
-## Multiple background-images
+### Multiple background-images
 
 It is possible to have two or more background-images superimposed.
 
@@ -117,7 +115,7 @@ See the [demo below for an illustration](https://developer.mozilla.org/en-US/doc
 <iframe class="interactive" frameborder="0" height="360" src="https://interactive-examples.mdn.mozilla.net/pages/css/background-image.html" title="MDN Web Docs Interactive Example" width="100%"></iframe>
 <br>
 
-## Darker Background Images
+### Darker Background Images
 
 > Combining a background-image image with a linear gradients is a great way to add a darker "overlay" to an image before adding text over it.
 
@@ -136,7 +134,7 @@ linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(./img/coding.webp);
 
 <br>
 
-## Background Shorthand Property
+### Background Shorthand Property
 
 All the background properties mentioned abover can be set at once using the [`background` shorthand property](https://www.w3schools.com/cssref/css3_pr_background.asp):
 
@@ -164,7 +162,7 @@ It is ok if some values are missing from the shorthand "declaration".
 
 
 
-# Sourcing Images
+## Sourcing Images
 
 
 
@@ -177,7 +175,7 @@ The following website are excellent sources of stock images that are free and li
 
 
 
-## URL's for External Images
+### URL's for External Images
 
 Once you find an external image, **you must obtain the URL to the image file, not the page that contains it**.
 
@@ -199,7 +197,7 @@ Once you find an external image, **you must obtain the URL to the image file, no
 
 
 
-## Hosting or Referencing ?
+### Hosting or Referencing ?
 
 For online images that you source you must decide whether to:
 
@@ -223,7 +221,7 @@ For online images that you source you must decide whether to:
 
 ---
 
-# Hero images
+## Hero images
 
 A "Hero" image is a large image at the top of your home page that will represent the general message or feeling of you website.
 
@@ -248,7 +246,7 @@ A "Hero" image is a large image at the top of your home page that will represent
 ---
 
 
-# Height & Width
+## Height & Width
 
 **It is recommended to set height and width of elements using CSS (instead of using HTML).**
 
@@ -273,7 +271,7 @@ Using the reference above, look at the following CSS properties:
 
 
 
-## Max,  Min & Responsive Pages
+### Max,  Min & Responsive Pages
 
 Using max and min width and height is a first step towards building responsive webpages.
 
@@ -284,7 +282,7 @@ They are useful for:
 
 ---
 
-# Borders
+## Borders
 
 !>  For this section we will refer to the page **[CSS Borders](https://www.w3schools.com/css/css_border.asp)** by W3Schools.
 
@@ -300,7 +298,7 @@ Using the reference above, look at the following CSS properties:
 
 <br>
 
-## Border direction
+### Border direction
 
 You can specify direction for all border properties mentioned above.
 
@@ -313,7 +311,7 @@ Ex.:
 
 
 
-## Rounded Images
+### Rounded Images
 
 We can combine the HMTL `<img>` element with the CSS `border-radius` property to create rounded images:
 
@@ -328,7 +326,7 @@ img {
 	<img src="https://res.cloudinary.com/teepublic/image/private/s--zzyj1l_O--/t_Preview/b_rgb:191920,c_limit,f_jpg,h_630,q_90,w_630/v1446249400/production/designs/317428_1.jpg" alt="Pikazard drawing" title="Pikazard!" style="width:200px; border-radius:50%">
 </a>
 
-## Border Shorthand Syntax
+### Border Shorthand Syntax
 
 The `border` property is a shorthand property for:
 
@@ -361,10 +359,10 @@ h4 {
 <h4 style="border: 2px dotted red;">Border shorthand notation</h4>
 ---
 
-# Shorthand declarations
+## Shorthand declarations
 
 
-## Four values: TRBL "trouble"
+### Four values: TRBL "trouble"
 
 Most shorthand notations that use 4 values follow the "trouble" declaration order:
 
@@ -387,7 +385,7 @@ border-style: dotted solid double dashed;
 - left border is dashed
 
 
-## Two values: top-bottom  left-right
+### Two values: top-bottom  left-right
 
 
 If the declaration uses only two values, the typical order is:
@@ -408,7 +406,7 @@ border-width: 10px 2px;
 <h4 style="border-style: solid; border-width: 10px 2px; ">Two-value declaration</h4>
 ---
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended reading: [**Backgrounds and borders**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) page by MDN web docs.
 
@@ -424,9 +422,9 @@ Other resources:
 
 ---
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 Complete the following exercises by W3Schools:
 
@@ -437,7 +435,7 @@ Complete the following exercises by W3Schools:
 
 
 
-## Lab 1 - Code validators
+### Lab 1 - Code validators
 
 Use the HTML and CSS validators (see top of this page) to correct the errors contained in the provided website.
 
@@ -452,7 +450,7 @@ Use the HTML and CSS validators (see top of this page) to correct the errors con
 !> This example site contains a "hack" not recommended for real development: using `&nbsp;` for creating horizontal spacing.
 
 
-## Lab 2 - The hero page
+### Lab 2 - The hero page
 
 Create the simple "Hero" page show below.
 
@@ -481,7 +479,7 @@ Create the simple "Hero" page show below.
 
 
 
-### Lab 2 Solution
+#### Lab 2 Solution
 
  *CSS*
 
@@ -505,9 +503,4 @@ a {
     border-radius: 15px;
     border: solid 10px blanchedalmond;
 }
- 
-
-
-
-
 ```

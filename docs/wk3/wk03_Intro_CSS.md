@@ -12,7 +12,7 @@ Here are two projects that illustrate the separation between CSS and HTML:
 
 
 
-# CSS Syntax
+## CSS Syntax
 
 Summarized from [CSS Syntax](https://www.w3schools.com/css/css_syntax.asp) by W3Schools:
 
@@ -45,7 +45,7 @@ p {
 ```
 
 
-## CSS Comments
+### CSS Comments
 
 Comments have a different syntax than HTML:
 
@@ -63,7 +63,7 @@ comment */
 
 
 
-# Implementing CSS with HTML
+## Implementing CSS with HTML
 
 There are three different ways to use CSS with your HTML document:
 
@@ -73,7 +73,7 @@ There are three different ways to use CSS with your HTML document:
 
 
 
-## Inline CSS
+### Inline CSS
 
 Add the `style=`  attribute **inside the html tag** followed by the CSS property and value:
 
@@ -90,7 +90,7 @@ Add the `style=`  attribute **inside the html tag** followed by the CSS property
 </div>
 
 
-## Internal CSS
+### Internal CSS
 
 Add the CSS rules **in the head section of the html page** by adding a `<style>` section.
 
@@ -107,7 +107,7 @@ Add the CSS rules **in the head section of the html page** by adding a `<style>`
  ```
 
 
-## External CSS
+### External CSS
 
 Use a separate CSS file (often a separate folder). **This is the preferred method out of the three **.
 
@@ -141,10 +141,10 @@ With the rest of the HMTL document the external CSS declaration should look like
 
 
 
-# CSS Selectors
+## CSS Selectors
 
 
-## Global Selectors
+### Global Selectors
 
 When using the html element tag as the selector **all elements of the same tag type will be affected**.
 
@@ -159,7 +159,7 @@ When using the html element tag as the selector **all elements of the same tag t
 This will affect every `<h2>`  element in the page.
 
 
-## Id Selectors
+### Id Selectors
 
 Target a specific HTML element by adding the `id="..."` attribute inside the opening html tag.
 
@@ -180,7 +180,7 @@ In the styling section reference the element's id with the `#` id selector:
 **Element Id's should be unique.** It is standard practice to never give the same id to more than one element.
 
 
-### Website Bookmarking with ID and Links
+#### Website Bookmarking with ID and Links
 
 Use Id's to create bookmarks inside your website and use links `<a>` to jump to those Id's
 
@@ -206,7 +206,7 @@ It's also possible to bookmark other pages within your website:
 ```
 
 
-## Class Selectors
+### Class Selectors
 
 Classes are a styling template generally associated with more than one element.
 
@@ -229,7 +229,7 @@ In the styling section reference the element's id with the `.` class selector:
 ```
 
 
-## Multiple Selectors
+### Multiple Selectors
 
 If you would like to add the same styling to the multiple selectors, it is possible list multiple selectors at the same time:
 
@@ -242,7 +242,7 @@ If you would like to add the same styling to the multiple selectors, it is possi
 ```
 
 
-## Nested selector
+### Nested selector
 
 It is possible to target the inner elements of an element that has been given an id using a nested selector.
 
@@ -258,7 +258,7 @@ It is possible to target the inner elements of an element that has been given an
 **When using nested selections** remember that the property must be modified on the element that uses it, not on its parent. Therefore, **the last element to be called should be the element to be modified.**
 
 
-## Select the entire page with the Body
+### Select the entire page with the Body
 
 In order to apply a styling to the whole page use the body selector:
 
@@ -271,7 +271,7 @@ In order to apply a styling to the whole page use the body selector:
 ```
 
 
-## Universal Selector
+### Universal Selector
 
 Use  `*`  to select every single element on document.
 
@@ -284,7 +284,7 @@ Use  `*`  to select every single element on document.
 
 
 
-# CSS Colors: text, background and borders
+## CSS Colors: text, background and borders
 
 Refer to the [W3Schools page for CSS Color](https://www.w3schools.com/css/css_colors.asp) for this lesson.
 
@@ -298,7 +298,7 @@ We will cover:
 
 
 
-# Resources & Looking Further
+## Resources & Looking Further
 
 - [Inline, Internal, and External CSS in HTML](https://www.w3schools.com/html/html_css.asp)
 
@@ -310,11 +310,11 @@ We will cover:
 
 
 
-# Hands-on
+## Hands-on
 
 
 
-## Exercises
+### Exercises
 
 Do the following exercises from W3Schools:
 
@@ -332,7 +332,7 @@ Do the following exercises from W3Schools:
 
 > [Download the Dinner solution from here](https://drive.google.com/file/d/1zRybBC5UHHmVRwuHTrHUcTN8EzAbI9O0/view?usp=sharing).
 
-## Lab 1
+### Lab 1
 
 Use CSS to style the provided html so that it looks like the image below.
 
@@ -350,5 +350,3 @@ Use CSS to style the provided html so that it looks like the image below.
 ![Result_Site](assets/Result_Site.png)
 
 > [Download the solution from here](https://drive.google.com/file/d/1jOSEq4s6jqQLmlbR2gwoxjf1O1OEMQt1/view?usp=sharing).
-
-

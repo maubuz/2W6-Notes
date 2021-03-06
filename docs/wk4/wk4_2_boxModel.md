@@ -1,5 +1,3 @@
-# 
-
 *This lesson was based on the page **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/)** by Interneting is Hard.*
 
 
@@ -40,7 +38,7 @@ This characteristic determines the space that is allocated to them in the docume
 
 
 
-# Browser Dev Tools
+## Browser Dev Tools
 
 There are built-in tools in our browser to help us inspect elements and visualize their box properties.
 
@@ -70,7 +68,7 @@ To learn more about the Dev Tools visit  [this link for the Firefox Dev Tools](h
 
 
 
-# Manipulating the Box
+## Manipulating the Box
 
 
 
@@ -134,7 +132,7 @@ In the section we will cover:
 
 
 
-## Display: Changing the Box Behaviour
+### Display: Changing the Box Behaviour
 
 
 
@@ -169,7 +167,7 @@ In the section we will cover:
 
 
 
-# Padding
+## Padding
 
 3. Add an **all-around padding** to the `<h1>` element:
 
@@ -226,7 +224,7 @@ When **two values are provided** for a shorthand notation:
 
 <br>
 
-# Borders
+## Borders
 
 
 
@@ -256,7 +254,7 @@ h1 {
 
 <br>
 
-# Margins
+## Margins
 
 Margins create space between the selected element and neighbouring elements.
 
@@ -363,7 +361,7 @@ strong {
 
 
 
-# Display: Inline-block
+## Display: Inline-block
 
 As seen above, we can change the display behaviour of an element between Inline and Block.
 
@@ -405,7 +403,7 @@ strong {
 
 
 
-# Vertical Margin Collapse
+## Vertical Margin Collapse
 
 The vertical margin collapse can be a **counter-intuitive behaviour** in CSS.
 
@@ -438,7 +436,7 @@ p {
 
 
 
-## Dealing with Vertical Margin Collapse
+### Dealing with Vertical Margin Collapse
 
 There are three approaches to dealing with the vertical margin collapse:
 
@@ -464,7 +462,7 @@ There are three approaches to dealing with the vertical margin collapse:
 
 
 
-# Explicit Dimensions: Width & Height
+## Explicit Dimensions: Width & Height
 
 
 
@@ -543,7 +541,7 @@ Now that the div is smaller than the view-port width, it will by default "justif
 
 <br>
 
-# Content vs Border Boxes
+## Content vs Border Boxes
 
 > The `width` and the `height` properties define the size of the box's content. 
 >
@@ -624,7 +622,7 @@ To learn more about the `box-sizing` property see [CSS Box Sizing tutorial](http
 
 
 
-# Intro to Aligning Boxes
+## Intro to Aligning Boxes
 
 There are several ways to align text and containers in CSS. We will look at two techniques (one you've already seen, and one new).
 
@@ -634,7 +632,7 @@ There are several ways to align text and containers in CSS. We will look at two 
 
 
 
-## Aligning Text
+### Aligning Text
 
 [In week 3 (Text Layout & Alignment)](../wk3/wk3_3_text_units.md)  we looked at how to align text within it's parent container using the `text-align` property.
 
@@ -658,7 +656,7 @@ body {
 
 <br>
 
-## Aligning Boxes with Auto-Margins
+### Aligning Boxes with Auto-Margins
 
 There are three methods for horizontally aligning block-level elements:
 
@@ -719,7 +717,7 @@ Your page should now look similar to this:
 
 
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended reading: **[CSS Box Model](https://internetingishard.com/html-and-css/css-box-model/) by Interneting is Hard**.
 
@@ -732,9 +730,9 @@ Other resources:
 
 
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 1. Do the following exercises from W3Schools:
 
