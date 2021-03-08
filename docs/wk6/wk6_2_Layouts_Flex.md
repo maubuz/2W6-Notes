@@ -1,17 +1,12 @@
-*This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
-
-
 # Page Layouts with Flexbox
 
-
-
-Once you've learned to control the position of flex-items, creating non-linear page layouts becomes much easier and intuitive.
+*This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
 
 
 
 ## Grouping Flex Items
 
-Flexbox opens a new strategy for creating more interesting layouts: **grouping elements inside multiple flex containers**.
+Flexbox opens up a new strategy for creating layouts: **grouping elements inside multiple flex containers**.
 
 
 
@@ -59,6 +54,12 @@ Consider the starting code below:
    - In the **styling for flex item** add `flex: 1;`
    - This will cause each item to take 1 equal part (from the total of 3 distributed parts)
 
+<br>
+
+***Expected output***
+
+![expected output of layout example 1](assets/image-20210307221737243.png)
+
 
 
 ### Example 2: Main and side columns
@@ -97,6 +98,12 @@ Consider the starting code below:
 
 <br>
 
+***Expected output:***
+
+![expected output of layout example 2](assets/image-20210307222710240.png)
+
+<br>
+
 ### Example 3: Navbar
 
 In this example we will create a navigation bar where:
@@ -112,7 +119,7 @@ In this example we will create a navigation bar where:
 
 Consider the starting code below.
 
-*Note: the white borders are being used purely for debugging purposes. We will remove them at the end.*
+*Note: white borders are added for debugging purposes. We will remove them at the end.*
 
 <br>
 
@@ -147,7 +154,7 @@ Consider the starting code below.
 
 3. Convert ***.menu*** into a flex container by adding `display: flex;`
 
-4. Distribute the children of *.menu* in order to maximise the space between them by adding `justify-content: space-between;`
+4. Distribute the children of *.menu* in order to maximize the space between them by adding `justify-content: space-between;`
 
    
 
@@ -183,14 +190,33 @@ Consider the starting code below.
 
    - At the same time, add a solid white border to *.links* in order to see how the layout is happening
 
+   ```css
+   .links {
+       border: 1px solid #fff;
+       display: flex;
+   }
+   ```
+
+   
+
 7. Send the flex items of *.links* to the right side by using `justify-content: flex-end;`
+
+   ```css
+   .links {
+       border: 1px solid #fff;
+       display: flex;
+       justify-content: flex-end;
+   }
+   ```
+
+   
 
 8. Add a small spacing between "Sign Up" and "Login" by creating a new CSS rule:
 
    <br>
 
    ```css
-   .login { margin-left: 20px; }
+   .login { margin-left: 1rem; }
    ```
 
 
@@ -198,8 +224,6 @@ Consider the starting code below.
 <br>
 
 ![Web page <li> elements laid out with nested flexbox containers](./assets/menu-bar-grouped-items-2-50cec0.png)
-
-
 
 <br>
 
@@ -213,15 +237,17 @@ Auto-margins in flexbox can be used as an alternative to creating a wrapper `<di
 
 > Auto-margins in a flex item can used to **create as much space as possible (separation)** between elements inside a container.
 >
-> The **auto-margin is set on a sibbling element**, not on the flex container.
+> The **auto-margin is set on a sibling element**, not on the flex container.
 
 
 
-In the example above, the reparation between the date and "Sign Up" can be made with auto-margins:
+In the example above, the separation between the date and "Sign Up" can be made with auto-margins:
 
 
 
-1. Flatten the ***.menu*** by removing the additional `<div>` tagged as *.links*
+1. Flatten the ***.menu*** by removing the additional `<div>` tagged as *.links* (back to the original staring HTML).
+
+   
 
 2. Add a left auto-margin on the ***.signup*** element:
 
@@ -242,13 +268,16 @@ In the example above, the reparation between the date and "Sign Up" can be made 
 
 ## References & Diving Deeper
 
-> Recommended reading:
->
+### Recommended reading:
+
 > -   **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard
->    -  *Includes the same tutorial with detailed explanations*
->
-> Recommended video:
->
+>   -  *Includes the same tutorial with detailed explanations*
+> 
+
+
+
+### Recommended video:
+
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/k32voqQhODc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 >
 
@@ -287,7 +316,7 @@ Use the provided starting code, create the layout in the image below:
 
 <br>
 
-#### Solution for Lab 2
+#### Solution for Lab 2 (posted on Wed)
 
 <!-- See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7). -->
 
@@ -311,3 +340,9 @@ Use the starting code provided and create the website layout illustrated in the 
 ***Desired [Wireframe](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399) Layout:***
 
 ![image-20200227143834520](assets/image-20200227143834520.png ':size=500')
+
+<br>
+
+#### Solution for Lab 3 (posted on Wed)
+
+<!-- See [this CodePen](https://codepen.io/maujac/pen/zYomxLV?editors=0100) -->
