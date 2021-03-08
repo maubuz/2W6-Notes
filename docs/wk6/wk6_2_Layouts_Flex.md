@@ -1,6 +1,6 @@
 # Page Layouts with Flexbox
 
-*This lesson was based on the page **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
+*This lesson was based on the page **[Flexbox](https://www.internetingishard.com/html-and-css/flexbox/)** by Interneting is Hard and on the YoutTube video [**Flexbox Tutorial (CSS): Real Layout Examples**](https://www.youtube.com/watch?v=k32voqQhODc)  by LearnWebCode.*
 
 
 
@@ -22,7 +22,8 @@ Flexbox opens up a new strategy for creating layouts: **grouping elements inside
 
 ![Diagram: wrapping two flex items in a <div> to eliminate one of the flex items](https://www.internetingishard.com/html-and-css/flexbox/grouping-flex-items-1bb642.png ':size=500')
 
-<p align="center"><strong>Grouping Flex Items </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
+<p align="center"><strong>Grouping Flex Items </strong><a href="https://www.internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
+
 <br>
 
 ### Example 1:  Three equal columns
@@ -129,20 +130,17 @@ Consider the starting code below.
 </iframe>
 
 
-
 <br>
 
-**Notice the following:**
+**Complete example with the following steps:**
 
-- The `<nav>` element with class ***.menu-container*** only has one child, the `<div>` of class ***.menu***.
-
-
-
-**Do the following:**
+<br>
 
 1. Convert ***.menu-container*** into a flex container with `display: flex;`
 
    - Since `<nav>` only has one child, nothing will change.
+
+   <br>
 
 2. Add the flex property `justify-content: center;`  to the ***.menu-container*** element in order to center its single flex item.
 
@@ -150,30 +148,41 @@ Consider the starting code below.
    >
    > Notice how we did this by adding a property to the *parent* element (the flex container) instead of directly to the element we wanted to center (the flex item).
 
-   
+   <br>
 
 3. Convert ***.menu*** into a flex container by adding `display: flex;`
 
-4. Distribute the children of *.menu* in order to maximize the space between them by adding `justify-content: space-between;`
+   - By default the flex container is only as big as it's content. The width of the ***.menu*** element will be small.
 
-   
+   ![Menu elements is only as wide as the content inside of it.](assets/image-20210308143639844.png)
+
+   <br>
+
+4. Tell the ***.menu*** element to take a full part (the only part) inside ***.menu-container*** by giving it `flex: 1`.
+
+   - Since there are no other items inside ***menu-container***, this will cause ***.menu*** to grow as wide as it's parent.
+   - Note that setting `width: 100%` on ***.menu*** would have the same effect.
+
+   <br>
+
+5. Distribute the children of *.menu* in order to maximize the space between them by adding `justify-content: space-between;`
 
    ![image-20200226215018429](assets/image-20200226215018429.png)
 
    <br>
 
-5. In the HTML wrap the "Sign Up" and the "Login" elements by creating a new `<div>` with the class of ***.links***
+6. In the HTML wrap the "Sign Up" and the "Login" elements by creating a new `<div>` with the class of ***.links***
 
-   - The flex behaviour `space-between`  should push the newly created container (the `<div>` with *.links*) away from it's sibling, the `<div>` with *.date*
+   - The flex behaviour `space-between`  should push the newly created container (the `<div>` with *.links*) away from it's sibling, the `<p>` with *.date*
 
    <br>
 
    ```html
    <div class='menu'>
-     <div class='date'>Aug 14, 2016</div>
+     <p class='date'>Aug 14, 2016</p>
      <div class='links'>
-       <div class='signup'>Sign Up</div>
-       <div class='login'>Login</div>
+       <p class='signup'>Sign Up</p>
+       <p class='login'>Login</p>
      </div>
    </div>
    ```
@@ -186,7 +195,7 @@ Consider the starting code below.
 
    <br>
 
-6. Turn the ***.links*** element into a flex container so that its siblings sit side-by-side
+7. Turn the ***.links*** element into a flex container so that its siblings sit side-by-side
 
    - At the same time, add a solid white border to *.links* in order to see how the layout is happening
 
@@ -197,9 +206,9 @@ Consider the starting code below.
    }
    ```
 
-   
+   <br>
 
-7. Send the flex items of *.links* to the right side by using `justify-content: flex-end;`
+8. Send the flex items of *.links* to the right side by using `justify-content: flex-end;`
 
    ```css
    .links {
@@ -209,9 +218,9 @@ Consider the starting code below.
    }
    ```
 
-   
+   <br>
 
-8. Add a small spacing between "Sign Up" and "Login" by creating a new CSS rule:
+9. Add a small spacing between "Sign Up" and "Login" by creating a new CSS rule:
 
    <br>
 
@@ -270,7 +279,7 @@ In the example above, the separation between the date and "Sign Up" can be made 
 
 ### Recommended reading:
 
-> -   **[Flexbox](https://internetingishard.com/html-and-css/flexbox/#grouping-flex-items)** by Interneting is Hard
+> -   **[Flexbox](https://www.internetingishard.com/html-and-css/flexbox/)** by Interneting is Hard
 >   -  *Includes the same tutorial with detailed explanations*
 > 
 
