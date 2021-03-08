@@ -1,16 +1,18 @@
+# Intro to Flexbox
+
 *This lesson is based on the pages **[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** by CSS-Tricks and **[Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)** by MDN Web Docs*
 
 
 
-# Intro to Flexbox
+## What is Flexbox?
 
 **[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) is a one-dimensional layout method for laying out items in rows or columns.**
 
-Items of a flex container adapt by growing or shriking it's size along one direction.
+Items of a flex container adapt by growing or shirking it's size along one direction.
 
 
 
-![image-20200223203730246](assets/image-20200223203730246.png ':size=400')
+![Mosaik illustrating possible arrangements with Flexbox ](assets/image-20200223203730246.png ':size=400')
 
 <p align="center"><a href="https://codebond.co/tutorial/css/complete-guide-to-flexbox"><em>Complete Guide to Flexbox</em></a></p>
 <br>
@@ -29,51 +31,35 @@ The flexbox "framework" is achieved via the `display` property:
 
 ## Axis and Terminology
 
-
-
-Every flexbox behaviour depends on the axis of orientation.
-
-**By default, the main axis goes along the horizontal and the cross axis follows the vertical**
-
-
-
-![A diagram explaining flexbox terminology. The size across the main axis of flexbox is called the main size, the other direction is the cross size. Those sizes have a main start, main end, cross start, and cross end.](https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg ':size=700')
-
-
-
-<br>
-
 Flexbox uses specific terminology to define the **parent-child relationship**:
 
 <br>
 
 ![image-20200223205947884](assets/image-20200223205947884.png)
 
-
+> Some flex properties apply only to the container while others apply only to the container's items.
 
 <br>
 
-Once a flex container is defined, it enables the following properties:
+Every flexbox behaviour depends on the axis of orientation.
 
-| Flex-related Property                                        | Description                                                  |
-| :----------------------------------------------------------- | ------------------------------------------------------------ |
-| [flex-direction](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp) | Specifies the direction of the flexible items inside a flex container |
-| [justify-content](https://www.w3schools.com/cssref/css3_pr_justify-content.asp) | Horizontally aligns the flex items when the items do not use all available space on the main-axis |
-| [align-items](https://www.w3schools.com/cssref/css3_pr_align-items.asp) | Vertically aligns the flex items when the items do not use all available space on the cross-axis |
-| [flex-wrap](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) | Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line |
-| [align-content](https://www.w3schools.com/cssref/css3_pr_align-content.asp) | Modifies the behavior of the flex-wrap property. It is similar  to align-items, but instead of aligning flex items, it aligns flex lines |
-| [flex-flow](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp) | A shorthand property for flex-direction and flex-wrap        |
-| [order](https://www.w3schools.com/cssref/css3_pr_order.asp)  | Specifies the order of a flexible item relative to the rest of the flex items inside the same container |
-| [align-self](https://www.w3schools.com/cssref/css3_pr_align-self.asp) | Used on flex items. Overrides the container's align-items property |
-| [flex](https://www.w3schools.com/cssref/css3_pr_flex.asp)    | A shorthand property for the flex-grow, flex-shrink, and the flex-basis     properties |
+**By <u>default</u>, the main axis goes along the horizontal and the cross axis follows the vertical**
 
+<br>
 
+![A diagram explaining flexbox terminology. The size across the main axis of flexbox is called the main size, the other direction is the cross size. Those sizes have a main start, main end, cross start, and cross end.](./assets/flex-basic-terminology.svg ':size=700')
+
+<p align="center"><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"><em>Complete Guide to Flexbox by CSS-Tricks</em></a></p>
+
+<br>
+
+Once a flex container is defined, special properties can be used on the container and on the item.
 
 <br>
 
 ## Default behaviour
 
-We will use the code below to explore Flexbox's default bahaviour:
+We will use the code below to explore Flexbox's default behavior:
 
 <iframe height="500" style="width: 100%;" scrolling="no" title="wk6_1 - Default_behaviour" src="https://codepen.io/maujac/embed/QWbdbPp?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/QWbdbPp'>wk6_1 - Default_behaviour</a> by Mauricio Buschinelli
@@ -86,17 +72,17 @@ We will use the code below to explore Flexbox's default bahaviour:
 
 <br>
 
-Once `display: flex` is added to the `<section>` element (the flex container),  **notice the following**:
+Once `display: flex` is added to the `<section>` element (the flex container),  **notice the following default behaviour**:
 
-- The block-level document flow of the `<article>` elements (the flex items) changes;
+- Flex items with `display: block` (ei., the `<article>`) no longer break into a new line.
   
    
   
-- If space permits, the size of each flex item is only wide enogh to display the content in a single line;
+- The size of each flex-item is only wide enough to fit the content in a single line. Additional space is left blank;
 
    
 
- - Flex items stretches vertically to cover the height of the container;
+ - Sibling flex-items stretch vertically to have the same height inside the flex-container;
 
    
 
@@ -104,7 +90,7 @@ Once `display: flex` is added to the `<section>` element (the flex container),  
 
    
 
- - If all items cannot fit without wrapping their content, space is distributed according to the ammount of content in each item.
+ - The width of each flex-item is allocated relative to the content in all siblings (ie. the sibling with most content will be the widest).
 
    
 
@@ -114,7 +100,7 @@ Once `display: flex` is added to the `<section>` element (the flex container),  
 
 <br>
 
-The power of Flexbox comes from it's ability to resize and adapt to the spacial context in a very intuitive way.
+The power of Flexbox comes from it's ability to resize and adapt to the spatial context in a very intuitive way.
 
 
 
@@ -126,23 +112,55 @@ The power of Flexbox comes from it's ability to resize and adapt to the spacial 
 
 !>  For the remainder of this section we will refer to the page **[A Complete Guide to Flexbox ](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)** by CSS-Tricks.
 
-See each property in action by applying them to the CodePen from the previous section.
+**Make your life easier and refer to this visual guide when using Flexbox ☝**
 
 <br>
 
+![Example of CSS-Tricks visual guide to Flexbox](assets/image-20210307214315626.png)
+
+<br>
+
+Using the CodePen above we will go over some of the most common flex properties:
+
+<br>
+
+| Property                                                     | Description (Container only)                                 |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| [flex-direction](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp) | Specifies the direction of the flexible items inside a flex container |
+| [justify-content](https://www.w3schools.com/cssref/css3_pr_justify-content.asp) | Horizontally aligns the flex items when the items do not use all available space on the main-axis |
+| [align-items](https://www.w3schools.com/cssref/css3_pr_align-items.asp) | Vertically aligns the flex items when the items do not use all available space on the cross-axis |
+| [flex-wrap](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) | Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line |
+| [align-content](https://www.w3schools.com/cssref/css3_pr_align-content.asp) | Modifies the behavior of the flex-wrap property. It is similar  to align-items, but instead of aligning flex items, it aligns flex lines |
+| [flex-flow](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp) | A shorthand property for flex-direction and flex-wrap        |
 
 
-## Enabling flexibility with `flex`
 
-By default flex items do not share space evently (see the "Default behaviour" section). Their content determines how much space is allocated to them.
+| Property                                                     | Description (Item only)                                      |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| [order](https://www.w3schools.com/cssref/css3_pr_order.asp)  | Specifies the order of a flexible item relative to the rest of the flex items inside the same container |
+| [align-self](https://www.w3schools.com/cssref/css3_pr_align-self.asp) | Used on flex items. Overrides the container's align-items property |
+| [flex](https://www.w3schools.com/cssref/css3_pr_flex.asp)    | A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties |
+| [flex-grow](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp) | Specifies how much the item will grow relative to sibling items |
+| [flex-shrink](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp) | specifies how the item will shrink relative sibling items.   |
+| [flex-basis](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp) | specifies the initial length of a flexible item.             |
+
+<br>
+
+## Controlling width with `flex`
+
+**Flexbox enables columns with even height, however, how do we get containers with even widths?**
 
 
 
-The `flex` property on the flex item works as a weight that tells the flex container how to distribute extra space to each item. 
+By default flex items do not share space evenly (see the "Default behaviour" section). Their content determines how much space is allocated to them.
+
+
+
+The `flex` property on the flex-item **works as a weight** that tells the flex container how to distribute extra space to each item. 
 
  
 
-> By assignning a number to the `flex` property you determine how many parts of the available space will be assigned to that item.
+> By assigning a number to the `flex` property you determine how many parts of the available space will be assigned to that item.
 >
 > In other words, it is like assigning a fraction of the total space distribute to the flex items
 
@@ -200,48 +218,41 @@ It is also possible to mix flex items with an assigned `flex` property and flex 
 <p align="center"><strong>Mixing flex parts </strong><a href="https://internetingishard.com/html-and-css/flexbox/"><em>Interneting is Hard</em></a></p>
 <br>
 
-
-
-### `flex`: combining  `-grow`, `-shrink` & `-basis`
-
-The property `flex` is the shorthand notation for:
-
-- `flex-grow`
-- `flex-shrink`
-- `flex-basis`
-
-<br>
-
-The 2nd and 3rd parameters (`flex-shrink` and `flex-basis`) are optional.
-
-**Default is `0 1 auto`**, but if you set it with a single number value, it becomes `<number> 1 0`.
-
-<br>
-
-> **It is recommended that you use the `flex` shorthand property** rather than set the individual properties. The shorthand sets the other values intelligently.
-
-
-
-<br>
-
 ## Obsolete after Flex
 
 Certain CSS properties **become obsolete** with the use of Flexbox:
 
 - The use of  [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) property for aligning  `inline-block` element.
 - The use of floats for layouts.
-- Using `position: abosolute` to center content inside a parent container.
 
 
 
 ## References & Diving Deeper
 
-> Recommended **cheat-sheet for this course**:
->
-> -  [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by CSS Tricks
->
->   
->
+### `flex`: combining  `-grow`, `-shrink` & `-basis`
+
+The property `flex` is the shorthand notation for:
+
+- [`flex-grow`](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp): specifies how much the item will grow relative to sibling items.
+- [`flex-shrink`](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp): specifies how the item will shrink relative sibling items.
+- [`flex-basis`](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp): specifies the initial length of a flexible item.
+
+<br>
+
+This information might come handy when more control is desired over the default behaviour.
+
+<br>
+
+The 2nd and 3rd parameters (`flex-shrink` and `flex-basis`) are optional.
+
+**`flex` property defaults to `0 1 auto`** (`flex-grow` `flex-shrink` `flex-basis`).
+
+If only a single number is provided, then `flex` property is: `<number> 1 0`.
+
+
+
+### Additional tutorials
+
 > For a **tutorial format** with step by step instructions (some reading required): 
 >
 > -  [Flexbox](https://internetingishard.com/html-and-css/flexbox/) by Interneting is Hard
@@ -254,11 +265,9 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 <br>
 
-
-
 ## Hands-on
 
-### Execises
+### Exercises
 
 1. Complete the **[flexbox challenges in  Flexbox Froggy](https://flexboxfroggy.com/)**
 
@@ -276,18 +285,26 @@ Certain CSS properties **become obsolete** with the use of Flexbox:
 
 
 
-Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io/2W6-UI/#/./wk5/wk5_1_lists_reset?id=hands-on) and use `Flexbox` to equally distribute the columns.
+Revisit the [Lab 3 of week 5 (the 3 column container)](https://mau-jac.github.io/2W6-UI/#/./wk5/wk5_1_lists_reset?id=hands-on) and use Flexbox to equally distribute the columns.
 
 Notes:
 
+- Use the CodePen below.
 - Flexbox will remove the inherited spacing (whitespace) between the columns (yay).
-- The fact that the `<h2>` element is a sibling of the `<article>` elements makes this layout particularly challenging. Normally the `<h2>` element would be a sibling of the flex container. 
+- The fact that the `<h2>` element is a sibling of the `<article>` elements makes this layout particularly challenging. Normally the `<h2>` element would be outside the flex container (as a previous sibling).
 
 <br>
 
-![image-20200216150238379](../wk5/assets/image-20200216150238379.png)
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk7 - Lab 3 with Flexbox" src="https://codepen.io/maujac/embed/wvoYBKg?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/wvoYBKg'>wk7 - Lab 3 with Flexbox</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
+<br>
 
+***Expected output:***
+
+![expected outcome for the 3 column container lab](assets/image-20210307215925562.png)
 
 <br>
 
