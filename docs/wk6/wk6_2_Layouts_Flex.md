@@ -50,7 +50,13 @@ Consider the starting code below:
 **Do the following:**
 
 1. Convert ***.call-outs-container*** to a flex container by adding `display: flex;` to it's styling.
+
+   <br>
+
 2. Notice how the size of the flex items depends on their content (the flex default behaviour).
+
+   <br>
+
 3. Make each flex item grow to take equal parts of the flex container:
    - In the **styling for flex item** add `flex: 1;`
    - This will cause each item to take 1 equal part (from the total of 3 distributed parts)
@@ -84,8 +90,15 @@ Consider the starting code below:
 **Do the following:**
 
 1. Convert `<section>`  to a flex container by adding `display: flex;` to it's styling.
+
+   <br>
+
 2. Since the div tagged ***.main-column*** has much more content then the other elements it is assigned more space (the flex default behaviour).
+
    - This makes sense, however, we did not control the spacing. 
+
+     <br>
+
 3. Make the main section 3 times as large as the sidebar :
    - In the **styling for *.main-column*** add `flex: 3;`
    - In the **styling for *.sidebar-one/two*** add `flex: 1;`
@@ -93,7 +106,7 @@ Consider the starting code below:
 
 <br>
 
-![flex_proportions](assets/flex_proportions.png)
+![flex_proportions](assets/flex_proportions.png ':size=300')
 
 
 
@@ -222,15 +235,9 @@ Consider the starting code below.
 
 9. Add a small spacing between "Sign Up" and "Login" by creating a new CSS rule:
 
-   <br>
-
    ```css
    .login { margin-left: 1rem; }
    ```
-
-
-
-<br>
 
 ![Web page <li> elements laid out with nested flexbox containers](./assets/menu-bar-grouped-items-2-50cec0.png)
 
@@ -252,11 +259,11 @@ Auto-margins in flexbox can be used as an alternative to creating a wrapper `<di
 
 In the example above, the separation between the date and "Sign Up" can be made with auto-margins:
 
-
+<br>
 
 1. Flatten the ***.menu*** by removing the additional `<div>` tagged as *.links* (back to the original staring HTML).
 
-   
+   <br>
 
 2. Add a left auto-margin on the ***.signup*** element:
 
@@ -348,7 +355,7 @@ Use the starting code provided and create the website layout illustrated in the 
 
 ***Desired [Wireframe](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399) Layout:***
 
-![image-20200227143834520](assets/image-20200227143834520.png ':size=500')
+![image-20200227143834520](assets/image-20200227143834520.png ':size=400')
 
 <br>
 
