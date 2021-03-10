@@ -35,7 +35,7 @@
 **Week 7**
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
-- [Positioning & Overflow](./wk5/wk5_2_positioning_overflow.md)
+- [Positioning & z-index](./wk5/positioning-zIndex.md)
 
 **Week 6**
 - [Test 1 Practice Questions](./wk6/Test1_Practice_Meghrig.md)
