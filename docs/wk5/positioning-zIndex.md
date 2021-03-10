@@ -1,4 +1,4 @@
-# Positioning & Overflow
+# Positioning & Z-index
 
 ## Position
 
@@ -6,13 +6,15 @@ The [**`position`**](https://www.w3schools.com/cssref/pr_class_position.asp) pro
 
 `position` is followed by the properties [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top), [`right`](https://developer.mozilla.org/en-US/docs/Web/CSS/right), [`bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom), and [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left) , which work as anchors for specifying distances.
 
-
+<br>
 
 >  Elements can have **two position states: positioned and not positioned**: 
 
-**Not positioned**: The default value of `static`.  Elements follow the regular document flow (business as usual).
 
-**Positioned**: Four possible values that behave differently, `relative`, `absolute`, `fixed`, or `sticky`.
+
+- **Not positioned**: The default value of `static`.  Elements follow the regular document flow (business as usual).
+
+- **Positioned**: Four possible values that behave differently, `relative`, `absolute`, `fixed`, or `sticky`.
 
 <br>
 
@@ -26,13 +28,13 @@ The `position` property can take the following values:
 
 
 
-| Value    | Description                                                  |
-| -------- | ------------------------------------------------------------ |
-| static   | Default value. Elements render in order, as they appear in the document flow. |
-| absolute | Positioned relative to its first positioned ancestor element. |
-| fixed    | Positioned relative to the browser window.                   |
-| relative | Positioned relative to its normal position.                  |
-| sticky   | Positioned based on the user's scroll position.              |
+| Value                                                        | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [static](https://www.w3schools.com/css/css_positioning.asp)  | Default value. Elements render in order, as they appear in the document flow. |
+| [absolute](https://www.w3schools.com/css/css_positioning.asp) | Positioned relative to its first positioned ancestor element. |
+| [fixed](https://www.w3schools.com/css/css_positioning.asp)   | Positioned relative to the browser window.                   |
+| [relative](https://www.w3schools.com/css/css_positioning.asp) | Positioned relative to its normal position.                  |
+| [sticky](https://www.w3schools.com/css/css_positioning.asp)  | Positioned based on the user's scroll position.              |
 
 <br>
 
@@ -64,13 +66,13 @@ We will use the code below to illustrate four `position` values.
 
 Elements with `position: static` are **not positioned** and follow the normal document flow.
 
-<img src="https://media0.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.gif?cid=ecf05e470k83olymtj7ka9bkb0o3tb295rglqmcss5awlw5s&rid=giphy.gif" alt="Seth Meyers Lol GIF by Late Night with Seth Meyers" style="zoom:40%;" />
+![img](https://i.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.webp ':size=400')
 
 <br>
 
 ### Position Relative
 
-**Add to the starting code:**
+*Add to the starting code:*
 
 ```css
 #second {
@@ -84,8 +86,6 @@ Elements with `position: static` are **not positioned** and follow the normal do
 <br>
 
 **Rules:**
-
-<br>
 
 1. Element is positioned **relative to it's original position** in the page.
 
@@ -117,8 +117,6 @@ Elements with `position: static` are **not positioned** and follow the normal do
 <br>
 
 **Rules:**
-
-<br>
 
 1. The element is **"removed" from the document flow and is ignored by other elements**.
 
