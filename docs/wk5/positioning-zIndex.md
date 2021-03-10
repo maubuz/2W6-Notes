@@ -66,7 +66,7 @@ We will use the code below to illustrate four `position` values.
 
 Elements with `position: static` are **not positioned** and follow the normal document flow.
 
-![img](https://i.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.webp ':size=400')
+![img](https://i.giphy.com/media/ehJ4vNWRhinhMMvLxp/giphy.webp ':size=200')
 
 <br>
 
