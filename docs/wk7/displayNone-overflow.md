@@ -1,5 +1,15 @@
 # Display None & Overflow
 
+## Display: none
+
+So far we've looked at four display values: `block`,  `inline`,  `inline-block`, and  `flex`.
+
+> By setting `display: none` on an element causes it to disappear from the document. 
+
+
+
+
+
 
 
 ## Overflow

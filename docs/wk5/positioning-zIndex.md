@@ -285,9 +285,9 @@ Revisit the [Lab 2 of week 4 (the hero page)](https://mau-jac.github.io/2W6-UI/#
 
 - Bring the image into the html as an `<img>` tag.
 
-- Use flexbox for centering and alignment of elements. 
-
 - Use the `position` property for the layering order.
+
+- Use flexbox for centering and alignment of elements. 
 
 - Do not use `<br>` for spacing.
 
