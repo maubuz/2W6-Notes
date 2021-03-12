@@ -36,6 +36,8 @@
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
 - [Positioning & z-index](./wk5/positioning-zIndex.md)
+- [Display None & Overflow](./wk7/displayNone-overflow.md)
+- [Peaking into JavaScript](./wk7/peakingJS.md)
 
 **Week 6**
 - [Test 1 Practice Questions](./wk6/Test1_Practice_Meghrig.md)

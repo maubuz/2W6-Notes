@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #1e1f26;
+    text-align: center;
+    height: 200vh; /*  Just so that we can scroll the page  */
+}
+
+h1,
+p {
+    background: #6287db;
+    color: white;
+    padding: 2rem;
+}
+
+div {
+    padding: 1em;
+    background: #f4d38a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+section {
+    background-color: #b2cfff;
+    display: flex;
+}
+
+#first {
+    border: dotted #8c794f 4px;
+    background: #ffdc91;
+}
+
+#second {
+    border: dashed #158c50 4px;
+    background: #99cc99;
+}
+
+#third {
+    border: double #bc3e7d 4px;
+    background: #e3c6ff;
+}
