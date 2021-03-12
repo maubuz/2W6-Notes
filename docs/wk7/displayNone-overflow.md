@@ -4,13 +4,57 @@
 
 So far we've looked at four display values: `block`,  `inline`,  `inline-block`, and  `flex`.
 
-> By setting `display: none` on an element causes it to disappear from the document. 
+> Setting `display: none` on an element causes it to disappear from the document as if it had never been added to the HTML.
 
+Consider the same starter code used in the positioning lesson:
 
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk7 - Positioning_baseline" src="https://codepen.io/maujac/embed/yLVQMyX?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/yLVQMyX'>wk7 - Positioning_baseline</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
+<br>
 
+Apply `display: none` to any element to see it disappear from the screen.
 
+For example:
 
+```css
+h1,
+p {
+    ...
+    display: none;
+}
+```
+
+<br>
+
+Once `display: none` is added to any element, open the dev tools and inspect the element to toggle it's display value on and off. The changes can be seen instantly in the browser. 
+
+<br>
+
+![toogle-display](assets/toogle-display.gif)
+
+<br>
+
+> A common use of `display: none` is to toggle elements such as menus on and off, depending on what the use has selected.
+
+<br>
+
+In the example below, add `display: none` to the `<nav>`  to see it disappear.
+
+```css
+nav {
+    ...
+    display: none;
+}
+```
+
+<br>
+
+Then use the dev-tools to toggle it on and off.
+
+<br>
 
 ## Overflow
 
@@ -35,7 +79,7 @@ The live demo from MDN web docs concisely illustrate the `overflow` property:
 
 <br>
 
-> For `overflow` to have an effect, the block-level container must have either a set `height` (or `max-height`) or `white-space` set to `nowrap`.
+> For `overflow` to have an work, it can only be used with block-level elements that have either a set `height` (or `max-height`) or `white-space` set to `nowrap`.
 
 <br>
 
