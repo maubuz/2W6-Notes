@@ -27,9 +27,9 @@ There are four important concepts which are part of the Cascade:
 
 
 
-## Inheritance
+## Style Inheritance
 
-Depending on the element, some CSS properties are inherited from it's parent container and some set to it's default values.
+Depending on the element, **some CSS properties are inherited from it's parent container** and some set to it's default values.
 
 
 
@@ -49,9 +49,9 @@ For example, `color` and `font-family` are inherited from the parent element (ex
 
 It is possible to control an element's inheritance by using the following CSS values:
 
-- `inherit`: use the same value as the parent.
-- `initial`: use the default values set by the browser.
-- `unset`: reset to it's original value (see table on link above).
+- `inherit` - use the same value as the parent.
+- `initial` - use the default values set by the browser.
+- `unset` - reset to it's original value (see table on link above).
 
 <br>
 
@@ -63,12 +63,11 @@ As an example:
 </iframe>
 
 
-
 <br>
 
-## Source Origin
+## Source Origin of Styling
 
-The location and the order in which CSS properties are declared determine their priority.
+The **location and the order** in which CSS properties are declared determine their priority.
 
 
 
@@ -187,6 +186,12 @@ Every selector has its place in the specificity hierarchy. There are four  categ
 <p align="center"><a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies"><em>CSS Specificity rules, in order</em></a></p>
 <br>
 
+![https://annyqihstp.cloudimg.io/v7/https://res.cloudinary.com/codewithjan/image/upload/css-conflicts/08.jpg?w=768&q=60](https://annyqihstp.cloudimg.io/v7/https://res.cloudinary.com/codewithjan/image/upload/css-conflicts/08.jpg?w=768&q=60 ':size=500')
+
+<p align="center"><a href="https://codewithjan.com/css-conflicts/"><em>Comparing the specificity of two conflicting selectors<em></a></p>
+
+<br>
+
 An example of specificity:
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="wk7 - Ex_Cascade_4" src="https://codepen.io/maujac/embed/ZEGvQGQ?height=265&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
@@ -195,12 +200,17 @@ An example of specificity:
 </iframe>
 
 
+<br>
+
+> You can use the [this CSS Specificity calculator](https://polypane.app/css-specificity-calculator/#selector=) to compare selectors
 
 <br>
 
+
+
 ## Importance
 
-We will not cover importance in this course, howerver, it is helpful to be familiar the concept:
+We will not cover importance in this course, however, it is helpful to be familiar the concept:
 
 **There are 4 types of CSS rules which determine their importance** (from most to least important):
 
@@ -232,9 +242,13 @@ Other resources:
 
 1. Do the *[Active learning: playing with the cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks)* exercise from MDN Web docs.
 
+   - **Task One**: use a new rule that will reset the background color back to white, without using an actual color value.
+
    
 
-2. Use the Cascade and create new css rules in order to overwrite (chage the styling) every rule at least once. You can add but you cannot modify the current code.
+2. Use the Cascade and create new css rules in order to overwrite the styling of each element at least once.
+
+   **You can add new code but you cannot touch the code that is already in there.**
 
 <br>
 
