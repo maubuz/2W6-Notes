@@ -1,6 +1,6 @@
 # The Cascade
 
-The first "C" in CSS stands for Cascade, which is **the way how the browser will prioritise competing styles**.
+The first "C" in CSS stands for Cascade, which is **the way how the browser will prioritize competing styles**.
 
 <br>
 
@@ -33,7 +33,7 @@ Depending on the element, some CSS properties are inherited from it's parent con
 
 
 
-For example, `color` and `font-family` are inherited from the parent element (except for certain browser defaults, like the `<a>` tag). The properties `width` and `border-radius` are not inherited.
+For example, `color` and `font-family` are inherited from the parent element (except for certain browser defaults, like the `<a>` tag). The properties `width` and `border-fradius` are not inherited.
 
 
 
@@ -213,7 +213,7 @@ We will not cover importance in this course, howerver, it is helpful to be famil
 
 
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 > Recommended reading: [**Cascade and inheritance**](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance) page by MDN web docs.
 
@@ -226,9 +226,9 @@ Other resources:
 
   
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 1. Do the *[Active learning: playing with the cascade](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_tasks)* exercise from MDN Web docs.
 
@@ -242,6 +242,3 @@ Other resources:
   See the Pen <a href='https://codepen.io/maujac/pen/wvapMWZ'>wk7 - Hands-on_1</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
-
-

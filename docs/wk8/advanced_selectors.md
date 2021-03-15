@@ -1,5 +1,3 @@
-# 
-
 This lesson was based on the page **[CSS Selectors](https://www.w3schools.com/CSS/css_selectors.asp)** by W3Schools.
 
 
@@ -44,7 +42,7 @@ And some combinator selectors such as the **descendant selector**:
 
 <br>
 
-# Combinator Selectors
+## Combinator Selectors
 
 **A combinator is something that explains the relationship between the selectors.**
 
@@ -65,7 +63,7 @@ There are four different combinators in CSS:
 
 <br>
 
-## >  Child Selector
+### >  Child Selector
 
 Selects nodes that are **direct children** of the first element.
 
@@ -75,10 +73,9 @@ Selects nodes that are **direct children** of the first element.
 </iframe>
 
 
-
 <br>
 
-## +  Adjacent Sibling Selector
+### +  Adjacent Sibling Selector
 
 Selects **subsequent adjacent siblings**.
 
@@ -88,10 +85,9 @@ Selects **subsequent adjacent siblings**.
 </iframe>
 
 
-
 <br>
 
-## ~  General Sibling Selector
+### ~  General Sibling Selector
 
 Selects **all subsequent siblings**
 
@@ -101,10 +97,9 @@ Selects **all subsequent siblings**
 </iframe>
 
 
-
 <br>
 
-# The Pseudo Selectors
+## Pseudo Selectors
 
 CSS offers us the ability to select elements or part of elements that are not actually described in the HTML document.
 
@@ -116,7 +111,7 @@ CSS offers us the ability to select elements or part of elements that are not ac
 
 <br>
 
-# Pseudo-Classes Selectors
+### Pseudo-Classes Selectors
 
 **Pseudo-class selectors enables the selection of elements based on a special state of an element.**
 
@@ -137,10 +132,9 @@ Common examples are :
 </iframe>
 
 
-
 <br>
 
-## List of common pseudo-classes
+### List of common pseudo-classes
 
 This list does not includes all pseudo-classes, only the most commonly used.
 
@@ -190,7 +184,7 @@ There are too many pseudo-classes for us to explore in the course. We will only 
 
 <br>
 
-##  ':not( )'
+###  ':not( )'
 
 Selects every element that is not a the specified element.
 
@@ -204,10 +198,9 @@ Selects every element that is not a the specified element.
 </iframe>
 
 
-
 <br>
 
-## ':nth-child(n)' 
+### ':nth-child(n)' 
 
 Selects every element that is the nth child of its parent
 
@@ -223,10 +216,9 @@ The same will happen to the `<p>` element that is a 2nd child of any given paren
 </iframe>
 
 
-
 <br>
 
-## ':focus'
+### ':focus'
 
 Selects the element that has the browser focus
 
@@ -238,10 +230,9 @@ Selects the element that has the browser focus
 </iframe>
 
 
-
 <br>
 
-# Pseudo-Elements Selectors
+## Pseudo-Elements Selectors
 
 **A CSS pseudo-element represent entities that are not included in HTML.**
 
@@ -258,7 +249,7 @@ In previous versions of CSS, pseudo-element were identified with single  `:` , h
 
 
 
-## List of common pseudo-classes
+### List of common pseudo-classes
 
 This list does not includes all pseudo-classes, only the most commonly used.
 
@@ -276,7 +267,7 @@ This list does not includes all pseudo-classes, only the most commonly used.
 
 <br>
 
-## '::first-letter' & '::first-line'
+### '::first-letter' & '::first-line'
 
 This selector is used to **add a style to the first letter or line** of the specified element or selector.
 
@@ -290,10 +281,9 @@ This selector is used to **add a style to the first letter or line** of the spec
   See the Pen <a href='https://codepen.io/maujac/pen/bGdZpLE'>wk8 - pseudo-element letter/line_ex10</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
-## '::before' & '::after'
+### '::before' & '::after'
 
 **Insert some content before or after an element.**
 
@@ -319,10 +309,9 @@ p::before {
 </iframe>
 
 
-
 <br>
 
-## '::selection'
+### '::selection'
 
 The `::selection` selector matches the portion of an element that is selected by a user.
 
@@ -343,9 +332,9 @@ The `::selection` selector matches the portion of an element that is selected by
 
 <br>
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 1.  Complete the [**exercises on Pseudo-classes** from W3Schools](https://www.w3schools.com/CSS/exercise.asp?filename=exercise_pseudo_classes1).
 2.  Complete the [**exercises on Pseudo-elements** from W3Schools](https://www.w3schools.com/CSS/exercise.asp?filename=exercise_pseudo_elements1).

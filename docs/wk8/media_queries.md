@@ -1,5 +1,3 @@
-#
-
 This lesson was based on the page **[CSS Media Queries - Examples](https://www.w3schools.com/css/css3_mediaqueries_ex.asp)** by W3Schools and **[Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)** by MDN web docs.
 
 
