@@ -26,18 +26,14 @@ So far we've seen simple selectors, such as the **class selector**:
   See the Pen <a href='https://codepen.io/maujac/pen/jOPdJNG'>wk8 - Ex simple selectors_1</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
-
-
 <br>
 
 And some combinator selectors such as the **descendant selector**:
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="wk8 - Ex simple selectors_2" src="https://codepen.io/maujac/embed/gOpqEbM?height=400&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/gOpqEbM'>wk8 - Ex simple selectors_2</a> by Mauricio Buschinelli
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk8 - simple descendant selector_ex1" src="https://codepen.io/maujac/embed/eYBXXjq?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/eYBXXjq'>wk8 - simple descendant selector_ex1</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 
 
 <br>
@@ -327,8 +323,37 @@ The `::selection` selector matches the portion of an element that is selected by
   See the Pen <a href='https://codepen.io/maujac/pen/WNvmxXd'>wk8 - pseudo-element select_ex12</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+<br>
 
+## Attribute Selectors
 
+Attribute selectors target **HTML elements with specific attributes and values.**
+
+<br>
+
+In the example below, you can target each `<a>` element individually without adding classes or ids:
+
+```css
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+```
+
+<br>
+
+| Selector                                                     | Example              | Example description                                          |
+| ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ |
+| [[*attribute*\]](https://www.w3schools.com/cssref/sel_attribute.asp) | [target]             | Selects all elements with a target attribute                 |
+| [[*attribute*=*value*\]](https://www.w3schools.com/cssref/sel_attribute_value.asp) | [target=_blank]      | Selects all elements with target="_blank"                    |
+| [[*attribute*~=*value*\]](https://www.w3schools.com/cssref/sel_attribute_value_contains.asp) | [title~=flower]      | Selects all elements with a title attribute containing the word "flower" |
+| [[*attribute*\|=*value*\]](https://www.w3schools.com/cssref/sel_attribute_value_lang.asp) | [lang\|=en]          | Selects all elements with a lang attribute value starting with "en" |
+| [[*attribute*^=*value*\]](https://www.w3schools.com/cssref/sel_attr_begin.asp) | a[href^="https"]     | Selects every <a> element whose href attribute value begins with "https" |
+| [[*attribute*$=*value*\]](https://www.w3schools.com/cssref/sel_attr_end.asp) | a[href$=".pdf"]      | Selects every <a> element whose href attribute value ends with ".pdf" |
+| [[*attribute**=*value*\]](https://www.w3schools.com/cssref/sel_attr_contain.asp) | a[href*="w3schools"] | Selects every <a> element whose href attribute value contains the substring "w3schools" |
+
+<br>
+
+!> For the rest of this section please refer to the page [CSS Attribute Selectors](https://www.w3schools.com/CSS/css_attribute_selectors.asp) by W3Schools.
 
 <br>
 
