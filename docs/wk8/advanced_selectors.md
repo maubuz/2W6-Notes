@@ -338,7 +338,8 @@ The `::selection` selector matches the portion of an element that is selected by
 
 1.  Complete the [**exercises on Pseudo-classes** from W3Schools](https://www.w3schools.com/CSS/exercise.asp?filename=exercise_pseudo_classes1).
 2.  Complete the [**exercises on Pseudo-elements** from W3Schools](https://www.w3schools.com/CSS/exercise.asp?filename=exercise_pseudo_elements1).
-3. Complete all levels of the [**CSS Dinner game**](https://flukeout.github.io/).
+3.  Complete the [**exercises on attribute selectors** from W3Schools](https://www.w3schools.com/CSS/exercise.asp?filename=exercise_attribute_selectors1).
+4.  Complete all levels of the [**CSS Dinner game**](https://flukeout.github.io/).
 
 
 
