@@ -27,17 +27,21 @@
 - [Audio, Video & SVG](./wk10/audio_video_svg.md) -->
 
 <!-- - **Week 8**
-- [Cascade](./wk7/wk7_1_cascade.md)
-- [Advanced Selectors](./wk8/advanced_selectors.md)
-- [Media Queries](./wk8/media_queries.md)
+
 - [Git & GitHub Primer](./wk8/git_github.md) -->
+
+**Week 8**
+- [Display None & Overflow](./wk8/displayNone-overflow.md)
+- [Cascade](./wk8/cascade.md)
+- [Advanced Selectors](./wk8/advanced_selectors.md)
+- [Peaking into JavaScript](./wk8/peakingJS.md)
+- [Media Queries](./wk8/media_queries.md)
 
 **Week 7**
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
 - [Layouts with Flexbox](./wk6/wk6_2_Layouts_Flex.md)
 - [Positioning & z-index](./wk5/positioning-zIndex.md)
-- [Display None & Overflow](./wk7/displayNone-overflow.md)
-- [Peaking into JavaScript](./wk7/peakingJS.md)
+
 
 **Week 6**
 - [Test 1 Practice Questions](./wk6/Test1_Practice_Meghrig.md)

@@ -1,5 +1,3 @@
-
-
 # The Cascade
 
 The first "C" in CSS stands for Cascade, which is **the way how the browser will prioritise competing styles**.
@@ -187,11 +185,6 @@ Every selector has its place in the specificity hierarchy. There are four  categ
 ![CSS Specificitry](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/media/image6-1.png)
 
 <p align="center"><a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-client-side-web-technologies"><em>CSS Specificity rules, in order</em></a></p>
-<br>
-
-<img src="https://cssway.thebigerns.com/special/master-item-styles/Resources/selectoricity.gif" style="width:600px;">
-
-<p align="center"><a href="https://cssway.thebigerns.com/special/master-item-styles/"><em>Example of specificity ranking with regard to selector types</em></a></p>
 <br>
 
 An example of specificity:
