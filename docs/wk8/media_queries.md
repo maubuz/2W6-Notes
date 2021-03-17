@@ -20,7 +20,7 @@ This is particularly important in Web Design because it allows us to change and 
 # Media Query Syntax
 
 ```css
-@media not|only mediatype and|not|only (expressions) {
+@media not|only|all mediatype and|not|only (expressions) {
   CSS-Code;
 }
 ```
@@ -232,7 +232,7 @@ Use the print media type:
 
 > Media Queries still respect the order of declaration in the CSS Cascade.
 >
-> In other words, if you reapply an conflicting style below the media query, this new style will be applied.
+> In other words, if you reapply a conflicting style below the media query, this new style will be applied.
 
 
 
@@ -269,7 +269,11 @@ There are currently hundreds of screen sizes to be considered, so choosing these
 
 >  There is no consensus on the screen sizes to be used as breakpoints.
 >
-> In this course we will use the three breakpoints below for **mobile, tablet and desktop**:
+>  In this course we will use the three breakpoints below:
+>
+>  - **mobile**: 320px;
+>  - **tablet**: 720px;
+>  - **desktop**: 1024px;
 
 
 
@@ -387,6 +391,15 @@ For more information please see [Using the viewport meta tag to control layout o
 
 Follow **[this tutorial by Simmons College](http://web.simmons.edu/~grovesd/comm328/demo/media-query-exercises/mq-ex1-instructions)** and create a responsive website from scratch **using mobile-first development**.
 
-- You will find the starting HTML and CSS files at the top of the page.
+- The staring code is provided below.
 - Use Flexbox whenever appropriate.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk8 - MQ_lab_1" src="https://codepen.io/maujac/embed/NWbVYjg?height=265&theme-id=light&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/NWbVYjg'>wk8 - MQ_lab_1</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
 
