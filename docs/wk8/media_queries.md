@@ -331,7 +331,7 @@ There three good reasons for this:
 
 <br>
 
-## Making sites Mobile
+## Making Mobile-first Sites
 
 When using the mobile first approach, a breakpoint should be "activated" whenever we reach a new minimum screen size.
 
