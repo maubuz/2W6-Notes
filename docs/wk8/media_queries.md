@@ -327,13 +327,23 @@ There three good reasons for this:
 
 <br>
 
-## Mobile First Breakpoints
+## Making sites Mobile
 
 When using the mobile first approach, a breakpoint should be "activated" whenever we reach a new minimum screen size.
 
+<br>
+
+Use the following steps:
+
+1. Create and link the base `index.html` and `style.css` normally.
+2. Resize your viewport to the mobile size you are interested in.
+3. Add all your styling in `style.css` so that your page looks good at the mobile viewport.
+4. Once the page is complete, resize your viewport to the next size up (table, desktop, etc).
+5. Add media queries to `style.css` as required in order to **overwrite the base css style created in step 3**.
+
+<br>
+
 > Use `min-width: value px` when introducing breakpoints in mobile first development.
-
-
 
 <br>
 
