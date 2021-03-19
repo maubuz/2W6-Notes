@@ -34,9 +34,9 @@
 - [Display None & Overflow](./wk8/displayNone-overflow.md)
 - [Cascade](./wk8/cascade.md)
 - [Advanced Selectors](./wk8/advanced_selectors.md)
-- [Peaking into JavaScript](./wk8/peakingJS.md)
 - [Media Queries](./wk8/media_queries.md)
 - [Positioning Images](./wk8/image-positioning.md)
+- [Peaking into JavaScript](./wk8/peakingJS.md)
 
 **Week 7**
 - [Intro to Flexbox](./wk6/wk6_1_Flexbox.md)
