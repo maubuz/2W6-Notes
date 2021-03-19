@@ -190,6 +190,8 @@ If all images don't have the same aspect ratio, this means that parts of the ima
 
 
 
+<br>
+
 ## References & Diving Deeper
 
 > Recommended reading: [object-fit by CSS-Tricks](https://css-tricks.com/almanac/properties/o/object-fit/)
