@@ -188,7 +188,10 @@ If all images don't have the same aspect ratio, this means that parts of the ima
 
 <br>
 
-
+<iframe height="265" style="width: 100%;" scrolling="no" title="Wk8 - image sizing object-fit" src="https://codepen.io/maujac/embed/poNMoye?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/poNMoye'>Wk8 - image sizing object-fit</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
