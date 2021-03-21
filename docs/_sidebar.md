@@ -22,9 +22,12 @@
 - [Web Layouts with Grid](./wk9/layouts_grid.md)
 - [Design Fundamentals](./wk9/design_fundamentals.md) -->
 
-<!-- - **Week 9**
-- [Optimization & Responsive Images](./wk10/responsive_images.md)
-- [Audio, Video & SVG](./wk10/audio_video_svg.md) -->
+- **Week 9**
+- [Responsive Images](./wk10/responsive_images.md)
+- [SVGs & Font Awesome](./wk10/svg_fontawesome.md)
+- [Image Optimization](./wk10/image_optimization.md)
+- [Audio, Video & SVGs](./wk10/audio_video_svg.md)
+
 
 <!-- - **Week 8**
 

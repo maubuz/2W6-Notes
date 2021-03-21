@@ -385,6 +385,12 @@ For more information please see [Using the viewport meta tag to control layout o
 
 > Recommended reading: [**Responsive Web Design Basics**](https://developers.google.com/web/fundamentals/design-and-ux/responsive/) by Google's Web Fundamentals page
 
+<br>
+
+The site below includes a comprehensive list of mobile devices and their screen sizes:
+
+- [www.screensiz.es](https://screensiz.es/)
+
 
 
 # Hands-on
