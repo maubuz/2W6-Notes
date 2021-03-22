@@ -80,7 +80,7 @@ The simplest way to use a SVG is by including it inside a `<img>` element:
 <br>
 
 ```html
-<img src="https://image.flaticon.com/icons/svg/1197/1197409.svg" alt="play media icon">
+<img src="https://image.flaticon.com/icons/svg/1197/1197409.svg" alt="coding computer monitor">
 ```
 
 <img style="width:200px;" src="https://image.flaticon.com/icons/svg/1197/1197409.svg" alt="play media icon">
