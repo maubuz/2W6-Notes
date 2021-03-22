@@ -26,7 +26,7 @@ We will learn how to make these images responsive.
 
 <br>
 
-**There are two approaches in native HTML to ensure the right image size is used for the right viewport width:**
+**There are two approaches in HTML to ensure the right image size is used for the right viewport width:**
 
 -  `srcset` attribute - for serving different sizes of the same image.
 - `<picture>` element - for serving a different image altogether at a new layout configuration.
@@ -37,7 +37,7 @@ We will learn how to make these images responsive.
 
 ## Retina Screens & CSS Pixels
 
-Retina screens have two to three times more pixels than a traditional screens. This is referred to as a **Display Pixel Ratio** (DPR) of 2x or 3x.
+Retina screens and other modern displays have two to three times more pixels than a traditional screens. This is referred to as a **Display Pixel Ratio** (DPR) of 2x or 3x.
 
 
 
@@ -70,7 +70,7 @@ If you are curious:
 <p align="center"><a href="https://www.internetingishard.com/html-and-css/responsive-images/"><em>Standart vs Retina Resolution by Interneting is Hard</em></a></p>
 <br>
 
-This means that a container of size 400x200 CSS pixels will be display at 200x100 hardware pixels in a retina display of 2x.
+This means that a container of size  200x100 CSS pixels will be display at 400x200 hardware pixels in a retina display of 2x.
 
 <br>
 

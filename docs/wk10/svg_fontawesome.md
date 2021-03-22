@@ -8,28 +8,6 @@ So far we've been only using raster images in website, however, vector images ar
 
 <br>
 
-**Raster images** such as `.png`, `.jpg`, and `.gif`, are defined using a grid of pixels. Each pixels has a specific color based on the addition of Red Green Blue.
-
-<br>
-
-
-
-![Suppose the  in the top left corner is an RGB bitmap image. When zoomed in, it might look like the big smiley face to the right. Every square represents a pixel. Zoomed in further we see three pixels whose colors are constructed by adding the values for red, green and blue.](https://academickids.com/encyclopedia/images/6/6e/Rgb-raster-image.png)
-
-<p align="center"><a href="https://academickids.com/encyclopedia/index.php/Raster_graphics"><em>Raster graphics</em></a></p>
-<br>
-
-**Vector images** on the other hand are defined using algorithms. The shapes and paths that compose a vector image are described by math and therefore can create perfect lines at any given zoom level.
-
-
-
-<br>
-
-![Picture](https://www.seekacreative.co.nz/uploads/3/0/6/7/30679021/vector-raster_orig.jpg ':size=500')
-
-<p align="center"><a href="https://www.seekacreative.co.nz/resources/vector-vs-raster-files"><em>Vector vs Raster Files</em></a></p>
-<br>
-
 One of the images below is a raster image and the other is a vector image.
 
 
@@ -133,7 +111,6 @@ There is one important step to using SVGs which is not needed in raster images:
   See the Pen <a href='https://codepen.io/maujac/pen/vYNLjVe'>wk10 - svg_img - Ex4</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
 
@@ -165,7 +142,6 @@ First you must tag the element to be styled with an ID or a class:
 </iframe>
 
 
-
 <br>
 
 ## SVG's "in the wild"
@@ -177,7 +153,7 @@ The two websites below are a great source of SVG's that are free to use (attribu
 
 <br>
 
-To see an SVG in production let's look at the logo of the Pexels Video website:
+To see an SVG in production let's look at the logo of the [Pexels Video website](https://www.pexels.com/videos):
 
 <br>
 
