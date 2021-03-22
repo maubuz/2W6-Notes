@@ -267,3 +267,103 @@ Recommended readings:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2QYpkrX2N48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
+
+## Hands-on
+
+
+
+### Lab 1
+
+Use the provided HTML and CSS and follow the steps below to create a responsive website:
+
+<br>
+
+1. Use the provided code to start a new project in your IDE:
+
+   *HTML (add to your html body)*
+
+   ```html
+   <h2 class="title">Responsive Images</h2>
+   
+   <section>
+     <div class="call-out">
+       <h4>Feature 1</h4>
+       <div class="box">
+         <img src="" alt="snowy mountains">
+       </div>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+     </div>
+   
+     <div class="call-out">
+       <h4>Feature 2</h4>
+       <div class="box">
+         <img class="full max" src="" alt="building with wood siding and blue sky">
+       </div>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+     </div>
+   </section>
+   ```
+
+   *CSS*
+
+   ```css
+   * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     background-color: #bbb;
+     font-family: Helvetica, sans-serif;
+   }
+   
+   div > * {
+     margin: 0 0 0.75em 0;
+   }
+   
+   .title {
+     background-color: white;
+     padding: 0.75em;
+     text-align: center;
+   }
+   
+   section > div:nth-child(even) {
+     background-color: #ccb9da;
+   }
+   
+   section > div:nth-child(odd) {
+     background-color: #cdf1cc;
+   }
+   
+   /* -> Layout Starts Here <- */
+   
+   section {
+     margin: 0.5rem auto 0 auto;
+     display: flex;
+   }
+   
+   .call-out {
+     padding: 1.5rem;
+     box-sizing: border-box;
+     margin: 0.5rem;
+     flex: 1;
+   }
+   
+   img {
+     width: 100%;
+   }
+   ```
+
+   <br>
+
+   2. Download the images from [this link](https://drive.google.com/file/d/1IZtO6ORHu7LCLWCp3xy5lG2V35eLjJFF/view?usp=sharing) and use them at the following screen widths:
+      - small: 400px width;
+      - medium: 800px width;
+      - large: 1200px width;
+
+
+
+
+
+
