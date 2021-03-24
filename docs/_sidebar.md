@@ -26,7 +26,7 @@
 - [Image Optimization](./wk10/image_optimization.md)
 - [Responsive Images](./wk10/responsive_images.md)
 - [SVGs & Font Awesome](./wk10/svg_fontawesome.md)
-- [Audio, Video & SVGs](./wk10/audio_video_svg.md)
+- [Audio, Video](./wk10/audio_video.md)
 
 
 <!-- - **Week 8**
