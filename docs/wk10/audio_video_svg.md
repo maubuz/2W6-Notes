@@ -34,7 +34,7 @@ Notice the following:
 
 
 
-- The use of the  `controls` attribute.  Without `controls` the audio file would be part of the page but could not be accessed by the used (it could still be accessed via JavaScript however).
+- The  `controls` attribute.  Without `controls` the audio file would be part of the page but would not be accessible by the used (it could still be accessed via JavaScript however).
 
 
 
@@ -50,14 +50,14 @@ There are other attributes that can be assigned to the `<audio>` element:
 | [controls](https://www.w3schools.com/tags/att_audio_controls.asp) | controls             | Specifies that audio controls should be displayed (such as a play/pause button etc) |
 | [loop](https://www.w3schools.com/tags/att_audio_loop.asp)    | loop                 | Specifies that the audio will start over again, every time it is finished |
 | [muted](https://www.w3schools.com/tags/att_audio_muted.asp)  | muted                | Specifies that the audio output should be muted              |
-| [preload](https://www.w3schools.com/tags/att_audio_preload.asp) | auto  metadata  none | Specifies if and how the author thinks the audio should be loaded when the page loads. Auto is the default. |
+| [preload](https://www.w3schools.com/tags/att_audio_preload.asp) | auto  metadata  none | Specifies if and how the author thinks the audio should be loaded when the page loads. Auto is the default, which loads the file with the page. |
 | [src](https://www.w3schools.com/tags/att_audio_src.asp)      | *URL*                | Specifies the URL of the audio file                          |
 
 
 
 <br>
 
-With the exception of `preload` and `src`, all other attributes are ***Boolean* attributes, meaning they don't require a value**.
+With the exception of `preload` and `src`, all other attributes are ***Boolean* attributes, meaning they don't require a value**. Their presence indicates *true*.
 
 <br>
 
@@ -83,7 +83,7 @@ Currently, there are 3 widely supported file formats for the `<audio>` element:
 
 ### Audio Fallbacks & Sources
 
-It is possible **and recommended** to supply more than one audio format for any given audio track. This works as a fallback sequence or files and guarantees browser support.
+It is **recommended** to supply more than one audio format for any given audio track. This works as a fallback sequence of files and guarantees browser support.
 
 <br>
 
@@ -108,11 +108,11 @@ Each `<source>` should be followed by a `type` attribute, which specifies the [M
 
 <br>
 
-A **[MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)** (called "media type" or "content type") is a string sent along with a file indicating the type of the file (content format).  By using the MIME type browsers can choose to immediately skip videos they don't understand.
+A **[MIME type](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type)** (called "media type" or "content type") is a string sent along with a file indicating the type of the file (content format).  By using the MIME type browsers can choose to immediately skip media they don't understand.
 
 <br>
 
-Notes on the `<audio>` tag:
+**Notes on the `<audio>` tag:**
 
 <br>
 
@@ -304,3 +304,29 @@ The `<video>` element is being used with:
 The empty values in `autoplay`, `loop` & `muted` are ignored since they are Boolean attributes.
 
 <br>
+
+## Hands-on
+
+### Exercise 1
+
+Embed a video in the provided CodePen. Meet the following requirements:
+
+1. Video [available at mixkit.co](https://mixkit.co/free-stock-video/crowds-of-people-cross-a-street-junction-4401/)
+
+2. For the video URL, right click and select *"copy video location"* (like for an image).
+
+3. Include video controls
+
+4. Video should not auto play
+
+5. Provide a poster using [this image from Unsplash](https://unsplash.com/photos/4lTx6GCKsJg)
+6. If the video fails to load, show a message that would take the user to the site hosting the original video (see step 1)
+7. Video and poster should resize with the viewport.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="audio-video - exercise 1" src="https://codepen.io/maujac/embed/abpOxwV?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/abpOxwV'>audio-video - exercise 1</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
