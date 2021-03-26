@@ -1,5 +1,3 @@
-#
-
 This lesson was based on the page **[Learn UI design fundamentals](https://www.freecodecamp.org/news/learn-ui-design-fundamentals-with-this-free-one-hour-course/)** by freeCodeCamp and  **[Alignment Principle Of Design](https://254-online.com/alignment-principle-design/)** by Gareth David.
 
 
@@ -22,7 +20,7 @@ This is not a Design course, however, in order to create attractive user interfa
 
 
 
-# White Space
+## White Space
 
 White space is the empty space between the elements (also refereed to as negative space).
 
@@ -59,7 +57,7 @@ The white space on top and the bottom should be consistent. Same thing for the l
 
 
 
-# Alignment
+## Alignment
 
 Alignment is the process of ensuring that elements are positioned correctly in relation to one another.
 
@@ -135,7 +133,7 @@ Not all elements need to align to the same line. In mixed alignment there should
 
 
 
-# Contrast
+## Contrast
 
 Contrast is a 'strikingly' different state between two or more things.
 
@@ -185,7 +183,7 @@ There are three levels of conformance:
 
 <br>
 
-## Contrast Checking Tools
+### Contrast Checking Tools
 
 It is very easy to know if you have the right color contrasts:
 
@@ -212,7 +210,7 @@ In the example below, **both smaller texts fail** the contrast check.
 
 <br>
 
-# Scale
+## Scale
 
 The size of one element compared to another is a form of contrast and must be considered.
 
@@ -247,7 +245,7 @@ To adjust the scale of the design above we can:
 
 <br>
 
-# Color
+## Color
 
 Color choices has a strong psychological impact on the "feel" of your website.
 
@@ -275,7 +273,7 @@ Compare the number of colors between both designs below:
 
 <br>
 
-## Color Theory
+### Color Theory
 
 We will not go into Color Theory, however, it is an important field of design.
 
@@ -297,7 +295,7 @@ Some topics include:
 
 <br>
 
-## Color Palettes
+### Color Palettes
 
 It can be hard to choose a good color palette, however, there are many color palette generators available:
 
@@ -336,7 +334,7 @@ The example code below has a bad color selection. We will improve by working wit
 
 <br>
 
-# Typography
+## Typography
 
 **Typography** is the art and technique of [arranging font types](https://en.wikipedia.org/wiki/Typesetting) to make written language **legible, and appealing**.
 
@@ -380,7 +378,7 @@ To learn more see [**10 Tips On Typography in Web Design**](https://uxplanet.org
 
 <br>
 
-# Visual Hierarchy
+## Visual Hierarchy
 
 Every element on a user interface has a level of importance. Visual hierarchy is how you establish the priority between the elements.
 
@@ -429,7 +427,7 @@ The best visual hierarchies lead users to take the action confidently. They have
 
 
 
-# Observe, think, mimic
+## Observe, think, mimic
 
 As a beginner you don't have to reinvent the wheel. You can learn from the best.
 
@@ -449,7 +447,7 @@ The next time you visit a website or use an app, ***observe*** it and ***think**
 
 <br>
 
-## Catalog it for later visit
+### Catalog it for later visit
 
 Make sure to save or bookmark sites that you find interesting.
 
@@ -466,7 +464,7 @@ Some popular design agglomerators:
 
 <br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 Recommended readings:
 
@@ -476,11 +474,11 @@ Recommended readings:
 
 <br>
 
-# Hands-on
+## Hands-on
 
 
 
-## Lab 3
+## Lab 2
 
 Starting with the provided code, improve the visual design by using the selectors provided in the CSS.
 
