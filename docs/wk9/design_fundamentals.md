@@ -478,7 +478,7 @@ Recommended readings:
 
 
 
-## Lab 2
+### Lab 2
 
 Starting with the provided code, improve the visual design by using the selectors provided in the CSS.
 
@@ -513,3 +513,15 @@ Focus on the following CSS properties:
 <!-- **Lab 3 solution** available [here](https://codepen.io/maujac/pen/ExVPNME) -->
 
 <br>
+
+## Group Design
+
+Here is the color exercise that we did collectively in class.
+
+The color palette used is [available here.](https://coolors.co/6aa6c8-18354e-c6a006-ea481f-293241)
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk9 - Design - Color - collective design" src="https://codepen.io/maujac/embed/xxgVXYj?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxgVXYj'>wk9 - Design - Color - collective design</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
