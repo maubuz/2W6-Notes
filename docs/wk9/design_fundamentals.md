@@ -6,7 +6,7 @@ This lesson was based on the page **[Learn UI design fundamentals](https://www.f
 
 # UI Design Fundamentals
 
-This is not a Design course, however, in order to create attractice user interfaces we must understand some design principles.
+This is not a Design course, however, in order to create attractive user interfaces we must understand some design principles.
 
 
 
@@ -47,9 +47,9 @@ In order to control the white space of your site elements focus on:
 
 
 
->  **Tip 1:** Remove all default white space with `box-sizing: border-box` and increse it until it feels too much, then tone it down a few notches.
+>  **Tip 1:** Remove all default white space with `box-sizing: border-box` and increase it until it feels too much, then tone it down a few notches.
 >
->  **Tip 2**: A recommeded `line-height` is between 1.4 and 2 (unitless).
+>  **Tip 2**: A recommended `line-height` is between 1.4 and 2 (unitless).
 
  
 
@@ -71,7 +71,7 @@ Align your elements based on these theoretical rows and columns.,
 
 
 
-The imaghe below has 4 elements and only 2 of them align (see green vertical lines).
+The image below has 4 elements and only 2 of them align (see green vertical lines).
 
 <br>
 
@@ -81,7 +81,7 @@ The imaghe below has 4 elements and only 2 of them align (see green vertical lin
 
 <br>
 
-Using the CodePen below, align the elements without modifiying the existing CSS (only add to it).
+Using the CodePen below, align the elements without modifying the existing CSS (only add to it).
 
 <br>
 
@@ -120,7 +120,7 @@ Good alignment is invisible i.e. this doesn’t have to be a literal line in you
 
 <br>
 
-Not all elements need to align to the same line. In mixed alignement there should still be a grid system.
+Not all elements need to align to the same line. In mixed alignment there should still be a grid system.
 
 <br>
 
@@ -137,7 +137,7 @@ Not all elements need to align to the same line. In mixed alignement there shoul
 
 # Contrast
 
-Contrast is a 'strinkingly' different state between two or more things.
+Contrast is a 'strikingly' different state between two or more things.
 
 **Contrast allows us to notice things**
 
@@ -167,7 +167,7 @@ Black and white offer the highest contrast level which is 21:1
 
 
 
->  In Canada and the USA every governmental website must **minimaly comply** to the AA level of the [Web Content Accessibility Guidelines (WCAG) version 2.0](https://www.w3.org/TR/WCAG20/).
+>  In Canada and the USA every governmental website must **minimally comply** to the AA level of the [Web Content Accessibility Guidelines (WCAG) version 2.0](https://www.w3.org/TR/WCAG20/).
 
 
 
@@ -220,9 +220,9 @@ The size of one element compared to another is a form of contrast and must be co
 
 Ask yourself:
 
-- Are there "empty " areas that could be levearaged if we increased the size of some elements ?
+- Are there "empty " areas that could be leveraged if we increased the size of some elements ?
 - Where do you want the "eyes" of the user to go first? Make those elements larger.
-- Are there any elements that are grossely out of scale compared to most elements ?
+- Are there any elements that are grossly out of scale compared to most elements ?
 
 <br>
 
@@ -240,7 +240,7 @@ Ask yourself:
 To adjust the scale of the design above we can:
 
 - Lower the `font-size` of the h1 element;
-- Let the cards take ht empty horizontal space;
+- Let the cards take the empty horizontal space;
 - "highlight" the color codes since they are a main element in the page.
 
 
@@ -268,7 +268,7 @@ Bellow are some commonly used examples:
 
 Compare the number of colors between both designs below:
 
-- The card on the right has more colors than necessary (6 colors).
+- The card on the left has more colors than necessary (6 colors).
 - The same can be accomplished with 4 colors (on the right).
 
 ![image-20200409104611358](assets/image-20200409104611358.png ':size=600')
@@ -499,7 +499,7 @@ Focus on the following CSS properties:
 
 **Notes:**
 
-- **You can only add to the empt CSS selectors.** You should not change the existing HTML or CSS.
+- **You can only add to the empty CSS selectors.** You should not change the existing HTML or CSS.
 
 
 
