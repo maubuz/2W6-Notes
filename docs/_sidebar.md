@@ -19,14 +19,14 @@
 
 <!-- - **Week 10**
 - [Intro to CSS Grid](./wk9/grid.md)
-- [Web Layouts with Grid](./wk9/layouts_grid.md)
-- [Design Fundamentals](./wk9/design_fundamentals.md) -->
+- [Web Layouts with Grid](./wk9/layouts_grid.md) -->
 
 - **Week 9**
 - [Image Optimization](./wk10/image_optimization.md)
 - [Responsive Images](./wk10/responsive_images.md)
 - [SVGs & Font Awesome](./wk10/svg_fontawesome.md)
 - [Audio, Video](./wk10/audio_video.md)
+- [Design Fundamentals](./wk9/design_fundamentals.md)
 
 
 <!-- - **Week 8**
