@@ -330,7 +330,7 @@ Use the properties `grid-row` and `grid-column`to define the grid-item's startin
 
 <br>
 
-Syntax:**
+**Syntax:**
 
 `grid-column: <starting-line-number> / <ending-linen-number> `
 
@@ -393,7 +393,9 @@ Syntax:**
 
 <br>
 
-**Visualising the line numbers might help understand how the items are being placed:**
+
+
+**Visualizing the line numbers might help understand how the items are being placed:**
 
 <br>
 
@@ -536,6 +538,6 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 
 
-2. Visit both websites below and use the Gris Inspector in the Dev Tools to visualise their Grid System:
+2. Visit both websites below and use the Gris Inspector in the Dev Tools to visualize their Grid System:
    - [**Futurismo**](http://labs.jensimmons.com/2016/examples/futurismo-1.html)
    -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html) 
