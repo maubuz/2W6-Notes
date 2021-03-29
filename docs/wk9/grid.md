@@ -1,7 +1,5 @@
 This lesson was based on the page **[Basic Concepts of grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)** by MDN web docs, **[A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)** by CSS Tricks and [**CSS Grid Layout Module**](https://www.w3schools.com/css/css_grid.asp) by W3Schools.
 
-
-
 # Intro to CSS Grid
 
 CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows.
@@ -14,7 +12,7 @@ CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-d
 
 <br>
 
-# Grid Terminology
+## Grid Terminology
 
 
 
@@ -51,7 +49,7 @@ The basic Grid terminology includes:
 
 <br>
 
-# Why Grid when we have Flexbox?
+## Why Grid when we have Flexbox?
 
 **Grid enables 2 dimensional layouts without the need for several nested containers.**
 
@@ -69,7 +67,7 @@ How would you accomplish the layout on the right with Flexbox?
 
 
 
-# Setting up the Grid
+## Setting up the Grid
 
 ### Display: grid;
 
@@ -161,7 +159,7 @@ Using the  `fr` unit it is possible to fill all the space with proportional spac
 
 <br>
 
-## The repeat() notation
+### The repeat() notation
 
 To avoid repetition when listing the size and quantities of tracks, use the repeat notation:
 
@@ -203,7 +201,7 @@ The repeat() notation can be used to mix fixed and fraction units:
 
 <br>
 
-## The implicit and explicit Grid
+### The implicit and explicit Grid
 
 In the example above, the **size of the columns was defined explicitly**, however, nothing was mentioned for the size of the rows.
 
@@ -247,7 +245,7 @@ In the example below, only the height of the first row was explicitly declared, 
 
 <br>
 
-## Adjustable tracks with minmax( )
+### Adjustable tracks with minmax( )
 
 If you would like to give have explicit and implicit tracks a **minimum size but also allow them to expand** use the `minmax( )` property.
 
@@ -291,7 +289,7 @@ In the example below the rows will never collapse bellow 75 pixels, however they
 
 <br>
 
-# Grid Lines
+## Grid Lines
 
 When the grid tracks are defined, **Grid automatically numbers the lines** between the tracks:
 
@@ -316,7 +314,7 @@ Note that while **positive lines go from left to right**, there are also **negat
 
 <br>
 
-## Placing items against Grid lines
+### Placing items against Grid lines
 
 It is possible to **control where the items sit on the grid according to grid line numbers**. 
 
@@ -424,7 +422,7 @@ Note that if only one value is given, the grid item will start at that line numb
 
 <br>
 
-## The span keyword
+### The span keyword
 
 You can specify a start line and then the number of tracks you would like the area to span.
 
@@ -458,7 +456,7 @@ Therefore, it is possible to replace the code below:
 
 
 
-# Grid Gap (gutters)
+## Grid Gap (gutters)
 
 Grid gaps are spaces between grid cells. They can be controlled with:
 
@@ -489,7 +487,7 @@ Adding the following CSS to the example above gives the result below;
 
 
 
-# Grid Inspector: Dev Tools
+## Grid Inspector: Dev Tools
 
 With the growing layout complexity of CSS Grid, it becomes very important to see the Grid.
 
@@ -528,7 +526,7 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 
 
-# Hands-on
+## Hands-on
 
 1. Complete the [**Levels 1 to 15  and 20 to 28 of Grid Garden**](https://cssgridgarden.com/)
 
@@ -540,4 +538,18 @@ With the growing layout complexity of CSS Grid, it becomes very important to see
 
 2. Visit both websites below and use the Gris Inspector in the Dev Tools to visualize their Grid System:
    - [**Futurismo**](http://labs.jensimmons.com/2016/examples/futurismo-1.html)
-   -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html) 
+   -  [**Variations on a grid**](http://labs.jensimmons.com/2017/01-003.html)
+
+
+
+3. Revisit the CodePen used in the Design Fundamentals course and **use Grid to setup the color cards**. Setup a Grid that:
+   - Has 3 columns;
+   - Each card has a minimum width of 120px and a max width of 1/3 of the viewport;
+   - Assume the viewport will never be smaller than 480px;
+
+
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Grid - Exercise 3" src="https://codepen.io/maujac/embed/wvgzwZv?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/wvgzwZv'>Grid - Exercise 3</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>

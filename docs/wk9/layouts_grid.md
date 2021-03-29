@@ -8,7 +8,7 @@ We will continue to explore CSS Grid and how it can facilitate the create of web
 
 
 
-# Nesting Grids
+## Nesting Grids
 
 A grid item can also become a grid container
 
@@ -57,7 +57,7 @@ A grid item can also become a grid container
 
 <br>
 
-# Overlapping Grid Items
+## Overlapping Grid Items
 
 Grid items can overlap inside their grid container without any problems.
 
@@ -114,13 +114,13 @@ In the example below **.box2 overlaps on top of .box1** and **.box3 overlaps on 
 
 <br>
 
-# Layering Grid Items
+## Layering Grid Items
 
 Grid items can be layered/stacked by properly positioning them and assigning `z-index` when necessary. 
 
 > The higher the `z-index` value the higher the priority order of the element.
 >
-> The deafult value of `z-index` is 0.
+> The default value of `z-index` is 0.
 
 <br>
 
@@ -147,7 +147,7 @@ Considering the previous example, we will place .box2 on top of .box1 **and** .b
 
 <br>
 
-# Grid area Property
+## Grid area Property
 
 It is possible to shorten the `grid-row` and `grid-column` notation even further by using `grid-area`
 
@@ -226,7 +226,7 @@ Example of `grid-area`:
 
 <br>
 
-Below the line numbers are added to help visualise the placement:
+Below the line numbers are added to help visualize the placement:
 
 <br>
 
@@ -236,7 +236,7 @@ Below the line numbers are added to help visualise the placement:
 
 
 
-## Naming and Positioning by Grid Areas
+### Naming and Positioning by Grid Areas
 
 In the example above we defining an area by specifying the lines that enclose that area:
 
@@ -303,7 +303,7 @@ main {
 
 <br>
 
-Once the naming convetion has been assignmed, create the layout using the item names instead of line numbers. 
+Once the naming convention has been assigned, create the layout using the item names instead of line numbers. 
 
 <br>
 
@@ -382,13 +382,13 @@ Since the names for the areas have already been defined with `grid-area` we can 
 
 
 
-# Using Grid vs Flexbox
+## Using Grid vs Flexbox
 
 When to use Grid rather than Flexbox? Ask yourself the following questions:
 
 
 
-## 1 direction vs 2 directions
+### 1 direction vs 2 directions
 
 
 
@@ -398,7 +398,7 @@ If you need to control the layout by **both row *and* column** – use a grid
 
 
 
-## Content out or layout in ?
+### Content out or layout in ?
 
 
 
@@ -424,13 +424,13 @@ An example would be setting a percentage width on a flex item to make it line up
 
 
 
-> Flexbox and Grid are perffectly compatible and most powerfull when used together
+> Flexbox and Grid are perfectly compatible and most powerful when used together
 
 
 
 <br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 Recommended readings:
 
@@ -450,17 +450,17 @@ Recommended readings:
 
 <br>
 
-# Hands-on
+## Hands-on
 
-## Exercises
+### Exercises
 
 1. Complete  [**any missing levels from Grid Garden**](https://cssgridgarden.com/).
 
    
 
-## Lab 1
+### Lab 1
 
-Strating with the provided code, create the layout below using **Flexbox and Grid together**.
+Starting with the provided code, create the layout below using **Flexbox and Grid together**.
 
 
 
@@ -491,12 +491,12 @@ Strating with the provided code, create the layout below using **Flexbox and Gri
 
 
 
-## Lab 2
+### Lab 2
 
 Create a responsive website that follows the layouts below. Follow these requirements:
 
 - Design mobile-first.
-- Only define your grid-area names andproperties once.
+- Only define your grid-area names and properties once.
 - You should have 3 different instances of the grid-template-areas property in your CSS, one for each layout.
 - Media Query break points:
   - Mobile: below 500px;

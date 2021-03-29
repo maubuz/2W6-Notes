@@ -17,9 +17,9 @@
 - [HTML Forms](./wk11/forms.md)
 - [The DOM](./wk11/dom.md) -->
 
-<!-- - **Week 10**
+- **Week 10**
 - [Intro to CSS Grid](./wk9/grid.md)
-- [Web Layouts with Grid](./wk9/layouts_grid.md) -->
+- [Web Layouts with Grid](./wk9/layouts_grid.md)
 
 - **Week 9**
 - [Image Optimization](./wk10/image_optimization.md)
