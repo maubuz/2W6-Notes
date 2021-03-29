@@ -25,7 +25,7 @@
 - [Image Optimization](./wk10/image_optimization.md)
 - [Responsive Images](./wk10/responsive_images.md)
 - [SVGs & Font Awesome](./wk10/svg_fontawesome.md)
-- [Audio, Video](./wk10/audio_video.md)
+- [Audio & Video](./wk10/audio_video.md)
 - [Design Fundamentals](./wk9/design_fundamentals.md)
 
 
