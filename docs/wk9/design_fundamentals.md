@@ -364,11 +364,14 @@ Typography is closely related to:
 
 > **Tip 1:** Avoid using **more than 2 to 3 different font types**
 >
-> **Tip 2: ** When using more than one font type, try **mixing *serif* and *sans-serif* fonts**.
+> **Tip 2:** When using more than one font type, try **mixing *serif* and *sans-serif* fonts**.
 >
-> - Alternatively, use [fontsinuse.com](https://fontsinuse.com/) to see collections of fonts that work well together.
+> - Use [Pair & Compare to pair different together](https://www.pairandcompare.net/) (includes all Google Fonts).
+> - Use [fontsinuse.com](https://fontsinuse.com/) to see collections of fonts that work well together.
 >
-> **Tip 3**: Try limiting **line length to 60 characters**.
+> **Tip 3**: Try limiting **line length to 60-70 characters**.
+>
+> - Experiment with max-widths on paragraphs of around 30em.
 
 <br>
 
