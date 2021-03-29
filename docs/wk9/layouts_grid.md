@@ -350,7 +350,7 @@ The `grid-template-areas` property defines a grid template by referencing the na
 
 
 
-If you define the grid layout with `grid-template-areas`  (technique above), it is very easy tomodify the layout using media queries.
+If you define the grid layout with `grid-template-areas`  (technique above), it is very easy to modify the layout using media queries.
 
 <br>
 
@@ -502,6 +502,9 @@ Create a responsive website that follows the layouts below. Follow these require
   - Mobile: below 500px;
   - Table: between 500px and 900px;
   - Desktop: above 900px;
+- For your convenience, a CodePen is provided to get started: 
+
+<br>
 
 
 
@@ -516,6 +519,13 @@ Create a responsive website that follows the layouts below. Follow these require
 ![image-20200407111645372](assets/image-20200407111645372.png)
 
 
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk9 - Grid -  Lab2_start" src="https://codepen.io/maujac/embed/MWJjeKo?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/MWJjeKo'>wk9 - Grid -  Lab2_start</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
