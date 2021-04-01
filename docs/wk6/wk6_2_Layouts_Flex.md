@@ -332,9 +332,9 @@ Use the provided starting code, create the layout in the image below:
 
 <br>
 
-#### Solution for Lab 2 (posted on Wed)
+#### Solution for Lab 2
 
-<!-- See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7). -->
+See the [**interactive video for step-by-step solution**](http://bit.ly/32K2bO7).
 
 <br>
 
@@ -359,6 +359,6 @@ Use the starting code provided and create the website layout illustrated in the 
 
 <br>
 
-#### Solution for Lab 3 (posted on Wed)
+#### Solution for Lab 3
 
-<!-- See [this CodePen](https://codepen.io/maujac/pen/zYomxLV?editors=0100) -->
+See [this CodePen](https://codepen.io/maujac/pen/zYomxLV?editors=0100)
