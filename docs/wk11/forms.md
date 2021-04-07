@@ -279,6 +279,18 @@ To define the default value of an [`<input>`](https://developer.mozilla.org/en-U
 
 <br>
 
+### &lt;select&gt; element
+
+The [`<select>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) is used to create a drop-down list of options.
+
+The [`option`](https://www.w3schools.com/tags/tag_option.asp) tags inside the `<select>` element define the available options in  the drop-down list.
+
+<br>
+
+<iframe class="interactive tabbed-standard" src="https://interactive-examples.mdn.mozilla.net/pages/tabbed/select.html" title="MDN Web Docs Interactive Example" loading="lazy" width="100%" height="400"></iframe>
+
+<br>
+
 ## Built-in form validation
 
 One of the most significant features of [HTML5 form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types) is the ability to validate most user data without relying on  JavaScript.
@@ -297,10 +309,11 @@ This is done by using validation attributes on `<input>` elements:
 
 <br>
 
-<iframe height="386" style="width: 100%;" scrolling="no" title="wk11-required-ex6" src="https://codepen.io/maujac/embed/OJyWaoB?height=386&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-required-ex6" src="https://codepen.io/maujac/embed/OJyWaoB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/OJyWaoB'>wk11-required-ex6</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 <br>
 
 > It is also possible (and more common) to do form validation with JavaScript, which we will do later in the course.
