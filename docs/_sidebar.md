@@ -13,9 +13,9 @@
 - [Intro to JavaScript](./wk12/javascript_intro.md)
 - [JS Operators & Coercion](./wk12/javascript_quirks.md) -->
 
-<!-- - **Week 11**
+**Week 11**
 - [HTML Forms](./wk11/forms.md)
-- [The DOM](./wk11/dom.md) -->
+- [The DOM](./wk11/dom.md)
 
 **Week 10**
 - [Intro to CSS Grid](./wk9/grid.md)

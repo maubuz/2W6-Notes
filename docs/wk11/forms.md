@@ -12,10 +12,10 @@ HTML forms are made primarily of 4 components:
 
 
 
-1. One `<form>` container element that wraps all other elements;
-2. One or more `<input>` element where users enter data;
-3. A special submit `<input>` element or a `<button>` element for triggering the submission;
-4. `<label>` elements that visually identifies the `<input>` elements
+1. **One** `<form>` container element that **wraps all form elements**;
+2. One or more `<input>` element where users **enter data**;
+3. A special submit `<input>` element **or** a `<button>` element for **triggering the submission**;
+4. `<label>` elements that visually **identifies each** `<input>` elements
 
 <br>
 
@@ -33,7 +33,7 @@ Let's look at a basic `<form>`:
 A few notes about this form:
 
 - The `<form>` is a `block` level element, **however, it's items are `inline` elements.**
-- The labels must have the same name as their respective inputs;
+- The **labels must have the same name as their respective inputs**;
 - The `<form>` container and it's children can be styled as usual via CSS;
 - Notice the `focus` "glow" when an `<input>`  is selected.
 
@@ -43,7 +43,7 @@ Now we will look at each form component in a little more detail:
 
 <br>
 
-# &lt;form&gt; Element
+## &lt;form&gt; Element
 
 As mentioned, the the `<form>` tag is used to create an HTML form for user input.
 
@@ -53,7 +53,7 @@ As mentioned, the the `<form>` tag is used to create an HTML form for user input
 
 <br> The URL usually points to a server-site script which will parse the data (categorizer it) and store it.
 
-In this course we will not look at server side processing. Typical languages used for this are PHP, Python, Ruby and JavaScript (via NodeJs frameworks like Express).
+In this course we will not look at server side processing. Typical languages used for this are PHP, Python, Ruby and JavaScript (using NodeJs frameworks like Express).
 
 <br>
 
@@ -74,17 +74,19 @@ The `<form>` element can receive the following attributes:
 
 <br>
 
-# The Method Attribute
+### The Method Attribute
 
 One important mention is that the `method` attribute specifies the HTTP method (**GET** or  **POST**) to be used when submitting the form data.
 
 
 
-> This determines whether the submitted data is visible in the URL bar (ei. to the user) or not.
+> This determines whether the submitted data is visible in the URL bar (ei. to the user) or encoded in the HTML request body.
 
 <br>
 
-`method` used GET by default. Always use POST if the form data contains sensitive or personal information. Ideally, encrypt the data by using an HTTPS certified URL.
+`method` uses GET by default. **Always use POST if the form data contains sensitive information.**
+
+Ideally, encrypt the data by using an HTTPS certified URL.
 
 <br>
 
@@ -103,30 +105,41 @@ One important mention is that the `method` attribute specifies the HTTP method (
 - POST has no size limitations, and can be used to send large amounts of data.
 - Form submissions with POST cannot be bookmarked
 
+<br>
 
+<iframe height="265" style="width: 100%;" scrolling="no" title="forms - GET-search" src="https://codepen.io/maujac/embed/poRWweL?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/poRWweL'>forms - GET-search</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
-# &lt;input&gt; Element
+## &lt;input&gt; Element
 
-The `<input>` element can be displayed in several ways, depending on the `type`  attribute.
+The [`<input>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) can be displayed in several ways, depending on the `type`  attribute.
 
 By default the `type` attribute is "text".
 
+<br>
 
+> The `<input>` element is very extensible and adaptable. There are dozens of properties available. We will only focus on a few.
+>
+> To learn more, visite the [MDN Web docs page on the `<input>` element.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-There are many values that  `type` can take, we will focus on the following:
+<br>
+
+### &lt;input&gt; Type
+
+There are many values that  `type=` can take, we will focus on the following:
 
 - Radio Buttons
 - E-mail
 - Search
 - Submit Button
 
-
-
 <br>
 
-The input can take the following values:
+The input `type=` can take the following values:
 
 <br>
 
@@ -159,11 +172,10 @@ The input can take the following values:
 
 <br>
 
-<iframe height="866" style="width: 100%;" scrolling="no" title="wk11-radio_email_search-ex2" src="https://codepen.io/maujac/embed/WNQRKpY?height=866&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-radio_email_search-ex2" src="https://codepen.io/maujac/embed/WNQRKpY?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/WNQRKpY'>wk11-radio_email_search-ex2</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 
 
 <br>
@@ -172,10 +184,11 @@ The `<input>` can also be used as button in order to **submit the form or to tri
 
 <br>
 
-<iframe height="357" style="width: 100%;" scrolling="no" title="wk11-input_button-ex3" src="https://codepen.io/maujac/embed/JjYEaLZ?height=357&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-input_button-ex3" src="https://codepen.io/maujac/embed/JjYEaLZ?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/JjYEaLZ'>wk11-input_button-ex3</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 <br>
 
@@ -183,46 +196,94 @@ In addition, the [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 <br>
 
-<iframe height="262" style="width: 100%;" scrolling="no" title="Searchbar demo" src="https://codepen.io/maujac/embed/QWjjjda?height=262&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="Searchbar demo" src="https://codepen.io/maujac/embed/QWjjjda?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/QWjjjda'>Searchbar demo</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+<br>
+
+### &lt;label&gt; elements
+
+The [`<label>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) associates a text caption with an `<input>` field.
+
+> Associate the `<label>` with an `<input>` element by giving the `<input>` an `id` attribute.
+>
+> The `<label>` then needs a `for` attribute whose value is the same as the input's `id`.
 
 <br>
 
+Using `<labels>` for `<inputs>` has two major advantages and is mandatory in this course:
 
-
-# &lt;textarea&gt; Element
-
-The `<textare>` element provides a multi-line text field for larger messages:
+- Screen readers can read out the label when the user is focused on the form input.
+- Clicking on the label will focus/activate the input.
 
 <br>
 
-<iframe height="360" style="width: 100%;" scrolling="no" title="wk11--ex4" src="https://codepen.io/maujac/embed/yLYgRxx?height=360&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/yLYgRxx'>wk11--ex4</a> by Mauricio Buschinelli
+```html
+<label for="username">Click me</label>
+<input type="text" id="username">
+```
+
+<br>
+
+<label for="username">Click me</label>
+<input type="text" id="username">
+
+<br>
+
+### &lt;input&gt; size & interaction
+
+The [`size` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/size) specifies how much of the input is shown. Has similar result as using CSS `width`, however, sizing is automatically adjusted to the input type.
+
+<br>
+
+There are also properties that will limit the user interaction with the `<input>`:
+
+<br>
+
+- [`disabled`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-disabled): Input value can't be modified and is never sent with the rest of the form data. Typically rendered with a dimmer color
+- [`readonly`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-readonly): User cannot modify the input value but it is still sent with the rest of the form data.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-input-size" src="https://codepen.io/maujac/embed/oNBGWZP?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/oNBGWZP'>wk11-input-size</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 <br>
 
-# Placeholder and default text
+## &lt;textarea&gt; Element
+
+[The `<textare>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) provides a multi-line text field for larger messages:
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-textarea-ex4" src="https://codepen.io/maujac/embed/yLYgRxx?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/yLYgRxx'>wk11-textarea-ex4</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+## Placeholder and default text
 
 To define the default value of an [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element you have to use the `value` attribute:
 
 <br>
 
-<iframe height="330" style="width: 100%;" scrolling="no" title="wk11-placeholder_defaults-ex5" src="https://codepen.io/maujac/embed/BaopGZP?height=330&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-placeholder_defaults-ex5" src="https://codepen.io/maujac/embed/BaopGZP?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/BaopGZP'>wk11-placeholder_defaults-ex5</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 <br>
 
-# Built-in form validation
+## Built-in form validation
 
 One of the most significant features of [HTML5 form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types) is the ability to validate most user data without relying on  JavaScript.
 
-This is done by using validation attributes on form  elements:
+This is done by using validation attributes on `<input>` elements:
 
 
 
@@ -230,7 +291,7 @@ This is done by using validation attributes on form  elements:
 - `minlength` and `maxlength`: Specifies the minimum and maximum length of textual data (strings)
 - `min` and `max`: Specifies the minimum and maximum values of numerical input types
 - `type`: Specifies whether the data needs to be a number, an email address, or some other specific preset type. 
-- `pattern`: Specifies a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) that defines a pattern the entered data needs to follow.
+- `pattern`: Specifies a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) that defines a pattern the entered data needs to follow (advanced).
 
 
 
@@ -240,19 +301,23 @@ This is done by using validation attributes on form  elements:
   See the Pen <a href='https://codepen.io/maujac/pen/OJyWaoB'>wk11-required-ex6</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
+> It is also possible (and more common) to do form validation with JavaScript, which we will do later in the course.
+>
+> See [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) by MDN web docs for more information.
 
 
-# References & Diving Deeper
+
+## References & Diving Deeper
 
 Recommended readings:
 
 
 
- -   [Web forms — Working with user data](https://developer.mozilla.org/en-US/docs/Learn/Forms) by MDN web docs
+ - [Basic native form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls) by MDN web docs
  -   [Form Design Patterns Book Excerpt: A Registration Form](https://www.smashingmagazine.com/2018/10/form-design-patterns-excerpt-a-registration-form/) by Smashing Magazine
+ -   [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) by MDN web docs
 
 
 
@@ -263,11 +328,11 @@ Recommended readings:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E5MEzC0prd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-# Hands-on
+## Hands-on
 
 
 
-## Exercises
+### Exercises
 
 Complete the following exercises from W3C Schools:
 
