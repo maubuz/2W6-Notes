@@ -387,6 +387,18 @@ For more information please see [Using the viewport meta tag to control layout o
 
 <br>
 
+**Recommended Videos:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zF6VSky4SIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2KL-z9A56SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<br>
+
 The site below includes a comprehensive list of mobile devices and their screen sizes:
 
 - [www.screensiz.es](https://screensiz.es/)
