@@ -485,7 +485,7 @@ Starting with the provided code, create the layout below using **Flexbox and Gri
 
 <br>
 
-<!-- **Lab 1 solution** available [here](https://codepen.io/maujac/pen/VwvvawB) -->
+**Lab 1 solution** available [here](https://codepen.io/maujac/pen/VwvvawB)
 
 <br>
 
@@ -529,7 +529,7 @@ Create a responsive website that follows the layouts below. Follow these require
 
 <br>
 
-<!-- **Lab 2 solution** available [here](https://codepen.io/maujac/pen/bGVVpdb) -->
+**Lab 2 solution** available [here](https://codepen.io/maujac/pen/bGVVpdb) 
 
 
 
