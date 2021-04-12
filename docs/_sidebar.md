@@ -6,16 +6,16 @@
 - [JS OOP & Canvas](./wk14/jsOOP_canvas.md) -->
 
 <!-- - **Week 13**
+- [JS Operators & Coercion](./wk12/javascript_quirks.md)
 - [Events](./wk13/events.md)
 - [DOM pt2](./wk13/DOM-manipulation_pt2.md) -->
 
-<!-- - **Week 12**
+- **Week 12**
+- [The DOM](./wk11/dom.md)
 - [Intro to JavaScript](./wk12/javascript_intro.md)
-- [JS Operators & Coercion](./wk12/javascript_quirks.md) -->
 
 **Week 11**
 - [HTML Forms](./wk11/forms.md)
-- [The DOM](./wk11/dom.md)
 
 **Week 10**
 - [Intro to CSS Grid](./wk9/grid.md)
