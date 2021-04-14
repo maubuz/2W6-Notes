@@ -1,76 +1,6 @@
 
 
-# Inserting elements in the DOM
-
-We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` propert.
-
-<br>
-
-<iframe height="342" style="width: 100%;" scrolling="no" title="wk11 - inserting_1 -ex6" src="https://codepen.io/maujac/embed/gOaRKjY?height=342&theme-id=light&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/gOaRKjY'>wk11 - inserting_1 -ex6</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-<br>
-
-However, this method can easily lead to typos and missed syntax.
-
-<br>
-
-Instead, use following method for **adding and deleting HTML elements**:
-
-<br>
-
-1. Create a new element and store it in a variable with  `createElement`
-2. Add the content of the new element with `createTextNode` or `innerHTML` 
-3. Select the note to receive the new element
-4. Append the new node to the selected element with:
-   1.  `appendChild` if the new content should go as the last child
-   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
-
-<br>
-
-Use the following methods:
-
-<br>
-
-| Method                                                       | Description                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Create an HTML element                                       |
-| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Remove an HTML element                                       |
-| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Add an HTML element                                          |
-| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replace an HTML element                                      |
-| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
-
-<br>
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk11 - creating_elements -ex8" src="https://codepen.io/maujac/embed/abvwjBX?height=265&theme-id=light&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/abvwjBX'>wk11 - creating_elements -ex8</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-
-<br>
-
-## Next Steps in the DOM
-
-The next steps in terms of DOM manipulation is to learn:
-
-- the document methods `querySelect` and `querySelectAll` 
-  - (allows us to use CSS selectors to access element )
-- window **events** and event **callback functions**
-  - (allows us to trigger functions based on DOM events like `onclick` and `onkeypress` )
-
-<br>
-
-However, to truly benefit from these concepts we need to learn JavaScript. We will go back to the DOM shortly.
-
-<br>
-
-
-
-# JavaScript
+# Intro to JavaScript
 
 ## Origins
 
@@ -78,75 +8,116 @@ JavaScript was created during the browser wars in the mid 90's. In an ambitious 
 
 Microsoft reverse engineered Netscape's JavaScript interpreter and dominated the market-share by including IE with Windows.
 
-Netscape had to cease it's operations. As a last move, they open sourced JavaScript. Brendan and others behind Netscape Navigator went on to co-found the Mozilla foundation.
+Netscape had to cease it's operations. As a last move, they open sourced JavaScript. Brendan and others behind Netscape Navigator went on to co-found the Mozilla foundation, the creators of the Firefox browser.
 
 
 
-# Adding JavaScript to HTML
+## Adding JavaScript to HTML
 
 What are the places that we can run JavaScript in the HTML document?
 
-**In-line**
+### In-line
 
-- Attached to a window event such as `onClick`
+Attached to a window event such as `onClick`
 
-  ```html
-  <button onclick="alert('Inline JavaScript!')">
-      Click me for JS
-  <button>
-  ```
+```html
+<button onclick="alert('Inline JavaScript!')">
+    Click me for JS
+<button>
+```
+
+
+
+<br>
+
+### Internal
+
+Inside the `<script>` tag.
+
+The `<script>` tag is normally **placed just before the end of the `<body>`.** Technically, the tag can be placed anywhere.
+
+- The location of the `<script>` tag is important. See the note on *Position matters*, down bellow.
+
+```html
+<body>
+    <h1>Welcome to our site!</h1>
+    
+... rest of the body
+
+    <script>
+        console.log('JavaScript inside the HTML document!');
+    </script>
+</body>
+```
 
 
 
 <br>
 
-**In the HTML document**, inside the `<script>` element.
+### External file
 
-- Normally done just before the end of the `<body>`.
+Include a `<script>` tag inside the HTML file with a `src =` attribute pointing to the script location.
 
-  ```html
-  ... rest of the body
-  
-      <script>
-          console.log('JavaScript inside the HTML document!');
-      </script>
-  </body>
-  ```
+- The location of the `<script>` tag is important.
 
-  
+> The recommendation is to placed in the `<head>` with the attribute `defer` 
+>
+> This way the code is fetched and parsed but not executed until the page is fully loaded.
 
-<br>**External file**
+<br>
 
-- By including a `src =` attribute to the `<script>` tag inside the HTML document
+Inside ***index.html***
 
-  ```html
-  ... rest of the body
-  
-  	<script src='code.js'></script>
-  </body>
-  ```
 
-- Then inside the file *code.js*:
+```html
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My awesome page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="code.js" defer></script>		// Note the defer attribute
+</head>
 
-  ```javascript
-  // Inside code.js file
-  
-  console.log("Linking to an external JS file!");
-  ```
+<body>
+	<h1>Welcome to my awesome page!</h1>
+    ... rest of the body
+</body>
+```
+
+
+
+Inside the file ***code.js***:
+
+```javascript
+// Inside code.js file
+
+console.log("Linking to an external JS file!");
+```
 
 
 
 <br>
+
+!> In this course you are **expected to use external JS files** unless asked otherwise.
 
 The example below illustrates all 3 cases:
 
 <br>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - JavaScript - executing -ex2" src="https://codepen.io/maujac/embed/XWmgXXJ?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - JavaScript - executing -ex2" src="https://codepen.io/maujac/embed/XWmgXXJ?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/XWmgXXJ'>wk12 - JavaScript - executing -ex2</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+<br>
+
+### Position Matters!
+
+Remember that the html document is parsed (processed) from top to bottom.
+
+This means that the `<script>` tag will be executed as soon as the browser sees it in the html file (unless the `defer` attribute is added to the tag.
+
+>If your JS script is manipulating DOM elements, make sure the browser has already added those elements to the DOM by the time your script is run.
 
 
 <br>
@@ -155,7 +126,7 @@ The example below illustrates all 3 cases:
 
 JavaScript is a dynamic typed language.
 
-This means that you don't tell the engine what type of data a variable holds, **it figures it out while the code is running**.
+This means that you don't specify what type of data a variable holds, **the JS engine figures it out while the code is running**.
 
 
 
@@ -174,16 +145,16 @@ bool isNew = "hello!"; // gives an error in C#
 However, in JavaScript the sequence of lines below are valid:
 
 ```javascript
-let isNew = true;  // no error in JavaScript
-isNew = 1;
-isNew = "It's all good";
+let isNew = true;			// holding a boolean
+isNew = 1;					// now a number
+isNew = "It's all good";	// now a string
 ```
 
 <br>
 
 ### Variable Declaration
 
-In order to declare a variable, use the keywords **let** or **const**:
+> In order to declare a variable, use the keywords **let** or **const**:
 
 **let** - Declares a block scope local variable, optionally initializing it to a value.
 
@@ -193,7 +164,7 @@ In order to declare a variable, use the keywords **let** or **const**:
 
 Examples of `let`:
 
-<iframe height="306" style="width: 100%;" scrolling="no" title="wk12 - JavaScript -  -ex3" src="https://codepen.io/maujac/embed/eYpRJRN?height=306&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="323" style="width: 100%;" scrolling="no" title="wk12 - JavaScript -  -ex3" src="https://codepen.io/maujac/embed/eYpRJRN?height=323&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/eYpRJRN'>wk12 - JavaScript -  -ex3</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -202,54 +173,46 @@ Examples of `let`:
 
 Examples of `const`:
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk12  - const -ex4" src="https://codepen.io/maujac/embed/eYpRzQo?height=265&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="345" style="width: 100%;" scrolling="no" title="wk12  - const -ex4" src="https://codepen.io/maujac/embed/eYpRzQo?height=345&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/eYpRzQo'>wk12  - const -ex4</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 <br>
 
-
-
-<br>
-
 #### The `var` keyword
 
-Older versions of JavaScript only used the keyword **var** for declaring variables. It is a large source of JavaScript bugs and is not recommended if you are new to the language. 
+Older versions of JavaScript only used the keyword **var** for declaring variables.
+
+The scope of variables declared with `var` is a little counter intuitive, is a large source of JavaScript bugs and is not recommended if you are new to the language. 
 
 
 
->  Do not use the the keyword **var** for declaring variables.
+>  Do not use the the keyword **var** for declaring variables. Stick to ***let*** and ***const***
 >
-> It can create unexpected results due to scoping "conflicts".
+> It can create unexpected results due to scoping "overlap".
 
 
 
 To illustrate this:
 
-```javascript
-var i = 5;
-for (var i = 0; i < 10; i++) {
-  // some statements
-}
-console.log(i);
-```
+<iframe height="265" style="width: 100%;" scrolling="no" title="Intro to JS - avoid var" src="https://codepen.io/maujac/embed/poRVddv?height=265&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/poRVddv'>Intro to JS - avoid var</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 What would you expect the value of `i` to be ?
 
-<details>
-    <summary>Output</summary>
-    <ul>
-        <li>i = 10</li>
-        <li>One would likely expect i to stay unchanged outside of the for-loop scope.</li>
-    </ul>
-</details>
+One would likely expect i to stay unchanged outside of the for-loop scope.
+
+<br>
+
 
 See  the [JavaScript **Let page** by W3C Schools](https://www.w3schools.com/JS/js_let.asp) for more information on the differences between `let` and `var` .
 
 <br>
 
-## Primitive Types
+## Primitive Data Types
 
 Primitive types are the most basic variable types in JavaScript.
 
@@ -257,14 +220,15 @@ A primitive type is a type of data that holds a single value. In other words, va
 
 <br>
 
-| Type        | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| `undefined` | Lack of existence. The use of `undefined` should be reserved for the JavaScript engine. |
-| `null`      | Lack of existence. Can be assigned to variables by developers . |
-| `boolean`   | `true` or `false`                                            |
-| `number`    | The only number type available. It's a floating point number (some decimals are always attached) |
-| `string`    | A sequence of characters. Either ' ' or " " can be used. Most other languages consider strings as an array of characters, but in JavaScript it is a primitive type. |
-| `symbol`    | New in ES6. Not covered in this course.                      |
+| Type                                                         | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [`undefined`](https://developer.mozilla.org/en-US/docs/Glossary/undefined) | Lack of existence. The use of `undefined` should be reserved for the JavaScript engine. |
+| [`null`](https://developer.mozilla.org/en-US/docs/Glossary/Null) | Lack of existence. Can be assigned to variables by developers. |
+| [`boolean`](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) | `true` or `false`                                            |
+| [`number`](https://developer.mozilla.org/en-US/docs/Glossary/Number) | The only number type available. It's a floating point number (some decimals are always attached) |
+| [`string`](https://developer.mozilla.org/en-US/docs/Glossary/String) | A sequence of characters. Either ' ' or " " can be used. Most other languages consider strings as an array of characters, but in JavaScript it is a primitive type. |
+| [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt) | Similar to numbers but can store much larger numbers. *Not covered in this course.* |
+| [`symbol`](https://developer.mozilla.org/en-US/docs/Glossary/Symbol) | New in ES6. *Not covered in this course.*                    |
 
 
 
@@ -291,7 +255,7 @@ typeof c;		// returns "boolean"
 typeof window;  // returns "object"
 ```
 
- 
+
 
 <br>
 
@@ -300,8 +264,42 @@ typeof window;  // returns "object"
 Note that **`undefined`** is a special value in JavaScript and it means slightly different things when dealing with variables, methods or functions:
 
 - A **variable** that has not been assigned a value is of type `undefined`. 
-- A **method** or statement also returns `undefined` if the variable that is being evaluated does not have an assigned value.
 - A **function** returns `undefined` if a value was not [`returned`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return).
+
+<br>
+
+Try the following code in the *Console* of the *Dev Tools*
+
+<br>
+
+**Undefined with variables:**
+
+```js
+let a;				// Variable declared but nothing assigned to it
+console.log(a);		// undefined
+```
+
+<br>
+
+**Undefined with functions:**
+
+```js
+// Declare two functions
+function sayHi(name){
+  console.log("Hi there ", name);		// Return nothing but print to console
+}
+
+function hiMessage(name){
+  return ("Hello my friend ", name);	// Returns a string
+}
+
+// Now run them
+sayHi("Larry");			// Logs to console but returns undefined
+
+hiMessage("Meghrig")	// Does not log to console but returns a string
+```
+
+
 
 <br>
 
@@ -311,7 +309,7 @@ The `NaN` value in JavaScript is a special Global property which represents **No
 
 For practical purpuses `Nan` can be considered as a primitive type. 
 
-It is normally observed when performing arithimetic opperations to non-numeric variables.
+It is normally observed when performing arithmetic operations to non-numeric variables.
 
 <br>
 
@@ -327,7 +325,7 @@ Arrays in JavaScript work similarly to other languages.
 
 <br>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk12  - arrays -ex5" src="https://codepen.io/maujac/embed/mdewOmg?height=265&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="271" style="width: 100%;" scrolling="no" title="wk12  - arrays -ex5" src="https://codepen.io/maujac/embed/mdewOmg?height=271&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/mdewOmg'>wk12  - arrays -ex5</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -373,9 +371,11 @@ See [JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array
 
 In JavaScript objects are **name-value pairs** (also referred to as **key-value pairs**)
 
-> Everything that is not a primitive type is an object, including functions and properties inside the object.
+Everything that is not a primitive type is an object, including functions and properties inside the object.
 
+<br>
 
+> For simplicity, think of a JS object as a **variable that inside holds a collection of keys**. Each key is associated to a value.
 
 <br>
 
@@ -384,12 +384,12 @@ In JavaScript objects are **name-value pairs** (also referred to as **key-value 
 The "classic" notation for creating a new objects the following:
 
 ```javascript
-let person = new Object();		// creates a new person object
+let person = new Object();		// creates a new person object with no keys
 ```
 
 <br>
 
-You can **access and add attributes** to to this object by using the "." (dot) operator:
+You can **access and add keys (or attributes)** to to this object by using the "." (dot) operator:
 
 ```javascript
 person.firstName = "John";
@@ -420,7 +420,7 @@ Objects are more easily created using the **object literal { } shorthand notatio
 <br>
 
 ```javascript
-let address = {};		// object literal to create a new object
+let address = {};		// object literal to create a new empty object
 
 address.street = "Sherbrooke";
 address.number = 1234;
@@ -624,7 +624,7 @@ If statements work similarly to other languages
 
 <br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 #### JavaScript Reference Pages
 
@@ -635,54 +635,52 @@ If statements work similarly to other languages
 
 <br>
 
+## Hands-on
 
+### Exercises
 
-# Hands-on
-
-
-
-## Exercises
-
-Complete the following exercises from W3C Schools:
-
-1. [JavaScript Arrays](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1) and [Array methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_array_methods1)
-2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
-3. [Js Strings](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_strings1) and [String Methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_string_methods1)
-4. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
+1. **Complete the following exercises from W3C Schools:**
+   1. [JavaScript Arrays](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1) and [Array methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_array_methods1)
+   2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
+   3. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
 
 
 
-## Lab 1 - Simple Array Manipulation
+2. **Syntax Warm-up:**
 
-Perform the following steps in the console of your browser (use the Dev Tools).
+   **Perform the following steps in the console of your browser (<u>use the Dev Tools and do not refresh the page</u>).**
 
-1. Create a variable called `friends`
-   and assign it an array with four of
-   your friends’ names.
-2. Show the user a dialog that displays
-   the third name in your list of
-   `friends`.
-3. Create a variable called `name` and
-   assign it a string value that is your
-   first name.
-4. If the value of `name` is identical to
-   Jennifer, show the user a dialog
-   box that says, “That’s my name too!”
-5. Create a variable called `myVariable`
-   and assign it a number value
-   between 1 and 10.
-6. If `myVariable`
-   is greater than five, show the user a
-   dialog that says “hight.” If not, show
-   the user a dialog that says “low.”
+   *Friends - array:*
 
+   1. Create a variable called `my_friends`  and assign it an array with four of your friends’ names inside.
+   2. Show the user a dialog that displays  the third name in your list of  `my_friends`.
 
+   *Name - string comparison*
+
+   1. Create a variable called `my_name` and  assign it a string value that is your first name.
+   2. Write a simple expression: if the value of `my_name` is identical to Jennifer, output to the console: “That’s my name too!”
+
+   *Age - numeric comparison*
+
+   1. Create a variable called `my_age` and assign it your age.
+   2. If `my_age`is greater than 18, show the user a dialog that says “high!.” If not, show the user a dialog that says “low.”
+
+   *Person - object literals*
+
+   1. Create a `person` object using the object literal notation.
+   2. This person should have the following properties (keys), which point to the variables you declared in the previous steps.
+      - name
+      - friends
+      - age
+   3. Output the person object to the console;
+
+   
 
 Solution [available here](https://codepen.io/maujac/pen/KKdZMzp)
 
 
 
-## Lab 2 - Colors on Click
+### Lab 1 - Colors on Click
 
 Use the code below to change the color of the `<h1>` element when the button is clicked.
 
@@ -691,9 +689,10 @@ Use the code below to change the color of the `<h1>` element when the button is 
 Implement the following steps:
 
 1. Create a global array containing 3 valid HTML color names.
-2. On click, change the `<h1>` background color to one of the 3 colors.
 
-<br>
+2. On click, change the `<h1>` background color to any of the 3 colors. 
+
+   <br>
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - Lab 2" src="https://codepen.io/maujac/embed/OJygwjW?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/maujac/pen/OJygwjW'>wk12 - Lab 2</a> by Mauricio Buschinelli
