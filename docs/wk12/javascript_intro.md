@@ -642,14 +642,21 @@ If statements work similarly to other languages
 
 ### Exercises
 
-1. **Complete the following exercises from W3C Schools:**
+1. **Check your understanding of JavaScript Data Types** with exercise below from Algonquin College:
+
+   1. [Type Trapper](https://activities.learn-the-web.algonquindesign.ca/type-trapper/)
+
+   
+
+2. **Complete the following exercises from W3C Schools:**
+
    1. [JavaScript Arrays](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_arrays1) and [Array methods](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_array_methods1)
    2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
    3. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
 
+   
 
-
-2. **Syntax Warm-up:**
+3. **Syntax Warm-up:**
 
    **Perform the following steps in the console of your browser (<u>use the Dev Tools and do not refresh the page</u>).**
 
@@ -697,10 +704,11 @@ Implement the following steps:
 
    <br>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk12 - Lab 2" src="https://codepen.io/maujac/embed/OJygwjW?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="378" style="width: 100%;" scrolling="no" title="wk12 - Lab 2" src="https://codepen.io/maujac/embed/OJygwjW?height=378&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/OJygwjW'>wk12 - Lab 2</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
 
