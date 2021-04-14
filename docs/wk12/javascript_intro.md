@@ -494,7 +494,7 @@ Function declarations in JavaScript work similarly to other languages:
 
 
 
-<iframe height="326" style="width: 100%;" scrolling="no" title="wk12  - function declarations -ex7" src="https://codepen.io/maujac/embed/oNjwqyX?height=326&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="331" style="width: 100%;" scrolling="no" title="wk12  - function declarations -ex7" src="https://codepen.io/maujac/embed/oNjwqyX?height=331&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/oNjwqyX'>wk12  - function declarations -ex7</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -513,7 +513,7 @@ Major differences from other languages:
 
 <br>
 
-<iframe height="318" style="width: 100%;" scrolling="no" title="wk12  - argumentless function -ex8" src="https://codepen.io/maujac/embed/ExVXErq?height=318&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="323" style="width: 100%;" scrolling="no" title="wk12  - argumentless function -ex8" src="https://codepen.io/maujac/embed/ExVXErq?height=323&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/ExVXErq'>wk12  - argumentless function -ex8</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -542,7 +542,7 @@ As a summary:
 
 <br>
 
-<iframe height="266" style="width: 100%;" scrolling="no" title="wk12  - local shadowing - ex9" src="https://codepen.io/maujac/embed/QWjgrbZ?height=266&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="274" style="width: 100%;" scrolling="no" title="wk12  - local shadowing - ex9" src="https://codepen.io/maujac/embed/QWjgrbZ?height=274&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/QWjgrbZ'>wk12  - local shadowing - ex9</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -564,10 +564,11 @@ There are several ways of using for-loops in Js. We will focus on two approaches
 
 Works similarly as other languages:
 
-<iframe height="245" style="width: 100%;" scrolling="no" title="wk12  - classic for-loop - ex11" src="https://codepen.io/maujac/embed/zYvzjjB?height=245&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk12  - classic for-loop - ex11" src="https://codepen.io/maujac/embed/zYvzjjB?height=265&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/zYvzjjB'>wk12  - classic for-loop - ex11</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 <br>
 
@@ -579,10 +580,11 @@ The `for...of` loop provides a method for directly accessing the items in the li
 
 <br>
 
-<iframe height="219" style="width: 100%;" scrolling="no" title="wk12  - for-each - ex13" src="https://codepen.io/maujac/embed/XWmgYrp?height=219&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="228" style="width: 100%;" scrolling="no" title="wk12  - for-each - ex13" src="https://codepen.io/maujac/embed/XWmgYrp?height=228&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/XWmgYrp'>wk12  - for-each - ex13</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 
 
@@ -592,7 +594,7 @@ The `for...of` loop provides a method for directly accessing the items in the li
 
 While-loops also work similarly as other languages:
 
-<iframe height="248" style="width: 100%;" scrolling="no" title="wk12  - while_loop - ex14" src="https://codepen.io/maujac/embed/KKdqedd?height=248&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="258" style="width: 100%;" scrolling="no" title="wk12  - while_loop - ex14" src="https://codepen.io/maujac/embed/KKdqedd?height=258&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/KKdqedd'>wk12  - while_loop - ex14</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -607,10 +609,11 @@ If you prefer `do...while` loops, they also exist in JavaScript. See [the do...w
 
 If statements work similarly to other languages
 
-<iframe height="258" style="width: 100%;" scrolling="no" title="wk12  - if statements - ex10" src="https://codepen.io/maujac/embed/oNjwdoW?height=258&theme-id=light&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="302" style="width: 100%;" scrolling="no" title="wk12  - if statements - ex10" src="https://codepen.io/maujac/embed/oNjwdoW?height=302&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/oNjwdoW'>wk12  - if statements - ex10</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 
 
@@ -703,7 +706,7 @@ Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
 
 <br>
 
-## Lab 3 - Multiply Two Numbers
+### Lab 2 - Multiply Two Numbers
 
 Write a function that will receive 3 numbers as input and it should return the multiplication of these
 3 numbers.
@@ -717,3 +720,4 @@ Write a function that will receive 3 numbers as input and it should return the m
 
 
 Solution [available here](https://codepen.io/maujac/pen/qBOpNdP)
+
