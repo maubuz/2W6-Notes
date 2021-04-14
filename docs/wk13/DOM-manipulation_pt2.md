@@ -2,7 +2,54 @@
 
 Now that we've learned more JavaScript, we can expand on DOM manipulation.
 
-<br>
+<br>Inserting elements in the DOM
+
+We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` propert.
+
+
+
+
+
+<iframe allowfullscreen="true" src="https://codepen.io/maujac/embed/gOaRKjY?height=342&amp;theme-id=light&amp;default-tab=html" title="wk11 - inserting_1 -ex6" height="342" allow-top-navigation="false" allow-forms="false" allow-popups="false" sandbox="allow-same-origin allow-scripts" onload="window.remoteOnLoad &amp;&amp; window.remoteOnLoad(this)" style="box-sizing: border-box; margin: 0px auto; max-width: 100%; width: 800px; border: none;"></iframe>
+
+
+
+
+
+However, this method can easily lead to typos and missed syntax.
+
+
+
+Instead, use following method for **adding and deleting HTML elements**:
+
+
+
+1. Create a new element and store it in a variable with  `createElement`
+2. Add the content of the new element with `createTextNode` or `innerHTML` 
+3. Select the note to receive the new element
+4. Append the new node to the selected element with:
+   1. `appendChild` if the new content should go as the last child
+   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
+
+
+
+Use the following methods:
+
+
+
+| Method                                                       | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Create an HTML element                                       |
+| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Remove an HTML element                                       |
+| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Add an HTML element                                          |
+| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replace an HTML element                                      |
+| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+
+
+
+
+
+<iframe allowfullscreen="true" src="https://codepen.io/maujac/embed/abvwjBX?height=265&amp;theme-id=light&amp;default-tab=html" title="wk11 - creating_elements -ex8" height="265" allow-top-navigation="false" allow-forms="false" allow-popups="false" sandbox="allow-same-origin allow-scripts" onload="window.remoteOnLoad &amp;&amp; window.remoteOnLoad(this)" style="box-sizing: border-box; margin: 0px auto; max-width: 100%; width: 800px; border: none;"></iframe>
 
 
 
