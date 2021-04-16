@@ -707,7 +707,7 @@ Write a function that will receive 3 numbers as input and it should return the m
 
 **Input:** three numbers
 
-**Output:** number
+**Output:** one number
 
 **Example**: inputs are (2,3,4), output is 24.
 
@@ -741,3 +741,4 @@ Use the provided function to generate a random index number.
 <br>
 
 Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
+
