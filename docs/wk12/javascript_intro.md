@@ -700,7 +700,7 @@ Solution [available here](https://codepen.io/maujac/pen/KKdZMzp)
 
 <br>
 
-### Lab 1 - Multiply Two Numbers
+### Lab 1 - Multiply Three Numbers
 
 Write a function that will receive 3 numbers as input and it should return the multiplication of these
 3 numbers.
