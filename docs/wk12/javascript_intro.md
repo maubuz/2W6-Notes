@@ -329,10 +329,20 @@ Arrays in JavaScript work similarly to other languages.
   See the Pen <a href='https://codepen.io/maujac/pen/mdewOmg'>wk12  - arrays -ex5</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+<br>
+
+In the example above, the array `cars` is declared and initialized immediately with some starting values.
+
+It is also possible to initialize an empty array:
 
 <br>
 
+```js
+let list = [];		// Initializing an empty array
+list.push("first item!");
+```
 
+<br>
 
 Unlike most languages, it is possible to **hold multiple data types** inside the same array:
 
@@ -646,7 +656,7 @@ If statements work similarly to other languages
 
    1. [Type Trapper](https://activities.learn-the-web.algonquindesign.ca/type-trapper/)
 
-   
+   <br>
 
 2. **Complete the following exercises from W3C Schools:**
 
@@ -654,7 +664,7 @@ If statements work similarly to other languages
    2. [Js Objects](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_objects1)
    3. [Js Functions](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
 
-   
+   <br>
 
 3. **Syntax Warm-up:**
 
@@ -684,19 +694,38 @@ If statements work similarly to other languages
       - age
    3. Output the person object to the console;
 
-   
+   <br>
 
 Solution [available here](https://codepen.io/maujac/pen/KKdZMzp)
 
+<br>
 
+### Lab 1 - Multiply Two Numbers
 
-### Lab 1 - Colors on Click
+Write a function that will receive 3 numbers as input and it should return the multiplication of these
+3 numbers.
+
+**Input:** three numbers
+
+**Output:** number
+
+**Example**: inputs are (2,3,4), output is 24.
+
+<br>
+
+Solution [available here](https://codepen.io/maujac/pen/qBOpNdP)
+
+<br>
+
+### Lab 2 - Colors on Click
 
 Use the code below to change the color of the `<h1>` element when the button is clicked.
 
+Use the provided function to generate a random index number. 
 
+<br>
 
-Implement the following steps:
+**Implement the following steps:**
 
 1. Create a global array containing 3 valid HTML color names.
 
@@ -709,23 +738,6 @@ Implement the following steps:
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
-Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
-
 <br>
 
-### Lab 2 - Multiply Two Numbers
-
-Write a function that will receive 3 numbers as input and it should return the multiplication of these
-3 numbers.
-
-**Input:** three numbers
-
-**Output:** number
-
-**Example**: inputs are (2,3,4), output is 24.
-
-
-
-Solution [available here](https://codepen.io/maujac/pen/qBOpNdP)
-
+Solution [available here](https://codepen.io/maujac/pen/BaoJKRx)
