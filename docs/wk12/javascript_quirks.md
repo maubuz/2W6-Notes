@@ -506,25 +506,33 @@ Example output :
 
 Write a JavaScript program which computes the average mark of the class. Then use the class average to determine the corresponding letter grade of the whole class.
 
-| **Student Name** | **Marks** |
-| ---------------- | --------- |
-| David            | 80        |
-| Vinoth           | 77        |
-| Divya            | 88        |
-| Ishitha          | 95        |
-| Thomas           | 68        |
+<br>
+
+Use the students array bellow:
+
+```js
+const students = [
+    { name: "David", mark: 80 },
+    { name: "Vinoth", mark: 77 },
+    { name: "Divya", mark: 88 },
+    { name: "Ishitha", mark: 95 },
+    { name: "Thomas", mark: 68 }
+]
+```
 
 <br>
 
-Numbers to letter grades:
+Use the letter grade object bellow:
 
-| **Range** | **Grade** |
-| --------- | --------- |
-| <60       | F         |
-| <70       | D         |
-| <80       | C         |
-| <90       | B         |
-| =100      | A         |
+```js
+const gradeRange = {
+    F: 60,
+    D: 70,
+    C: 80,
+    B: 90,
+    A: 100,
+}
+```
 
 <br>
 
