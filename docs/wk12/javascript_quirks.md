@@ -1,16 +1,38 @@
 # JavaScript: Some weird parts
 
-JavaScript can seem a little weird at first, **unless you learn some of the things under the hood**.
+JavaScript can seem a little accouter intuitive at first.
 
-Here we'll learn enough to not get caught off guard by JS.
+**We will look at the following concepts that common sources of confusion to newcomers:**
+
+- **Operator precedence and associativity:** determines which components in a expression get evaluated first and in which direction.
+- **Coercion:** how JavaScript converts from one data types to another.
+- **Strict Equality and truthiness:** how JavaScript compares different data types.
 
 <br>
 
-# Primitive wrapper objects
+## Primitive wrapper objects
 
 You can think of primitive data types as infant variables that can't do anything other than store a single value inside.
 
-Except for `null` and `undefined`, all primitive types have object equivalents that wrap around the them:
+**Primitives don't have methods or properties.**
+
+<br>
+
+There are certain manipulations that are very common to person on primitive types. 
+
+For example:
+
+- transforming a `number` into a `string` or vice-versa,
+- splitting a long `string` into smaller pieces,
+- determining if a `string ` contains an occurrence of another `string`
+
+<br>
+
+> For this reason, there are **wrapper objects** that give primitives special powers. 
+
+<br>
+
+Except for `null` and `undefined`, all primitive types have object equivalents that wrap around the them (notice how they start in upper case) :
 
 - [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) for the string primitive.
 - [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) for the number primitive.
@@ -19,25 +41,42 @@ Except for `null` and `undefined`, all primitive types have object equivalents t
 
 <br>
 
-Here is how primitive wrapper objects work:
+For example, in the code below, we create a string primitive, however, we call the method `toUpperCase()` on it.
 
 <br>
 
-1. Primitives types are still primitive. Only a single value, as desired.
-2. The language allows access to methods and properties of strings, numbers, booleans and symbols.
-3. In order for that to work, a special “object wrapper” that provides the extra functionality is created, and then is destroyed.
+```js
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+console.log( sentence.toUpperCase() );
+
+// Output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+```
+
+<br>
+
+The method `toUpperCase()` works because "behind the scenes", JavaScript used the `String` wrapper object to temporarily give the `string` primitive super powers.
+
+<br>
+
+**Here is how primitive wrapper objects work:**
+
+<br>
+
+1. Primitives types are still primitive and can only store a single value (no methods of properties).
+2. The language allows methods and properties to be called on strings, numbers, booleans and symbols.
+3. In order for that to work, a special “object wrapper” that provides the extra functionality is created, used, and then is destroyed.
 
 <br>
 
 
 
-> For all practical purpuses, consider the methods and properties associated with the wrapper objects to belong to the primitive types.
+> For all practical purposes, consider the methods and properties associated with the wrapper objects to belong to the primitive types.
 
 
 
 <br>
 
-#  Operators
+##  Operators
 
 Like most languages, JavaScript has several types of operators. We will focus on the following:
 
@@ -46,9 +85,9 @@ Like most languages, JavaScript has several types of operators. We will focus on
 - Comparison Operators
 - Logical Operators
 
+<br>
 
-
-Below are commonly used operators. See the [**JavaScript Operators page**](https://www.w3schools.com/js/js_operators.asp) for full reference.
+Below are commonly used operators. See the [**JavaScript Operators page**](https://www.w3schools.com/js/js_operators.asp) for the full reference.
 
 <br>
 
@@ -108,47 +147,47 @@ Below are commonly used operators. See the [**JavaScript Operators page**](https
 
 
 
-# Operator Precedence & Associativity
+## Operator Precedence & Associativity
 
-Operator precedence determines which components in a expression get evaluated first.
+**Operator precedence** determines which components in a expression get evaluated first.
 
-Operator associativity determines the direction in which the expression is evaluated (ei. left-to-right or right- to-left).
+**Operator associativity** determines the direction in which the expression is evaluated (ei. left-to-right or right- to-left).
 
 <br>
 
-For example, which operator gets called first ?
+Which operator gets called first in the line below?
 
 ```javascript
- if( a && b != c ) { ... }
+if( a && b != c ) { ... }
 ```
 
 
 
 <br>
 
-The precedence is determined by a **precedence level number**. The heigher the level, the heigher the precedence priority.
+The precedence is determined by a **precedence level number**. The higher the level, the higher the precedence priority.
 
 <br>
 
-Both the precedence level number and the associativity direction can be found in the [**operator precedence table**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence) from MDN web docs.
+Both the precedence level number and the associativity direction can be found in the [**operator precedence table**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table) from MDN web docs.
 
 <br>
 
-> Precendence and associativity might seen like uncesserary details to learn, however, they largely determine how coercion happens in JavaScript.
+> Precedence and associativity might seen like uncesserary details to learn, however, they largely determine how coercion happens in JavaScript.
 
 <br>
 
 
 
-# Coercion
+## Coercion
 
 Coercion means converting a value from one type to another. Also know as type casting in other languages.
 
-Since JavaScript is a dynamically typed language, coercion happens very ofter.
+Since JavaScript is a dynamically typed language, coercion happens very often.
 
 
 
-## Implicit coercion
+### Implicit coercion
 
 Implicit coercion is done automatically by the JavaScript engine. Some implicit coercions are intuitive while others are **very counter-intuitive**. 
 
@@ -215,7 +254,7 @@ With the   `+` operator, the following rule applies:
 
 <br>
 
-## Explicit coercion
+### Explicit coercion
 
 There are mechanisms we can use to *explicitly* cause values to be coerced, such as using the built-in type “wrapper” objects.
 
@@ -231,7 +270,7 @@ For more information on coercion, see [JavaScript type coercion explained](https
 
 <br>
 
-# Comparison Operators
+## Comparison Operators
 
 ### Comparison & Coercion
 
@@ -266,7 +305,7 @@ In the example above, JavaScript coerced the `string`
 
 <br>
 
-### Example: precedence, associativity & coercion
+#### Example: precedence, associativity & coercion
 
 Consider the code below:
 
@@ -322,7 +361,7 @@ console.log( 0 < 1 );		// true
 
 
 
-## Equality
+### Equality
 
 Due to coercion, some equality comparisons can be quite counter-intuitive, which makes the code very difficult to anticipate.
 
@@ -346,8 +385,10 @@ null < 1;
 		<li>null == 0;	 // false</li>
         <li>null < 1;	 // true</li>
 		<li>"" == 0;	 // true</li>
+        <li>"" == false; // true</li>
     </ul>
 </details>
+
 
 
 
@@ -372,7 +413,7 @@ The strict equality operator, compares two variables **without trying to coerce 
 
 <br>
 
-## The Equality Table
+### The Equality Table
 
 To know what the  `==`  (loose equality operator) and the  `===`  (strict equality operator) will return when comparing data types, refer to [**the equality table**](https://dorey.github.io/JavaScript-Equality-Table/unified/)
 
@@ -383,9 +424,13 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 <p align="center"><a href="https://web-fundamentals.dev/js-type-coercion"><em>Type Coercion by web-fundamentals.dev/</em></a></p>
 <br>
 
-# Take-aways
+## Take-aways
 
-> Use `===` and `!==`  by default in your code.
+> If an expression has multiple operations, use the [Precedence Table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table) to know the priority and direction of operations (highest precedence wins).
+
+<br>
+
+> Use `===` and `!==`  by default in your code instead of  `==`  and  `!=`
 
 <br>
 
@@ -397,9 +442,11 @@ To know what the  `==`  (loose equality operator) and the  `===`  (strict equali
 
 <br>
 
+> Use the wrapper object functions [`Number()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [`String()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [`Boolean()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) to convert between primitive data types.
 
+<br>
 
-# References & Diving Deeper
+## References & Diving Deeper
 
 
 
@@ -429,11 +476,11 @@ A good place to celebrate JavaScript quirks is [wtfjs.com](https://wtfjs.com/), 
 
 
 
-# Hands-on
+## Hands-on
 
 
 
-## Exercises
+### Exercises
 
 #### Exercise 1
 
@@ -457,7 +504,7 @@ Example output :
 
 #### Exercise 3
 
-Write a JavaScript program which compute, the average marks of the  following students Then, this average is used to determine the corresponding letter grade of the whole class.
+Write a JavaScript program which computes the average mark of the class. Then use the class average to determine the corresponding letter grade of the whole class.
 
 | **Student Name** | **Marks** |
 | ---------------- | --------- |
@@ -469,7 +516,7 @@ Write a JavaScript program which compute, the average marks of the  following st
 
 <br>
 
-The grades are computed as follows :
+Numbers to letter grades:
 
 | **Range** | **Grade** |
 | --------- | --------- |
@@ -481,7 +528,7 @@ The grades are computed as follows :
 
 <br>
 
-## Lab 4 - Login button
+### Lab 4 - Login button
 
 Use the code below to implement the following functionality:
 

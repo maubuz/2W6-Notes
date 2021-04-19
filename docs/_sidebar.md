@@ -5,10 +5,10 @@
 - [CSS Frameworks](./wk14/css_frameworks.md)
 - [JS OOP & Canvas](./wk14/jsOOP_canvas.md) -->
 
-<!-- - **Week 13**
+- **Week 13**
 - [JS Operators & Coercion](./wk12/javascript_quirks.md)
 - [Events](./wk13/events.md)
-- [DOM pt2](./wk13/DOM-manipulation_pt2.md) -->
+- [DOM pt2](./wk13/DOM-manipulation_pt2.md)
 
 - **Week 12**
 - [The DOM](./wk11/dom.md)

@@ -14,7 +14,7 @@ greet();	// Output: 'Hello' undefined
 
 ## Execution Context
 
-At any given moment, the JavaScript engine is wrapping code being run inside an execution context (this of this as a bubble or a mini-world). This context includes four components:
+At any given moment, the JavaScript engine is wrapping code being run inside an execution context (think of this as a bubble or a mini-world). This context includes four components:
 
 - The Global Object
 - The special 'this' object (pointer)
@@ -64,7 +64,7 @@ When a function or variable is created in the browser's global execution context
 
 
 
-> Note that this is running environment is unique to JavaScript being run inside a browser.
+> Note that this running environment is unique to JavaScript being run inside a browser.
 >
 > The global context would be different if you were running JavaScript in the sever using Node.Js
 
@@ -115,7 +115,7 @@ undefined
 
 <br>
 
-The function be is ran even though it is declared after it is being called. Also, trying to log `a` gives us `undefined`.
+The function b is ran even though it is declared after it is being called. Also, trying to log `a` gives us `undefined`.
 
 Notice how `undefined` is not the same as if variable `a` was never declared:
 
