@@ -6,7 +6,7 @@ This section is based on the page [Introduction to browser events](https://javas
 
 An **event** is a signal that something has happened. All DOM nodes generate such signals.
 
-Here’s a list of the most useful DOM events, just to take a look at:
+Here’s a list of some DOM events:
 
 
 
@@ -52,7 +52,10 @@ Here’s a list of the most useful DOM events, just to take a look at:
 
 <br>
 
-> For a complete list of events see [**MDN's Event reference page**](https://developer.mozilla.org/en-US/docs/Web/Events)
+> For a complete list of events see:
+>
+> - [**HTML DOM Events page**](https://www.w3schools.com/jsref/dom_obj_event.asp) from W3Schools for a **summary list**.
+> - [**Event reference page**](https://developer.mozilla.org/en-US/docs/Web/Events) from MDN Web Docs for a **full list of all event organized by types**
 
 <br>
 
@@ -62,25 +65,25 @@ Here’s a list of the most useful DOM events, just to take a look at:
 
 # Event Handlers
 
-To trigger an action when a specific event happens, we can assign an **event handler** to the event.
+> To trigger an action when a specific event happens, we can assign an **event handler** to the event.
+>
+> An event handler is a JavaScript function.
 
-An event handler is a JavaScript function.
-
-
+<br>
 
 There are three ways of assigning an event handler to an event:
 
-- As a HTML in-line attribute;
-- As a DOM property on a element;
-- Using an event listener.
+- As a HTML **in-line attribute**;
+- As a **DOM property** on a element;
+- Using an **event listener** - the proffered method in this course 🏆
 
 
 
 ## Handles as HTML Attributes
 
-A handler can be set in HTML with an attribute named  `on<event>`.
+A handler can be set in HTML with an attribute named  `on<event>`  (*without the angled brackets*).
 
-This the method that we have been using so far in the course.
+**This is the simplest method but has many limitations.**
 
 For example, to assign a handler to the  `click` event for a `<button>` element, we can use the  `onclick` attribute:
 
@@ -106,13 +109,23 @@ Note that we could have written an complete JavaScript command inside the HTML e
 
 <br>
 
-However, this is highly inconvenient, error-prone and not recommended. Keep your structure (HTML) and your functionality (JavaScript) separated.
+!> This method is error-prone for long JS expressions and is not recommended. Keep your structure (HTML) and your functionality (JavaScript) separated.
 
 <br>
 
 ## Handlers as DOM Properties
 
 We can assign an event handler to an HTML element using the DOM property `on<event>`  syntax.
+
+<br>
+
+*Inside code.js:*
+
+```js
+element.onclick = myFunction	// myFunction is a function that is defined elsewhere
+```
+
+<br>
 
 The example below uses the `mouseover` event:
 
@@ -127,17 +140,17 @@ The example below uses the `mouseover` event:
 
 <br>
 
-### Syntax differences
+### Syntax differences for event handlers
 
 There is an important syntax difference between the two methods listed above:
 
-- Handlers assigned as HTML attributes **take bracket**s `( )`  in the function call:
+- Handlers assigned as **HTML attributes** **take bracket**s `( )`  in the function call:
 
   ```javascript
   onclick="changeColors()"
   ```
 
-- Handlers assigned as DOM properties **do not take brackets** `( )` in the function call:
+- Handlers assigned as **DOM properties** **do not take brackets** `( )` in the function call:
 
   ```javascript
   // right
@@ -149,9 +162,11 @@ There is an important syntax difference between the two methods listed above:
 
 
 
-If we add parentheses, `activate()` becomes a function call.
+If we add parentheses, `activate()` becomes a function call, meaning that is will be executed at that line.
 
-The last line actually takes the *result* of the function execution, which is `undefined` (since the function returns nothing), and assigns it to the `onmouseover` event.
+<br>
+
+The last line actually puts the *result* of the function execution, which is `undefined` (since the function returns nothing), and assigns it to the `onmouseover` event.
 
 <br>
 
@@ -161,14 +176,14 @@ Event handlers assigned as HTML attributes or as DOM properties have **one major
 
 - **Events can only be handled by a single event handler**
 
-
+<br>
 
 If more than one handler is assigned to the same element, only the last assignment will be effective:
 
 ```javascript
 input.onclick = myHandler;
 // ...
-input.onclick = myAwesomeHandler // replaces the previous handler
+input.onclick = myOtherHandler // replaces the previous handler
 ```
 
 
@@ -179,7 +194,7 @@ input.onclick = myAwesomeHandler // replaces the previous handler
 >
 > **This is the recommended method for adding event handlers to events**
 
-
+<br>
 
 It uses the following syntax:
 
@@ -190,13 +205,14 @@ element.addEventListener("event", handler, [options]);
 
 
 - **event** - name of event (e.g. `"click"` or  `"mouseover"`);
+  - see [HTML DOM Events page](https://www.w3schools.com/jsref/dom_obj_event.asp) from W3Schools for a **summary list**.
 - **handler** - event handler function;
 - **options** - optional object with the properties `once`, `capture`, or `passive`.
-- (see [docs for optional object](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) )
+  - see [docs for optional object](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 
 
-
+<br>
 
 <iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - addEventListener - ex3" src="https://codepen.io/maujac/embed/BaoJLOR?height=265&theme-id=dark&default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/BaoJLOR'>wk13 - events - addEventListener - ex3</a> by Mauricio Buschinelli
@@ -207,7 +223,7 @@ element.addEventListener("event", handler, [options]);
 
 <br>
 
-> An event handler function is also called a **callback function**.
+> An event handler function is also a **callback function**.
 >
 > The idea is that when the specified event happens, anyone listening for that event will be **"called back".**
 
