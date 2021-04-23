@@ -6,6 +6,10 @@ This section is based on the page [Introduction to browser events](https://javas
 
 An **event** is a signal that something has happened. All DOM nodes generate such signals.
 
+
+
+## Event Examples
+
 Here’s a list of some DOM events:
 
 
@@ -59,15 +63,15 @@ Here’s a list of some DOM events:
 
 <br>
 
-**Events are constantly being fired in the browser,  it's only a matter of <u>how we handle them</u>.**
+**Events are constantly being fired** in the browser,  it's only a matter **how we handle them**.
 
 <br>
 
-# Event Handlers
+## Event Handlers
 
-> To trigger an action when a specific event happens, we can assign an **event handler** to the event.
+> To ktrigger an action when a specific event happens, we can assign an **event handler** to the event.
 >
-> An event handler is a JavaScript function.
+> **An event handler is a JavaScript function.**
 
 <br>
 
@@ -79,11 +83,11 @@ There are three ways of assigning an event handler to an event:
 
 
 
-## Handles as HTML Attributes
+### Handlers as HTML Attributes
 
 A handler can be set in HTML with an attribute named  `on<event>`  (*without the angled brackets*).
 
-**This is the simplest method but has many limitations.**
+This is the **simplest** method but **has many limitations**.
 
 For example, to assign a handler to the  `click` event for a `<button>` element, we can use the  `onclick` attribute:
 
@@ -106,14 +110,13 @@ Note that we could have written an complete JavaScript command inside the HTML e
 </iframe>
 
 
-
 <br>
 
 !> This method is error-prone for long JS expressions and is not recommended. Keep your structure (HTML) and your functionality (JavaScript) separated.
 
 <br>
 
-## Handlers as DOM Properties
+### Handlers as DOM Properties
 
 We can assign an event handler to an HTML element using the DOM property `on<event>`  syntax.
 
@@ -122,7 +125,7 @@ We can assign an event handler to an HTML element using the DOM property `on<eve
 *Inside code.js:*
 
 ```js
-element.onclick = myFunction	// myFunction is a function that is defined elsewhere
+element.onclick = myFunction	// a function defined elsewhere in this file
 ```
 
 <br>
@@ -147,10 +150,10 @@ There is an important syntax difference between the two methods listed above:
 - Handlers assigned as **HTML attributes** **take bracket**s `( )`  in the function call:
 
   ```javascript
-  onclick="changeColors()"
+  <div id="zone" onclick="activate()">
   ```
 
-- Handlers assigned as **DOM properties** **do not take brackets** `( )` in the function call:
+- Handlers assigned as **Object properties** **do not take brackets** `( )` in the function call:
 
   ```javascript
   // right
@@ -170,11 +173,15 @@ The last line actually puts the *result* of the function execution, which is `un
 
 <br>
 
-## Handlers via Event Listeners
+### Handler Limitations: HTML attributes & DOM properties
 
-Event handlers assigned as HTML attributes or as DOM properties have **one major limitation**:
+> Event handlers assigned as HTML attributes or as DOM properties have **one major limitation**:
+>
+> **Events can only be handled by a single event handler**
 
-- **Events can only be handled by a single event handler**
+<br>
+
+### Handlers via Event Listeners 🏆
 
 <br>
 
@@ -192,7 +199,7 @@ input.onclick = myOtherHandler // replaces the previous handler
 
 > The method **addEventListener( )** is used to assign one or more handlers to a single event.
 >
-> **This is the recommended method for adding event handlers to events**
+> **This is the recommended method for adding event handlers to events** 🏆
 
 <br>
 
@@ -206,7 +213,7 @@ element.addEventListener("event", handler, [options]);
 
 - **event** - name of event (e.g. `"click"` or  `"mouseover"`);
   - see [HTML DOM Events page](https://www.w3schools.com/jsref/dom_obj_event.asp) from W3Schools for a **summary list**.
-- **handler** - event handler function;
+- **handler** - function that will handle the event;
 - **options** - optional object with the properties `once`, `capture`, or `passive`.
   - see [docs for optional object](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
@@ -220,12 +227,11 @@ element.addEventListener("event", handler, [options]);
 </iframe>
 
 
-
 <br>
 
 > An event handler function is also a **callback function**.
 >
-> The idea is that when the specified event happens, anyone listening for that event will be **"called back".**
+> The idea is that when an element observes the specified event, it's handler function will be **"called back".**
 
 
 
@@ -233,7 +239,7 @@ element.addEventListener("event", handler, [options]);
 
 ### Removing event listeners
 
-To remove an added handler, use the method `removeEventListener`, with the same syntax as `addEventHandler`:
+To remove an event handler from an element, use the method `removeEventListener`, with the same syntax as `addEventHandler`:
 
 ```javas
 element.removeEventListener(event, handler, [options]);
@@ -243,7 +249,7 @@ element.removeEventListener(event, handler, [options]);
 
 <br>
 
-# Event Object
+## Event Object
 
 As soon as an event happens, the browser automatically creates an **event object** and stores details about the event as **object properties**.
 
@@ -252,10 +258,10 @@ As soon as an event happens, the browser automatically creates an **event object
 Some properties of the event object:
 
 - **event.type** - type of event (e.g. `"click"` ,  `"mouseover"` or  `"keydown"` );
-- **event.target** - element that originally triggered the event;
-- **event.currentTarget** - element that handled the event (see event bubbling for contrast with `event.target` );
-- **event.clientX / event.clientY** - window-relative coordinates of the cursor, for **mouse events**.
-- **event.key** - key value of the key represented by the event, for **keyboard events**.
+- **event.target** - element where event was **originally triggered**;
+- **event.currentTarget** - element who's event handler function is currently handling the event (see event bubbling for contrast with `event.target` );
+- **event.clientX / event.clientY** - window-relative coordinates of the cursor, for **mouse events only**.
+- **event.key** - key value of the key represented by the event, for **keyboard events only**.
 
 
 
@@ -271,6 +277,8 @@ For example:
 - In turn, the  `"click"` event has the `"clientY"`  property, which returns the vertical coordinate of the mouse pointer, relative to the current window.  A `"keydown"` event returns a meaningless value for the same property.
 
 <br>
+
+### Event Types
 
 Below is a list of common event object types:
 
@@ -305,7 +313,7 @@ See the [Event API documentation](https://developer.mozilla.org/en-US/docs/Web/A
 
 <br>
 
-## Catching event objects
+### Catching event objects
 
 When writing an event handler, it is possible to "catch" the event object created by the browser.
 
@@ -320,7 +328,7 @@ Once captured, the event details (stored as object properties) can be used insid
 
 To catch the event that triggered the callback function:
 
-1. List the event as a function argument in the function declaration
+1. List the event as a function argument in the function declaration (optional)
 2. Use the event object inside the function.
 
 
@@ -358,7 +366,7 @@ Note that:
 
 <br>
 
-# Event Bubbling
+## Event Bubbling
 
 In the example below, we add an event listener for the "click" event on the `<div>` . However, the event is also being fired when we click on the `<button>`.
 
@@ -372,7 +380,6 @@ In the example below, we add an event listener for the "click" event on the `<di
 </iframe>
 
 
-
 <br>
 
 If we inspect the `event.target`  and the `event.currentTarget` we will notice that:
@@ -384,13 +391,13 @@ If we inspect the `event.target`  and the `event.currentTarget` we will notice t
 
 This is happening due to **Event Bubbling**:
 
-> **When an event happens on an element, it first runs the handlers on that element, then on its parent, then all the way up on other ancestors.**
+> **When an event happens on an element, it triggers the handlers on that element, then on its parent, then all the way up on other ancestors.**
 
 
 
 <br>
 
-Consider 3 nested elements `FORM > DIV > P` with a handler on each of them:
+Consider 3 nested elements `FORM > DIV > P`:
 
 <br>
 
@@ -403,7 +410,7 @@ Consider 3 nested elements `FORM > DIV > P` with a handler on each of them:
 
 <br>
 
-A click on the inner `` first runs `onclick`:
+A click on the inner `<p>` first runs `onclick`:
 
 1. On that `<p>`.
 2. Then on the outer `<div>`.
@@ -416,12 +423,13 @@ A click on the inner `` first runs `onclick`:
 
 ![image-20200505111114930](assets/image-20200505111114930.png)
 
-<p align="center"><a href="https://javascript.info/bubbling-and-capturing"><em>Bubbling and capturing by jhavascript.info</em></a></p>
+<p align="center"><a href="https://javascript.info/bubbling-and-capturing"><em>Bubbling and capturing by javascript.info</em></a></p>
+
 <br>
 
 
 
-## Event target vs currentTarget
+### Event target vs currentTarget
 
 As you saw above, a handler on a parent element can always get the details about where it actually happened.
 
@@ -435,7 +443,7 @@ If we have a single handler on `form.onclick`, then it can “catch” all click
 
 <br>
 
-> **`event.currentTarget` returns the element who is firing the event handler.**
+> **`event.currentTarget` returns the element who is calling the event handler.**
 >
 > In other words, `event.currentTarget` returns the element who was listening for the event and triggered the callback function.
 
@@ -460,7 +468,7 @@ Notice the difference between  `event.target`  vs  `event.currentTarget`  when c
 
 <br>
 
-## Stopping bubbling
+### Stopping bubbling
 
 A bubbling event goes from the target element all the way to the `document` object. 
 
@@ -491,12 +499,11 @@ Bubbling can be used in a pattern called **event-delegation** where all events a
   See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
 
 
-## Preventing default behavior
+### Preventing default behavior
 
 Sometimes it is desirable to stop a default behavior without necessarily stopping bubbling.
 
@@ -533,7 +540,7 @@ For example, you can stop a form from being submitted on a button click, however
 
 <br>
 
-# Recommended reading
+## Recommended reading
 
 [**Introduction to browser events**](https://javascript.info/introduction-browser-events) by javascript.info 
 
@@ -541,7 +548,7 @@ For example, you can stop a form from being submitted on a button click, however
 
 <br>
 
-# References
+## References
 
 *Reference links by MDN web docs.*
 
@@ -561,11 +568,11 @@ For example, you can stop a form from being submitted on a button click, however
 
 
 
-# Hands-on - wk13
+## Hands-on - wk13
 
 
 
-## Lab 1 - Balloon
+### Lab 1 - Balloon
 
 Write a page that displays a balloon (using the balloon emoji, 🎈).  When you press the up arrow, it should inflate (grow) 10 percent, and  when you press the down arrow, it should deflate (shrink) 10 percent.
 
@@ -585,14 +592,13 @@ When that works, add a feature where, if you blow up the balloon past a  certain
         <li>You can change the balloon to an explosion by replacing the text node with another one (using replaceChild) or by setting the textContent property of its parent node to a new string.</li>
     </ul>
 </details>
-
 <!-- [**Link to solution**](https://codepen.io/maujac/pen/MWaBggj) -->
 
 
 
 <br>
 
-## Lab 2 - Event Delegation
+### Lab 2 - Event Delegation
 
 In the event delegation section of the notes you were shown the example below.
 
@@ -610,10 +616,9 @@ Implement the functionality of all 3 buttons using the event delegation pattern:
   See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
-## Lab 3- Mouse colors
+### Lab 3- Mouse colors
 
 #### Part 1
 

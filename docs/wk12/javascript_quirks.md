@@ -124,9 +124,9 @@ Below are commonly used operators. See the [**JavaScript Operators page**](https
 | Operator | Description                                  |
 | -------- | -------------------------------------------- |
 | ==       | equal to                                     |
-| ===      | Strick equality (equal value and equal type) |
+| ===      | strict equality (equal value and equal type) |
 | !=       | not equal                                    |
-| !==      | Strick not equal value or not equal type     |
+| !==      | strictly not equal value or not equal type   |
 | >        | greater than                                 |
 | <        | less than                                    |
 | >=       | greater than or equal to                     |
