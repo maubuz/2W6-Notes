@@ -1,8 +1,8 @@
 **Home**
 - [About](/)
 
-<!-- **Week 14** -->
-<!-- - [DOM pt2](./wk13/DOM-manipulation_pt2.md) -->
+**Week 14**
+- [DOM pt2](./wk13/DOM-manipulation_pt2.md)
 <!-- - [CSS Frameworks](./wk14/css_frameworks.md) -->
 <!-- - [JS OOP & Canvas](./wk14/jsOOP_canvas.md) -->
 
