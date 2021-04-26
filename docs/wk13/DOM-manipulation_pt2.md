@@ -2,69 +2,113 @@
 
 Now that we've learned more JavaScript, we can expand on DOM manipulation.
 
-<br>Inserting elements in the DOM
+<br>
 
-We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` propert.
+## Inserting elements in the DOM
 
-
-
-
-
-<iframe allowfullscreen="true" src="https://codepen.io/maujac/embed/gOaRKjY?height=342&amp;theme-id=light&amp;default-tab=html" title="wk11 - inserting_1 -ex6" height="342" allow-top-navigation="false" allow-forms="false" allow-popups="false" sandbox="allow-same-origin allow-scripts" onload="window.remoteOnLoad &amp;&amp; window.remoteOnLoad(this)" style="box-sizing: border-box; margin: 0px auto; max-width: 100%; width: 800px; border: none;"></iframe>
+We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` property.
 
 
 
+<iframe height="297" style="width: 100%;" scrolling="no" title="wk11 - inserting_1v2" src="https://codepen.io/maujac/embed/jOydjrP?height=297&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/jOydjrP'>wk11 - inserting_1v2</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
-However, this method can easily lead to typos and missed syntax.
 
 
 
-Instead, use following method for **adding and deleting HTML elements**:
+!> Manually constructing HTML elements from strings of code can easily lead to typos and missed syntax.
+
+<br>
+
+**Use the methods below to construct, modify and insert DOM elements using JavaScript:**
+
+<br>
+
+| Method                                                       | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Creates an HTML element                                      |
+| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes an HTML element                                      |
+| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Adds an HTML element                                         |
+| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replaces an HTML element                                     |
+| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+
+<br>
+
+### New element recipe 👨‍🍳
+
+
+
+In order to add new elements to the DOM using the methods listed above, follow these steps:
 
 
 
 1. Create a new element and store it in a variable with  `createElement`
-2. Add the content of the new element with `createTextNode` or `innerHTML` 
-3. Select the note to receive the new element
-4. Append the new node to the selected element with:
+
+   ```js
+   let newDiv = document.createElement("div"); 
+   ```
+
+   <br>
+
+2. Add text to the new node (if desired)
+
+   1. Add the text content to the new element with `innerHTML` 
+
+    ```js
+    newDiv.innerHTML = 'A brand new div';
+    ```
+
+    <br>
+
+   2. Alternatively, create a new independent text node with `createTextNode` and then add it as a child of the element created in step 1.
+
+   ```js
+let newText = documddent.createTextNode('A brand new div');
+   newDiv.appendChild(newText);
+   ```
+   
+   <br>
+   
+   
+
+3. Get a reference the node to receive the new element as it's last child. To position the new node amongst other siblings, a reference to a sibling is also necessary.
+
+   <br>
+
+4. Append the new node to the selected reference element with:
+
    1. `appendChild` if the new content should go as the last child
-   2. Select a middle sibbling node and use `insertBefore` to insert in the middle of the parent
+
+      ```js
+      // Option 1: add as the last child of existingDiv
+      
+      let existingDiv = document.getElementById("tips");
+      existingDiv.appendChild(newDiv);
+      ```
+
+      
+
+   2. Alternatively, select a middle sibling node and use `insertBefore` to insert in the middle of the parent
+
+      ```js
+      // Option 2: add between siblings.
+      
+      let existingDiv = document.getElementById('tips');
+      const heroSection = document.getElementById('hero');
+      heroSection.insertAfter(newDiv, existingDiv)
+      ```
 
 
-
-Use the following methods:
-
-
-
-| Method                                                       | Description                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Create an HTML element                                       |
-| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Remove an HTML element                                       |
-| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Add an HTML element                                          |
-| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replace an HTML element                                      |
-| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
-
-
-
-
-
-<iframe allowfullscreen="true" src="https://codepen.io/maujac/embed/abvwjBX?height=265&amp;theme-id=light&amp;default-tab=html" title="wk11 - creating_elements -ex8" height="265" allow-top-navigation="false" allow-forms="false" allow-popups="false" sandbox="allow-same-origin allow-scripts" onload="window.remoteOnLoad &amp;&amp; window.remoteOnLoad(this)" style="box-sizing: border-box; margin: 0px auto; max-width: 100%; width: 800px; border: none;"></iframe>
-
-
-
-# CSS-Selector Review
-
-In addition to accessing elements by **Id** name, **Class** name or element **Type** you can use the same CSS-selector syntax that you use in the CSS file.
 
 <br>
 
-For example, using only CSS, let's select the `<p>` element inside the article of class "walmart" and set it's background color to lightblue:
 
-<br>
 
-<iframe height="355" style="width: 100%;" scrolling="no" title="wk13 - DOM_pt2 - querySelect - ex2" src="https://codepen.io/maujac/embed/wvKyLLV?height=355&theme-id=dark&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/wvKyLLV'>wk13 - DOM_pt2 - querySelect - ex2</a> by Mauricio Buschinelli
+<iframe height="330" style="width: 100%;" scrolling="no" title="wk11 - creating_elements -ex8" src="https://codepen.io/maujac/embed/abvwjBX?height=330&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/abvwjBX'>wk11 - creating_elements -ex8</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
@@ -72,20 +116,9 @@ For example, using only CSS, let's select the `<p>` element inside the article o
 
 <br>
 
-Similarly, lets select only the odd items in the `<ul>` element and change their background color:
+## querySelector & querySelectorAll
 
-<br>
-
-<iframe height="270" style="width: 100%;" scrolling="no" title="wk13 - DOM_pt2 - querySelect_2 - ex3" src="https://codepen.io/maujac/embed/ExVQqwL?height=270&theme-id=dark&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/ExVQqwL'>wk13 - DOM_pt2 - querySelect_2 - ex3</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-
-<br>
-
-# querySelector & querySelectorAll
+In addition to selection elements by **Id** name, **Class** name or element **Type**, it is also possible to use CSS-selector syntax to specify element in JavaScript.
 
 
 
@@ -118,10 +151,6 @@ const el = document.querySelector(".myclass");
 <br>
 
 
-
-Let's perform the same styling manipulation to the ad example used earlier:
-
-<br>
 
  <iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - DOM_pt2 - querySelect - ex3" src="https://codepen.io/maujac/embed/zYvRgML?height=265&theme-id=dark&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/zYvRgML'>wk13 - DOM_pt2 - querySelect - ex3</a> by Mauricio Buschinelli
@@ -169,12 +198,12 @@ Let's perform the same styling manipulation to Item list example used earlier:
 
 
 
-## querySelectAll vs getElementsBy*
+### querySelectAll vs getElementsBy*
 
 The are a few important differences between 
 
 - `getElementsBy*`  methods returns a `HTMLCollection` 
--  `querySelectAll` returns a `NodeList` containing 
+-  `querySelectAll` returns a `NodeList` 
 
 <br>
 
@@ -190,7 +219,7 @@ let newArray = Array.from( array_like_obj );
 
 <br>
 
-### Live vs Static Collections
+#### Live vs Static Collections
 
 Another important difference between `getElementsBy*`  methods and  `querySelectAll` is **how the lists that they return reflect the current state of the DOM**.
 
@@ -234,22 +263,23 @@ The importance of having a live collection vs a static collection depends only h
 
 
 
-# Attribute selectors: a css "detour"
+## Attribute selectors
 
-When we covered [advanced CSS selectors in week 8](https://mau-jac.github.io/2W6-UI/#/./wk8/advanced_selectors) I mentioned that it is possible to select HTML elements using attribute selectors and invited you to become familiar with them, but I did not cover them.
-
-<br>
-
-> **Attribute selectors** select elements based on an attribute or attribute value
-
-
+To refresh our memories:
 
 <br>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - DOM pt2 - attribute selectors - ex2" src="https://codepen.io/maujac/embed/yLYPvMd?height=265&theme-id=light&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+> **Attribute selectors** select elements based on an attribute or attribute value of an HTML element.
+
+
+
+<br>
+
+<iframe height="255" style="width: 100%;" scrolling="no" title="wk13 - DOM pt2 - attribute selectors - ex2" src="https://codepen.io/maujac/embed/yLYPvMd?height=255&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/yLYPvMd'>wk13 - DOM pt2 - attribute selectors - ex2</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 
 
@@ -273,10 +303,9 @@ In the example below we are gaining access to the number input by using `querySe
   See the Pen <a href='https://codepen.io/maujac/pen/LYpOQOy'>wk13 - DOM pt2 - querySelect_form_type - ex3</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 <br>
 
-# Element Ids, Classes & Attributes
+## Element Ids, Classes & Attributes
 
 Below is a summary of methods commonly used to modify element Ids, Classes and Attributes:
 
@@ -322,9 +351,15 @@ This is possible because the only thing differentiating the text input field fro
 
 <br>
 
+​     
+
+## Computed Styles
 
 
-# textContent vs innerText
+
+
+
+## textContent vs innerText
 
 There are many ways of accessing the text content of an element node:
 
@@ -355,7 +390,7 @@ The `span` inside the `h1` is hidden with  `display: none`. Notice how the outpu
 
 <br>
 
-# nodeClone( ) Method
+## nodeClone( ) Method
 
 It is possible to clone an existing node with all of it's attributes and their values
 
@@ -382,7 +417,7 @@ For more information [see cloneNode( ) documentation](https://www.w3schools.com/
 
 <br>
 
-# Remember: inserting elements in the DOM
+## Remember: inserting elements in the DOM
 
 We've already looked at [how to insert new elements in the DOM.](https://mau-jac.github.io/2W6-UI/#/./wk12/javascript_intro?id=inserting-elements-in-the-dom)
 

@@ -459,8 +459,8 @@ Notice the difference between  `event.target`  vs  `event.currentTarget`  when c
 
 <br>
 
-<iframe height="316" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=316&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+<iframe height="282" style="width: 100%;" scrolling="no" title="wk13 - events - target vs currentTarget" src="https://codepen.io/maujac/embed/YzNBbaE?height=282&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/YzNBbaE'>wk13 - events - target vs currentTarget</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
@@ -517,7 +517,7 @@ For example, by default, when a `<button>` element is clicked inside a `<form>` 
 
 
 
-A common example of stopping default behavior is to stop the `<button>` from submitting without necessarily stooping the `"click"` event from bubbling.
+A common example of stopping default behavior is to stop the `<button>` from submitting without necessarily stopping the `"click"` event from bubbling.
 
 <br>
 
@@ -532,7 +532,7 @@ A common example of stopping default behavior is to stop the `<button>` from sub
 
 > Note that event bubbling and preventing default behavior are two different and isolated mechanism.
 >
-> You can stop one but not the other.
+> You can stop them independently.
 
 
 
@@ -570,9 +570,66 @@ For example, you can stop a form from being submitted on a button click, however
 
 ## Hands-on - wk13
 
+### Lab 1- Mouse colors
+
+#### Part 1
+
+Create a container where the background color changes depending on the mouse position over the container.
+
+**The color change should be consistent and not random.**
 
 
-### Lab 1 - Balloon
+
+#### Part 2
+
+Allow the color to change according to the mouse position (like above) but **only when the mouse is clicked while the alt key is pressed.**
+
+
+
+<br>
+
+<iframe height="368" style="width: 100%;" scrolling="no" title="wk13 - Lab 3 - Mouse colors" src="https://codepen.io/maujac/embed/GRpQaeM?height=368&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/GRpQaeM'>wk13 - Lab 3 - Mouse colors</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+<details>
+    <summary>Display hint</summary>
+    <ul>
+        <li>For mouse events, you can use the event.offsetX and offsetY to get the mouse position with respect to the top-left of the element listening to the event.</li><br>
+    </ul>
+</details>
+
+
+<!-- **[Link to Solution](https://codepen.io/maujac/pen/gOaKPGZ)** -->
+
+<br>
+
+### Lab 2 - Event Delegation
+
+In the event delegation section of the notes you were shown the example below.
+
+However, the buttons lacked implementation and only outputted a string to the console.
+
+Implement the functionality of all 3 buttons using the event delegation pattern:
+
+- **Add item** should add a new Item to the top of the list (the `<h2>` elements in this case).
+- **Change color** should change the background color of the list.
+- **Remove item** should remove the last item in the list.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
+### Lab 3 - Balloon Challenge
 
 Write a page that displays a balloon (using the balloon emoji, 🎈).  When you press the up arrow, it should inflate (grow) 10 percent, and  when you press the down arrow, it should deflate (shrink) 10 percent.
 
@@ -598,59 +655,7 @@ When that works, add a feature where, if you blow up the balloon past a  certain
 
 <br>
 
-### Lab 2 - Event Delegation
 
-In the event delegation section of the notes you were shown the example below.
-
-However, the buttons lacked implementation and only outputted a string to the console.
-
-Implement the functionality of all 3 buttons using the event delegation pattern:
-
-- **Add item** should add a new Item to the top of the list (the `<h2>` elements in this case).
-- **Change color** should change the background color of the list.
-- **Remove item** should remove the last item in the list.
-
-<br>
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-<br>
-
-### Lab 3- Mouse colors
-
-#### Part 1
-
-Create a container where the background color changes depending on the mouse position over the container.
-
-**The color change should be consistent and not random.**
-
-
-
-#### Part 2
-
-Allow the color to change according to the mouse position (like above) but **only when the mouse is clicked while the alt key is pressed.**
-
-
-
-<br>
-
-<iframe height="368" style="width: 100%;" scrolling="no" title="wk13 - Lab 3 - Mouse colors" src="https://codepen.io/maujac/embed/GRpQaeM?height=368&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/GRpQaeM'>wk13 - Lab 3 - Mouse colors</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-<details>
-    <summary>Display hint</summary>
-    <ul>
-        <li>For mouse events, you can use the event.offsetX and offsetY to get the mouse position with respect to the top-left of the element listening to the event.</li><br>
-    </ul>
-</details>
-
-<!-- **[Link to Solution](https://codepen.io/maujac/pen/gOaKPGZ)** -->
-
-<br>
 
 
 
