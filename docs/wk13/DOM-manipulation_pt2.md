@@ -353,9 +353,67 @@ This is possible because the only thing differentiating the text input field fro
 
 ​     
 
-## Computed Styles
+## CSS Styles in JS: getComputedStyle()
+
+We've learned **how to change style properties** using JS with the method [*element*.style.*property = new style*](https://www.w3schools.com/js/js_htmldom_css.asp)
 
 
+
+>  However, when used to read style properties,  *element*.style.*property* has a major limitation:
+>
+> - This method can only read css properties that have been added via JavaScript.
+
+
+
+In other words, **stylesheet properties are not accessible** via  *element*.style.*property*
+
+<br>
+
+In the example below, when trying to read the font-size, we are returned an empty string
+
+<iframe height="327" style="width: 100%;" scrolling="no" title="wk13 - computed styles - not working" src="https://codepen.io/maujac/embed/OJWdKyN?height=327&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/OJWdKyN'>wk13 - computed styles - not working</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+> In order to read properties added via CSS or JavaScript, use the method [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle)
+
+
+
+The method  **`Window.getComputedStyle()`** returns an object containing the values of all CSS properties of an element.
+
+<br>
+
+Once the styling rules are retrieved with `Window.getComputedStyle()`, the individual CSS properties can be accessed using ` getPropertyValue('prop-name')`
+
+```js
+const heading = document.getElementById("title");
+
+const styles = window.getComputedStyle(heading);
+let font_size = styles.fontSize;
+```
+
+<br>
+
+Alternatively, reading the properties of the object returned by `Window.getComputedStyle()`.
+
+```js
+const heading = document.getElementById("title");
+
+const styles = window.getComputedStyle(heading);
+let same_size = styles.getPropertyValue("font-size");
+```
+
+<br>
+
+<iframe height="457" style="width: 100%;" scrolling="no" title="wk13 - computed styles - working" src="https://codepen.io/maujac/embed/gOgqVgr?height=457&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/gOgqVgr'>wk13 - computed styles - working</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
 
 
 
