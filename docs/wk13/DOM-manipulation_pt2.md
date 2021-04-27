@@ -29,11 +29,11 @@ We've already inserted simple elements in the DOM using the `getElementById` met
 
 | Method                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [document.createElement(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Creates an HTML element                                      |
-| [Node.removeChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes an HTML element                                      |
-| [Node.appendChild(*element*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Adds an HTML element                                         |
-| [Node.replaceChild(*new, old*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replaces an HTML element                                     |
-| [Node.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+| [document.createElement(*tagName*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Creates an HTML element                                      |
+| [parentNode.removeChild(*child*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes an HTML element                                      |
+| [parentNode.appendChild(*newChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Adds an HTML element                                         |
+| [parentNode.replaceChild(*newChild, oldChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replaces an HTML element                                     |
+| [parentNode.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
 
 <br>
 
@@ -66,7 +66,7 @@ In order to add new elements to the DOM using the methods listed above, follow t
    2. Alternatively, create a new independent text node with `createTextNode` and then add it as a child of the element created in step 1.
 
    ```js
-let newText = documddent.createTextNode('A brand new div');
+let newText = document.createTextNode('A brand new div');
    newDiv.appendChild(newText);
    ```
    
