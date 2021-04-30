@@ -491,22 +491,26 @@ For more information [see cloneNode( ) documentation](https://www.w3schools.com/
 
 ### Lab 3 - Event Delegation
 
-In the event delegation section of the notes you were shown the example below.
+In the event delegation section of the notes you were shown a similar code snip.
 
 However, the buttons lacked implementation and only outputted a string to the console.
 
-Implement the functionality of all 3 buttons using the event delegation pattern:
+Implement the functionality of all 2 buttons using the event delegation pattern:
 
-- **Add item** should add a new Item to the top of the list (the `<h2>` elements in this case).
-- **Change color** should change the background color of the list.
+- **Add item** should add a new Item at the bottom of the `<ul>` with the value specified in the `<input>`
 - **Remove item** should remove the last item in the list.
 
 <br>
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+> Do this exercise in your local code editor.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events exercise - lab 3" src="https://codepen.io/maujac/embed/zYNVwva?height=265&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/zYNVwva'>wk13 - events exercise - lab 3</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 <br>
 
