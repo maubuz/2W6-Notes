@@ -473,25 +473,40 @@ For more information [see cloneNode( ) documentation](https://www.w3schools.com/
 
 > Note: If you will use cloneNode( ) to build your DOM, make sure that the element you are cloning is always available and part of the DOM
 
-<br>
-
-## Remember: inserting elements in the DOM
-
-We've already looked at [how to insert new elements in the DOM.](https://mau-jac.github.io/2W6-UI/#/./wk12/javascript_intro?id=inserting-elements-in-the-dom)
-
-This is still very relevant and used in conjunction with the methods shown above.
-
 
 
 <br>
 
-# References
+## References
 
 **Recommended video**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nx2AhrCIlXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+
+<br>
+
+## Hands-on
+
+### Lab 3 - Event Delegation
+
+In the event delegation section of the notes you were shown the example below.
+
+However, the buttons lacked implementation and only outputted a string to the console.
+
+Implement the functionality of all 3 buttons using the event delegation pattern:
+
+- **Add item** should add a new Item to the top of the list (the `<h2>` elements in this case).
+- **Change color** should change the background color of the list.
+- **Remove item** should remove the last item in the list.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - events - good_bubbling - ex10" src="https://codepen.io/maujac/embed/xxwpeaB?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/xxwpeaB'>wk13 - events - good_bubbling - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
