@@ -600,6 +600,13 @@ myBtn.addEventListener("click", (eve) => {
 
 <br>
 
+<iframe height="445" style="width: 100%;" scrolling="no" title="wk13 - events - anonymous functions" src="https://codepen.io/maujac/embed/OJWKYgP?height=445&theme-id=dark&default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/OJWKYgP'>wk13 - events - anonymous functions</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
 ## Recommended reading
 
 [**Introduction to browser events**](https://javascript.info/introduction-browser-events) by javascript.info 
