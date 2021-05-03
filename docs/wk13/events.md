@@ -540,7 +540,65 @@ For example, you can stop a form from being submitted on a button click, however
 
 <br>
 
+## Anonymous & Arrow Functions
 
+It is often the case that event handler functions only get referenced once when attaching them to elements via `addEventListener`.
+
+In those cases, it can be faster to declare the function directly inside `addEventListener` rather than in a named function. For these and other similar cases, JavaScript allows the use of anonymous and arrow functions.
+
+<br>
+
+**Named Functions**
+
+So far we've only looked at named functions. The function is declared at one point in the code and then referenced somewhere else:
+
+<br>
+
+```js
+const myBtn = document.getElementById('btn');
+
+function callMeBack(eve){
+  console.log('Clicked at ' + eve.target.tagName );
+}
+
+myBtn.addEventListener("click", callMeBack);
+```
+
+<br>
+
+**Anonymous Functions**
+
+Anonymous functions are declared immediately instead of referencing a named function that is declared elsewhere in the code:
+
+<br>
+
+```js
+const myBtn = document.getElementById('btn');
+
+myBtn.addEventListener("click", function(eve){
+  console.log('Clicked at ' + eve.target.tagName );
+});
+```
+
+<br>
+
+**Arrow Functions**
+
+Arrow functions offer a syntax that is even shorter than anonymous functions.
+
+In addition to the syntax difference, arrow functions treat the `this` word differently, however, we will not cover `this` in this course.
+
+<br>
+
+```js
+const myBtn = document.getElementById('btn');
+
+myBtn.addEventListener("click", (eve) => {
+  console.log('Clicked at ' + eve.target.tagName );
+});
+```
+
+<br>
 
 ## Recommended reading
 
