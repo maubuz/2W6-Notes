@@ -4,7 +4,7 @@ Now that we've learned more JavaScript, we can expand on DOM manipulation.
 
 <br>
 
-## Inserting elements in the DOM
+## Adding and removing elements to the DOM
 
 We've already inserted simple elements in the DOM using the `getElementById` method and the `innerHTML` property.
 
@@ -30,10 +30,11 @@ We've already inserted simple elements in the DOM using the `getElementById` met
 | Method                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [document.createElement(*tagName*)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | Creates an HTML element                                      |
-| [parentNode.removeChild(*child*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes an HTML element                                      |
-| [parentNode.appendChild(*newChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Adds an HTML element                                         |
-| [parentNode.replaceChild(*newChild, oldChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replaces an HTML element                                     |
-| [parentNode.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+| [*parentNode*.appendChild(*newChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | Adds an HTML element                                         |
+| [*parentNode*.replaceChild(*newChild, oldChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild) | Replaces an HTML element                                     |
+| [*parentNode*.insertBefore(*newChild*,*referenceChild*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) | Inserts a node before a *reference node* as a child of a specified *parent node*. |
+| [*parentNode*.removeChild(*child*)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) | Removes an HTML element                                      |
+| [*element*.remove()](https://www.w3schools.com/jsref/met_element_remove.asp) | removes the specified element from the DOM.                  |
 
 <br>
 
@@ -164,7 +165,7 @@ const el = document.querySelector(".myclass");
 ### querySelectorAll Syntax
 
 ```javascript
-elementList = parentNode.querySelectorAll(selectors);
+elementList = document.querySelectorAll(selectors);
 ```
 
 
