@@ -57,7 +57,7 @@ Bootstrap and Materialize work in a very similar way and differ mostly in their 
 
 <br>
 
-Bootstrap was developed by [Twitter](https://en.wikipedia.org/wiki/Twitter) as a framework to encourage consistency across internal tools.
+[Bootstrap](https://getbootstrap.com/) was developed by [Twitter](https://en.wikipedia.org/wiki/Twitter) as a framework to encourage consistency across internal tools.
 
 It is currently the most popular of all CSS frameworks.
 
@@ -106,22 +106,22 @@ For simplicity we will use the CDN link option.
    **The CSS link** (as usual, include in the `<head>` of your html file):
 
    ```html
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
    ```
 
    <br>
 
-   **The JS script link** (as usual, include just before the end of your `</body>` tag):
+   **The JS script link** (include just before the end of your `</body>` tag):
 
    ```html
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
    ```
 
    <br>
 
-   Note that Bootstrap has a dependency on **jQuery** and **Popper.js**, which are two JS frameworks. Therefore you also have to include them in your pages, and thus force your visitors to download them.
+   Note that Bootstrap has a dependency on **Popper.js**, which are two JS frameworks. Therefore you also have to include them in your pages, and thus force your visitors to download them.
 
    <br>
 
@@ -134,10 +134,10 @@ For simplicity we will use the CDN link option.
    > You will need to consult the documentation a lot.
    >
    > **Become familiar with how it is organized.**
+   >
+   > <br>
 
-   <br>
-
-   ![image-20200512090328827](assets/image-20200512090328827.png)
+   ![image-20210503181038758](assets/image-20210503181038758.png)
 
 <br>
 
@@ -149,7 +149,12 @@ For simplicity we will use the CDN link option.
 
 3. Save and open it in the browser.
 
+<br>
 
+<iframe height="322" style="width: 100%;" scrolling="no" title="Bootstrap - getting started" src="https://codepen.io/maujac/embed/oNBKRrK?height=322&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/oNBKRrK'>Bootstrap - getting started</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
@@ -257,7 +262,14 @@ The table below illustrates the size of a `.container` at a specific breakpoint:
 
 <br>
 
-See the containers in action and compare them with a [Grid example](https://getbootstrap.com/docs/4.4/examples/grid/#containers).
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk14 - Bootstrap - container sizes" src="https://codepen.io/maujac/embed/QWdeXwO?height=265&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/QWdeXwO'>wk14 - Bootstrap - container sizes</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+To see more grid examples in action check the page [Grid example](https://getbootstrap.com/docs/4.4/examples/grid/#containers).
 
 <br>
 
