@@ -317,11 +317,18 @@ Using the number system above columns will always take the same amount of space 
 
 <br>
 
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk14 - Bootstrap - col examples" src="https://codepen.io/maujac/embed/QWdeXKQ?height=265&theme-id=dark&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/QWdeXKQ'>wk14 - Bootstrap - col examples</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
 ## Responsive Grid
 
 For responsive websites, it is possible to customize the size of your columns on different devices sizes.
 
-Add the **breakpoint keyword** to the `col` class to specify how many columns it will take once the breakpoint is reached. 
+> Add the **breakpoint keyword** to the `col` class to specify how many columns it will take once the breakpoint is reached. 
 
 <br>
 
