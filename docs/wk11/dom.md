@@ -305,10 +305,10 @@ The following methods belong to the Document object and can be used to select HT
 | Property                                                     | Description                                   |
 | ------------------------------------------------------------ | --------------------------------------------- |
 | [*element*.innerHTML = *new html content*](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) | Change the inner HTML of an element           |
-| [*element*.*attribute = new value*](https://www.w3schools.com/js/js_htmldom_html.asp) | Change the attribute value of an HTML element |
-| [*element*.style.*property = new style*](https://www.w3schools.com/js/js_htmldom_css.asp) | Change the style of an HTML element           |
+| [*element*.*attribute = "new value"*](https://www.w3schools.com/js/js_htmldom_html.asp) | Change the attribute value of an HTML element |
+| [*element*.style.*property = "new style"*](https://www.w3schools.com/js/js_htmldom_css.asp) | Change the style of an HTML element           |
 | **Method**                                                   | **Description**                               |
-| [*element*.setAttribute*(attribute, value)*](https://www.w3schools.com/jsref/met_element_setattribute.asp) | Change the attribute value of an HTML element |
+| [*element*.setAttribute(*attribute, value*)](https://www.w3schools.com/jsref/met_element_setattribute.asp) | Change the attribute value of an HTML element |
 
 <br>
 
