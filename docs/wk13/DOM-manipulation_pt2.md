@@ -306,7 +306,7 @@ In the example below we are gaining access to the number input by using `querySe
 </iframe>
 <br>
 
-## Element Ids, Classes & Attributes
+## Ids, Classes & Attributes
 
 Below is a summary of methods commonly used to modify element Ids, Classes and Attributes:
 
@@ -316,8 +316,8 @@ Below is a summary of methods commonly used to modify element Ids, Classes and A
 
 | Property or Method                                           | Description                                                |
 | ------------------------------------------------------------ | ---------------------------------------------------------- |
-| [*element*.`className`](https://www.w3schools.com/jsref/prop_html_classname.asp) | returns a string with the class(es) name(es) of an element |
-| [*element.*`classList.add( "class-name" )`](https://www.w3schools.com/jsref/prop_element_classlist.asp) | returns the class name(s) of an element as an array        |
+| [*element*.className](https://www.w3schools.com/jsref/prop_html_classname.asp) | returns a string with the class(es) name(es) of an element |
+| [*element.*classList.add( "class-name" )](https://www.w3schools.com/jsref/prop_element_classlist.asp) | returns the class name(s) of an element as an array        |
 
 
 
@@ -325,7 +325,7 @@ Below is a summary of methods commonly used to modify element Ids, Classes and A
 
 | Property or Method                                           | Description                                     |
 | ------------------------------------------------------------ | ----------------------------------------------- |
-| [*element.*`id`](https://www.w3schools.com/jsref/prop_html_id.asp) | returns the value of an element's id  attribute |
+| [*element.*id](https://www.w3schools.com/jsref/prop_html_id.asp) | returns the value of an element's id  attribute |
 
 
 
@@ -333,7 +333,7 @@ Below is a summary of methods commonly used to modify element Ids, Classes and A
 
 | Property or Method                                           | Description                                |
 | ------------------------------------------------------------ | ------------------------------------------ |
-| [*element.*`setAttribute( attribute-name, "value" )`](https://www.w3schools.com/jsref/met_element_setattribute.asp) | adds the specified attribute to an element |
+| [*element.*setAttribute( attribute-name, "value" )](https://www.w3schools.com/jsref/met_element_setattribute.asp) | adds the specified attribute to an element |
 
 <br>
 
