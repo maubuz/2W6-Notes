@@ -417,7 +417,7 @@ Q.18) Using Flexbox, recreate the horizontal nav bar below:
 
 Q.19) Using Flexbox, recreate this section of a website based on the starting html code:
 
-![image-20200306113947427](assets/image-20200306113947427.png)
+![image-20200306113947427](assets/image-20200306113947427-1620617117858.png)
 
 ```html
 <section id="home-info">
@@ -529,4 +529,3 @@ Q.22) Given the html structure below, how would you select all the children of t
     <li>1, 2, 3 4, and 5</li>
   </ul>
 </details>
-
