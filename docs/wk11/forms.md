@@ -76,17 +76,18 @@ The `<form>` element can receive the following attributes:
 
 ### The Method Attribute
 
-One important mention is that the `method` attribute specifies the HTTP method (**GET** or  **POST**) to be used when submitting the form data.
+The `method` attribute specifies the HTTP method (**GET** or  **POST**) to be used when submitting the form data.
 
 
 
-> This determines whether the submitted data is visible in the URL bar (ei. to the user) or encoded in the HTML request body.
+> With a **GET method** the data is submitted and visible in the URL bar (ei. to the user).
+> With a **POST method**, the data is encoded in the HTML request body and can be encrypted (with https).
 
 <br>
 
-`method` uses GET by default. **Always use POST if the form data contains sensitive information.**
+`method` uses GET by default, however, **always use POST if the form data contains sensitive information.**
 
-Ideally, encrypt the data by using an HTTPS certified URL.
+Ideally, encrypt the data in the request body by using an HTTPS certified URL.
 
 <br>
 
@@ -104,6 +105,7 @@ Ideally, encrypt the data by using an HTTPS certified URL.
 
 - POST has no size limitations, and can be used to send large amounts of data.
 - Form submissions with POST cannot be bookmarked
+- Some servers are not setup to handle a POST request and might display `HTTP error 405: method not allowed`.
 
 <br>
 
@@ -172,34 +174,16 @@ The input `type=` can take the following values:
 
 <br>
 
+Example of radio and email inputs:
+
+<br>
+
 <iframe height="265" style="width: 100%;" scrolling="no" title="wk11-radio_email_search-ex2" src="https://codepen.io/maujac/embed/WNQRKpY?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/maujac/pen/WNQRKpY'>wk11-radio_email_search-ex2</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 
-<br>
-
-The `<input>` can also be used as button in order to **submit the form or to trigger an event** (using JavaScript):
-
-<br>
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-input_button-ex3" src="https://codepen.io/maujac/embed/JjYEaLZ?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/JjYEaLZ'>wk11-input_button-ex3</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-<br>
-
-In addition, the [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element can also be used to submit the form. The main difference between the `<button>` and the `<input type="submit">`  is that the `<button>` element can take other elements inside, such as icons or images.
-
-<br>
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="Searchbar demo" src="https://codepen.io/maujac/embed/QWjjjda?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/QWjjjda'>Searchbar demo</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 <br>
 
 ### &lt;label&gt; elements
@@ -291,6 +275,57 @@ The [`option`](https://www.w3schools.com/tags/tag_option.asp) tags inside the `<
 
 <br>
 
+## Form submission
+
+There are two ways of triggering a form submission:
+
+- Immediately after an `<input>` of `type=button` is clicked inside a form;
+- Immediately after a `<button>` element is clicked inside a form;
+
+<br>
+
+As far as the form is concerned both methods are functionally the same.
+
+<br>
+
+Depending on the browser and the `action` attribute of the `<form>`, the page might quickly refresh, which can be hard to notice.
+
+> **If you do not want a form to submit immediately, then you must stop this default behaviour using JavaScript.**
+>
+> This will be covered in the chapter about DOM Events.
+
+<br>
+
+#### Submission with input type="button"
+
+The `<input>` element can be used as a button in order to submit the form. This happens automatically as soon as the button is clicked.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="wk11-input_button-ex3" src="https://codepen.io/maujac/embed/JjYEaLZ?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/JjYEaLZ'>wk11-input_button-ex3</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+
+<br>
+
+#### Submission with button
+
+The [`<button>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element can also be used to submit the form. The main difference between the `<button>` and the `<input type="submit">`  is that the `<button>` element can take other elements inside, such as icons or images.
+
+<br>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="Searchbar demo" src="https://codepen.io/maujac/embed/QWjjjda?height=265&theme-id=dark&default-tab=html,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/QWjjjda'>Searchbar demo</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<br>
+
+
+
 ## Built-in form validation
 
 One of the most significant features of [HTML5 form controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types) is the ability to validate most user data without relying on  JavaScript.
@@ -304,6 +339,7 @@ This is done by using validation attributes on `<input>` elements:
 - `min` and `max`: Specifies the minimum and maximum values of numerical input types
 - `type`: Specifies whether the data needs to be a number, an email address, or some other specific preset type. 
 - `pattern`: Specifies a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) that defines a pattern the entered data needs to follow (advanced).
+- `step`: Only useful on an `<input>` of `type=number`. Specified the increment amounts. Defaults to 1 unit (integer).
 
 
 
@@ -313,12 +349,17 @@ This is done by using validation attributes on `<input>` elements:
   See the Pen <a href='https://codepen.io/maujac/pen/OJyWaoB'>wk11-required-ex6</a> by Mauricio Buschinelli
   (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+<br>
+
+>Note that **data validation only happens once the `<form>` elements experiences a `submit` event.**
+>
+>The `submit` event is only triggered after the button's click has been processed. See DOM Events for more.
 
 <br>
 
-> It is also possible (and more common) to do form validation with JavaScript, which we will do later in the course.
->
-> See [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) by MDN web docs for more information.
+It is also possible (and more common) to do form validation with JavaScript, which we will do later in the course.
+
+See [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) by MDN web docs for more information.
 
 
 
@@ -353,7 +394,6 @@ Complete the following exercises from W3C Schools:
 2. [Form Elements](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_elements1)
 3. [Input Types](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_input_types1)
 4. [Form Attributes](https://www.w3schools.com/html/exercise.asp?filename=exercise_html_form_attributes1)
-
 
 
 
