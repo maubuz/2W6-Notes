@@ -14,7 +14,7 @@ Here’s a list of some DOM events:
 
 
 
-### **Mouse events:**
+### Mouse events:
 
 | Event name               | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ |
@@ -26,7 +26,7 @@ Here’s a list of some DOM events:
 
 
 
-### **Form element events:**
+### Form element events:
 
 | Event name | Description                                                  |
 | ---------- | ------------------------------------------------------------ |
@@ -36,7 +36,7 @@ Here’s a list of some DOM events:
 
 
 
-### **Keyboard events:**
+### Keyboard events:
 
 | Event name | Description                        |
 | ---------- | ---------------------------------- |
@@ -45,7 +45,7 @@ Here’s a list of some DOM events:
 
 
 
-### **Document & other events:**
+### Document & other events:
 
 | Event name         | Description                                                |
 | ------------------ | ---------------------------------------------------------- |
@@ -552,7 +552,7 @@ However, it is important to choose the correct point in the event-chain to stop 
 
 <br>
 
-<img src="assets/image-20210522223651131.png" alt="image-20210522223651131" style="zoom:80%;" />
+![action flow to form input validation](assets/image-20210522223651131.png ':size=600')
 
 <br>
 
@@ -737,8 +737,4 @@ When that works, add a feature where, if you blow up the balloon past a  certain
 
 
 <br>
-
-
-
-
 
