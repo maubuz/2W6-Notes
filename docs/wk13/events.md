@@ -503,7 +503,7 @@ Bubbling can be used in a pattern called **event-delegation** where all events a
 
 
 
-### Preventing default behavior
+## Preventing default behavior
 
 Sometimes it is desirable to stop a default behavior without necessarily stopping bubbling.
 
@@ -513,11 +513,11 @@ Sometimes it is desirable to stop a default behavior without necessarily stoppin
 
 
 
-For example, by default, when a `<button>` element is clicked inside a `<form>` , the **form is submitted automatically**. 
+For example, by default, when a `<button>` or `<input type=button>` element is clicked inside a `<form>` , the **form is submitted automatically**. 
 
 
 
-A common example of stopping default behavior is to stop the `<button>` from submitting without necessarily stopping the `"click"` event from bubbling.
+A common example of stopping default behavior is to stop the `<button>` or `<input>` from submitting without necessarily stopping the `"click"` event from bubbling.
 
 <br>
 
@@ -537,6 +537,37 @@ A common example of stopping default behavior is to stop the `<button>` from sub
 
 
 For example, you can stop a form from being submitted on a button click, however, the click event will still bubble up through the DOM tree.
+
+### Form validation & submit event
+
+In the previous example, the form submission was prevented by stopping the default behaviour of a click inside a form.
+
+However, it is important to choose the correct point in the event-chain to stop the default behaviour.
+
+<br>
+
+> The `<form>` element offers native user input validation. However, **validation can only happen once the `<form>` observes a `submit` event.**
+>
+> A submit event is only triggered inside the form after a button is clicked.
+
+<br>
+
+<img src="assets/image-20210522223651131.png" alt="image-20210522223651131" style="zoom:80%;" />
+
+<br>
+
+Try adding an invalid email to the previous example. The form is not validating user input because the default behaviour was stopped when the button observed a "click", not when the form observed a "submit".
+
+<br>
+
+To allow the `<form>` to validate user input, stop default behaviour once the `<form>` experiences a `submit` event:
+
+<br>
+
+<iframe height="337" style="width: 100%;" scrolling="no" title="wk13 - events - Form &amp; preventDefault - ex10" src="https://codepen.io/maujac/embed/PoppBdN?height=337&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/maujac/pen/PoppBdN'>wk13 - events - Form &amp; preventDefault - ex10</a> by Mauricio Buschinelli
+  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 <br>
 
