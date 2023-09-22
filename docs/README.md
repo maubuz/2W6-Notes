@@ -8,7 +8,7 @@ This is the companion site for the 420-2W6 course.
 
 In this website you will find all the notes, labs and exercises for the course.
 
-This site is live at [maujac.github.io/2W6-UI](https://maubuz.github.io/2W6-Notes)
+This site is live at [maubuz.github.io/2W6-Notes](https://maubuz.github.io/2W6-Notes)
 
 
 
